@@ -26,7 +26,12 @@
       "mcp__task-master-ai__get_tasks",
       "Bash(dir:*)",
       "mcp__task-master-ai__parse_prd",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "mcp__task-master-ai__add_task",
+      "mcp__task-master-ai__set_task_status",
+      "mcp__task-master-ai__add_subtask",
+      "mcp__task-master-ai__next_task",
+      "mcp__supabase__postgrestRequest"
     ]
   },
   "enableAllProjectMcpServers": true,

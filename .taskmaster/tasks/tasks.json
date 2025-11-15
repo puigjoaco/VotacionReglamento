@@ -1,0 +1,106 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "FASE 1: Setup del Proyecto",
+        "description": "Configuración inicial del entorno de desarrollo, instalación de dependencias y setup básico",
+        "details": "",
+        "testStrategy": "",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "FASE 2: Diseño e Implementación de Base de Datos",
+        "description": "Crear esquema de base de datos en Supabase con tablas usuarios y comentarios, funciones de validación de RUT, triggers, RLS policies y vistas",
+        "details": "",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Diseñar esquema de base de datos completo",
+            "description": "Definir estructura de tablas usuarios y comentarios con sus campos, tipos de datos, constraints y relaciones",
+            "details": "",
+            "status": "done",
+            "dependencies": [],
+            "parentTaskId": 2
+          },
+          {
+            "id": 2,
+            "title": "Crear tabla usuarios en Supabase",
+            "description": "Tabla con: rut (PK), apellido_razon_social, departamento, tipo (propietario/residente), activo, created_at",
+            "details": "",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 2
+          },
+          {
+            "id": 3,
+            "title": "Crear tabla comentarios en Supabase",
+            "description": "Tabla con: id, rut_usuario, departamento, tipo_usuario, contenido, created_at, updated_at con constraint UNIQUE (departamento, tipo_usuario)",
+            "details": "",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 2
+          },
+          {
+            "id": 4,
+            "title": "Implementar función validar_rut() con módulo 11",
+            "description": "Función PL/pgSQL para validar RUT chileno con algoritmo módulo 11, manejo de formato con/sin puntos y guión, dígito verificador K",
+            "details": "",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 2
+          },
+          {
+            "id": 5,
+            "title": "Crear función puede_comentar() para validar permisos",
+            "description": "Verificar que usuario existe, no tiene comentario previo, y fecha actual < deadline (25 dic 2025)",
+            "details": "",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 2
+          },
+          {
+            "id": 6,
+            "title": "Implementar trigger para prevenir eliminación de comentarios",
+            "description": "Trigger BEFORE DELETE que bloquea eliminación de comentarios para cumplir con transparencia total",
+            "details": "",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 2
+          },
+          {
+            "id": 7,
+            "title": "Configurar Row Level Security (RLS)",
+            "description": "Políticas: SELECT público, INSERT solo si puede_comentar, UPDATE solo propio y antes de deadline, DELETE denegado",
+            "details": "",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 2
+          },
+          {
+            "id": 8,
+            "title": "Crear vista comentarios_con_usuarios",
+            "description": "Vista con JOIN entre comentarios y usuarios para facilitar queries del frontend",
+            "details": "",
+            "status": "pending",
+            "dependencies": [],
+            "parentTaskId": 2
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-11-15T12:08:20.164Z",
+      "description": "Default tasks context",
+      "updated": "2025-11-15T12:15:11.648Z"
+    }
+  }
+}
