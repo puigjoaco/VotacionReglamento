@@ -19,7 +19,14 @@
       "Bash(npm init:*)",
       "Bash(npm install:*)",
       "Bash(npx shadcn@latest init -y)",
-      "Bash(npx shadcn@latest init:*)"
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx:*)",
+      "WebSearch",
+      "mcp__shadcn__list_components",
+      "mcp__task-master-ai__get_tasks",
+      "Bash(dir:*)",
+      "mcp__task-master-ai__parse_prd",
+      "Bash(mkdir:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
