@@ -113,6 +113,17 @@
         "description": "Implementar endpoints REST para gestión de comentarios: GET, POST, PATCH con validación Zod, verificación de permisos y manejo de errores",
         "details": "",
         "testStrategy": "",
+        "status": "done",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "FASE 5: Desarrollo de Frontend",
+        "description": "Implementar dashboard, componentes de comentarios, formularios y páginas principales con diseño responsive usando shadcn/ui",
+        "details": "",
+        "testStrategy": "",
         "status": "pending",
         "dependencies": [],
         "priority": "high",
@@ -122,7 +133,7 @@
     "metadata": {
       "created": "2025-11-15T12:08:20.164Z",
       "description": "Default tasks context",
-      "updated": "2025-11-15T12:18:41.616Z"
+      "updated": "2025-11-15T12:20:47.953Z"
     }
   }
 }
