@@ -9,16 +9,13 @@ const handler = NextAuth({
     CredentialsProvider({
       name: 'Credenciales',
       credentials: {
+        departamento: { label: 'Departamento', type: 'text' },
+        tipo: { label: 'Tipo', type: 'text' },
         rut: { label: 'RUT', type: 'text', placeholder: '12.345.678-9' },
-        apellido: {
-          label: 'Apellido o Razón Social',
-          type: 'text',
-          placeholder: 'González',
-        },
       },
       async authorize(credentials) {
-        if (!credentials?.rut || !credentials?.apellido) {
-          throw new Error('RUT y Apellido son requeridos');
+        if (!credentials?.departamento || !credentials?.tipo || !credentials?.rut) {
+          throw new Error('Departamento, tipo y RUT son requeridos');
         }
 
         // Validar formato de RUT
@@ -26,15 +23,16 @@ const handler = NextAuth({
           throw new Error('RUT inválido');
         }
 
-        // Limpiar y normalizar inputs
+        // Limpiar RUT
         const rutLimpio = cleanRut(credentials.rut);
-        const apellidoNormalizado = normalizeText(credentials.apellido);
 
-        // Buscar usuario en Supabase
+        // Buscar usuario en Supabase con departamento, tipo y RUT
         const supabase = await createClient();
         const { data: usuarios, error } = await supabase
           .from('usuarios')
           .select('*')
+          .eq('departamento', credentials.departamento)
+          .eq('tipo', credentials.tipo)
           .eq('rut', rutLimpio)
           .eq('activo', true);
 
@@ -44,17 +42,10 @@ const handler = NextAuth({
         }
 
         if (!usuarios || usuarios.length === 0) {
-          throw new Error('Usuario no encontrado');
+          throw new Error('Credenciales incorrectas. Verifica departamento, tipo y RUT.');
         }
 
         const usuario = usuarios[0] as Usuario;
-
-        // Comparar apellido normalizado
-        const apellidoUsuarioNormalizado = normalizeText(usuario.apellido_razon_social);
-
-        if (apellidoUsuarioNormalizado !== apellidoNormalizado) {
-          throw new Error('Apellido incorrecto');
-        }
 
         // Autenticación exitosa
         return {
