@@ -16,9 +16,7 @@ DELETE FROM usuarios;
 
 -- Departamento 21
 INSERT INTO usuarios (rut, apellido_razon_social, departamento, tipo, activo)
-VALUES ('191346
-
-05K', 'MARTINEZ', '21', 'residente', true) ON CONFLICT (rut) DO NOTHING;
+VALUES ('19134605K', 'MARTINEZ', '21', 'residente', true) ON CONFLICT (rut) DO NOTHING;
 INSERT INTO usuarios (rut, apellido_razon_social, departamento, tipo, activo)
 VALUES ('174071241', 'PICASSO', '21', 'propietario', true) ON CONFLICT (rut) DO NOTHING;
 
