@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/puigjoaco/VotacionReglamento#readme",
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
