@@ -17,12 +17,17 @@
       "Bash(openssl rand:*)",
       "Bash(npx create-next-app:*)",
       "Bash(npm init:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest init -y)",
+      "Bash(npx shadcn@latest init:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "taskmaster-ai",
-    "context7"
+    "context7",
+    "supabase",
+    "vercel",
+    "shadcn"
   ]
 }
