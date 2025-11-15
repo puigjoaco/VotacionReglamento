@@ -9,7 +9,15 @@
       "Bash(git remote add:*)",
       "Bash(git pull:*)",
       "Bash(git branch:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Sistema de Comentarios para Reglamento Interno\n\n- Configuración de Taskmaster AI con PRD completo\n- Complexity report detallado (73 horas estimadas, 66 subtareas)\n- 8 fases de desarrollo planificadas\n- Configuración de MCPs: Supabase, Vercel, Context7, TaskMaster\n- Documentación del proyecto en claude.md\n\n🤖 Generated with Claude Code\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit:*)",
+      "Bash(openssl rand:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
