@@ -1,0 +1,121 @@
+✅ **EXPLICACIÓN COMPLETA DE LA SITUACIÓN
+
+(La historia + el motivo + el proceso + el sistema)**
+
+En la asamblea del 13 de noviembre de 2025, los propietarios y residentes del edificio discutieron la necesidad de revisar el Reglamento Interno vigente, un documento que ya existe y que fue reducido a escritura pública por el comité anterior.
+Con el paso del tiempo, surgieron dudas, discrepancias y propuestas de mejora respecto a algunos puntos del reglamento, por lo que la comunidad consideró necesario recoger la opinión de todos de manera transparente, ordenada y participativa.
+
+Sin embargo, hacerlo de manera tradicional —por correo, WhatsApp, impresiones o conversaciones individuales— generaría desorden, pérdida de información, falta de trazabilidad y riesgo de que algunos aportes no fueran considerados.
+
+Por esa razón, en la misma asamblea se acordó implementar una plataforma simple, accesible para todos, donde cada propietario o residente pueda ingresar y dejar por escrito su comentario o propuesta de modificación respecto al reglamento.
+
+🧩 ¿POR QUÉ SE HACE ESTA PLATAFORMA?
+1. Para recoger todos los comentarios sin perder ninguno
+
+Los comentarios quedan guardados con:
+
+RUT
+
+departamento
+
+tipo (propietario o residente)
+
+fecha y hora
+
+Nada se pierde, nada se borra, nada se reemplaza.
+
+2. Para asegurar transparencia absoluta
+
+Todos pueden ver:
+
+su propio comentario
+
+los comentarios de todos los demás departamentos
+
+tanto del propietario como del residente de cada unidad
+
+Nada queda oculto, nada queda solo “entre el comité”.
+
+3. Para dar igualdad de participación
+
+Cada departamento puede tener dos voces:
+
+la del propietario
+
+la del residente (si existe)
+
+Ambos pueden comentar y los dos comentarios quedan registrados.
+No se elimina ni se sobrepone ninguno sobre otro.
+
+4. Para evitar conflictos futuros
+
+Como todo queda digitalmente registrado, se evitan frases como:
+
+“Yo no dije eso.”
+
+“No tomaron en cuenta lo que comenté.”
+
+“Mi comentario lo cambiaron.”
+
+“Nunca recibí información.”
+
+El sistema permite que cada persona vea lo que escribió y lo que escribieron los demás.
+
+5. Para no depender de correos, cadenas ni plataformas externas
+
+No se necesitan correos electrónicos, EmailJS, WhatsApp, ni nada adicional.
+Todo accede directamente a través de:
+
+RUT como usuario
+
+apellido o razón social como clave
+
+Esto hace que el proceso sea simple, accesible y universal.
+
+6. Para formalizar los cambios al Reglamento Interno
+
+Después del 25 de diciembre (fecha límite para comentar):
+
+Se toman todos los comentarios.
+
+Se consolidan todos los temas propuestos.
+
+Se prepara un documento con todas las posibles modificaciones.
+
+Se realiza una consulta escrita, tal como exige la ley, donde los propietarios votan:
+
+si se mantiene el reglamento vigente, o
+
+si se aprueban modificaciones específicas.
+
+Este orden permite que:
+
+nadie quede fuera
+
+todas las voces se consideren
+
+y la votación posterior sea legítima, informada y formal
+
+🟩 EN RESUMEN: ¿Por qué estamos haciendo esto?
+
+Porque la comunidad necesita un mecanismo:
+
+ordenado
+
+transparente
+
+inclusivo
+
+simple de usar
+
+sin intermediarios
+
+sin riesgo de pérdida de información
+
+que registre comentarios individualmente
+
+que prepare la base para la votación oficial
+
+Este sistema asegura que la revisión del Reglamento Interno sea un proceso participativo, verificable y correctamente documentado, cumpliendo tanto con la voluntad de la comunidad como con los procedimientos formales que exige la copropiedad.
+
+Se hara con Vercel y con Supabase.

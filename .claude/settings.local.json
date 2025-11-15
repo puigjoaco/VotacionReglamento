@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__taskmaster-ai__models",
+      "Bash(dir /b:*)",
+      "Bash(where:*)",
+      "Bash(nul)",
+      "Bash(claude config list:*)",
+      "Bash(git remote add:*)",
+      "Bash(git pull:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "taskmaster-ai",
+    "context7"
+  ]
+}

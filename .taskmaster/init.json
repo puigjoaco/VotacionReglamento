@@ -1,0 +1,26 @@
+{
+  "projectName": "Sistema de Comentarios - Reglamento Interno",
+  "description": "Plataforma web para recoger comentarios y propuestas de modificación del Reglamento Interno del edificio de manera transparente, ordenada y participativa",
+  "technology": {
+    "frontend": "Next.js",
+    "deployment": "Vercel",
+    "backend": "Supabase",
+    "database": "PostgreSQL (Supabase)"
+  },
+  "goals": [
+    "Recoger todos los comentarios sin perder ninguno",
+    "Asegurar transparencia absoluta",
+    "Dar igualdad de participación (propietario + residente por departamento)",
+    "Evitar conflictos futuros mediante registro digital",
+    "No depender de correos ni plataformas externas",
+    "Formalizar cambios al Reglamento Interno"
+  ],
+  "constraints": {
+    "deadline": "2025-12-25",
+    "authentication": "RUT + Apellido/Razón Social",
+    "commentsPerUnit": 2,
+    "visibility": "Todos los comentarios visibles para todos"
+  },
+  "initialized": "2025-11-15",
+  "status": "planning"
+}

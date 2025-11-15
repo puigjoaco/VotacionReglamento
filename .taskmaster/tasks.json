@@ -1,0 +1,991 @@
+{
+  "tasks": [
+    {
+      "id": "task-001",
+      "title": "FASE 1: Setup del Proyecto",
+      "description": "Configuración inicial del entorno de desarrollo, instalación de dependencias y setup básico",
+      "priority": "high",
+      "status": "pending",
+      "estimatedHours": 5,
+      "phase": 1,
+      "subtasks": [
+        {
+          "id": "task-001-01",
+          "title": "Inicializar proyecto Next.js con TypeScript",
+          "description": "Crear proyecto con create-next-app usando template de TypeScript",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Ejecutar npx create-next-app@latest",
+            "Seleccionar opciones: TypeScript, ESLint, Tailwind CSS, App Router",
+            "Verificar que el proyecto inicia correctamente"
+          ]
+        },
+        {
+          "id": "task-001-02",
+          "title": "Configurar proyecto en Supabase",
+          "description": "Crear proyecto en Supabase y obtener credenciales",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear cuenta en Supabase (si no existe)",
+            "Crear nuevo proyecto",
+            "Copiar URL y anon key",
+            "Configurar región (preferiblemente South America)"
+          ]
+        },
+        {
+          "id": "task-001-03",
+          "title": "Instalar dependencias principales",
+          "description": "Instalar paquetes necesarios para el proyecto",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Instalar @supabase/supabase-js",
+            "Instalar next-auth",
+            "Instalar zod para validaciones",
+            "Instalar date-fns para manejo de fechas",
+            "Instalar lucide-react para iconos"
+          ]
+        },
+        {
+          "id": "task-001-04",
+          "title": "Configurar variables de entorno",
+          "description": "Setup de archivos .env con las credenciales necesarias",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Crear .env.local",
+            "Agregar NEXT_PUBLIC_SUPABASE_URL",
+            "Agregar NEXT_PUBLIC_SUPABASE_ANON_KEY",
+            "Agregar NEXTAUTH_SECRET (generado)",
+            "Agregar NEXTAUTH_URL",
+            "Crear .env.example sin valores sensibles"
+          ]
+        },
+        {
+          "id": "task-001-05",
+          "title": "Configurar estructura de carpetas",
+          "description": "Crear estructura organizada del proyecto",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Crear carpeta /lib para utilidades",
+            "Crear carpeta /components para componentes React",
+            "Crear carpeta /types para tipos TypeScript",
+            "Crear carpeta /hooks para custom hooks",
+            "Configurar path aliases en tsconfig.json"
+          ]
+        },
+        {
+          "id": "task-001-06",
+          "title": "Setup inicial de Supabase client",
+          "description": "Crear archivo de configuración de cliente Supabase",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear /lib/supabase/client.ts",
+            "Implementar createClientComponentClient",
+            "Crear /lib/supabase/server.ts para server components",
+            "Agregar tipos TypeScript para Database"
+          ]
+        },
+        {
+          "id": "task-001-07",
+          "title": "Configurar ESLint y Prettier",
+          "description": "Setup de herramientas de calidad de código",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Configurar reglas de ESLint",
+            "Instalar y configurar Prettier",
+            "Crear .prettierrc",
+            "Agregar scripts en package.json"
+          ]
+        },
+        {
+          "id": "task-001-08",
+          "title": "Setup de Git y control de versiones",
+          "description": "Inicializar repositorio y configurar .gitignore",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Inicializar git (si no existe)",
+            "Verificar .gitignore incluye .env.local",
+            "Crear primer commit",
+            "Configurar remote (GitHub/GitLab) si aplica"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-002",
+      "title": "FASE 2: Diseño e Implementación de Base de Datos",
+      "description": "Crear esquema de base de datos, tablas, constraints, funciones y políticas RLS",
+      "priority": "high",
+      "status": "pending",
+      "estimatedHours": 8,
+      "phase": 2,
+      "subtasks": [
+        {
+          "id": "task-002-01",
+          "title": "Diseñar esquema de base de datos",
+          "description": "Definir estructura completa de tablas y relaciones",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Documentar tabla usuarios con todos los campos",
+            "Documentar tabla comentarios con todos los campos",
+            "Documentar tabla comentarios_historial (opcional)",
+            "Definir tipos de datos para cada campo",
+            "Definir primary keys y foreign keys",
+            "Crear diagrama ER (opcional)"
+          ]
+        },
+        {
+          "id": "task-002-02",
+          "title": "Crear tabla de usuarios",
+          "description": "Implementar tabla de usuarios con validaciones",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear tabla con: rut (PK), apellido_razon_social, departamento, tipo, activo",
+            "Agregar constraint CHECK para tipo (propietario/residente)",
+            "Agregar constraint UNIQUE para (departamento, tipo)",
+            "Agregar índices necesarios",
+            "Crear timestamp created_at"
+          ]
+        },
+        {
+          "id": "task-002-03",
+          "title": "Crear tabla de comentarios",
+          "description": "Implementar tabla principal de comentarios",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear tabla con: id, rut_usuario, departamento, tipo_usuario, contenido",
+            "Agregar timestamps: created_at, updated_at",
+            "Agregar constraint FOREIGN KEY a usuarios",
+            "Agregar constraint UNIQUE (departamento, tipo_usuario)",
+            "Agregar constraint CHECK para contenido no vacío"
+          ]
+        },
+        {
+          "id": "task-002-04",
+          "title": "Implementar función de validación de RUT",
+          "description": "Crear función PL/pgSQL para validar RUT chileno",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Crear función validar_rut(rut TEXT) RETURNS BOOLEAN",
+            "Implementar algoritmo módulo 11",
+            "Manejar RUT con/sin puntos y guión",
+            "Manejar dígito verificador 'K'",
+            "Crear tests de la función con RUTs válidos/inválidos"
+          ]
+        },
+        {
+          "id": "task-002-05",
+          "title": "Crear función para verificar si puede comentar",
+          "description": "Función que valida si un usuario puede crear comentario",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear función puede_comentar(p_rut TEXT, p_depto TEXT, p_tipo TEXT)",
+            "Verificar que usuario existe",
+            "Verificar que no existe comentario previo",
+            "Verificar que fecha actual < deadline",
+            "Retornar objeto con resultado y mensaje de error"
+          ]
+        },
+        {
+          "id": "task-002-06",
+          "title": "Implementar trigger para prevenir eliminación",
+          "description": "Trigger que bloquea DELETE en tabla comentarios",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Crear función prevent_delete_comentarios()",
+            "Crear trigger BEFORE DELETE",
+            "Levantar excepción con mensaje claro",
+            "Testear que no se pueden eliminar comentarios"
+          ]
+        },
+        {
+          "id": "task-002-07",
+          "title": "Configurar Row Level Security (RLS)",
+          "description": "Implementar políticas de seguridad a nivel de fila",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Habilitar RLS en tabla comentarios",
+            "Crear política SELECT: todos pueden leer todo",
+            "Crear política INSERT: solo si puede_comentar = true",
+            "Crear política UPDATE: solo propio comentario y antes de deadline",
+            "Crear política DELETE: denegar a todos",
+            "Testear cada política"
+          ]
+        },
+        {
+          "id": "task-002-08",
+          "title": "Crear vista comentarios_con_usuarios",
+          "description": "Vista que une comentarios con datos de usuarios",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Crear VIEW con JOIN entre comentarios y usuarios",
+            "Incluir todos los campos necesarios para el frontend",
+            "Agregar campos calculados si es necesario",
+            "Verificar performance de la vista"
+          ]
+        },
+        {
+          "id": "task-002-09",
+          "title": "Crear script de carga inicial de usuarios",
+          "description": "Script para popular tabla usuarios con datos reales",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear CSV o JSON con datos de usuarios",
+            "Validar todos los RUTs antes de insertar",
+            "Crear script SQL de inserción",
+            "Ejecutar carga inicial",
+            "Verificar integridad de datos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-003",
+      "title": "FASE 3: Sistema de Autenticación",
+      "description": "Implementar autenticación custom con RUT y apellido usando NextAuth",
+      "priority": "high",
+      "status": "pending",
+      "estimatedHours": 10,
+      "phase": 3,
+      "subtasks": [
+        {
+          "id": "task-003-01",
+          "title": "Crear utilidad de validación de RUT",
+          "description": "Función frontend para validar formato de RUT",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear /lib/utils/rut.ts",
+            "Implementar función formatRut() para normalizar",
+            "Implementar función validateRut() con módulo 11",
+            "Implementar función cleanRut() para remover puntos/guión",
+            "Crear tests unitarios"
+          ]
+        },
+        {
+          "id": "task-003-02",
+          "title": "Crear utilidad de normalización de texto",
+          "description": "Función para normalizar apellidos (case-insensitive, sin tildes)",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Crear función normalizeText()",
+            "Convertir a lowercase",
+            "Remover tildes y caracteres especiales",
+            "Crear tests con casos edge (ñ, ü, etc.)"
+          ]
+        },
+        {
+          "id": "task-003-03",
+          "title": "Configurar NextAuth",
+          "description": "Setup básico de NextAuth con provider credentials",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Crear /app/api/auth/[...nextauth]/route.ts",
+            "Configurar CredentialsProvider",
+            "Configurar callbacks (jwt, session)",
+            "Configurar páginas custom (signIn)",
+            "Agregar tipos TypeScript para Session"
+          ]
+        },
+        {
+          "id": "task-003-04",
+          "title": "Implementar lógica de autenticación",
+          "description": "Función authorize() que valida RUT y apellido contra DB",
+          "status": "pending",
+          "estimatedHours": 2,
+          "checklist": [
+            "Validar formato de RUT",
+            "Normalizar RUT y apellido",
+            "Query a Supabase para verificar credenciales",
+            "Retornar objeto de usuario si es válido",
+            "Manejar errores específicos (usuario no existe, password incorrecto)"
+          ]
+        },
+        {
+          "id": "task-003-05",
+          "title": "Crear componente RutInput",
+          "description": "Input especializado para RUT con validación en tiempo real",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Crear componente con formateo automático",
+            "Agregar validación visual (checkmark/error)",
+            "Implementar formato mientras se escribe (12.345.678-9)",
+            "Agregar mensajes de error claros",
+            "Hacerlo accesible (ARIA labels)"
+          ]
+        },
+        {
+          "id": "task-003-06",
+          "title": "Crear página de login",
+          "description": "Interfaz de autenticación con UX clara",
+          "status": "pending",
+          "estimatedHours": 2,
+          "checklist": [
+            "Crear /app/login/page.tsx",
+            "Implementar formulario con RutInput y campo apellido",
+            "Agregar validación del lado del cliente",
+            "Implementar manejo de errores del servidor",
+            "Agregar loading states",
+            "Diseño responsive",
+            "Agregar instrucciones claras de uso"
+          ]
+        },
+        {
+          "id": "task-003-07",
+          "title": "Implementar middleware de autenticación",
+          "description": "Proteger rutas que requieren autenticación",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear /middleware.ts",
+            "Verificar sesión con NextAuth",
+            "Redirigir a /login si no autenticado",
+            "Definir rutas públicas (/, /login)",
+            "Definir rutas protegidas (/dashboard, /comentario/*)"
+          ]
+        },
+        {
+          "id": "task-003-08",
+          "title": "Testing de autenticación",
+          "description": "Suite de tests para el sistema de auth",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Test: login exitoso con credenciales válidas",
+            "Test: login fallido con RUT inválido",
+            "Test: login fallido con apellido incorrecto",
+            "Test: persistencia de sesión",
+            "Test: logout",
+            "Test: acceso a ruta protegida sin auth → redirect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-004",
+      "title": "FASE 4: API Routes y Lógica de Backend",
+      "description": "Implementar endpoints de API para gestión de comentarios",
+      "priority": "high",
+      "status": "pending",
+      "estimatedHours": 12,
+      "phase": 4,
+      "subtasks": [
+        {
+          "id": "task-004-01",
+          "title": "Crear tipos TypeScript para API",
+          "description": "Definir interfaces y tipos para requests/responses",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear /types/comentario.ts",
+            "Definir tipo Comentario",
+            "Definir tipo CreateComentarioDTO",
+            "Definir tipo UpdateComentarioDTO",
+            "Definir tipos de respuesta de API",
+            "Crear schemas de Zod para validación"
+          ]
+        },
+        {
+          "id": "task-004-02",
+          "title": "API: GET /api/comentarios",
+          "description": "Endpoint para obtener todos los comentarios",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Crear /app/api/comentarios/route.ts",
+            "Implementar handler GET",
+            "Query a vista comentarios_con_usuarios",
+            "Agregar filtros opcionales (departamento, tipo)",
+            "Ordenar por fecha DESC",
+            "Manejar errores y retornar respuesta apropiada"
+          ]
+        },
+        {
+          "id": "task-004-03",
+          "title": "API: POST /api/comentarios",
+          "description": "Endpoint para crear nuevo comentario",
+          "status": "pending",
+          "estimatedHours": 2.5,
+          "checklist": [
+            "Implementar handler POST",
+            "Validar request body con Zod",
+            "Verificar autenticación",
+            "Verificar que fecha actual < deadline",
+            "Verificar con función puede_comentar()",
+            "Insertar comentario en DB",
+            "Retornar comentario creado",
+            "Manejar errores específicos (ya existe, deadline pasado, etc.)"
+          ]
+        },
+        {
+          "id": "task-004-04",
+          "title": "API: GET /api/comentarios/[id]",
+          "description": "Endpoint para obtener comentario específico",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear /app/api/comentarios/[id]/route.ts",
+            "Implementar handler GET",
+            "Validar que ID es válido",
+            "Query comentario con JOIN a usuarios",
+            "Retornar 404 si no existe",
+            "Incluir historial si aplica"
+          ]
+        },
+        {
+          "id": "task-004-05",
+          "title": "API: PATCH /api/comentarios/[id]",
+          "description": "Endpoint para editar comentario (si se permite)",
+          "status": "pending",
+          "estimatedHours": 2,
+          "checklist": [
+            "Implementar handler PATCH",
+            "Validar request body",
+            "Verificar autenticación",
+            "Verificar que usuario es dueño del comentario",
+            "Verificar que fecha actual < deadline",
+            "Actualizar comentario",
+            "Crear entrada en historial si aplica",
+            "Retornar comentario actualizado"
+          ]
+        },
+        {
+          "id": "task-004-06",
+          "title": "API: GET /api/usuarios/me",
+          "description": "Endpoint para obtener info del usuario autenticado",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Crear /app/api/usuarios/me/route.ts",
+            "Verificar sesión",
+            "Query datos del usuario",
+            "Verificar si ya tiene comentario",
+            "Retornar usuario + metadata (tiene_comentario, puede_comentar)"
+          ]
+        },
+        {
+          "id": "task-004-07",
+          "title": "API: GET /api/estadisticas",
+          "description": "Endpoint para obtener stats generales (opcional)",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Crear /app/api/estadisticas/route.ts",
+            "Calcular total de comentarios",
+            "Calcular departamentos con 0/1/2 comentarios",
+            "Calcular % de participación",
+            "Días restantes hasta deadline",
+            "Retornar objeto con todas las stats"
+          ]
+        },
+        {
+          "id": "task-004-08",
+          "title": "Implementar rate limiting (opcional)",
+          "description": "Prevenir abuso de endpoints",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Instalar librería de rate limiting",
+            "Configurar límites por IP",
+            "Aplicar a endpoints críticos (POST, PATCH)",
+            "Retornar 429 Too Many Requests cuando aplica"
+          ]
+        },
+        {
+          "id": "task-004-09",
+          "title": "Testing de API routes",
+          "description": "Suite de tests de integración para APIs",
+          "status": "pending",
+          "estimatedHours": 2,
+          "checklist": [
+            "Setup de test environment",
+            "Tests para GET /api/comentarios (con/sin filtros)",
+            "Tests para POST /api/comentarios (éxito, errores)",
+            "Tests para PATCH (éxito, sin permisos, deadline pasado)",
+            "Tests de validación de schemas",
+            "Tests de manejo de errores"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-005",
+      "title": "FASE 5: Desarrollo de Frontend",
+      "description": "Implementar todas las páginas y componentes de la interfaz de usuario",
+      "priority": "high",
+      "status": "pending",
+      "estimatedHours": 15,
+      "phase": 5,
+      "subtasks": [
+        {
+          "id": "task-005-01",
+          "title": "Configurar tema y estilos globales",
+          "description": "Setup de colores, tipografía y componentes base de Tailwind",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Configurar tailwind.config.ts con colores del proyecto",
+            "Definir variables CSS para tema",
+            "Crear componentes base (Button, Card, Input)",
+            "Configurar fuentes",
+            "Crear layout base con header/footer"
+          ]
+        },
+        {
+          "id": "task-005-02",
+          "title": "Crear componente CommentCard",
+          "description": "Card para mostrar un comentario individual",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Mostrar departamento, tipo de usuario, fecha",
+            "Mostrar contenido del comentario",
+            "Agregar badge para tipo (propietario/residente)",
+            "Agregar botón editar (solo si es propio)",
+            "Diseño responsive",
+            "Accessibility (roles ARIA)"
+          ]
+        },
+        {
+          "id": "task-005-03",
+          "title": "Crear componente DepartmentFilter",
+          "description": "Filtro/buscador por departamento",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Input de búsqueda",
+            "Lista de departamentos únicos",
+            "Selección múltiple opcional",
+            "Clear filters button",
+            "Mostrar count de resultados"
+          ]
+        },
+        {
+          "id": "task-005-04",
+          "title": "Crear componente DateCountdown",
+          "description": "Contador regresivo hasta el deadline",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Calcular días/horas/minutos restantes",
+            "Actualizar en tiempo real",
+            "Diseño visual destacado",
+            "Mensaje cuando deadline ha pasado",
+            "Usar timezone de Chile (UTC-3)"
+          ]
+        },
+        {
+          "id": "task-005-05",
+          "title": "Crear página Dashboard principal",
+          "description": "Vista principal con todos los comentarios",
+          "status": "pending",
+          "estimatedHours": 3,
+          "checklist": [
+            "Layout responsivo",
+            "Header con info de usuario logueado",
+            "DateCountdown visible",
+            "DepartmentFilter funcional",
+            "Grid/List de CommentCards",
+            "Loading states",
+            "Empty state (sin comentarios)",
+            "Error handling",
+            "Botón 'Crear comentario' (si puede)"
+          ]
+        },
+        {
+          "id": "task-005-06",
+          "title": "Crear página Crear Comentario",
+          "description": "Formulario para crear nuevo comentario",
+          "status": "pending",
+          "estimatedHours": 2.5,
+          "checklist": [
+            "Form con textarea para contenido",
+            "Contador de caracteres (si hay límite)",
+            "Mostrar info del usuario (depto, tipo)",
+            "Validación client-side",
+            "Confirmación antes de enviar",
+            "Loading state al enviar",
+            "Redirect a dashboard después de crear",
+            "Manejo de errores (ya existe, deadline, etc.)"
+          ]
+        },
+        {
+          "id": "task-005-07",
+          "title": "Crear página Editar Comentario (si aplica)",
+          "description": "Formulario para editar comentario existente",
+          "status": "pending",
+          "estimatedHours": 2,
+          "checklist": [
+            "Pre-cargar contenido actual",
+            "Form similar a crear",
+            "Mostrar historial de ediciones",
+            "Validación de permisos",
+            "Confirmación de cambios",
+            "Manejo de errores"
+          ]
+        },
+        {
+          "id": "task-005-08",
+          "title": "Crear página de detalle de comentario",
+          "description": "Vista individual de un comentario",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Mostrar comentario completo",
+            "Mostrar metadata (fecha, versión, etc.)",
+            "Mostrar historial de ediciones",
+            "Botón volver al dashboard",
+            "Botón editar (si tiene permisos)"
+          ]
+        },
+        {
+          "id": "task-005-09",
+          "title": "Implementar componente de estadísticas",
+          "description": "Widget con stats del proyecto (opcional)",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Total de comentarios",
+            "% de participación",
+            "Departamentos con 0/1/2 comentarios",
+            "Gráfico simple (opcional)",
+            "Actualización en tiempo real"
+          ]
+        },
+        {
+          "id": "task-005-10",
+          "title": "Optimización de performance",
+          "description": "Mejorar velocidad y experiencia de usuario",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Implementar lazy loading de comentarios",
+            "Optimizar imágenes (si las hay)",
+            "Implementar React.memo en componentes pesados",
+            "Agregar prefetching de rutas",
+            "Verificar lighthouse score > 90"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-006",
+      "title": "FASE 6: Testing y Quality Assurance",
+      "description": "Implementar suite completa de tests y asegurar calidad del código",
+      "priority": "medium",
+      "status": "pending",
+      "estimatedHours": 8,
+      "phase": 6,
+      "subtasks": [
+        {
+          "id": "task-006-01",
+          "title": "Setup de entorno de testing",
+          "description": "Configurar Jest, React Testing Library y Playwright",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Instalar Jest y @testing-library/react",
+            "Configurar jest.config.js",
+            "Instalar Playwright para E2E",
+            "Configurar playwright.config.ts",
+            "Crear scripts de test en package.json",
+            "Setup de test database en Supabase"
+          ]
+        },
+        {
+          "id": "task-006-02",
+          "title": "Tests unitarios de utilidades",
+          "description": "Testear funciones helper (RUT, normalización, etc.)",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Tests de validateRut() con casos válidos/inválidos",
+            "Tests de formatRut() con diferentes formatos",
+            "Tests de normalizeText()",
+            "Tests de utilidades de fecha",
+            "100% coverage en /lib/utils"
+          ]
+        },
+        {
+          "id": "task-006-03",
+          "title": "Tests de componentes React",
+          "description": "Unit tests de componentes principales",
+          "status": "pending",
+          "estimatedHours": 2,
+          "checklist": [
+            "Test CommentCard (render, props, events)",
+            "Test RutInput (validación, formato)",
+            "Test DepartmentFilter (filtrado)",
+            "Test DateCountdown (cálculo correcto)",
+            "Verificar accessibility con jest-axe"
+          ]
+        },
+        {
+          "id": "task-006-04",
+          "title": "Tests de integración de API",
+          "description": "Integration tests de endpoints",
+          "status": "pending",
+          "estimatedHours": 2,
+          "checklist": [
+            "Test flujo completo: crear comentario",
+            "Test validaciones de negocio",
+            "Test manejo de errores",
+            "Test autenticación en endpoints protegidos",
+            "Test deadline enforcement"
+          ]
+        },
+        {
+          "id": "task-006-05",
+          "title": "Tests E2E con Playwright",
+          "description": "End-to-end tests de flujos críticos",
+          "status": "pending",
+          "estimatedHours": 2.5,
+          "checklist": [
+            "Test: login → dashboard → ver comentarios",
+            "Test: login → crear comentario → verificar aparece",
+            "Test: intentar crear 2do comentario mismo tipo → error",
+            "Test: editar comentario propio",
+            "Test: no poder editar comentario ajeno",
+            "Test: sistema bloqueado después de deadline"
+          ]
+        },
+        {
+          "id": "task-006-06",
+          "title": "Testing manual con usuarios",
+          "description": "UAT (User Acceptance Testing) con usuarios reales",
+          "status": "pending",
+          "estimatedHours": 3,
+          "checklist": [
+            "Preparar ambiente de staging",
+            "Cargar datos de prueba",
+            "Invitar 5-10 usuarios para testing",
+            "Observar uso real",
+            "Recoger feedback",
+            "Documentar bugs encontrados",
+            "Iterar y corregir problemas críticos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-007",
+      "title": "FASE 7: Deployment y Monitoreo",
+      "description": "Deploy a producción, configuración de dominio y setup de monitoreo",
+      "priority": "high",
+      "status": "pending",
+      "estimatedHours": 5,
+      "phase": 7,
+      "subtasks": [
+        {
+          "id": "task-007-01",
+          "title": "Configurar proyecto en Vercel",
+          "description": "Setup inicial del proyecto en Vercel",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Crear cuenta en Vercel (si no existe)",
+            "Importar repositorio de GitHub",
+            "Configurar build settings",
+            "Configurar environment variables"
+          ]
+        },
+        {
+          "id": "task-007-02",
+          "title": "Configurar variables de entorno en producción",
+          "description": "Setup de todas las env vars en Vercel",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Agregar NEXT_PUBLIC_SUPABASE_URL",
+            "Agregar NEXT_PUBLIC_SUPABASE_ANON_KEY",
+            "Agregar NEXTAUTH_SECRET (generar nuevo para prod)",
+            "Agregar NEXTAUTH_URL con dominio de producción",
+            "Verificar que no hay secrets expuestos"
+          ]
+        },
+        {
+          "id": "task-007-03",
+          "title": "Primer deploy a producción",
+          "description": "Deploy inicial y verificación",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Trigger deploy desde Vercel",
+            "Verificar build exitoso",
+            "Verificar que app funciona en URL de Vercel",
+            "Testear login en producción",
+            "Testear crear comentario en producción",
+            "Verificar conexión a Supabase"
+          ]
+        },
+        {
+          "id": "task-007-04",
+          "title": "Configurar dominio custom (opcional)",
+          "description": "Setup de dominio personalizado",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Comprar dominio (si se desea)",
+            "Configurar DNS",
+            "Agregar dominio en Vercel",
+            "Configurar SSL automático",
+            "Actualizar NEXTAUTH_URL",
+            "Verificar funcionamiento con dominio"
+          ]
+        },
+        {
+          "id": "task-007-05",
+          "title": "Setup de monitoreo y analytics",
+          "description": "Configurar herramientas de monitoreo",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Configurar Vercel Analytics",
+            "Setup de error tracking (Sentry opcional)",
+            "Configurar alertas de uptime",
+            "Setup de logs en Supabase",
+            "Crear dashboard de métricas"
+          ]
+        },
+        {
+          "id": "task-007-06",
+          "title": "Configurar backups automáticos",
+          "description": "Asegurar respaldo de datos",
+          "status": "pending",
+          "estimatedHours": 0.5,
+          "checklist": [
+            "Verificar backups automáticos de Supabase",
+            "Configurar frecuencia de backups",
+            "Testear restauración de backup",
+            "Documentar procedimiento de recuperación"
+          ]
+        },
+        {
+          "id": "task-007-07",
+          "title": "Crear documentación de usuario",
+          "description": "Guía de uso para propietarios/residentes",
+          "status": "pending",
+          "estimatedHours": 1.5,
+          "checklist": [
+            "Crear documento PDF con instrucciones",
+            "Screenshots de cada paso",
+            "Video tutorial corto (opcional)",
+            "FAQ con problemas comunes",
+            "Información de contacto para soporte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "task-008",
+      "title": "FASE 8: Post-Launch y Soporte",
+      "description": "Actividades después del lanzamiento y durante el período activo",
+      "priority": "medium",
+      "status": "pending",
+      "estimatedHours": 10,
+      "phase": 8,
+      "subtasks": [
+        {
+          "id": "task-008-01",
+          "title": "Comunicación del lanzamiento",
+          "description": "Informar a la comunidad sobre el sistema",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Preparar email/mensaje de anuncio",
+            "Incluir link al sistema",
+            "Incluir instrucciones breves",
+            "Mencionar deadline (25 dic)",
+            "Incluir contacto para soporte"
+          ]
+        },
+        {
+          "id": "task-008-02",
+          "title": "Monitoreo activo durante primera semana",
+          "description": "Vigilancia intensa post-lanzamiento",
+          "status": "pending",
+          "estimatedHours": 3,
+          "checklist": [
+            "Revisar logs diariamente",
+            "Monitorear errores",
+            "Responder consultas rápidamente",
+            "Identificar problemas de UX",
+            "Hacer ajustes menores si es necesario"
+          ]
+        },
+        {
+          "id": "task-008-03",
+          "title": "Soporte a usuarios",
+          "description": "Atender dudas y problemas de usuarios",
+          "status": "pending",
+          "estimatedHours": 4,
+          "checklist": [
+            "Configurar canal de soporte (email, WhatsApp, etc.)",
+            "Responder consultas en < 24 horas",
+            "Ayudar con problemas de login",
+            "Documentar problemas frecuentes",
+            "Actualizar FAQ según necesidad"
+          ]
+        },
+        {
+          "id": "task-008-04",
+          "title": "Recordatorios antes de deadline",
+          "description": "Comunicaciones para incentivar participación",
+          "status": "pending",
+          "estimatedHours": 1,
+          "checklist": [
+            "Mensaje a 2 semanas del deadline",
+            "Mensaje a 1 semana del deadline",
+            "Mensaje a 3 días del deadline",
+            "Mensaje final 1 día antes",
+            "Incluir estadísticas de participación"
+          ]
+        },
+        {
+          "id": "task-008-05",
+          "title": "Cierre y exportación de datos",
+          "description": "Después del 25 de diciembre",
+          "status": "pending",
+          "estimatedHours": 2,
+          "checklist": [
+            "Verificar que sistema está en modo solo-lectura",
+            "Exportar todos los comentarios a PDF",
+            "Exportar a Excel/CSV",
+            "Generar reporte de estadísticas finales",
+            "Backup final de base de datos",
+            "Preparar documento consolidado para votación"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "totalTasks": 8,
+    "totalSubtasks": 66,
+    "totalEstimatedHours": 73,
+    "phases": 8,
+    "createdAt": "2025-11-15",
+    "deadline": "2025-12-25",
+    "daysAvailable": 40,
+    "recommendedCompletionDate": "2025-12-15"
+  }
+}
