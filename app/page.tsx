@@ -69,29 +69,35 @@ export default function Home() {
 
           {/* Features */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+            <Card className="bg-gradient-to-br from-emerald-500/20 to-green-600/10 border-emerald-500/30 backdrop-blur-sm hover:from-emerald-500/30 hover:to-green-600/20 transition-all duration-300">
               <CardContent className="pt-6 text-center">
-                <Shield className="h-10 w-10 text-emerald-400 mx-auto mb-4" />
-                <h3 className="font-bold text-lg mb-2 text-white">Seguro</h3>
-                <p className="text-sm text-blue-100/70">
+                <div className="bg-emerald-500/20 p-3 rounded-xl w-fit mx-auto mb-4">
+                  <Shield className="h-8 w-8 text-emerald-400" />
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-emerald-300">Seguro</h3>
+                <p className="text-sm text-emerald-100/80">
                   Autenticación con RUT. Solo usuarios autorizados pueden acceder.
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+            <Card className="bg-gradient-to-br from-cyan-500/20 to-blue-600/10 border-cyan-500/30 backdrop-blur-sm hover:from-cyan-500/30 hover:to-blue-600/20 transition-all duration-300">
               <CardContent className="pt-6 text-center">
-                <Eye className="h-10 w-10 text-cyan-400 mx-auto mb-4" />
-                <h3 className="font-bold text-lg mb-2 text-white">Transparente</h3>
-                <p className="text-sm text-blue-100/70">
+                <div className="bg-cyan-500/20 p-3 rounded-xl w-fit mx-auto mb-4">
+                  <Eye className="h-8 w-8 text-cyan-400" />
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-cyan-300">Transparente</h3>
+                <p className="text-sm text-cyan-100/80">
                   Todos los comentarios son visibles para toda la comunidad.
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+            <Card className="bg-gradient-to-br from-purple-500/20 to-violet-600/10 border-purple-500/30 backdrop-blur-sm hover:from-purple-500/30 hover:to-violet-600/20 transition-all duration-300">
               <CardContent className="pt-6 text-center">
-                <FileText className="h-10 w-10 text-purple-400 mx-auto mb-4" />
-                <h3 className="font-bold text-lg mb-2 text-white">Permanente</h3>
-                <p className="text-sm text-blue-100/70">
+                <div className="bg-purple-500/20 p-3 rounded-xl w-fit mx-auto mb-4">
+                  <FileText className="h-8 w-8 text-purple-400" />
+                </div>
+                <h3 className="font-bold text-lg mb-2 text-purple-300">Permanente</h3>
+                <p className="text-sm text-purple-100/80">
                   Los comentarios no se eliminan. Registro permanente de propuestas.
                 </p>
               </CardContent>
