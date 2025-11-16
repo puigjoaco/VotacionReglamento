@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { CommentCard } from '@/components/CommentCard';
+import { DepartmentCommentCard } from '@/components/DepartmentCommentCard';
 import { DateCountdown } from '@/components/DateCountdown';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -87,8 +88,14 @@ export default function DashboardPage() {
     }
   }, [searchTerm, comentarios]);
 
-  const miComentario = comentarios.find(
-    (c) => c.departamento === session?.user?.departamento && c.tipo_usuario === session?.user?.tipo
+  // Buscar TODOS los comentarios del departamento del usuario actual
+  const misComentarios = comentarios.filter(
+    (c) => c.departamento === session?.user?.departamento
+  );
+
+  // El comentario específico del tipo de usuario actual (para compatibilidad)
+  const miComentario = misComentarios.find(
+    (c) => c.tipo_usuario === session?.user?.tipo
   );
 
   if (status === 'loading' || loading) {
@@ -190,34 +197,23 @@ export default function DashboardPage() {
           </Alert>
         )}
 
-        {/* Mi comentario existente */}
-        {miComentario && (
-          <Card className="mb-8 border-blue-500/30 bg-gradient-to-r from-blue-900/50 to-indigo-900/50 shadow-lg backdrop-blur-sm">
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <CardTitle className="text-lg flex items-center text-blue-200">
-                  <FileText className="mr-2 h-5 w-5 text-blue-400" />
-                  Mi Comentario
-                </CardTitle>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => router.push(`/comentario/${miComentario.id}/editar`)}
-                  className="border-blue-400/50 text-blue-200 hover:bg-blue-800/50"
-                >
-                  <Edit3 className="mr-2 h-4 w-4" />
-                  Editar
-                </Button>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <CommentCard
-                comentario={miComentario}
-                isOwn={true}
-                onEdit={() => router.push(`/comentario/${miComentario.id}/editar`)}
-              />
-            </CardContent>
-          </Card>
+        {/* Mis comentarios del departamento */}
+        {misComentarios.length > 0 && (
+          <div className="mb-8">
+            <div className="mb-4">
+              <h2 className="text-lg font-semibold text-blue-200 flex items-center">
+                <FileText className="mr-2 h-5 w-5 text-blue-400" />
+                Comentarios de mi Departamento
+              </h2>
+            </div>
+            <DepartmentCommentCard
+              departamento={session?.user?.departamento || ''}
+              comentarios={misComentarios}
+              currentUserRut={session?.user?.rut}
+              currentUserTipo={session?.user?.tipo}
+              onEdit={(comentarioId) => router.push(`/comentario/${comentarioId}/editar`)}
+            />
+          </div>
         )}
 
         {/* Search */}
@@ -282,18 +278,34 @@ export default function DashboardPage() {
               </div>
             ) : (
               <div className="grid gap-6">
-                {filteredComentarios.map((comentario) => (
-                  <CommentCard
-                    key={comentario.id}
-                    comentario={comentario}
-                    isOwn={comentario.rut_usuario === session?.user?.rut}
-                    onEdit={
-                      comentario.rut_usuario === session?.user?.rut
-                        ? () => router.push(`/comentario/${comentario.id}/editar`)
-                        : undefined
+                {(() => {
+                  // Agrupar comentarios por departamento
+                  const comentariosPorDepartamento = filteredComentarios.reduce((acc, comentario) => {
+                    if (!acc[comentario.departamento]) {
+                      acc[comentario.departamento] = [];
                     }
-                  />
-                ))}
+                    acc[comentario.departamento].push(comentario);
+                    return acc;
+                  }, {} as Record<string, ComentarioConUsuario[]>);
+
+                  // Ordenar departamentos numéricamente
+                  const departamentosOrdenados = Object.keys(comentariosPorDepartamento).sort((a, b) => {
+                    const numA = parseInt(a);
+                    const numB = parseInt(b);
+                    return numA - numB;
+                  });
+
+                  return departamentosOrdenados.map((departamento) => (
+                    <DepartmentCommentCard
+                      key={departamento}
+                      departamento={departamento}
+                      comentarios={comentariosPorDepartamento[departamento]}
+                      currentUserRut={session?.user?.rut}
+                      currentUserTipo={session?.user?.tipo}
+                      onEdit={(comentarioId) => router.push(`/comentario/${comentarioId}/editar`)}
+                    />
+                  ));
+                })()}
               </div>
             )}
           </CardContent>

@@ -221,19 +221,12 @@ export async function DELETE(
       );
     }
 
-    // Eliminar comentario usando cliente admin para bypass de RLS
-    const adminClient = createAdminClient();
-    const { error: deleteError } = await adminClient
-      .from('comentarios')
-      .delete()
-      .eq('id', id);
-
-    if (deleteError) {
-      console.error('Error al eliminar comentario:', deleteError);
-      return NextResponse.json({ error: 'Error al eliminar comentario' }, { status: 500 });
-    }
-
-    return NextResponse.json({ message: 'Comentario eliminado exitosamente' });
+    // Por ahora, devolver error indicando que no se permite eliminar
+    // Esto es una decisión de diseño para mantener transparencia absoluta
+    return NextResponse.json(
+      { error: 'Los comentarios no pueden ser eliminados para mantener la transparencia del proceso. Solo pueden ser editados hasta el 25 de diciembre de 2025.' },
+      { status: 403 }
+    );
   } catch (error) {
     console.error('Error en DELETE /api/comentarios/[id]:', error);
     return NextResponse.json({ error: 'Error interno del servidor' }, { status: 500 });
