@@ -82,9 +82,19 @@ export default function EditarComentarioPage({
       });
 
       const data = await response.json();
+      console.log('Response status:', response.status);
+      console.log('Response data:', data);
 
       if (!response.ok) {
-        setError(data.error || 'Error al actualizar comentario');
+        // Mostrar información de debug si está disponible
+        let errorMsg = data.error || 'Error al actualizar comentario';
+        if (data.step) {
+          errorMsg += ` (step: ${data.step})`;
+        }
+        if (data.details) {
+          errorMsg += ` - ${data.details}`;
+        }
+        setError(errorMsg);
         setSaving(false);
         return;
       }
