@@ -153,8 +153,8 @@ export default function DashboardPage() {
                     </Badge>
                     <Badge
                       className={`text-xs ${session.user.tipo === 'propietario'
-                        ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
-                        : 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30'}`}
+                        ? 'bg-blue-500/20 text-blue-300 border-blue-500/30'
+                        : 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'}`}
                     >
                       {session.user.tipo === 'propietario' ? 'Propietario' : 'Residente'}
                     </Badge>
