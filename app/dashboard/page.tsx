@@ -159,8 +159,8 @@ export default function DashboardPage() {
           <DateCountdown />
         </div>
 
-        {/* Call to Action - Crear comentario */}
-        {puedeComentarResponse?.puede_comentar && !miComentario && (
+        {/* Call to Action - Crear comentario (SIEMPRE visible si no tiene comentario) */}
+        {!miComentario && (
           <Alert className="mb-8 bg-gradient-to-r from-emerald-900/50 to-green-900/50 border-emerald-500/30 shadow-lg backdrop-blur-sm">
             <CheckCircle2 className="h-5 w-5 text-emerald-400" />
             <AlertTitle className="text-emerald-300 font-semibold text-lg">
