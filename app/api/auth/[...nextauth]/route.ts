@@ -26,14 +26,13 @@ const handler = NextAuth({
         // Limpiar RUT
         const rutLimpio = cleanRut(credentials.rut);
 
-        // Buscar usuario en Supabase con departamento, tipo y RUT
+        // Buscar usuario en Supabase con departamento y tipo
         const supabase = await createClient();
         const { data: usuarios, error } = await supabase
           .from('usuarios')
           .select('*')
           .eq('departamento', credentials.departamento)
           .eq('tipo', credentials.tipo)
-          .eq('rut', rutLimpio)
           .eq('activo', true);
 
         if (error) {
@@ -42,10 +41,15 @@ const handler = NextAuth({
         }
 
         if (!usuarios || usuarios.length === 0) {
-          throw new Error('Credenciales incorrectas. Verifica departamento, tipo y RUT.');
+          throw new Error('Credenciales incorrectas. Verifica departamento y tipo.');
         }
 
         const usuario = usuarios[0] as Usuario;
+
+        // Verificar RUT (case-insensitive)
+        if (rutLimpio.toUpperCase() !== usuario.rut.toUpperCase()) {
+          throw new Error('RUT incorrecto para este departamento y tipo.');
+        }
 
         // Autenticación exitosa
         return {

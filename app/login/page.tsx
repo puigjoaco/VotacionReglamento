@@ -18,7 +18,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Building2, Calendar, AlertCircle, Loader2 } from 'lucide-react';
+import { Building2, Calendar, AlertCircle, Loader2, Home, User, KeyRound, Shield } from 'lucide-react';
 
 // Generar lista de departamentos: Pisos 2-18, 4 departamentos por piso
 const generarDepartamentos = () => {
@@ -89,55 +89,68 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
-      <div className="w-full max-w-md space-y-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 p-4">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djZoNnYtNmgtNnptMCAwdi02aC02djZoNnptLTYgMGgtNnY2aDZ2LTZ6bTAgMHYtNmgtNnY2aDZ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-40"></div>
+
+      <div className="relative w-full max-w-lg space-y-8">
         {/* Header */}
-        <div className="text-center space-y-2">
+        <div className="text-center space-y-4">
           <div className="flex justify-center">
-            <div className="bg-blue-600 p-3 rounded-full">
-              <Building2 className="h-8 w-8 text-white" />
+            <div className="bg-gradient-to-br from-blue-500 to-cyan-400 p-4 rounded-2xl shadow-2xl shadow-blue-500/30">
+              <Building2 className="h-10 w-10 text-white" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold text-gray-900">
-            Sistema de Comentarios
-          </h1>
-          <p className="text-gray-600">
-            Revisión del Reglamento Interno
-          </p>
+          <div>
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+              Sistema de Comentarios
+            </h1>
+            <p className="text-blue-200/80 mt-2 text-lg">
+              Revisión del Reglamento Interno
+            </p>
+          </div>
         </div>
 
         {/* Deadline Badge */}
         <div className="flex justify-center">
-          <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-amber-200 px-4 py-2">
+          <Badge className="bg-amber-500/20 text-amber-300 border-amber-500/30 px-5 py-2.5 text-sm font-medium backdrop-blur-sm">
             <Calendar className="h-4 w-4 mr-2" />
             Fecha límite: 25 de diciembre de 2025
           </Badge>
         </div>
 
         {/* Login Card */}
-        <Card className="shadow-lg">
-          <CardHeader className="space-y-1">
-            <CardTitle className="text-xl">Iniciar Sesión</CardTitle>
-            <CardDescription>
-              Selecciona tu departamento y tipo, luego ingresa tu RUT como contraseña
+        <Card className="shadow-2xl border-white/10 bg-white/95 backdrop-blur-xl">
+          <CardHeader className="space-y-2 pb-6">
+            <div className="flex items-center gap-2">
+              <Shield className="h-5 w-5 text-blue-600" />
+              <CardTitle className="text-2xl font-bold text-gray-900">Iniciar Sesión</CardTitle>
+            </div>
+            <CardDescription className="text-base text-gray-600">
+              Ingresa tus credenciales para acceder al sistema
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-5">
               {/* Departamento */}
               <div className="space-y-2">
-                <Label htmlFor="departamento">Departamento</Label>
+                <Label htmlFor="departamento" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
+                  <Home className="h-4 w-4 text-blue-600" />
+                  Departamento
+                </Label>
                 <Select value={departamento} onValueChange={setDepartamento}>
-                  <SelectTrigger className="w-full">
+                  <SelectTrigger className="w-full h-12 text-base border-gray-300 focus:border-blue-500 focus:ring-blue-500">
                     <SelectValue placeholder="Selecciona tu departamento" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="max-h-[300px]">
                     {DEPARTAMENTOS.map(({ piso, deptos }) => (
                       <SelectGroup key={piso}>
-                        <SelectLabel>Piso {piso}</SelectLabel>
+                        <SelectLabel className="text-xs font-bold text-blue-600 bg-blue-50 py-2 px-2 -mx-1">
+                          Piso {piso}
+                        </SelectLabel>
                         {deptos.map((depto) => (
-                          <SelectItem key={depto} value={depto}>
-                            Departamento {depto}
+                          <SelectItem key={depto} value={depto} className="text-base py-2">
+                            <span className="font-medium">Departamento {depto}</span>
                           </SelectItem>
                         ))}
                       </SelectGroup>
@@ -148,20 +161,25 @@ export default function LoginPage() {
 
               {/* Tipo */}
               <div className="space-y-2">
-                <Label htmlFor="tipo">Tipo de Usuario</Label>
+                <Label htmlFor="tipo" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
+                  <User className="h-4 w-4 text-blue-600" />
+                  Tipo de Usuario
+                </Label>
                 <Select value={tipo} onValueChange={setTipo}>
-                  <SelectTrigger className="w-full">
+                  <SelectTrigger className="w-full h-12 text-base border-gray-300 focus:border-blue-500 focus:ring-blue-500">
                     <SelectValue placeholder="Selecciona tu tipo" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="propietario">
-                      <div className="flex items-center">
-                        <span className="font-medium">Propietario</span>
+                    <SelectItem value="propietario" className="py-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                        <span className="font-medium text-base">Propietario</span>
                       </div>
                     </SelectItem>
-                    <SelectItem value="residente">
-                      <div className="flex items-center">
-                        <span className="font-medium">Residente</span>
+                    <SelectItem value="residente" className="py-3">
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                        <span className="font-medium text-base">Residente</span>
                       </div>
                     </SelectItem>
                   </SelectContent>
@@ -170,39 +188,47 @@ export default function LoginPage() {
 
               {/* RUT */}
               <div className="space-y-2">
-                <Label htmlFor="rut">RUT (Contraseña)</Label>
+                <Label htmlFor="rut" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
+                  <KeyRound className="h-4 w-4 text-blue-600" />
+                  RUT (Contraseña)
+                </Label>
                 <RutInput
                   value={rut}
                   onChange={setRut}
                   onValidChange={setIsRutValid}
                   placeholder="12.345.678-9"
+                  className="h-12 text-base"
                 />
-                <p className="text-xs text-muted-foreground">
-                  Tu RUT es tu contraseña de acceso
+                <p className="text-xs text-gray-500 flex items-center gap-1">
+                  <span className="inline-block w-1 h-1 rounded-full bg-gray-400"></span>
+                  Tu RUT es tu contraseña de acceso al sistema
                 </p>
               </div>
 
               {/* Error Message */}
               {error && (
-                <Alert variant="destructive">
+                <Alert variant="destructive" className="border-red-200 bg-red-50">
                   <AlertCircle className="h-4 w-4" />
-                  <AlertDescription>{error}</AlertDescription>
+                  <AlertDescription className="font-medium">{error}</AlertDescription>
                 </Alert>
               )}
 
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full"
+                className="w-full h-12 text-base font-semibold bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg shadow-blue-500/30 transition-all duration-200"
                 disabled={isLoading || !isRutValid || !departamento || !tipo}
               >
                 {isLoading ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Verificando...
+                    <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                    Verificando credenciales...
                   </>
                 ) : (
-                  'Ingresar al Sistema'
+                  <>
+                    <Shield className="mr-2 h-5 w-5" />
+                    Ingresar al Sistema
+                  </>
                 )}
               </Button>
             </form>
@@ -210,9 +236,13 @@ export default function LoginPage() {
         </Card>
 
         {/* Footer Info */}
-        <div className="text-center text-sm text-gray-500 space-y-1">
-          <p>Sistema exclusivo para propietarios y residentes</p>
-          <p>del edificio para enviar comentarios sobre el Reglamento Interno</p>
+        <div className="text-center space-y-2">
+          <p className="text-blue-200/70 text-sm">
+            Sistema exclusivo para propietarios y residentes del edificio
+          </p>
+          <p className="text-blue-200/50 text-xs">
+            Participa en la revisión del Reglamento Interno de forma segura y transparente
+          </p>
         </div>
       </div>
     </div>
