@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
 import { createComentarioSchema } from '@/lib/validations/comentario';
 import type { ComentarioConUsuario, PuedeComentarResponse } from '@/types/database';
@@ -45,7 +46,7 @@ export async function GET(request: NextRequest) {
 // POST /api/comentarios - Crear nuevo comentario
 export async function POST(request: NextRequest) {
   try {
-    const session = await getServerSession();
+    const session = await getServerSession(authOptions);
 
     if (!session?.user) {
       return NextResponse.json({ error: 'No autenticado' }, { status: 401 });

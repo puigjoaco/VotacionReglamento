@@ -1,12 +1,13 @@
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
 import type { Usuario, PuedeComentarResponse } from '@/types/database';
 
 // GET /api/usuarios/me - Obtener info del usuario autenticado
 export async function GET() {
   try {
-    const session = await getServerSession();
+    const session = await getServerSession(authOptions);
 
     if (!session?.user) {
       return NextResponse.json({ error: 'No autenticado' }, { status: 401 });
