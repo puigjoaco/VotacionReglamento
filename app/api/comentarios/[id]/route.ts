@@ -42,6 +42,22 @@ export async function PATCH(
       return NextResponse.json({ error: 'No autenticado' }, { status: 401 });
     }
 
+    // Verificar que la sesión tiene los campos necesarios
+    if (!session.user.departamento || !session.user.tipo) {
+      return NextResponse.json(
+        {
+          error: 'Sesión incompleta. Por favor cierra sesión y vuelve a ingresar.',
+          debug: {
+            hasRut: !!session.user.rut,
+            hasDepartamento: !!session.user.departamento,
+            hasTipo: !!session.user.tipo,
+            sessionUser: session.user
+          }
+        },
+        { status: 401 }
+      );
+    }
+
     const { id } = await params;
     const body = await request.json();
     const validation = updateComentarioSchema.safeParse(body);
