@@ -67,7 +67,11 @@ export async function PATCH(
       return NextResponse.json({ error: 'Comentario no encontrado' }, { status: 404 });
     }
 
-    if (comentarioExistente.rut_usuario !== session.user.rut) {
+    // Verificar propiedad por departamento y tipo (más confiable que RUT)
+    if (
+      comentarioExistente.departamento !== session.user.departamento ||
+      comentarioExistente.tipo_usuario !== session.user.tipo
+    ) {
       return NextResponse.json(
         { error: 'No tienes permiso para editar este comentario' },
         { status: 403 }
@@ -130,7 +134,11 @@ export async function DELETE(
       return NextResponse.json({ error: 'Comentario no encontrado' }, { status: 404 });
     }
 
-    if (comentarioExistente.rut_usuario !== session.user.rut) {
+    // Verificar propiedad por departamento y tipo (más confiable que RUT)
+    if (
+      comentarioExistente.departamento !== session.user.departamento ||
+      comentarioExistente.tipo_usuario !== session.user.tipo
+    ) {
       return NextResponse.json(
         { error: 'No tienes permiso para eliminar este comentario' },
         { status: 403 }
