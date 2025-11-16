@@ -54,7 +54,7 @@ export default function DashboardPage() {
     const fetchUserInfo = async () => {
       try {
         // Add cache-busting parameter to bypass CDN cache
-        const response = await fetch(`/api/usuarios/me?_t=${Date.now()}`, {
+        const response = await fetch(`/api/usuarios/current?_t=${Date.now()}`, {
           cache: 'no-store',
           headers: {
             'Cache-Control': 'no-cache',
