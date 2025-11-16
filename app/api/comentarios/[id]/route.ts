@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
+import { createAdminClient } from '@/lib/supabase/admin';
 import { updateComentarioSchema } from '@/lib/validations/comentario';
 
 // GET /api/comentarios/[id] - Obtener un comentario específico
@@ -128,8 +129,9 @@ export async function PATCH(
     }
 
     step = 'updateComment';
-    // Actualizar comentario
-    const { error: updateError } = await supabase
+    // Usar cliente admin para bypass de RLS en operaciones de escritura
+    const adminClient = createAdminClient();
+    const { error: updateError } = await adminClient
       .from('comentarios')
       .update({ contenido })
       .eq('id', id);
@@ -141,7 +143,7 @@ export async function PATCH(
 
     step = 'fetchUpdatedComment';
     // Obtener el comentario actualizado
-    const { data: comentarioActualizado, error: fetchUpdatedError } = await supabase
+    const { data: comentarioActualizado, error: fetchUpdatedError } = await adminClient
       .from('comentarios')
       .select('*')
       .eq('id', id)
@@ -219,8 +221,9 @@ export async function DELETE(
       );
     }
 
-    // Eliminar comentario
-    const { error: deleteError } = await supabase
+    // Eliminar comentario usando cliente admin para bypass de RLS
+    const adminClient = createAdminClient();
+    const { error: deleteError } = await adminClient
       .from('comentarios')
       .delete()
       .eq('id', id);
