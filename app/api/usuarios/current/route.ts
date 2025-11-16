@@ -37,14 +37,17 @@ export async function GET(request: NextRequest) {
     const { rut, departamento, tipo } = session.user;
     const supabase = await createClient();
 
-    // Obtener datos completos del usuario
+    // Obtener datos completos del usuario (buscar por rut, departamento y tipo para evitar duplicados)
     const { data: usuario, error: userError } = await supabase
       .from('usuarios')
       .select('*')
       .eq('rut', rut)
+      .eq('departamento', departamento)
+      .eq('tipo', tipo)
       .single();
 
     if (userError || !usuario) {
+      console.error('[API /usuarios/current] User not found:', { rut, departamento, tipo, error: userError });
       return NextResponse.json({ error: 'Usuario no encontrado' }, { status: 404 });
     }
 
