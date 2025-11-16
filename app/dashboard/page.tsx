@@ -35,8 +35,13 @@ export default function DashboardPage() {
         const response = await fetch('/api/comentarios');
         if (response.ok) {
           const data = await response.json();
-          setComentarios(data);
-          setFilteredComentarios(data);
+          // Eliminar duplicados por ID (la vista puede duplicar por JOINs incorrectos)
+          const uniqueComentarios = data.filter(
+            (comentario: ComentarioConUsuario, index: number, self: ComentarioConUsuario[]) =>
+              index === self.findIndex((c) => c.id === comentario.id)
+          );
+          setComentarios(uniqueComentarios);
+          setFilteredComentarios(uniqueComentarios);
         }
       } catch (error) {
         console.error('Error al cargar comentarios:', error);
@@ -77,7 +82,7 @@ export default function DashboardPage() {
   }, [searchTerm, comentarios]);
 
   const miComentario = comentarios.find(
-    (c) => c.rut_usuario === session?.user?.rut
+    (c) => c.departamento === session?.user?.departamento && c.tipo_usuario === session?.user?.tipo
   );
 
   if (status === 'loading' || loading) {
