@@ -53,7 +53,13 @@ export default function DashboardPage() {
     // Obtener info del usuario
     const fetchUserInfo = async () => {
       try {
-        const response = await fetch('/api/usuarios/me');
+        // Add cache-busting parameter to bypass CDN cache
+        const response = await fetch(`/api/usuarios/me?_t=${Date.now()}`, {
+          cache: 'no-store',
+          headers: {
+            'Cache-Control': 'no-cache',
+          },
+        });
         if (response.ok) {
           const data = await response.json();
           setPuedeComentarResponse(data.puede_comentar);

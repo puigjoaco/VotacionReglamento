@@ -12,12 +12,14 @@ export async function GET() {
     const session = await getServerSession(authOptions);
 
     if (!session?.user) {
-      return NextResponse.json({ error: 'No autenticado' }, { status: 401 });
+      const res = NextResponse.json({ error: 'No autenticado' }, { status: 401 });
+      res.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate');
+      return res;
     }
 
     // Verificar que la sesión tiene todos los campos necesarios
     if (!session.user.rut || !session.user.departamento || !session.user.tipo) {
-      return NextResponse.json({
+      const res = NextResponse.json({
         error: 'Sesión incompleta. Por favor cierra sesión y vuelve a ingresar.',
         debug: {
           hasRut: !!session.user.rut,
@@ -25,6 +27,8 @@ export async function GET() {
           hasTipo: !!session.user.tipo,
         }
       }, { status: 401 });
+      res.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate');
+      return res;
     }
 
     const { rut, departamento, tipo } = session.user;
@@ -68,17 +72,29 @@ export async function GET() {
           : 'Puedes crear tu comentario',
     };
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       usuario: usuario,
       tiene_comentario: tieneComentario,
       puede_comentar: puedeComentarInfo,
     });
+
+    // Prevent CDN caching
+    response.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    response.headers.set('Pragma', 'no-cache');
+    response.headers.set('Expires', '0');
+
+    return response;
   } catch (error) {
     console.error('Error en GET /api/usuarios/me:', error);
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    return NextResponse.json(
+    const errorResponse = NextResponse.json(
       { error: 'Error interno del servidor', details: errorMessage },
       { status: 500 }
     );
+
+    // Prevent CDN caching errors too
+    errorResponse.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate');
+
+    return errorResponse;
   }
 }
