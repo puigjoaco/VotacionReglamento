@@ -129,16 +129,32 @@ export async function PATCH(
 
     step = 'updateComment';
     // Actualizar comentario
-    const { data: comentarioActualizado, error: updateError } = await supabase
+    const { error: updateError } = await supabase
       .from('comentarios')
       .update({ contenido })
-      .eq('id', id)
-      .select()
-      .single();
+      .eq('id', id);
 
     if (updateError) {
       console.error('Error al actualizar comentario:', updateError);
       return NextResponse.json({ error: 'Error al actualizar comentario', step, details: updateError.message }, { status: 500 });
+    }
+
+    step = 'fetchUpdatedComment';
+    // Obtener el comentario actualizado
+    const { data: comentarioActualizado, error: fetchUpdatedError } = await supabase
+      .from('comentarios')
+      .select('*')
+      .eq('id', id)
+      .single();
+
+    if (fetchUpdatedError) {
+      // Si no podemos leer el comentario actualizado, devolvemos éxito de todas formas
+      // ya que la actualización sí se realizó
+      console.error('Error al obtener comentario actualizado:', fetchUpdatedError);
+      return NextResponse.json({
+        message: 'Comentario actualizado exitosamente',
+        id: id
+      });
     }
 
     step = 'success';
