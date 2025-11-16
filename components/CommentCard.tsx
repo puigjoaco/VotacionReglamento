@@ -16,30 +16,35 @@ export function CommentCard({ comentario, isOwn = false, onEdit }: CommentCardPr
   });
 
   return (
-    <Card className={isOwn ? 'border-blue-300 bg-blue-50' : ''}>
+    <Card className={`border-slate-700/50 bg-slate-800/60 backdrop-blur-sm ${isOwn ? 'ring-2 ring-blue-500/30' : ''}`}>
       <CardHeader>
         <div className="flex items-start justify-between">
           <div className="space-y-1">
-            <CardTitle className="text-lg">
+            <CardTitle className="text-lg text-white">
               Departamento {comentario.departamento}
             </CardTitle>
-            <CardDescription className="text-sm">
+            <CardDescription className="text-sm text-slate-400">
               {comentario.apellido_razon_social}
             </CardDescription>
           </div>
-          <Badge variant={comentario.tipo_usuario === 'propietario' ? 'default' : 'secondary'}>
+          <Badge
+            variant={comentario.tipo_usuario === 'propietario' ? 'default' : 'secondary'}
+            className={comentario.tipo_usuario === 'propietario'
+              ? 'bg-blue-600/80 text-white'
+              : 'bg-emerald-600/80 text-white'}
+          >
             {comentario.tipo_usuario === 'propietario' ? 'Propietario' : 'Residente'}
           </Badge>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
-        <p className="text-gray-700 whitespace-pre-wrap">{comentario.contenido}</p>
-        <div className="flex items-center justify-between text-sm text-gray-500">
+        <p className="text-slate-200 whitespace-pre-wrap leading-relaxed">{comentario.contenido}</p>
+        <div className="flex items-center justify-between text-sm text-slate-400">
           <time dateTime={comentario.created_at}>{fechaFormateada}</time>
           {isOwn && onEdit && (
             <button
               onClick={onEdit}
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              className="text-blue-400 hover:text-blue-300 font-medium transition-colors"
             >
               Editar comentario
             </button>
