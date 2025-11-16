@@ -65,6 +65,8 @@ export async function POST(request: NextRequest) {
     const { contenido } = validation.data;
     const { rut, departamento, tipo } = session.user;
 
+    console.log('Creando comentario:', { rut, departamento, tipo });
+
     const supabase = await createClient();
 
     // Verificar fecha límite
@@ -83,11 +85,21 @@ export async function POST(request: NextRequest) {
       .select('id')
       .eq('departamento', departamento)
       .eq('tipo_usuario', tipo)
-      .single();
+      .maybeSingle();
+
+    console.log('Verificación de existencia:', {
+      departamento,
+      tipo,
+      existente,
+      checkError
+    });
 
     if (existente) {
       return NextResponse.json(
-        { error: 'Ya existe un comentario para este departamento y tipo de usuario' },
+        {
+          error: 'Ya existe un comentario para este departamento y tipo de usuario',
+          debug: { departamento, tipo }
+        },
         { status: 409 }
       );
     }
