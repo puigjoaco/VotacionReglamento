@@ -125,7 +125,7 @@ export default function NuevoComentarioPage() {
                   variant="outline"
                   onClick={() => router.push('/dashboard')}
                   disabled={loading}
-                  className="border-slate-600 text-slate-300 hover:bg-slate-700/50 hover:text-white"
+                  className="border-slate-500/50 bg-slate-700/30 text-slate-300 hover:bg-slate-600/50 hover:text-white hover:border-slate-400/50"
                 >
                   Cancelar
                 </Button>

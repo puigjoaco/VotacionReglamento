@@ -66,28 +66,29 @@ export async function POST(request: NextRequest) {
 
     const supabase = await createClient();
 
-    // Verificar si puede comentar
-    const { data: permisoData, error: permisoError } = await supabase.rpc(
-      'puede_comentar',
-      {
-        p_rut: rut,
-        p_departamento: departamento,
-        p_tipo: tipo,
-      }
-    );
-
-    if (permisoError) {
-      console.error('Error al verificar permisos:', permisoError);
+    // Verificar fecha límite
+    const fechaLimite = new Date('2025-12-25T23:59:59-03:00');
+    const ahora = new Date();
+    if (ahora > fechaLimite) {
       return NextResponse.json(
-        { error: 'Error al verificar permisos' },
-        { status: 500 }
+        { error: 'El plazo para comentar ha finalizado (25 de diciembre de 2025)' },
+        { status: 403 }
       );
     }
 
-    const permiso = permisoData as PuedeComentarResponse;
+    // Verificar si ya tiene comentario
+    const { data: existente, error: checkError } = await supabase
+      .from('comentarios')
+      .select('id')
+      .eq('departamento', departamento)
+      .eq('tipo_usuario', tipo)
+      .single();
 
-    if (!permiso.puede_comentar) {
-      return NextResponse.json({ error: permiso.mensaje }, { status: 403 });
+    if (existente) {
+      return NextResponse.json(
+        { error: 'Ya existe un comentario para este departamento y tipo de usuario' },
+        { status: 409 }
+      );
     }
 
     // Crear comentario
