@@ -46,7 +46,7 @@ export async function GET() {
 
     const puedeComentarInfo: PuedeComentarResponse = {
       puede_comentar: dentroDelPlazo && !tieneComentario,
-      razon: tieneComentario
+      mensaje: tieneComentario
         ? 'Ya tienes un comentario registrado'
         : !dentroDelPlazo
           ? 'El plazo para comentar ha finalizado'

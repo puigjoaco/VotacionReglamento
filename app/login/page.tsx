@@ -120,13 +120,13 @@ export default function LoginPage() {
         </div>
 
         {/* Login Card */}
-        <Card className="shadow-2xl border-white/10 bg-white/95 backdrop-blur-xl">
+        <Card className="shadow-2xl border-slate-700/50 bg-slate-800/90 backdrop-blur-xl">
           <CardHeader className="space-y-2 pb-6">
             <div className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-blue-600" />
-              <CardTitle className="text-2xl font-bold text-gray-900">Iniciar Sesión</CardTitle>
+              <Shield className="h-5 w-5 text-blue-400" />
+              <CardTitle className="text-2xl font-bold text-white">Iniciar Sesión</CardTitle>
             </div>
-            <CardDescription className="text-base text-gray-600">
+            <CardDescription className="text-base text-slate-300">
               Ingresa tus credenciales para acceder al sistema
             </CardDescription>
           </CardHeader>
@@ -134,22 +134,22 @@ export default function LoginPage() {
             <form onSubmit={handleSubmit} className="space-y-5">
               {/* Departamento */}
               <div className="space-y-2">
-                <Label htmlFor="departamento" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                  <Home className="h-4 w-4 text-blue-600" />
+                <Label htmlFor="departamento" className="text-sm font-semibold text-slate-200 flex items-center gap-2">
+                  <Home className="h-4 w-4 text-blue-400" />
                   Departamento
                 </Label>
                 <Select value={departamento} onValueChange={setDepartamento}>
-                  <SelectTrigger className="w-full h-12 text-base border-gray-300 focus:border-blue-500 focus:ring-blue-500">
+                  <SelectTrigger className="w-full h-12 text-base border-slate-600 bg-slate-700/50 text-white focus:border-blue-500 focus:ring-blue-500">
                     <SelectValue placeholder="Selecciona tu departamento" />
                   </SelectTrigger>
-                  <SelectContent className="max-h-[300px]">
+                  <SelectContent className="max-h-[300px] bg-slate-800 border-slate-700">
                     {DEPARTAMENTOS.map(({ piso, deptos }) => (
                       <SelectGroup key={piso}>
-                        <SelectLabel className="text-xs font-bold text-blue-600 bg-blue-50 py-2 px-2 -mx-1">
+                        <SelectLabel className="text-xs font-bold text-blue-400 bg-slate-900 py-2 px-2 -mx-1">
                           Piso {piso}
                         </SelectLabel>
                         {deptos.map((depto) => (
-                          <SelectItem key={depto} value={depto} className="text-base py-2">
+                          <SelectItem key={depto} value={depto} className="text-base py-2 text-slate-200 focus:bg-slate-700 focus:text-white">
                             <span className="font-medium">Departamento {depto}</span>
                           </SelectItem>
                         ))}
@@ -161,22 +161,22 @@ export default function LoginPage() {
 
               {/* Tipo */}
               <div className="space-y-2">
-                <Label htmlFor="tipo" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                  <User className="h-4 w-4 text-blue-600" />
+                <Label htmlFor="tipo" className="text-sm font-semibold text-slate-200 flex items-center gap-2">
+                  <User className="h-4 w-4 text-blue-400" />
                   Tipo de Usuario
                 </Label>
                 <Select value={tipo} onValueChange={setTipo}>
-                  <SelectTrigger className="w-full h-12 text-base border-gray-300 focus:border-blue-500 focus:ring-blue-500">
+                  <SelectTrigger className="w-full h-12 text-base border-slate-600 bg-slate-700/50 text-white focus:border-blue-500 focus:ring-blue-500">
                     <SelectValue placeholder="Selecciona tu tipo" />
                   </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="propietario" className="py-3">
+                  <SelectContent className="bg-slate-800 border-slate-700">
+                    <SelectItem value="propietario" className="py-3 text-slate-200 focus:bg-slate-700 focus:text-white">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
                         <span className="font-medium text-base">Propietario</span>
                       </div>
                     </SelectItem>
-                    <SelectItem value="residente" className="py-3">
+                    <SelectItem value="residente" className="py-3 text-slate-200 focus:bg-slate-700 focus:text-white">
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 rounded-full bg-blue-500"></div>
                         <span className="font-medium text-base">Residente</span>
@@ -188,8 +188,8 @@ export default function LoginPage() {
 
               {/* RUT */}
               <div className="space-y-2">
-                <Label htmlFor="rut" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                  <KeyRound className="h-4 w-4 text-blue-600" />
+                <Label htmlFor="rut" className="text-sm font-semibold text-slate-200 flex items-center gap-2">
+                  <KeyRound className="h-4 w-4 text-blue-400" />
                   RUT (Contraseña)
                 </Label>
                 <RutInput
@@ -197,19 +197,19 @@ export default function LoginPage() {
                   onChange={setRut}
                   onValidChange={setIsRutValid}
                   placeholder="12.345.678-9"
-                  className="h-12 text-base"
+                  className="h-12 text-base border-slate-600 bg-slate-700/50 text-white placeholder:text-slate-400"
                 />
-                <p className="text-xs text-gray-500 flex items-center gap-1">
-                  <span className="inline-block w-1 h-1 rounded-full bg-gray-400"></span>
+                <p className="text-xs text-slate-400 flex items-center gap-1">
+                  <span className="inline-block w-1 h-1 rounded-full bg-slate-500"></span>
                   Tu RUT es tu contraseña de acceso al sistema
                 </p>
               </div>
 
               {/* Error Message */}
               {error && (
-                <Alert variant="destructive" className="border-red-200 bg-red-50">
+                <Alert variant="destructive" className="border-red-500/50 bg-red-900/50">
                   <AlertCircle className="h-4 w-4" />
-                  <AlertDescription className="font-medium">{error}</AlertDescription>
+                  <AlertDescription className="font-medium text-red-200">{error}</AlertDescription>
                 </Alert>
               )}
 
