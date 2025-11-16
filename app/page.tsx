@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Building2, Calendar, Shield, Eye, FileText, ArrowRight } from 'lucide-react';
+import { Building2, Calendar, Shield, Eye, FileText, ArrowRight, Download } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -44,8 +44,8 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          {/* CTA Button */}
-          <div>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/login">
               <Button
                 size="lg"
@@ -55,6 +55,16 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
+            <a href="/reglamento.pdf" download>
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 py-6 border-2 border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10 hover:border-cyan-400 transition-all duration-300"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Descargar Reglamento
+              </Button>
+            </a>
           </div>
 
           {/* Features */}

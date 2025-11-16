@@ -11,7 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import type { ComentarioConUsuario } from '@/types/database';
-import { PlusCircle, Search, Building2, LogOut, MessageSquare, CheckCircle2, Loader2 } from 'lucide-react';
+import { PlusCircle, Search, Building2, LogOut, MessageSquare, CheckCircle2, Loader2, Download, FileText, Edit3 } from 'lucide-react';
 
 export default function DashboardPage() {
   const { data: session, status } = useSession();
@@ -82,8 +82,8 @@ export default function DashboardPage() {
 
   if (status === 'loading' || loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
-        <Card className="w-80">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50">
+        <Card className="w-80 shadow-xl">
           <CardContent className="pt-6">
             <div className="text-center">
               <Loader2 className="h-12 w-12 animate-spin text-blue-600 mx-auto mb-4" />
@@ -96,30 +96,31 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       {/* Header */}
-      <header className="bg-white border-b shadow-sm sticky top-0 z-10">
+      <header className="bg-gradient-to-r from-slate-900 to-blue-900 text-white shadow-xl sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="bg-blue-600 p-2 rounded-lg">
+              <div className="bg-gradient-to-br from-blue-500 to-cyan-400 p-2.5 rounded-xl shadow-lg">
                 <Building2 className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900">
+                <h1 className="text-xl font-bold">
                   Sistema de Comentarios
                 </h1>
                 {session?.user && (
                   <div className="flex items-center gap-2 mt-1">
-                    <span className="text-sm text-gray-600">
+                    <span className="text-sm text-blue-200">
                       {session.user.apellido_razon_social}
                     </span>
-                    <Badge variant="outline" className="text-xs">
+                    <Badge variant="outline" className="text-xs border-blue-400/50 text-blue-200">
                       Depto {session.user.departamento}
                     </Badge>
                     <Badge
-                      variant={session.user.tipo === 'propietario' ? 'default' : 'secondary'}
-                      className="text-xs"
+                      className={`text-xs ${session.user.tipo === 'propietario'
+                        ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30'
+                        : 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30'}`}
                     >
                       {session.user.tipo === 'propietario' ? 'Propietario' : 'Residente'}
                     </Badge>
@@ -127,14 +128,27 @@ export default function DashboardPage() {
                 )}
               </div>
             </div>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => signOut({ callbackUrl: '/login' })}
-            >
-              <LogOut className="mr-2 h-4 w-4" />
-              Cerrar Sesión
-            </Button>
+            <div className="flex items-center gap-3">
+              <a href="/reglamento.pdf" download>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10 hover:border-cyan-400"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Reglamento PDF
+                </Button>
+              </a>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => signOut({ callbackUrl: '/login' })}
+                className="border-red-400/50 text-red-300 hover:bg-red-400/10 hover:border-red-400"
+              >
+                <LogOut className="mr-2 h-4 w-4" />
+                Cerrar Sesión
+              </Button>
+            </div>
           </div>
         </div>
       </header>
@@ -145,19 +159,19 @@ export default function DashboardPage() {
           <DateCountdown />
         </div>
 
-        {/* Call to Action */}
-        {puedeComentarResponse?.puede_comentar && (
-          <Alert className="mb-8 bg-green-50 border-green-200">
-            <CheckCircle2 className="h-5 w-5 text-green-600" />
-            <AlertTitle className="text-green-900 font-semibold">
+        {/* Call to Action - Crear comentario */}
+        {puedeComentarResponse?.puede_comentar && !miComentario && (
+          <Alert className="mb-8 bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200 shadow-lg">
+            <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+            <AlertTitle className="text-emerald-900 font-semibold text-lg">
               ¡Puedes enviar tu comentario!
             </AlertTitle>
-            <AlertDescription className="text-green-700">
+            <AlertDescription className="text-emerald-700">
               <p className="mb-4">
                 Tienes hasta el 25 de diciembre de 2025 para compartir tus propuestas de modificación al
                 Reglamento Interno.
               </p>
-              <Button onClick={() => router.push('/comentario/nuevo')} className="bg-green-600 hover:bg-green-700">
+              <Button onClick={() => router.push('/comentario/nuevo')} className="bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 shadow-lg">
                 <PlusCircle className="mr-2 h-4 w-4" />
                 Crear mi comentario
               </Button>
@@ -165,11 +179,41 @@ export default function DashboardPage() {
           </Alert>
         )}
 
+        {/* Mi comentario existente */}
+        {miComentario && (
+          <Card className="mb-8 border-blue-200 bg-gradient-to-r from-blue-50 to-indigo-50 shadow-lg">
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-lg flex items-center text-blue-900">
+                  <FileText className="mr-2 h-5 w-5 text-blue-600" />
+                  Mi Comentario
+                </CardTitle>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => router.push(`/comentario/${miComentario.id}/editar`)}
+                  className="border-blue-300 text-blue-700 hover:bg-blue-100"
+                >
+                  <Edit3 className="mr-2 h-4 w-4" />
+                  Editar
+                </Button>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <CommentCard
+                comentario={miComentario}
+                isOwn={true}
+                onEdit={() => router.push(`/comentario/${miComentario.id}/editar`)}
+              />
+            </CardContent>
+          </Card>
+        )}
+
         {/* Search */}
-        <Card className="mb-8">
+        <Card className="mb-8 shadow-lg border-gray-200">
           <CardHeader>
-            <CardTitle className="text-lg flex items-center">
-              <Search className="mr-2 h-5 w-5" />
+            <CardTitle className="text-lg flex items-center text-gray-900">
+              <Search className="mr-2 h-5 w-5 text-blue-600" />
               Buscar Comentarios
             </CardTitle>
             <CardDescription>
@@ -184,21 +228,21 @@ export default function DashboardPage() {
                 placeholder="Escribe para buscar..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10"
+                className="pl-10 h-12 text-base border-gray-300 focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
           </CardContent>
         </Card>
 
         {/* Comments List */}
-        <Card>
+        <Card className="shadow-lg border-gray-200">
           <CardHeader>
             <div className="flex items-center justify-between">
-              <CardTitle className="text-lg flex items-center">
-                <MessageSquare className="mr-2 h-5 w-5" />
+              <CardTitle className="text-lg flex items-center text-gray-900">
+                <MessageSquare className="mr-2 h-5 w-5 text-blue-600" />
                 Todos los comentarios
               </CardTitle>
-              <Badge variant="secondary" className="text-sm">
+              <Badge variant="secondary" className="text-sm bg-blue-100 text-blue-800 border-blue-200">
                 {filteredComentarios.length} {filteredComentarios.length === 1 ? 'comentario' : 'comentarios'}
               </Badge>
             </div>
@@ -208,17 +252,16 @@ export default function DashboardPage() {
           </CardHeader>
           <CardContent>
             {filteredComentarios.length === 0 ? (
-              <div className="text-center py-12 bg-gray-50 rounded-lg border-2 border-dashed">
+              <div className="text-center py-12 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
                 <MessageSquare className="h-12 w-12 text-gray-400 mx-auto mb-4" />
                 <p className="text-gray-500 font-medium">
                   {searchTerm
                     ? 'No se encontraron comentarios que coincidan con tu búsqueda.'
                     : 'Aún no hay comentarios publicados.'}
                 </p>
-                {!searchTerm && puedeComentarResponse?.puede_comentar && (
+                {!searchTerm && puedeComentarResponse?.puede_comentar && !miComentario && (
                   <Button
-                    variant="outline"
-                    className="mt-4"
+                    className="mt-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800"
                     onClick={() => router.push('/comentario/nuevo')}
                   >
                     <PlusCircle className="mr-2 h-4 w-4" />
@@ -247,9 +290,9 @@ export default function DashboardPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t mt-12">
+      <footer className="bg-gradient-to-r from-slate-900 to-blue-900 text-white mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <p className="text-center text-sm text-gray-500">
+          <p className="text-center text-sm text-blue-200/70">
             Sistema de Comentarios para la Revisión del Reglamento Interno
           </p>
         </div>
