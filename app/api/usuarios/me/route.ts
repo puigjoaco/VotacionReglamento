@@ -1,13 +1,14 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
 
 export const dynamic = 'force-dynamic';
-export const runtime = 'nodejs';
 
 // GET /api/usuarios/me - Obtener info del usuario autenticado
-export async function GET() {
+export async function GET(request: NextRequest) {
+  // Consume request to ensure Next.js recognizes this as a dynamic route
+  void request;
   try {
     const session = await getServerSession(authOptions);
 
