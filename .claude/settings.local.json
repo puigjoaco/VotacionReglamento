@@ -64,7 +64,10 @@
       "Bash(curl:*)",
       "Bash(del nul)",
       "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" add -A)",
-      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" status --short)"
+      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" status --short)",
+      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" commit -m \"$(cat <<''EOF''\ndebug: Add detailed logging to diagnose 404 error post-login\n\n- Add console.log statements to track login flow\n- Add response status and headers logging for API calls\n- Log session state changes in dashboard\n- This will help identify the exact source of the 404 error\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" push origin main)",
+      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" commit -m \"$(cat <<''EOF''\ndebug: Add middleware and API logging for 404 investigation\n\n- Log middleware token checks and redirects\n- Log API 401 responses for better debugging\n- These server-side logs will appear in Vercel function logs\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ]
   },
   "enableAllProjectMcpServers": true,

@@ -13,8 +13,10 @@ export async function GET(request: NextRequest) {
     const session = await getServerSession(authOptions);
 
     if (!session?.user) {
+      console.log('[API /usuarios/current] No session found, returning 401');
       const res = NextResponse.json({ error: 'No autenticado' }, { status: 401 });
       res.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate');
+      res.headers.set('Content-Type', 'application/json');
       return res;
     }
 

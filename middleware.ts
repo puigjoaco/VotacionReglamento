@@ -7,15 +7,19 @@ export async function middleware(req: NextRequest) {
 
   const { pathname } = req.nextUrl;
 
+  console.log('[Middleware] Checking path:', pathname, 'Token:', token ? 'Present' : 'Missing');
+
   // Si el usuario NO está autenticado y está en una ruta protegida
   if (!token) {
     // Redirigir a login
+    console.log('[Middleware] No token, redirecting to login');
     const loginUrl = new URL('/login', req.url);
     loginUrl.searchParams.set('callbackUrl', pathname);
     return NextResponse.redirect(loginUrl);
   }
 
   // Si está autenticado, permitir acceso
+  console.log('[Middleware] Token present, allowing access to:', pathname);
   return NextResponse.next();
 }
 
