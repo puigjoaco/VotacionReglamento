@@ -73,7 +73,15 @@ export async function PATCH(
       comentarioExistente.tipo_usuario !== session.user.tipo
     ) {
       return NextResponse.json(
-        { error: 'No tienes permiso para editar este comentario' },
+        {
+          error: 'No tienes permiso para editar este comentario',
+          debug: {
+            comentario_depto: comentarioExistente.departamento,
+            session_depto: session.user.departamento,
+            comentario_tipo: comentarioExistente.tipo_usuario,
+            session_tipo: session.user.tipo,
+          },
+        },
         { status: 403 }
       );
     }
@@ -91,20 +99,21 @@ export async function PATCH(
     // Actualizar comentario
     const { data: comentarioActualizado, error: updateError } = await supabase
       .from('comentarios')
-      .update({ contenido, updated_at: new Date().toISOString() })
+      .update({ contenido })
       .eq('id', id)
       .select()
       .single();
 
     if (updateError) {
       console.error('Error al actualizar comentario:', updateError);
-      return NextResponse.json({ error: 'Error al actualizar comentario' }, { status: 500 });
+      return NextResponse.json({ error: 'Error al actualizar comentario', details: updateError.message }, { status: 500 });
     }
 
     return NextResponse.json(comentarioActualizado);
   } catch (error) {
     console.error('Error en PATCH /api/comentarios/[id]:', error);
-    return NextResponse.json({ error: 'Error interno del servidor' }, { status: 500 });
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    return NextResponse.json({ error: 'Error interno del servidor', details: errorMessage }, { status: 500 });
   }
 }
 
