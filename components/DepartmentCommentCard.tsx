@@ -83,7 +83,7 @@ export function DepartmentCommentCard({
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => onEdit(comentarioPropietario.id)}
+                  onClick={() => onEdit(String(comentarioPropietario.id))}
                   className="text-blue-400 hover:text-blue-300 hover:bg-blue-900/30"
                 >
                   <Edit3 className="mr-1 h-3 w-3" />
@@ -124,7 +124,7 @@ export function DepartmentCommentCard({
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => onEdit(comentarioResidente.id)}
+                  onClick={() => onEdit(String(comentarioResidente.id))}
                   className="text-emerald-400 hover:text-emerald-300 hover:bg-emerald-900/30"
                 >
                   <Edit3 className="mr-1 h-3 w-3" />
