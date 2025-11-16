@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
+import { createAdminClient } from '@/lib/supabase/admin';
 import { createComentarioSchema } from '@/lib/validations/comentario';
 import type { ComentarioConUsuario, PuedeComentarResponse } from '@/types/database';
 
@@ -107,7 +108,9 @@ export async function POST(request: NextRequest) {
 
     // Si el comentario existe pero está eliminado, actualizarlo en lugar de crear uno nuevo
     if (existente && existente.contenido.includes('[Comentario eliminado')) {
-      const { data: comentarioActualizado, error: updateError } = await supabase
+      // Usar cliente admin para bypass de RLS
+      const adminClient = createAdminClient();
+      const { data: comentarioActualizado, error: updateError } = await adminClient
         .from('comentarios')
         .update({ contenido })
         .eq('id', existente.id)
