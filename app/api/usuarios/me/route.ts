@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
-import type { Usuario, PuedeComentarResponse } from '@/types/database';
 
 export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 // GET /api/usuarios/me - Obtener info del usuario autenticado
 export async function GET() {
@@ -59,7 +59,7 @@ export async function GET() {
     const ahora = new Date();
     const dentroDelPlazo = ahora <= fechaLimite;
 
-    const puedeComentarInfo: PuedeComentarResponse = {
+    const puedeComentarInfo = {
       puede_comentar: dentroDelPlazo && !tieneComentario,
       mensaje: tieneComentario
         ? 'Ya tienes un comentario registrado'
@@ -69,14 +69,15 @@ export async function GET() {
     };
 
     return NextResponse.json({
-      usuario: usuario as Usuario,
+      usuario: usuario,
       tiene_comentario: tieneComentario,
       puede_comentar: puedeComentarInfo,
     });
   } catch (error) {
     console.error('Error en GET /api/usuarios/me:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Error interno del servidor' },
+      { error: 'Error interno del servidor', details: errorMessage },
       { status: 500 }
     );
   }
