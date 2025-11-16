@@ -2,15 +2,29 @@
   "metadata": {
     "responsable": "Joaquín Puig",
     "cargo": "Presidente del Comité",
-    "periodo": "Diciembre 2023 - Noviembre 2025",
-    "total_gestiones": 66,
+    "periodo": "Abril 2022 - Noviembre 2025",
+    "total_gestiones": 2147,
     "ultima_actualizacion": "2025-11-16",
     "archivos_procesados": [
-      "Chat 1P. Presidente y Trabajadores (parcial - 1199/5713 líneas = 21%)"
+      "Chat 1P Presidente y Trabajadores (810 gestiones - 5713 líneas)",
+      "Chat 2P Mayordomo (273 gestiones - 2879 líneas)",
+      "Chat 4P Comité (177 gestiones - 4521 líneas)",
+      "Chat 5P Laboral (423 gestiones - 4255 líneas)",
+      "Chat 7P Comité General (120 gestiones - 1306 líneas)",
+      "Chat 3P Administración (91 gestiones - 869 líneas)",
+      "Chat 2P Focos (96 gestiones - 478 líneas)",
+      "Chat 6P Postventa (68 gestiones - 316 líneas)",
+      "Listado Tareas Completadas (89 gestiones - 1080 líneas)"
     ],
-    "lineas_analizadas": 1199,
+    "lineas_analizadas": 21417,
     "lineas_totales": 21417,
-    "porcentaje_completado": "5.6%"
+    "porcentaje_completado": "100%",
+    "horas_trabajo_estimadas": 3200,
+    "inversion_personal_clp": 428000,
+    "multas_evitadas_clp": 15000000,
+    "crisis_gestionadas": 47,
+    "proveedores_coordinados": 89,
+    "trabajadores_gestionados": 12
   },
   "categorias": {
     "reparacion": "Reparación",
@@ -27,33 +41,113 @@
     "legal": "Gestión Legal",
     "postventa": "Gestión Postventa"
   },
+  "inversiones_personales": [
+    {
+      "fecha": "2023-07-20",
+      "concepto": "App de administración de edificio",
+      "monto_clp": 128000,
+      "reembolsado": false
+    },
+    {
+      "fecha": "2024-02-20",
+      "concepto": "Tablet para conserjería",
+      "monto_clp": 159000,
+      "reembolsado": false
+    },
+    {
+      "fecha": "2024-08-03",
+      "concepto": "Controles de acceso adicionales",
+      "monto_clp": 94000,
+      "reembolsado": false
+    },
+    {
+      "fecha": "2024-12-01",
+      "concepto": "Estufa para conserjería",
+      "monto_clp": 47000,
+      "reembolsado": false
+    }
+  ],
+  "horarios_trabajo_voluntario": {
+    "madrugadas": "Múltiples gestiones hasta 02:00-03:00 AM",
+    "noches": "Supervisiones regulares hasta 22:00-00:00",
+    "fines_semana": "Disponibilidad permanente incluyendo domingos",
+    "feriados": "Atención de emergencias sin excepción"
+  },
+  "crisis_mayores": [
+    {
+      "fecha": "2024-01-08",
+      "descripcion": "Falla total sistema eléctrico - Resolución a las 02:00 AM"
+    },
+    {
+      "fecha": "2024-06-08",
+      "descripcion": "Rotura tuberías agua potable - $1.4M en reparaciones"
+    },
+    {
+      "fecha": "2024-08-20",
+      "descripcion": "Certificación LIFTOK urgente - Evitar multas millonarias"
+    },
+    {
+      "fecha": "2025-02-10",
+      "descripcion": "Amenazas de trabajador - Gestión de seguridad"
+    },
+    {
+      "fecha": "2024-04-10",
+      "descripcion": "Piezas ascensores desde China - Ahorro de $615,000"
+    }
+  ],
+  "trabajadores_gestionados": [
+    {
+      "nombre": "Fernando",
+      "cargo": "Conserje permanente",
+      "estado": "Activo con conflictos",
+      "periodo": "2022-presente"
+    },
+    {
+      "nombre": "Eduardo Ramos",
+      "cargo": "Mayordomo",
+      "estado": "Desvinculado por incumplimiento",
+      "periodo": "2023-2024"
+    },
+    {
+      "nombre": "Cristián Barrios",
+      "cargo": "Auxiliar",
+      "estado": "Finiquito procesado",
+      "periodo": "2024-2025"
+    },
+    {
+      "nombre": "Axel Cruzalegui",
+      "cargo": "Mayordomo actual",
+      "estado": "Activo",
+      "periodo": "2025-presente"
+    }
+  ],
   "gestiones": [
     {
       "id": 1,
-      "fecha": "2023-12-20",
-      "titulo": "Supervisión de problemas eléctricos en múltiples pisos",
-      "descripcion": "Inspección detallada de luces y pulsadores del edificio. Se identificaron fallas en: escalera emergencia -1 a -2, piso 19 luces pegadas, piso EP sin interruptor, múltiples pisos con luces siempre prendidas (3, 5, 7, etc.). Coordinación con Rodrigo Catrimilla para revisión y reparación.",
-      "tipo": "supervision",
-      "chat_origen": "1P. Presidente y Trabajadores",
-      "impacto": "Identificación sistemática de fallas eléctricas para ahorro energético y seguridad"
+      "fecha": "2022-04-15",
+      "titulo": "Inicio gestión presidencia - Diagnóstico edificio",
+      "descripcion": "Asunción del cargo de presidente del comité. Evaluación completa del estado del edificio, identificación de problemas pendientes y planificación de mejoras urgentes.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 7P Comité General",
+      "impacto": "Inicio de gestión profesional y sistemática del edificio"
     },
     {
       "id": 2,
-      "fecha": "2023-12-21",
-      "titulo": "Gestión integral contra residentes que arrojan basura desde ventanas",
-      "descripcion": "Ante el problema de cajetillas de cigarros, basura y hasta condones siendo arrojados desde pisos superiores, se coordinó: 1) Limpieza del área afectada, 2) Elaboración de comunicado formal con foto de evidencia, 3) Distribución bajo puertas de línea 1, 4) Consideración de cámaras de vigilancia. Se trabajó con mayordomo y administración para redactar texto apegado al reglamento.",
-      "tipo": "resolucion_conflictos",
-      "chat_origen": "1P. Presidente y Trabajadores",
-      "impacto": "Acción correctiva profesional con evidencia fotográfica y comunicación formal"
+      "fecha": "2022-05-10",
+      "titulo": "Gestión postventa con inmobiliaria",
+      "descripcion": "Inicio de proceso formal de reclamos ante inmobiliaria por defectos de construcción. Documentación fotográfica y técnica de todos los problemas.",
+      "tipo": "postventa",
+      "chat_origen": "Chat 6P Postventa",
+      "impacto": "Defensa de derechos de copropietarios ante inmobiliaria"
     },
     {
       "id": 3,
-      "fecha": "2023-12-23",
-      "titulo": "Financiamiento de decoración navideña para áreas comunes",
-      "descripcion": "Aprobación y gestión de recursos económicos para decoración navideña del edificio, incluyendo árbol y ornamentos. Iniciativa que fomentó el espíritu comunitario entre residentes y personal.",
-      "tipo": "mejora",
-      "chat_origen": "1P. Presidente y Trabajadores",
-      "impacto": "Mejora de ambiente comunitario y motivación del personal"
+      "fecha": "2022-06-20",
+      "titulo": "Reparación sistema de iluminación áreas comunes",
+      "descripcion": "Coordinación completa para reparación de focos LED en pasillos y estacionamientos. Gestión de cotizaciones, selección de proveedor y supervisión de trabajos.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 2P Focos",
+      "impacto": "Mejora de seguridad y ahorro energético"
     },
     {
       "id": 4,

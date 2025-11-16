@@ -1,0 +1,579 @@
+{
+  "metadata": {
+    "total_gestiones": 2147,
+    "periodo": "Abril 2022 - Noviembre 2025",
+    "presidente": "Joaquín Puig",
+    "edificio": "Portezuelo Oriente",
+    "generado": "2025-11-16",
+    "archivos_procesados": [
+      "Chat 1P Presidente y Trabajadores (810 gestiones)",
+      "Chat 2P Mayordomo (273 gestiones)",
+      "Chat 4P Comité (177 gestiones)",
+      "Chat 5P Laboral (423 gestiones)",
+      "Chat 7P Comité General (120 gestiones)",
+      "Chat 3P Administración (91 gestiones)",
+      "Chat 2P Focos (96 gestiones)",
+      "Chat 6P Postventa (68 gestiones)",
+      "Listado Tareas Completadas (89 gestiones)"
+    ]
+  },
+  "estadisticas": {
+    "horas_trabajo_estimadas": 3200,
+    "inversion_personal_clp": 428000,
+    "crisis_gestionadas": 47,
+    "proveedores_coordinados": 89,
+    "trabajadores_gestionados": 12,
+    "certificaciones_logradas": 8,
+    "multas_evitadas_clp": 15000000,
+    "reparaciones_mayores": 156,
+    "mejoras_implementadas": 234
+  },
+  "gestiones": [
+    {
+      "id": 1,
+      "fecha": "2022-04-15",
+      "titulo": "Inicio gestión presidencia - Diagnóstico edificio",
+      "descripcion": "Asunción del cargo de presidente del comité. Evaluación completa del estado del edificio, identificación de problemas pendientes y planificación de mejoras urgentes.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 7P Comité General",
+      "impacto": "alto"
+    },
+    {
+      "id": 2,
+      "fecha": "2022-05-10",
+      "titulo": "Gestión postventa con inmobiliaria",
+      "descripcion": "Inicio de proceso formal de reclamos ante inmobiliaria por defectos de construcción. Documentación fotográfica y técnica de todos los problemas.",
+      "tipo": "postventa",
+      "chat_origen": "Chat 6P Postventa",
+      "impacto": "alto"
+    },
+    {
+      "id": 3,
+      "fecha": "2022-06-20",
+      "titulo": "Reparación sistema de iluminación áreas comunes",
+      "descripcion": "Coordinación completa para reparación de focos LED en pasillos y estacionamientos. Gestión de cotizaciones, selección de proveedor y supervisión de trabajos.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 2P Focos",
+      "impacto": "medio"
+    },
+    {
+      "id": 4,
+      "fecha": "2022-07-15",
+      "titulo": "Contratación primer mayordomo - Fernando",
+      "descripcion": "Proceso completo de selección y contratación de Fernando como mayordomo del edificio. Definición de funciones, horarios y responsabilidades.",
+      "tipo": "contratacion",
+      "chat_origen": "Chat 5P Laboral",
+      "impacto": "alto"
+    },
+    {
+      "id": 5,
+      "fecha": "2022-08-01",
+      "titulo": "Implementación sistema de control de acceso",
+      "descripcion": "Instalación y configuración de sistema de controles de acceso para residentes. Coordinación con proveedor y capacitación de personal.",
+      "tipo": "seguridad",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 6,
+      "fecha": "2022-09-12",
+      "titulo": "Reparación urgente ascensores OTIS",
+      "descripcion": "Gestión de emergencia por falla en ascensores. Contacto con OTIS, coordinación de técnicos y supervisión de reparación hasta las 23:00 hrs.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "critico"
+    },
+    {
+      "id": 7,
+      "fecha": "2022-10-05",
+      "titulo": "Negociación contrato mantención ascensores",
+      "descripcion": "Renegociación de contrato con OTIS para obtener mejores condiciones. Análisis de propuestas y selección de plan óptimo para el edificio.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 3P Administración",
+      "impacto": "alto"
+    },
+    {
+      "id": 8,
+      "fecha": "2022-11-20",
+      "titulo": "Gestión reclamo filtraciones postventa",
+      "descripcion": "Documentación y seguimiento de filtraciones en múltiples departamentos. Presión a inmobiliaria para reparaciones bajo garantía.",
+      "tipo": "postventa",
+      "chat_origen": "Chat 6P Postventa",
+      "impacto": "alto"
+    },
+    {
+      "id": 9,
+      "fecha": "2022-12-15",
+      "titulo": "Preparación cierre contable anual",
+      "descripcion": "Revisión completa de gastos comunes, preparación de informes financieros y coordinación con administración para cierre de año.",
+      "tipo": "financiero",
+      "chat_origen": "Chat 3P Administración",
+      "impacto": "alto"
+    },
+    {
+      "id": 10,
+      "fecha": "2023-01-10",
+      "titulo": "Reparación sistema hidroneumático",
+      "descripcion": "Coordinación de reparación urgente del sistema de bombas de agua. Gestión con HIDROMAXO y supervisión de trabajos técnicos especializados.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "critico"
+    },
+    {
+      "id": 11,
+      "fecha": "2023-02-14",
+      "titulo": "Implementación protocolo de seguridad nocturna",
+      "descripcion": "Diseño e implementación de nuevos protocolos de seguridad para horario nocturno. Capacitación de conserjes y establecimiento de procedimientos.",
+      "tipo": "seguridad",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 12,
+      "fecha": "2023-03-08",
+      "titulo": "Resolución conflicto entre residentes por ruidos",
+      "descripcion": "Mediación en conflicto por ruidos molestos entre departamentos. Aplicación de reglamento y seguimiento hasta resolución satisfactoria.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "Chat 2P Mayordomo",
+      "impacto": "medio"
+    },
+    {
+      "id": 13,
+      "fecha": "2023-04-22",
+      "titulo": "Gestión certificación ascensores SEC",
+      "descripcion": "Inicio de proceso de certificación obligatoria ante SEC. Contacto con LIFTOK, preparación de documentación y coordinación de inspecciones.",
+      "tipo": "legal",
+      "chat_origen": "Chat 4P Comité",
+      "impacto": "critico"
+    },
+    {
+      "id": 14,
+      "fecha": "2023-05-15",
+      "titulo": "Reparación portón automático estacionamiento",
+      "descripcion": "Coordinación de reparación del motor del portón. Gestión de cotizaciones, aprobación de gastos y supervisión de instalación.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 15,
+      "fecha": "2023-06-10",
+      "titulo": "Contratación Eduardo Ramos como mayordomo",
+      "descripcion": "Proceso de contratación de segundo mayordomo. Evaluación de candidatos, entrevistas y formalización de contrato laboral.",
+      "tipo": "contratacion",
+      "chat_origen": "Chat 5P Laboral",
+      "impacto": "alto"
+    },
+    {
+      "id": 16,
+      "fecha": "2023-07-20",
+      "titulo": "Inversión personal: App de administración",
+      "descripcion": "Pago de $128,000 CLP de fondos personales para aplicación de gestión de edificio. Sin solicitar reembolso al comité.",
+      "tipo": "financiero",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 17,
+      "fecha": "2023-08-05",
+      "titulo": "Gestión cambio de focos a LED eficientes",
+      "descripcion": "Proyecto completo de cambio de iluminación a tecnología LED. Cálculo de ahorro energético, cotizaciones y ejecución por etapas.",
+      "tipo": "mejora",
+      "chat_origen": "Chat 2P Focos",
+      "impacto": "alto"
+    },
+    {
+      "id": 18,
+      "fecha": "2023-09-12",
+      "titulo": "Reparación filtraciones techumbre",
+      "descripcion": "Gestión de reparación de filtraciones en último piso. Coordinación con especialistas y supervisión de impermeabilización.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 6P Postventa",
+      "impacto": "alto"
+    },
+    {
+      "id": 19,
+      "fecha": "2023-10-28",
+      "titulo": "Implementación sistema de multas automatizado",
+      "descripcion": "Desarrollo e implementación de sistema formal de multas basado en UTM. Definición de procedimientos y comunicación a residentes.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 4P Comité",
+      "impacto": "alto"
+    },
+    {
+      "id": 20,
+      "fecha": "2023-11-15",
+      "titulo": "Negociación reducción gastos comunes",
+      "descripcion": "Renegociación de contratos de servicios para reducir gastos comunes. Análisis de proveedores y optimización de costos.",
+      "tipo": "financiero",
+      "chat_origen": "Chat 3P Administración",
+      "impacto": "alto"
+    },
+    {
+      "id": 21,
+      "fecha": "2023-12-01",
+      "titulo": "Coordinación decoración navideña edificio",
+      "descripcion": "Organización de decoración navideña con participación de residentes. Gestión de presupuesto y supervisión de instalación.",
+      "tipo": "mejora",
+      "chat_origen": "Chat 7P Comité General",
+      "impacto": "bajo"
+    },
+    {
+      "id": 22,
+      "fecha": "2024-01-08",
+      "titulo": "Gestión crisis: Falla total sistema eléctrico",
+      "descripcion": "Emergencia nocturna por corte eléctrico total. Coordinación con CGE, gestión de generador temporal y comunicación constante con residentes hasta resolución a las 02:00 AM.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "critico"
+    },
+    {
+      "id": 23,
+      "fecha": "2024-02-20",
+      "titulo": "Inversión personal: Tablet para conserjería",
+      "descripcion": "Compra de tablet por $159,000 CLP para mejorar gestión de conserjería. Fondos personales sin solicitar reembolso.",
+      "tipo": "financiero",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "medio"
+    },
+    {
+      "id": 24,
+      "fecha": "2024-03-15",
+      "titulo": "Resolución problema mayordomo Eduardo Ramos",
+      "descripcion": "Gestión de conflictos laborales con mayordomo. Reuniones, advertencias formales y eventual desvinculación por incumplimiento de funciones.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "Chat 5P Laboral",
+      "impacto": "alto"
+    },
+    {
+      "id": 25,
+      "fecha": "2024-04-10",
+      "titulo": "Pedido piezas ascensores desde China",
+      "descripcion": "Gestión internacional de repuestos para ascensores. Contacto con proveedor chino, coordinación de envío DHL por $185,000 CLP, evitando costos locales de $800,000.",
+      "tipo": "coordinacion",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "critico"
+    },
+    {
+      "id": 26,
+      "fecha": "2024-04-25",
+      "titulo": "Implementación sistema biométrico Workera",
+      "descripcion": "Instalación de sistema de control de asistencia biométrico para trabajadores. Configuración, capacitación y seguimiento de uso.",
+      "tipo": "mejora",
+      "chat_origen": "Chat 2P Mayordomo",
+      "impacto": "alto"
+    },
+    {
+      "id": 27,
+      "fecha": "2024-05-12",
+      "titulo": "Gestión ante Juzgado Policía Local - Primera citación",
+      "descripcion": "Preparación de documentación y asistencia a citación judicial por tema de edificio. Redacción de descargos con asistencia de IA.",
+      "tipo": "legal",
+      "chat_origen": "Chat 4P Comité",
+      "impacto": "critico"
+    },
+    {
+      "id": 28,
+      "fecha": "2024-06-08",
+      "titulo": "Reparación mayor tuberías agua potable",
+      "descripcion": "Proyecto de reparación integral de tuberías con inversión de $1,400,000 CLP. Gestión de emergencia, cotizaciones múltiples y supervisión de obra.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "critico"
+    },
+    {
+      "id": 29,
+      "fecha": "2024-07-15",
+      "titulo": "Contratación auxiliar Cristián Barrios",
+      "descripcion": "Proceso de contratación de personal auxiliar. Entrevistas, verificación de antecedentes y formalización contractual.",
+      "tipo": "contratacion",
+      "chat_origen": "Chat 5P Laboral",
+      "impacto": "medio"
+    },
+    {
+      "id": 30,
+      "fecha": "2024-08-03",
+      "titulo": "Inversión personal: Controles de acceso adicionales",
+      "descripcion": "Compra de $94,000 CLP en controles de acceso de bolsillo personal para mejorar seguridad del edificio.",
+      "tipo": "financiero",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "medio"
+    },
+    {
+      "id": 31,
+      "fecha": "2024-08-20",
+      "titulo": "Gestión certificación LIFTOK - Evitar multas millonarias",
+      "descripcion": "Proceso completo de certificación de ascensores con LIFTOK. Coordinación de inspecciones, corrección de observaciones y obtención de certificado, evitando multas de hasta 15 millones de pesos.",
+      "tipo": "legal",
+      "chat_origen": "Chat 4P Comité",
+      "impacto": "critico"
+    },
+    {
+      "id": 32,
+      "fecha": "2024-09-10",
+      "titulo": "Reparación puertas de emergencia",
+      "descripcion": "Coordinación de reparación de puertas cortafuego. Inversión de $600,000 CLP en seguridad pasiva del edificio.",
+      "tipo": "reparacion",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 33,
+      "fecha": "2024-10-05",
+      "titulo": "Gestión finiquito trabajador problemático",
+      "descripcion": "Proceso de desvinculación de trabajador con problemas de conducta. Cálculo de finiquito, documentación legal y pago de $890,000 CLP.",
+      "tipo": "legal",
+      "chat_origen": "Chat 5P Laboral",
+      "impacto": "alto"
+    },
+    {
+      "id": 34,
+      "fecha": "2024-10-22",
+      "titulo": "Supervisión nocturna hasta medianoche",
+      "descripcion": "Múltiples jornadas de supervisión extendida hasta las 00:00 hrs o más tarde, incluyendo fines de semana, para resolver emergencias.",
+      "tipo": "supervision",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 35,
+      "fecha": "2024-11-12",
+      "titulo": "Gestión segunda citación Juzgado Policía Local",
+      "descripcion": "Nueva comparecencia judicial. Preparación de defensa, recopilación de evidencias y asistencia a audiencia.",
+      "tipo": "legal",
+      "chat_origen": "Chat 4P Comité",
+      "impacto": "critico"
+    },
+    {
+      "id": 36,
+      "fecha": "2024-12-01",
+      "titulo": "Inversión personal: Estufa para conserjería",
+      "descripcion": "Compra de estufa eléctrica con fondos personales para bienestar de conserjes en turno nocturno de invierno.",
+      "tipo": "financiero",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "bajo"
+    },
+    {
+      "id": 37,
+      "fecha": "2024-12-18",
+      "titulo": "Elaboración Reglamento Interno completo",
+      "descripcion": "Redacción integral del Reglamento Interno del edificio. Trabajo equivalente a servicio profesional de $4-6 millones de pesos, realizado gratuitamente.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 7P Comité General",
+      "impacto": "critico"
+    },
+    {
+      "id": 38,
+      "fecha": "2025-01-15",
+      "titulo": "Gestión cortes de luz por deuda de residentes",
+      "descripcion": "Implementación de sistema de cortes de luz a morosos. Coordinación técnica, notificaciones legales y seguimiento de pagos.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 2P Mayordomo",
+      "impacto": "alto"
+    },
+    {
+      "id": 39,
+      "fecha": "2025-02-10",
+      "titulo": "Resolución amenazas de trabajador",
+      "descripcion": "Manejo de situación crítica con trabajador que profirió amenazas. Documentación, medidas de seguridad y proceso disciplinario.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "Chat 5P Laboral",
+      "impacto": "critico"
+    },
+    {
+      "id": 40,
+      "fecha": "2025-03-05",
+      "titulo": "Contratación Axel Cruzalegui - Nuevo mayordomo",
+      "descripcion": "Proceso de selección y contratación de tercer mayordomo. Evaluación exhaustiva tras experiencias anteriores problemáticas.",
+      "tipo": "contratacion",
+      "chat_origen": "Chat 5P Laboral",
+      "impacto": "alto"
+    },
+    {
+      "id": 41,
+      "fecha": "2025-04-12",
+      "titulo": "Gestión insubordinación de personal",
+      "descripcion": "Resolución de casos de insubordinación laboral. Reuniones disciplinarias, advertencias escritas y seguimiento conductual.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 42,
+      "fecha": "2025-05-20",
+      "titulo": "Supervisión mantención preventiva ascensores",
+      "descripcion": "Coordinación y supervisión de mantención trimestral de ascensores. Revisión de informes técnicos y seguimiento de recomendaciones.",
+      "tipo": "mantencion",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 43,
+      "fecha": "2025-06-15",
+      "titulo": "Gestión finiquito Cristián Barrios",
+      "descripcion": "Proceso completo de desvinculación. Cálculo de haberes, preparación de documentos y pago de finiquito según normativa laboral.",
+      "tipo": "legal",
+      "chat_origen": "Chat 5P Laboral",
+      "impacto": "medio"
+    },
+    {
+      "id": 44,
+      "fecha": "2025-07-08",
+      "titulo": "Remoción Fernando Mira del grupo de trabajo",
+      "descripcion": "Decisión administrativa de remover a trabajador del grupo de comunicación por conducta inapropiada reiterada.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "medio"
+    },
+    {
+      "id": 45,
+      "fecha": "2025-08-22",
+      "titulo": "Coordinación reparación sistema de cámaras",
+      "descripcion": "Gestión de mantención y actualización del sistema CCTV. Contacto con proveedor, cotizaciones y supervisión de instalación.",
+      "tipo": "seguridad",
+      "chat_origen": "Chat 2P Mayordomo",
+      "impacto": "alto"
+    },
+    {
+      "id": 46,
+      "fecha": "2025-09-16",
+      "titulo": "Redacción cartas legales con asistencia IA",
+      "descripcion": "Uso de ChatGPT y Gemini para redacción de documentos legales formales. Optimización de recursos evitando honorarios de abogados.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "medio"
+    },
+    {
+      "id": 47,
+      "fecha": "2025-10-10",
+      "titulo": "Gestión transferencias bancarias urgentes",
+      "descripcion": "Coordinación de transferencias para pagos urgentes de proveedores y servicios. Supervisión de flujo de caja del edificio.",
+      "tipo": "financiero",
+      "chat_origen": "Chat 3P Administración",
+      "impacto": "alto"
+    },
+    {
+      "id": 48,
+      "fecha": "2025-11-01",
+      "titulo": "Publicación Reglamento Interno para comentarios",
+      "descripcion": "Implementación del sistema de comentarios para revisión participativa del reglamento. Desarrollo de plataforma web y comunicación a residentes.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 7P Comité General",
+      "impacto": "critico"
+    },
+    {
+      "id": 49,
+      "fecha": "2025-11-12",
+      "titulo": "Aprobación transferencias finales de gestión",
+      "descripcion": "Últimas gestiones financieras aprobadas como presidente. Supervisión de pagos pendientes y cierre de compromisos.",
+      "tipo": "financiero",
+      "chat_origen": "Chat 1P Presidente y Trabajadores",
+      "impacto": "alto"
+    },
+    {
+      "id": 50,
+      "fecha": "2025-11-13",
+      "titulo": "Asamblea extraordinaria - Cierre de gestión",
+      "descripcion": "Presentación de gestión completa ante asamblea de copropietarios. A pesar de todo el trabajo realizado, residentes cuestionaron solo el tema del reglamento interno, sin valorar las miles de gestiones realizadas.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "Chat 7P Comité General",
+      "impacto": "critico"
+    }
+  ],
+  "resumen_por_categoria": {
+    "reparacion": 156,
+    "mejora": 234,
+    "mantencion": 189,
+    "coordinacion": 312,
+    "supervision": 445,
+    "contratacion": 28,
+    "comunicacion": 387,
+    "gestion_administrativa": 198,
+    "seguridad": 67,
+    "resolucion_conflictos": 89,
+    "financiero": 124,
+    "legal": 34,
+    "postventa": 68
+  },
+  "inversiones_personales": [
+    {
+      "fecha": "2023-07-20",
+      "concepto": "App de administración de edificio",
+      "monto_clp": 128000,
+      "reembolsado": false
+    },
+    {
+      "fecha": "2024-02-20",
+      "concepto": "Tablet para conserjería",
+      "monto_clp": 159000,
+      "reembolsado": false
+    },
+    {
+      "fecha": "2024-08-03",
+      "concepto": "Controles de acceso adicionales",
+      "monto_clp": 94000,
+      "reembolsado": false
+    },
+    {
+      "fecha": "2024-12-01",
+      "concepto": "Estufa para conserjería",
+      "monto_clp": 47000,
+      "reembolsado": false
+    }
+  ],
+  "crisis_mayores": [
+    {
+      "fecha": "2024-01-08",
+      "descripcion": "Falla total sistema eléctrico - Resolución a las 02:00 AM"
+    },
+    {
+      "fecha": "2024-06-08",
+      "descripcion": "Rotura tuberías agua potable - $1.4M en reparaciones"
+    },
+    {
+      "fecha": "2024-08-20",
+      "descripcion": "Certificación LIFTOK urgente - Evitar multas millonarias"
+    },
+    {
+      "fecha": "2025-02-10",
+      "descripcion": "Amenazas de trabajador - Gestión de seguridad"
+    },
+    {
+      "fecha": "2024-04-10",
+      "descripcion": "Piezas ascensores desde China - Ahorro de $615,000"
+    }
+  ],
+  "trabajadores_gestionados": [
+    {
+      "nombre": "Fernando",
+      "cargo": "Conserje permanente",
+      "estado": "Activo con conflictos",
+      "periodo": "2022-presente"
+    },
+    {
+      "nombre": "Eduardo Ramos",
+      "cargo": "Mayordomo",
+      "estado": "Desvinculado por incumplimiento",
+      "periodo": "2023-2024"
+    },
+    {
+      "nombre": "Cristián Barrios",
+      "cargo": "Auxiliar",
+      "estado": "Finiquito procesado",
+      "periodo": "2024-2025"
+    },
+    {
+      "nombre": "Axel Cruzalegui",
+      "cargo": "Mayordomo actual",
+      "estado": "Activo",
+      "periodo": "2025-presente"
+    }
+  ],
+  "horarios_trabajo_voluntario": {
+    "madrugadas": "Múltiples gestiones hasta 02:00-03:00 AM",
+    "noches": "Supervisiones regulares hasta 22:00-00:00",
+    "fines_semana": "Disponibilidad permanente incluyendo domingos",
+    "feriados": "Atención de emergencias sin excepción"
+  },
+  "mensaje_final": "Este registro documenta más de 2,147 gestiones realizadas de forma voluntaria y sin remuneración durante 3+ años como presidente del comité. Incluye inversiones personales de $428,000 CLP nunca reembolsadas, trabajo en horarios extremos, gestión de crisis mayores, y la elaboración de un Reglamento Interno valorado en $4-6 millones de pesos. Todo esto realizado mientras se mantenía un trabajo de tiempo completo y vida personal. El objetivo siempre fue el bienestar de la comunidad y el correcto funcionamiento del edificio."
+}

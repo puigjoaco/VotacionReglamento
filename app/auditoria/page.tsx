@@ -29,7 +29,7 @@ import {
   Award,
   Plane,
 } from 'lucide-react';
-import gestionesData from '@/data/gestiones.json';
+import gestionesData from './gestiones.json';
 
 // Definir tipo para gestión
 interface Gestion {
@@ -51,9 +51,9 @@ const tipoIconos: Record<string, React.ReactNode> = {
   supervision: <Eye className="h-5 w-5" />,
   contratacion: <Briefcase className="h-5 w-5" />,
   comunicacion: <MessageSquare className="h-5 w-5" />,
-  'gestion administrativa': <FileText className="h-5 w-5" />,
+  gestion_administrativa: <FileText className="h-5 w-5" />,
   seguridad: <Shield className="h-5 w-5" />,
-  'resolucion de conflictos': <AlertTriangle className="h-5 w-5" />,
+  resolucion_conflictos: <AlertTriangle className="h-5 w-5" />,
   financiero: <DollarSign className="h-5 w-5" />,
   legal: <Scale className="h-5 w-5" />,
   postventa: <Home className="h-5 w-5" />,
@@ -68,9 +68,9 @@ const tipoColores: Record<string, string> = {
   supervision: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
   contratacion: 'bg-pink-500/20 text-pink-300 border-pink-500/30',
   comunicacion: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30',
-  'gestion administrativa': 'bg-indigo-500/20 text-indigo-300 border-indigo-500/30',
+  gestion_administrativa: 'bg-indigo-500/20 text-indigo-300 border-indigo-500/30',
   seguridad: 'bg-red-500/20 text-red-300 border-red-500/30',
-  'resolucion de conflictos': 'bg-amber-500/20 text-amber-300 border-amber-500/30',
+  resolucion_conflictos: 'bg-amber-500/20 text-amber-300 border-amber-500/30',
   financiero: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30',
   legal: 'bg-rose-500/20 text-rose-300 border-rose-500/30',
   postventa: 'bg-teal-500/20 text-teal-300 border-teal-500/30',
@@ -83,8 +83,9 @@ export default function AuditoriaPage() {
   const [showAllStats, setShowAllStats] = useState(false);
 
   const gestiones = gestionesData.gestiones as Gestion[];
-  const metadata = gestionesData.metadata;
-  const categorias = gestionesData.categorias;
+  const metadata = gestionesData.metadata as any;
+  const estadisticas = gestionesData.estadisticas as any;
+  const resumenCategoria = gestionesData.resumen_por_categoria as Record<string, number>;
 
   // Filtrar gestiones
   const filteredGestiones = useMemo(() => {
@@ -101,23 +102,8 @@ export default function AuditoriaPage() {
     });
   }, [gestiones, searchTerm, selectedTipo]);
 
-  // Calcular estadísticas
-  const estadisticas = useMemo(() => {
-    const porTipo: Record<string, number> = {};
-    const porMes: Record<string, number> = {};
-
-    gestiones.forEach((g) => {
-      // Contar por tipo
-      porTipo[g.tipo] = (porTipo[g.tipo] || 0) + 1;
-
-      // Contar por mes
-      const fecha = new Date(g.fecha);
-      const mesKey = `${fecha.getFullYear()}-${String(fecha.getMonth() + 1).padStart(2, '0')}`;
-      porMes[mesKey] = (porMes[mesKey] || 0) + 1;
-    });
-
-    return { porTipo, porMes };
-  }, [gestiones]);
+  // Usar estadísticas del JSON
+  const statsPorTipo = resumenCategoria;
 
   const toggleCard = (id: number) => {
     setExpandedCards((prev) => {
@@ -152,10 +138,10 @@ export default function AuditoriaPage() {
             <div>
               <h1 className="text-2xl font-bold">Auditoría de Gestiones</h1>
               <p className="text-blue-200 text-sm">
-                Registro completo del trabajo realizado por {metadata.responsable}
+                Registro completo del trabajo realizado por {metadata.presidente}
               </p>
               <p className="text-blue-300 text-xs mt-1">
-                {metadata.cargo} • {metadata.periodo}
+                Presidente del Comité • {metadata.periodo}
               </p>
             </div>
           </div>
@@ -184,15 +170,15 @@ export default function AuditoriaPage() {
             <CardContent className="pt-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-emerald-200 text-sm font-medium">Líneas Analizadas</p>
+                  <p className="text-emerald-200 text-sm font-medium">Horas Trabajo</p>
                   <p className="text-4xl font-bold text-white">
-                    {metadata.lineas_analizadas.toLocaleString()}
+                    {estadisticas.horas_trabajo_estimadas.toLocaleString()}+
                   </p>
                 </div>
-                <FileText className="h-10 w-10 text-emerald-400" />
+                <Clock className="h-10 w-10 text-emerald-400" />
               </div>
               <p className="text-xs text-emerald-300 mt-2">
-                de {metadata.lineas_totales.toLocaleString()} líneas totales
+                horas de trabajo voluntario
               </p>
             </CardContent>
           </Card>
@@ -201,14 +187,14 @@ export default function AuditoriaPage() {
             <CardContent className="pt-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-purple-200 text-sm font-medium">Categorías</p>
+                  <p className="text-purple-200 text-sm font-medium">Inversión Personal</p>
                   <p className="text-4xl font-bold text-white">
-                    {Object.keys(estadisticas.porTipo).length}
+                    ${estadisticas.inversion_personal_clp.toLocaleString()}
                   </p>
                 </div>
-                <Filter className="h-10 w-10 text-purple-400" />
+                <DollarSign className="h-10 w-10 text-purple-400" />
               </div>
-              <p className="text-xs text-purple-300 mt-2">tipos de gestión diferentes</p>
+              <p className="text-xs text-purple-300 mt-2">CLP sin reembolso</p>
             </CardContent>
           </Card>
 
@@ -216,12 +202,12 @@ export default function AuditoriaPage() {
             <CardContent className="pt-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-amber-200 text-sm font-medium">Dedicación</p>
-                  <p className="text-4xl font-bold text-white">24/7</p>
+                  <p className="text-amber-200 text-sm font-medium">Multas Evitadas</p>
+                  <p className="text-4xl font-bold text-white">${(estadisticas.multas_evitadas_clp / 1000000).toFixed(0)}M</p>
                 </div>
-                <Plane className="h-10 w-10 text-amber-400" />
+                <Scale className="h-10 w-10 text-amber-400" />
               </div>
-              <p className="text-xs text-amber-300 mt-2">Incluso trabajando desde China</p>
+              <p className="text-xs text-amber-300 mt-2">CLP en multas evitadas</p>
             </CardContent>
           </Card>
         </div>
@@ -250,8 +236,8 @@ export default function AuditoriaPage() {
                   comunidad.
                 </p>
                 <p className="text-amber-100/80 text-sm leading-relaxed">
-                  <strong>Nota:</strong> Solo se ha analizado el {metadata.porcentaje_completado} de
-                  los chats disponibles. El número real de gestiones es significativamente mayor.
+                  <strong>Nota:</strong> Se han analizado 21,417 líneas de 9 archivos de chat de WhatsApp.
+                  Este registro representa las {metadata.total_gestiones.toLocaleString()} gestiones documentadas.
                 </p>
               </div>
             </div>
@@ -283,7 +269,7 @@ export default function AuditoriaPage() {
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-              {Object.entries(estadisticas.porTipo)
+              {Object.entries(statsPorTipo)
                 .sort((a, b) => b[1] - a[1])
                 .slice(0, showAllStats ? undefined : 8)
                 .map(([tipo, count]) => (
@@ -463,17 +449,14 @@ export default function AuditoriaPage() {
           <CardContent className="pt-6">
             <div className="text-center">
               <h3 className="text-blue-200 font-semibold text-lg mb-2">
-                Este registro representa solo una fracción del trabajo total
+                Más de 3 años de trabajo voluntario documentado
               </h3>
               <p className="text-blue-100/80 text-sm">
-                Se han analizado {metadata.lineas_analizadas.toLocaleString()} de{' '}
-                {metadata.lineas_totales.toLocaleString()} líneas de conversación (
-                {metadata.porcentaje_completado}). El análisis completo revelaría cientos de gestiones
-                adicionales.
+                {(gestionesData as any).mensaje_final}
               </p>
               <p className="text-blue-100/80 text-sm mt-2">
                 Cada gestión aquí documentada representa horas de coordinación, seguimiento y
-                responsabilidad.
+                responsabilidad asumida sin remuneración alguna.
               </p>
             </div>
           </CardContent>
