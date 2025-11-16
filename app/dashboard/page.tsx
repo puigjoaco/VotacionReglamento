@@ -96,7 +96,7 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-100 to-indigo-100">
       {/* Header */}
       <header className="bg-gradient-to-r from-slate-900 to-blue-900 text-white shadow-xl sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -133,7 +133,7 @@ export default function DashboardPage() {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10 hover:border-cyan-400"
+                  className="border-white/40 bg-white/10 text-white hover:bg-white/20 hover:border-white/60"
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Reglamento PDF
@@ -143,7 +143,7 @@ export default function DashboardPage() {
                 variant="outline"
                 size="sm"
                 onClick={() => signOut({ callbackUrl: '/login' })}
-                className="border-red-400/50 text-red-300 hover:bg-red-400/10 hover:border-red-400"
+                className="border-white/40 bg-white/10 text-white hover:bg-red-500/20 hover:border-red-400/60"
               >
                 <LogOut className="mr-2 h-4 w-4" />
                 Cerrar Sesión
@@ -210,51 +210,51 @@ export default function DashboardPage() {
         )}
 
         {/* Search */}
-        <Card className="mb-8 shadow-lg border-gray-200">
+        <Card className="mb-8 shadow-xl border-slate-200 bg-white/80 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-lg flex items-center text-gray-900">
+            <CardTitle className="text-lg flex items-center text-slate-800">
               <Search className="mr-2 h-5 w-5 text-blue-600" />
               Buscar Comentarios
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="text-slate-600">
               Filtra por número de departamento, apellido o contenido del comentario
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-400" />
               <Input
                 type="text"
                 placeholder="Escribe para buscar..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10 h-12 text-base border-gray-300 focus:border-blue-500 focus:ring-blue-500"
+                className="pl-10 h-12 text-base border-slate-300 bg-white focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
           </CardContent>
         </Card>
 
         {/* Comments List */}
-        <Card className="shadow-lg border-gray-200">
+        <Card className="shadow-xl border-slate-200 bg-white/80 backdrop-blur-sm">
           <CardHeader>
             <div className="flex items-center justify-between">
-              <CardTitle className="text-lg flex items-center text-gray-900">
+              <CardTitle className="text-lg flex items-center text-slate-800">
                 <MessageSquare className="mr-2 h-5 w-5 text-blue-600" />
                 Todos los comentarios
               </CardTitle>
-              <Badge variant="secondary" className="text-sm bg-blue-100 text-blue-800 border-blue-200">
+              <Badge className="text-sm bg-blue-600 text-white border-blue-700">
                 {filteredComentarios.length} {filteredComentarios.length === 1 ? 'comentario' : 'comentarios'}
               </Badge>
             </div>
-            <CardDescription>
+            <CardDescription className="text-slate-600">
               Comentarios de propietarios y residentes sobre el Reglamento Interno
             </CardDescription>
           </CardHeader>
           <CardContent>
             {filteredComentarios.length === 0 ? (
-              <div className="text-center py-12 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
-                <MessageSquare className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-500 font-medium">
+              <div className="text-center py-12 bg-slate-50 rounded-lg border-2 border-dashed border-slate-300">
+                <MessageSquare className="h-12 w-12 text-slate-400 mx-auto mb-4" />
+                <p className="text-slate-600 font-medium">
                   {searchTerm
                     ? 'No se encontraron comentarios que coincidan con tu búsqueda.'
                     : 'Aún no hay comentarios publicados.'}
