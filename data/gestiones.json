@@ -1,0 +1,882 @@
+{
+  "metadata": {
+    "responsable": "Joaquín Puig",
+    "cargo": "Presidente del Comité",
+    "periodo": "Diciembre 2023 - Noviembre 2025",
+    "total_gestiones": 66,
+    "ultima_actualizacion": "2025-11-16",
+    "archivos_procesados": [
+      "Chat 1P. Presidente y Trabajadores (parcial - 1199/5713 líneas = 21%)"
+    ],
+    "lineas_analizadas": 1199,
+    "lineas_totales": 21417,
+    "porcentaje_completado": "5.6%"
+  },
+  "categorias": {
+    "reparacion": "Reparación",
+    "mejora": "Mejora",
+    "mantencion": "Mantención",
+    "coordinacion": "Coordinación",
+    "supervision": "Supervisión",
+    "contratacion": "Contratación Personal",
+    "comunicacion": "Comunicación",
+    "gestion_administrativa": "Gestión Administrativa",
+    "seguridad": "Seguridad",
+    "resolucion_conflictos": "Resolución de Conflictos",
+    "financiero": "Gestión Financiera",
+    "legal": "Gestión Legal",
+    "postventa": "Gestión Postventa"
+  },
+  "gestiones": [
+    {
+      "id": 1,
+      "fecha": "2023-12-20",
+      "titulo": "Supervisión de problemas eléctricos en múltiples pisos",
+      "descripcion": "Inspección detallada de luces y pulsadores del edificio. Se identificaron fallas en: escalera emergencia -1 a -2, piso 19 luces pegadas, piso EP sin interruptor, múltiples pisos con luces siempre prendidas (3, 5, 7, etc.). Coordinación con Rodrigo Catrimilla para revisión y reparación.",
+      "tipo": "supervision",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Identificación sistemática de fallas eléctricas para ahorro energético y seguridad"
+    },
+    {
+      "id": 2,
+      "fecha": "2023-12-21",
+      "titulo": "Gestión integral contra residentes que arrojan basura desde ventanas",
+      "descripcion": "Ante el problema de cajetillas de cigarros, basura y hasta condones siendo arrojados desde pisos superiores, se coordinó: 1) Limpieza del área afectada, 2) Elaboración de comunicado formal con foto de evidencia, 3) Distribución bajo puertas de línea 1, 4) Consideración de cámaras de vigilancia. Se trabajó con mayordomo y administración para redactar texto apegado al reglamento.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Acción correctiva profesional con evidencia fotográfica y comunicación formal"
+    },
+    {
+      "id": 3,
+      "fecha": "2023-12-23",
+      "titulo": "Financiamiento de decoración navideña para áreas comunes",
+      "descripcion": "Aprobación y gestión de recursos económicos para decoración navideña del edificio, incluyendo árbol y ornamentos. Iniciativa que fomentó el espíritu comunitario entre residentes y personal.",
+      "tipo": "mejora",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mejora de ambiente comunitario y motivación del personal"
+    },
+    {
+      "id": 4,
+      "fecha": "2024-01-08",
+      "titulo": "Descubrimiento de cobro indebido de electricidad",
+      "descripcion": "Se descubrió que el edificio estaba pagando la electricidad de la caseta de guardias y del edificio 9300 sin reembolso. Se identificaron remarcadores específicos y se inició proceso de cobro retroactivo y regularización mensual. Gestión que recuperará dinero para la comunidad.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Recuperación de dinero mal cobrado y ahorro mensual permanente"
+    },
+    {
+      "id": 5,
+      "fecha": "2024-01-08",
+      "titulo": "Corrección de información errónea sobre instalación de A/C",
+      "descripcion": "Se detectó que un representante de la inmobiliaria estaba dando información incorrecta a residentes sobre quién repara orificios tras instalación de aires acondicionados. Se contactó inmediatamente para corregir el problema.",
+      "tipo": "comunicacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Evitar confusiones y potenciales conflictos legales"
+    },
+    {
+      "id": 6,
+      "fecha": "2024-01-11",
+      "titulo": "Regularización de cobros mensuales a edificios vecinos",
+      "descripcion": "Se asignaron tareas específicas para: 1) Cobrar a 9300 todo el acumulado del remarcador, 2) Cobrar a Exteriores lo de la caseta, 3) Establecer sistema mensual de cobro. Se proporcionaron contactos de administradores de ambos edificios.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Sistema de recuperación de costos implementado formalmente"
+    },
+    {
+      "id": 7,
+      "fecha": "2024-01-18",
+      "titulo": "Coordinación de contratación de auxiliar de aseo",
+      "descripcion": "Organización de proceso de entrevistas para nuevo personal. Se delegó la entrevista inicial al mayordomo con la administración para asegurar evaluación técnica adecuada.",
+      "tipo": "contratacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Proceso profesional de selección de personal"
+    },
+    {
+      "id": 8,
+      "fecha": "2024-01-31",
+      "titulo": "Supervisión de reparación de bajada de aguas lluvias",
+      "descripcion": "Seguimiento riguroso de reparación con pruebas de agua. Se estableció que no se daría por aceptado el trabajo hasta probarlo con lluvias reales, dado el historial de problemas recurrentes en piso 19.",
+      "tipo": "postventa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Control de calidad estricto en reparaciones"
+    },
+    {
+      "id": 9,
+      "fecha": "2024-02-05",
+      "titulo": "Gestión de compra de focos dañados por camión",
+      "descripcion": "Un camión rompió focos al entrar. Se gestionó: 1) Identificación del modelo, 2) Búsqueda en proveedores (sin stock), 3) Búsqueda de alternativas, 4) Presidente ofreció pagar uno de los focos personalmente.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Solución inmediata con aporte personal del presidente"
+    },
+    {
+      "id": 10,
+      "fecha": "2024-02-05",
+      "titulo": "Investigación de personal haciendo trabajos privados en horario laboral",
+      "descripcion": "Se detectó que auxiliares de aseo estaban limpiando departamentos durante horario de trabajo. Se investigó revisando cámaras de seguridad, se verificó duración (12:30-12:35), se confirmó que no hubo pago. Se estableció claramente que esta práctica está prohibida por reglamento interno.",
+      "tipo": "supervision",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Control estricto de cumplimiento de funciones del personal"
+    },
+    {
+      "id": 11,
+      "fecha": "2024-03-07",
+      "titulo": "Escalamiento de filtración a postventa",
+      "descripcion": "Se solicitó video de filtración durante lluvias del 22 de febrero. Se coordinó que se enviara formalmente a postventa con copia al comité para seguimiento oficial.",
+      "tipo": "postventa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Documentación formal de defectos de construcción"
+    },
+    {
+      "id": 12,
+      "fecha": "2024-03-13",
+      "titulo": "Compra de carro de limpieza profesional",
+      "descripcion": "Adquisición de carro de 180 litros con 4 ruedas giratorias y plásticos grises, reemplazando el dañado. Especificaciones técnicas precisas para asegurar calidad.",
+      "tipo": "mejora",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Equipamiento profesional para mantención del edificio"
+    },
+    {
+      "id": 13,
+      "fecha": "2024-03-15",
+      "titulo": "Coordinación de entrevistas para personal",
+      "descripcion": "Gestión de proceso de selección de nuevo personal con múltiples candidatos.",
+      "tipo": "contratacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Proceso formal de contratación"
+    },
+    {
+      "id": 14,
+      "fecha": "2024-04-02",
+      "titulo": "Escalamiento urgente de filtraciones departamento 181",
+      "descripcion": "Ante fotos de filtraciones graves en depto 181, se coordinó escalamiento prioritario a postventa con copia al propietario afectado para que tenga visibilidad del proceso.",
+      "tipo": "postventa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Atención prioritaria a problemas graves de construcción"
+    },
+    {
+      "id": 15,
+      "fecha": "2024-04-08",
+      "titulo": "Control de uso indebido de estacionamientos de visita",
+      "descripcion": "Gestión de problema con scooter mal estacionado y refuerzo de normativas. Se registró además incidente grave: residente del 171 (mismo que amenazó con espada) lanzó celulares desde ventana, uno cayendo en parabrisas de visita.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Documentación de comportamiento peligroso para acciones legales"
+    },
+    {
+      "id": 16,
+      "fecha": "2024-04-08",
+      "titulo": "Firma de acta de reparación de postventa",
+      "descripcion": "Recepción formal de trabajo de reparación de cielo del hall. Se estableció protocolo: primero revisa René, luego firma Joaquín.",
+      "tipo": "postventa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Control formal de recepción de trabajos de postventa"
+    },
+    {
+      "id": 17,
+      "fecha": "2024-04-09",
+      "titulo": "Recepción y resguardo de motores importados desde China",
+      "descripcion": "Llegaron motores importados (posiblemente para ascensores). Se coordinó almacenamiento seguro bajo llave en bodega de materiales con acceso exclusivo del mayordomo. Se detectó daño en transporte que se documentó.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión de importación y control de activos valiosos"
+    },
+    {
+      "id": 18,
+      "fecha": "2024-04-18",
+      "titulo": "Limpieza profunda de patio de luz y reparación de cámaras",
+      "descripcion": "Coordinación de múltiples tareas: 1) Limpieza profunda del patio de luz (área visible desde departamentos), 2) Reparación de cámaras 3 y 4 quemadas, 3) Revisión de portón que no responde a distancia. Presidente personalmente ordenó y trapeó área.",
+      "tipo": "mantencion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Trabajo personal del presidente en mantención física del edificio"
+    },
+    {
+      "id": 19,
+      "fecha": "2024-05-20",
+      "titulo": "Reunión con prevencionista por falta de extintores",
+      "descripcion": "Visita del prevencionista para evaluar la falta de extintores reglamentarios en el edificio. Se generó informe con cantidad exacta requerida para la comunidad.",
+      "tipo": "seguridad",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Cumplimiento de normativas de seguridad"
+    },
+    {
+      "id": 20,
+      "fecha": "2024-05-30",
+      "titulo": "Inducción completa a nuevo mayordomo con protocolos",
+      "descripcion": "Ronda personal con nuevo mayordomo (Juan) estableciendo 15+ protocolos críticos: control de acceso estricto, limpieza de áreas comunes, rondas de supervisión, mudanzas limitadas, mantención de jardines, control de estacionamientos, avisos a residentes del piso 18, entre otros. Lista completa de procedimientos operacionales.",
+      "tipo": "coordinacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Profesionalización de la gestión del edificio"
+    },
+    {
+      "id": 21,
+      "fecha": "2024-06-24",
+      "titulo": "Gestión de reparación del computador de TAGs",
+      "descripcion": "Coordinación con Fernando Osorio para reparar sistema de control de acceso por TAGs. Se identificó que el programa es muy antiguo y requiere nuevo controlador.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mantención de sistemas de seguridad"
+    },
+    {
+      "id": 22,
+      "fecha": "2024-06-24",
+      "titulo": "Control riguroso de estacionamientos de visita",
+      "descripcion": "Investigación de vehículo estacionado múltiples días en espacio de visita. Se identificó propietario, se le informó la normativa de 6 horas máximo, se instalaron avisos en ascensores. Sistema de control implementado.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Implementación de normativas con seguimiento"
+    },
+    {
+      "id": 23,
+      "fecha": "2024-06-25",
+      "titulo": "Revisión de extractores de ducto de basura",
+      "descripcion": "Inspección y documentación del estado de los extractores del sistema de basura del edificio.",
+      "tipo": "mantencion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mantención preventiva de sistemas críticos"
+    },
+    {
+      "id": 24,
+      "fecha": "2024-06-30",
+      "titulo": "Decisión de no renovación de mayordomo",
+      "descripcion": "Tras evaluación de desempeño, se decidió no renovar contrato del mayordomo Juan Manzor por no cumplir estándares requeridos. Proceso formal con carta certificada.",
+      "tipo": "contratacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Exigencia de estándares de calidad en personal"
+    },
+    {
+      "id": 25,
+      "fecha": "2024-07-18",
+      "titulo": "Investigación de daño a infraestructura mediante cámaras",
+      "descripcion": "Análisis forense de grabaciones de cámaras para identificar responsable de daño. Se descubrió que propietario del depto 41 (ex miembro del comité) vio el daño y no lo reportó. Se documentó secuencia completa de eventos.",
+      "tipo": "seguridad",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Uso de tecnología para identificar responsables y evidenciar omisiones"
+    },
+    {
+      "id": 26,
+      "fecha": "2024-07-19",
+      "titulo": "Redacción y envío de comunicado oficial sobre mejoras",
+      "descripcion": "Elaboración de comunicado formal a todos los copropietarios informando sobre cambios en personal y mejoras sustanciales en limpieza de estacionamientos, pasillos, escaleras de emergencia, accesos. Enviado por sistema KASTOR.",
+      "tipo": "comunicacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Comunicación transparente de gestión a la comunidad"
+    },
+    {
+      "id": 27,
+      "fecha": "2024-07-22",
+      "titulo": "Envío de carta legal aprobada por abogado",
+      "descripcion": "Gestión de envío de carta formal al departamento 41, documento previamente aprobado por abogado. Proceso legal profesional.",
+      "tipo": "legal",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Acciones legales formales con respaldo profesional"
+    },
+    {
+      "id": 28,
+      "fecha": "2024-07-29",
+      "titulo": "Lista maestra de 20+ gestiones pendientes y presupuestos",
+      "descripcion": "Documento detallado con fechas de seguimiento para: buzzer en puerta, rejas perimetrales con cerco eléctrico, cámaras adicionales, bombas de piscina, extractor de basura, moto mal estacionada, red húmeda, extintores, brazos hidráulicos de puertas, lavado de estanque, ascensores, alarmas de incendio, contratación de personal, jardinería mensual, mantención de bombas. Cada ítem con responsable y fecha límite.",
+      "tipo": "coordinacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión profesional con seguimiento de múltiples proyectos simultáneos"
+    },
+    {
+      "id": 29,
+      "fecha": "2024-07-29",
+      "titulo": "Investigación y cartas a múltiples departamentos problemáticos",
+      "descripcion": "Gestión de casos: Depto 73 y 122 (situación delicada - cartas a dueño y arrendatario), Depto 141 (perro orina en áreas comunes - evidencia de cámara 08:05 AM), Depto 71 (lavó auto en estacionamiento visita - infracción grave).",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Aplicación rigurosa del reglamento con evidencia"
+    },
+    {
+      "id": 30,
+      "fecha": "2024-07-31",
+      "titulo": "Gestión de pagos de gastos comunes",
+      "descripcion": "Seguimiento personalizado de morosidad: Depto 74 (adeuda 32.076 CLP), Depto 101 (verificación de pagos). Coordinación directa con administración para actualización.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Control financiero detallado de la comunidad"
+    },
+    {
+      "id": 31,
+      "fecha": "2024-08-02",
+      "titulo": "Documentación visual de señalética instalada",
+      "descripcion": "Registro completo con 25+ fotos y videos de toda la señalética instalada en el edificio. Documentación profesional de mejoras de seguridad.",
+      "tipo": "mejora",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Evidencia visual de mejoras implementadas"
+    },
+    {
+      "id": 32,
+      "fecha": "2024-08-07",
+      "titulo": "MEGA LISTA: 30+ proyectos simultáneos con fechas límite",
+      "descripcion": "Documento exhaustivo con: Puerta peatonal bisagra resorte (Marco Vivanco), Actas protocolizar, 2 presupuestos cámaras consulta escrita (Viernes 09), Portones post-viento (Martes 06), Grupo electrógeno (enchufes, 20min/semana, fuga petróleo), Tubo fluorescente -2 (Miércoles 07), CLIMA Y NOVA mantención $400.000 IVA + terminar SOCLIMA + extractor basura (Miércoles 07), Alarmas incendio Leonardo 4UF descontar, Chicharra buzzer puerta (Miércoles 07), Presupuesto alarmas completo (Viernes 09), JFire aprobado (Martes 06), Cielo gimnasio 50% (Lunes 12), Brazo hidráulico 3 puertas (Martes 06), Lavado estanque Hidromaxo, Citófono ascensores Schindler, Jardinería $350.000 (Jueves 01), Luces bodegas generador, Paisajista habilitación, Fundación hormigón + soldar rejas, Focos estacionamientos, Botón pánico conserjería, Baño oficinas, Carteles ductos, Ingeniero eléctrico, Turno domingo, Rejas perimetrales + cerco eléctrico.",
+      "tipo": "coordinacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión de escala empresarial: 30+ proyectos con fechas, presupuestos y responsables"
+    },
+    {
+      "id": 33,
+      "fecha": "2024-08-07",
+      "titulo": "Propuestas modificación Reglamento de Copropiedad",
+      "descripcion": "Elaboración con abogado José Manuel: 1) Reglamento interno con multas, 2) Tiempo límite estacionamientos visitas, 3) Prohibición trabajadores en deptos particulares, 4) Ruidos molestos, 5) Uso de pesas, 6) Multas fecas mascotas.",
+      "tipo": "legal",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mejora estructural del marco legal"
+    },
+    {
+      "id": 34,
+      "fecha": "2024-08-07",
+      "titulo": "Autorización pagos múltiples en sistema bancario",
+      "descripcion": "Aprobación inmediata: Sueldo Fernanda, honorarios propios, petróleo Guillermo Quiroz. Gestión financiera en tiempo real.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Control financiero eficiente"
+    },
+    {
+      "id": 35,
+      "fecha": "2024-08-07",
+      "titulo": "Investigación técnica alarmas de incendio",
+      "descripcion": "Análisis del problema: no es la carcasa sino el sensor interior el pintado. Coordinación Rodrigo Vega (constructora) y Leonardo (técnico) para solución correcta.",
+      "tipo": "seguridad",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Diagnóstico técnico preciso"
+    },
+    {
+      "id": 36,
+      "fecha": "2024-08-07",
+      "titulo": "Gestión emergencia falta de combustible",
+      "descripcion": "Obtención número emergencias 800123496. Coordinación con equipo para contacto fuera de horario.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Respuesta rápida ante emergencias"
+    },
+    {
+      "id": 37,
+      "fecha": "2024-08-08",
+      "titulo": "Compra personal de petróleo $31.000",
+      "descripcion": "Adquisición directa de petróleo para generador. Inversión personal para continuidad operativa del edificio.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Compromiso personal con la comunidad"
+    },
+    {
+      "id": 38,
+      "fecha": "2024-08-09",
+      "titulo": "Gestión incumplimiento laboral conserje",
+      "descripcion": "Manejo de Fernando: llegadas tardías, falta comunicación, actitud inapropiada. Documentación de excusas. Coordinación llamada de atención formal.",
+      "tipo": "contratacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Exigencia de estándares laborales"
+    },
+    {
+      "id": 39,
+      "fecha": "2024-08-10",
+      "titulo": "Investigación mascota problemática con video",
+      "descripcion": "Grabación de video del gato entrando al departamento del dueño infractor. Evidencia audiovisual para acciones legales.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Recopilación sistemática de evidencia"
+    },
+    {
+      "id": 40,
+      "fecha": "2024-08-10",
+      "titulo": "Multas pelea en ascensor (5 UF c/u)",
+      "descripcion": "Cursamiento multas departamentos 122 y 73 por altercado violento. Cartas formales con notificación de cobro.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Aplicación estricta del reglamento"
+    },
+    {
+      "id": 41,
+      "fecha": "2024-08-10",
+      "titulo": "Multa mascota orinando áreas comunes",
+      "descripcion": "Sanción departamento 141 por perro orinando en pasillos. Evidencia documentada.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Enforcement normas convivencia"
+    },
+    {
+      "id": 42,
+      "fecha": "2024-08-11",
+      "titulo": "Multas acumulativas depto 23 (sábado y domingo)",
+      "descripcion": "2 multas de 5 UF cada una por infracciones consecutivas. Documentación fotográfica de ambos incidentes.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Sanciones progresivas por reincidencia"
+    },
+    {
+      "id": 43,
+      "fecha": "2024-08-12",
+      "titulo": "Tercera multa consecutiva depto 23 (lunes)",
+      "descripcion": "Aplicación 3ra multa 5 UF por tercer día consecutivo. Escalamiento por ser reiterativo.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Aplicación rigurosa con escalamiento"
+    },
+    {
+      "id": 44,
+      "fecha": "2024-08-12",
+      "titulo": "Pago brazo hidráulico puerta exterior $64.990",
+      "descripcion": "Autorización y reembolso a Fernanda por brazo hidráulico puerta entrada exterior.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mejora infraestructura de acceso"
+    },
+    {
+      "id": 45,
+      "fecha": "2024-08-14",
+      "titulo": "Pago mensual DICOP $2.628.093",
+      "descripcion": "Coordinación y pago de gastos comunes al día. Gestión financiera de alto monto.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión financiera responsable"
+    },
+    {
+      "id": 46,
+      "fecha": "2024-08-14",
+      "titulo": "Carta término contrato SOCLIMA",
+      "descripcion": "Gestión carta formal para terminar contrato. Documento para firma de Andrés.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión contractual profesional"
+    },
+    {
+      "id": 47,
+      "fecha": "2024-08-16",
+      "titulo": "Protocolo seguridad gimnasio post-daño",
+      "descripcion": "Nueva norma: conserjes NO pueden entregar llaves a personal trainers. Residente debe bajar a conserjería personalmente.",
+      "tipo": "seguridad",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Implementación protocolos de seguridad"
+    },
+    {
+      "id": 48,
+      "fecha": "2024-08-19",
+      "titulo": "Pago contratista Francisco Salcedo $85.000",
+      "descripcion": "Autorización pago por trabajos realizados. Gestión reembolso inmediato.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Cumplimiento compromisos financieros"
+    },
+    {
+      "id": 49,
+      "fecha": "2024-08-20",
+      "titulo": "Finalización cielo gimnasio $80.000 saldo",
+      "descripcion": "Pago saldo a Angel Alaniz por trabajos completados en cielo del gimnasio.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Reparación infraestructura completada"
+    },
+    {
+      "id": 50,
+      "fecha": "2024-08-20",
+      "titulo": "Anticipo nuevo proyecto $180.000",
+      "descripcion": "Aprobación nuevo trabajo Angel Alaniz con 50% anticipo. Planificación financiera.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión de proyectos con anticipos"
+    },
+    {
+      "id": 51,
+      "fecha": "2024-08-21",
+      "titulo": "Jardinería mensual + árbol caído $450.000 total",
+      "descripcion": "Pago mensual $350.000 + $100.000 extra por corte árbol caído. Total $450.000.",
+      "tipo": "mantencion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mantención áreas verdes con emergencias"
+    },
+    {
+      "id": 52,
+      "fecha": "2024-08-23",
+      "titulo": "Resolución motocicleta auxiliar mal estacionada",
+      "descripcion": "Identificación moto de auxiliar Marcos en lugar prohibido. Establecimiento norma equitativa incluyendo personal. Búsqueda alternativa bajo techo.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Aplicación equitativa de normas"
+    },
+    {
+      "id": 53,
+      "fecha": "2024-08-26",
+      "titulo": "Carta formal alteración fachada (cartón)",
+      "descripcion": "Carta oficial por instalación cartón en fachada. Falta gravísima, exigencia retiro inmediato, solución debe ser aprobada.",
+      "tipo": "legal",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Protección estética edificio"
+    },
+    {
+      "id": 54,
+      "fecha": "2024-08-26",
+      "titulo": "Multas estacionamientos visitas deptos 65 y 40",
+      "descripcion": "Aplicación multas por uso indebido estacionamientos visitas. Documentación fotográfica.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Enforcement normas estacionamiento"
+    },
+    {
+      "id": 55,
+      "fecha": "2024-08-28",
+      "titulo": "Búsqueda actas extraviadas",
+      "descripcion": "Seguimiento paradero actas importantes. Coordinación Macarena y Gloria para localizar documentos de Andrés.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Control documental administración"
+    },
+    {
+      "id": 56,
+      "fecha": "2024-08-28",
+      "titulo": "Multa bicicleta estacionamiento 35",
+      "descripcion": "Sanción por bicicleta en estacionamiento vehicular. Infracción uso espacios comunes.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Aplicación consistente reglamento"
+    },
+    {
+      "id": 57,
+      "fecha": "2024-08-29",
+      "titulo": "Gestión proveedor focos Arketipo + compra 50 unidades",
+      "descripcion": "Contacto con proveedor original focos exteriores. Confirmación stock. Decisión comprar 50 unidades para inventario.",
+      "tipo": "mejora",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Planificación largo plazo suministros"
+    },
+    {
+      "id": 58,
+      "fecha": "2024-08-29",
+      "titulo": "Enforcement limpieza derrame aceite",
+      "descripcion": "Seguimiento camioneta derramó aceite. Aserrín desde lunes sin limpiar. Exigencia limpieza inmediata desmintiendo excusa.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Fiscalización rigurosa con verificación"
+    },
+    {
+      "id": 59,
+      "fecha": "2024-08-29",
+      "titulo": "Coordinación urgente PREVIRED 9 AM",
+      "descripcion": "Gestión pago cotizaciones previsionales con fecha límite. Alarma programada para cumplimiento.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Cumplimiento obligaciones legales laborales"
+    },
+    {
+      "id": 60,
+      "fecha": "2024-08-30",
+      "titulo": "Multas estacionamientos 35 y 50",
+      "descripcion": "Aplicación multas por mal uso. Política 'multa primero, cortesía después' para educar.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Estrategia pedagógica de sanciones"
+    },
+    {
+      "id": 61,
+      "fecha": "2024-08-30",
+      "titulo": "Bono trabajo extra Fernando",
+      "descripcion": "Autorización bono especial a pesar de gasto común emitido. Búsqueda registro correcto. Reconocimiento esfuerzo extra.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Motivación y reconocimiento personal"
+    },
+    {
+      "id": 62,
+      "fecha": "2024-09-01",
+      "titulo": "Seguimiento reparación portones (Alexander y Fernando)",
+      "descripcion": "Revisión portón reparado por Alexander que volvió a fallar. Portón inferior por Fernando Osorio. Coordinación nueva inspección.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Seguimiento calidad reparaciones"
+    },
+    {
+      "id": 63,
+      "fecha": "2024-09-01",
+      "titulo": "Pago total gastos comunes exteriores al día",
+      "descripcion": "Puesta al día todos gastos comunes exteriores adeudados más mes actual. Presión reunión eléctricos.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Saneamiento financiero completo"
+    },
+    {
+      "id": 64,
+      "fecha": "2024-09-02",
+      "titulo": "Verificación cursamiento multas bicicleta y cajas",
+      "descripcion": "Seguimiento con administración confirmar multas efectivamente cursadas. Control cumplimiento.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Control seguimiento sanciones"
+    },
+    {
+      "id": 65,
+      "fecha": "2024-09-06",
+      "titulo": "Autorización finiquito Eduardo + reembolso + notaría",
+      "descripcion": "Aprobación 4 pagos: letreros, finiquito Eduardo, reembolso Damaly estacionamiento, trámite notarial finiquito. Gestión laboral completa.",
+      "tipo": "contratacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión laboral con cumplimiento legal"
+    },
+    {
+      "id": 66,
+      "fecha": "2024-09-06",
+      "titulo": "Pago reparación motor Prodalam $342.661",
+      "descripcion": "Autorización y pago significativo por reparación de motor. Inversión importante infraestructura.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mantención equipamiento crítico"
+    },
+    {
+      "id": 67,
+      "fecha": "2024-09-09",
+      "titulo": "Enforcement cartel Verisure en área común",
+      "descripcion": "Identificación y solicitud de retiro de cartel Verisure instalado en pasillo (área común) del depto 62. Protección estética edificio.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mantenimiento integridad áreas comunes"
+    },
+    {
+      "id": 68,
+      "fecha": "2024-09-11",
+      "titulo": "Gestión de teléfonos faltantes (3 departamentos)",
+      "descripcion": "Identificación de deptos 61, 81 y 152a sin números de contacto válidos. Coordinación con Macarena para conseguirlos.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Completar base de datos de contactos"
+    },
+    {
+      "id": 69,
+      "fecha": "2024-09-11",
+      "titulo": "Presión por temas postventa pendientes",
+      "descripcion": "Exigencia a Fernanda para dedicar más tiempo a temas de constructora pendientes. Supervisión de rendimiento y prioridades.",
+      "tipo": "supervision",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Seguimiento de garantías y postventa"
+    },
+    {
+      "id": 70,
+      "fecha": "2024-09-12",
+      "titulo": "Autorización pagos: anticipos, aguinaldos y proveedores",
+      "descripcion": "Aprobación de múltiples pagos incluyendo anticipos de sueldos, aguinaldos y proveedores varios.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión financiera integral del personal"
+    },
+    {
+      "id": 71,
+      "fecha": "2024-09-12",
+      "titulo": "Abono 10 focos exteriores",
+      "descripcion": "Autorización y pago por abono de 10 focos exteriores para iluminación del edificio.",
+      "tipo": "mejora",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mejora de iluminación exterior"
+    },
+    {
+      "id": 72,
+      "fecha": "2024-09-14",
+      "titulo": "Multa por fogón abandonado en estacionamiento",
+      "descripcion": "Identificación de fogón dejado en estacionamiento 6 (mismo infractor del gato). Coordinación con Macarena para multa.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Aplicación estricta de normas"
+    },
+    {
+      "id": 73,
+      "fecha": "2024-09-14",
+      "titulo": "Segunda infracción conserje permitiendo motos ilegales",
+      "descripcion": "Juanito pillado por segunda vez permitiendo estacionamiento ilegal de motos. Primera vez le perdonó, segunda ya no.",
+      "tipo": "contratacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Exigencia cumplimiento normas a personal"
+    },
+    {
+      "id": 74,
+      "fecha": "2024-09-16",
+      "titulo": "Coordinación múltiple: fogón, motos, estacionamientos discapacitados",
+      "descripcion": "Verificación fogón removido, refuerzo norma motos ilegales con Juan y Fernando, establecimiento uso estacionamientos discapacitados solo en fiestas patrias/navidad/año nuevo.",
+      "tipo": "coordinacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Enforcement múltiple en un día"
+    },
+    {
+      "id": 75,
+      "fecha": "2024-09-16",
+      "titulo": "Listado multas impagas + carta legal a dueño",
+      "descripcion": "Fernanda envió listado de multas no pagadas por infractor problemático. Carta a dueño con copia a abogado José Manuel advirtiendo responsabilidad final del propietario.",
+      "tipo": "legal",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Escalamiento legal de deudas"
+    },
+    {
+      "id": 76,
+      "fecha": "2024-09-17",
+      "titulo": "Negociación factura Veracruz excesiva",
+      "descripcion": "Cuestionamiento de factura de $850.000 por servicios de generador (3 visitas). Se considera excesivo por trabajo real mínimo. Coordinación reunión para ajustar precios.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Defensa de intereses económicos de la comunidad"
+    },
+    {
+      "id": 77,
+      "fecha": "2024-09-17",
+      "titulo": "Brazo hidráulico instalación $60.000",
+      "descripcion": "Coordinación de proveedor para instalar brazo hidráulico. Presupuesto de $60.000.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Mantención infraestructura accesos"
+    },
+    {
+      "id": 78,
+      "fecha": "2024-09-25",
+      "titulo": "TRABAJANDO DESDE CHINA - 11 horas diferencia",
+      "descripcion": "A las 2:40 AM hora China (11 hrs diferencia), envío de comprobantes de GGCC y seguimiento de deudas. Compromiso extremo incluso viajando al extranjero.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Dedicación 24/7 sin importar ubicación geográfica"
+    },
+    {
+      "id": 79,
+      "fecha": "2024-10-01",
+      "titulo": "Pago stickers TAG + PREVIRED",
+      "descripcion": "Autorización pago stickers TAG para portones + recordatorio de cotizaciones previsionales PREVIRED.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Cumplimiento obligaciones legales"
+    },
+    {
+      "id": 80,
+      "fecha": "2024-10-08",
+      "titulo": "Finiquito Claudio Stuardo + limpieza ducto basura",
+      "descripcion": "Autorización finiquito de empleado + pago servicio innovación para limpieza profesional de ducto de basura.",
+      "tipo": "contratacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión laboral y mantención higiénica"
+    },
+    {
+      "id": 81,
+      "fecha": "2024-10-11",
+      "titulo": "CASO GRAVE: Residente usando áreas comunes para videos comerciales",
+      "descripcion": "Descubrimiento de residente usando: 1) Patio común (destino no modificable), 2) Moviendo sillones del lounge, 3) Mascotas en lounge (prohibido), 4) GRABACIÓN COMERCIAL SIN AUTORIZACIÓN (gravísimo - como grabar en lugar privado). Consulta con abogado.",
+      "tipo": "legal",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Protección legal de espacios comunes"
+    },
+    {
+      "id": 82,
+      "fecha": "2024-10-15",
+      "titulo": "Plan B legal si dueños no responden",
+      "descripcion": "Ante falta de respuesta de propietarios (Martín y Mariana), coordinación de reunión con abogado para Plan B: acción legal directa.",
+      "tipo": "legal",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Preparación de acciones legales"
+    },
+    {
+      "id": 83,
+      "fecha": "2024-10-16",
+      "titulo": "Consulta escrita a 16 departamentos pendientes",
+      "descripcion": "Envío de consulta escrita formal a departamentos 23, 24, 31, 33, 41, 42, 44, 53, 54, 61, 82, 124, 133, 152, 173, 174 que no habían respondido.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Seguimiento exhaustivo de procesos formales"
+    },
+    {
+      "id": 84,
+      "fecha": "2024-10-17",
+      "titulo": "Reemplazo ventanal piso 5 - $280.000",
+      "descripcion": "Autorización pago por termo panel nuevo + obra de mano + traslado. Presupuesto $280.000, plazo 5 días.",
+      "tipo": "reparacion",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Reparación infraestructura crítica"
+    },
+    {
+      "id": 85,
+      "fecha": "2024-10-18",
+      "titulo": "Carta formal urgente a propietarios depto 164",
+      "descripcion": "Redacción y envío de carta formal a Martín y Mariana Bravo advirtiendo medidas legales si no responden. Se enfatiza que dueño es responsable final de arrendatario problemático.",
+      "tipo": "legal",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Escalamiento formal de conflicto legal"
+    },
+    {
+      "id": 86,
+      "fecha": "2024-10-21",
+      "titulo": "Gasto generador en 3 cuotas por departamentos",
+      "descripcion": "Decisión de dividir gasto de generador + petróleo en 3 cuotas mensuales para no impactar fuerte a copropietarios.",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión financiera considerada con la comunidad"
+    },
+    {
+      "id": 87,
+      "fecha": "2024-10-21",
+      "titulo": "Obtención RUT comunidad (53.332.214-K)",
+      "descripcion": "Solicitud y obtención del RUT y razón social del edificio: Comunidad Portezuelo Oriente RUT 53.332.214-K.",
+      "tipo": "gestion_administrativa",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Información legal básica del edificio"
+    },
+    {
+      "id": 88,
+      "fecha": "2024-10-23",
+      "titulo": "COMPRA TABLET DESDE CHINA para conserjería",
+      "descripcion": "Adquisición de tablet por $72.60 USD directamente desde China para uso en conserjería. Gestión internacional de compras.",
+      "tipo": "mejora",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Modernización tecnológica con ahorro por compra directa"
+    },
+    {
+      "id": 89,
+      "fecha": "2024-10-24",
+      "titulo": "Multas estacionamientos 65 y 66 con documentación fotográfica",
+      "descripcion": "Aplicación multas por uso indebido sin autorización. Solicitud de fotos claras para respaldo ante reclamos.",
+      "tipo": "resolucion_conflictos",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Enforcement con evidencia documentada"
+    },
+    {
+      "id": 90,
+      "fecha": "2024-10-28",
+      "titulo": "Remesas: jardinero, piscina, cerco eléctrico, conserje domingo",
+      "descripcion": "Autorización múltiples pagos: Raúl Rivas (jardinero), Javier Huenuvil (mantención piscina), Héctor López (cerco eléctrico), Juan Ramos (conserje domingo).",
+      "tipo": "financiero",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Gestión integral de proveedores y personal"
+    },
+    {
+      "id": 91,
+      "fecha": "2024-10-29",
+      "titulo": "Seguimiento OTIS: botones ascensor + citófono",
+      "descripcion": "Presión a OTIS por reparación pendiente de botones de ascensor y citófono. Contrato de 2 meses sin completar trabajos prometidos.",
+      "tipo": "supervision",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Exigencia cumplimiento contratos"
+    },
+    {
+      "id": 92,
+      "fecha": "2024-10-29",
+      "titulo": "Compra muestras luminarias para edificio",
+      "descripcion": "Autorización transferencia para compra de muestras de luminarias. Evaluación de opciones para mejora de iluminación.",
+      "tipo": "mejora",
+      "chat_origen": "1P. Presidente y Trabajadores",
+      "impacto": "Proceso de selección profesional de proveedores"
+    }
+  ],
+  "estadisticas": {
+    "por_tipo": {
+      "reparacion": 3,
+      "mejora": 2,
+      "mantencion": 2,
+      "coordinacion": 3,
+      "supervision": 2,
+      "contratacion": 3,
+      "comunicacion": 2,
+      "gestion_administrativa": 3,
+      "seguridad": 2,
+      "resolucion_conflictos": 3,
+      "financiero": 2,
+      "legal": 1,
+      "postventa": 3
+    },
+    "por_año": {
+      "2023": 3,
+      "2024": 27
+    }
+  },
+  "nota_importante": "Este listado representa SOLO el análisis de 700 líneas de 21,417 totales (3.3% del total). El número real de gestiones es MUCHO mayor. Se estima un mínimo de 500-700 gestiones documentadas en todos los chats."
+}
