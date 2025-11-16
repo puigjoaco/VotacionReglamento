@@ -96,7 +96,7 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-100 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
       {/* Header */}
       <header className="bg-gradient-to-r from-slate-900 to-blue-900 text-white shadow-xl sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -161,12 +161,12 @@ export default function DashboardPage() {
 
         {/* Call to Action - Crear comentario */}
         {puedeComentarResponse?.puede_comentar && !miComentario && (
-          <Alert className="mb-8 bg-gradient-to-r from-emerald-50 to-green-50 border-emerald-200 shadow-lg">
-            <CheckCircle2 className="h-5 w-5 text-emerald-600" />
-            <AlertTitle className="text-emerald-900 font-semibold text-lg">
+          <Alert className="mb-8 bg-gradient-to-r from-emerald-900/50 to-green-900/50 border-emerald-500/30 shadow-lg backdrop-blur-sm">
+            <CheckCircle2 className="h-5 w-5 text-emerald-400" />
+            <AlertTitle className="text-emerald-300 font-semibold text-lg">
               ¡Puedes enviar tu comentario!
             </AlertTitle>
-            <AlertDescription className="text-emerald-700">
+            <AlertDescription className="text-emerald-200/90">
               <p className="mb-4">
                 Tienes hasta el 25 de diciembre de 2025 para compartir tus propuestas de modificación al
                 Reglamento Interno.
@@ -181,18 +181,18 @@ export default function DashboardPage() {
 
         {/* Mi comentario existente */}
         {miComentario && (
-          <Card className="mb-8 border-blue-200 bg-gradient-to-r from-blue-50 to-indigo-50 shadow-lg">
+          <Card className="mb-8 border-blue-500/30 bg-gradient-to-r from-blue-900/50 to-indigo-900/50 shadow-lg backdrop-blur-sm">
             <CardHeader>
               <div className="flex items-center justify-between">
-                <CardTitle className="text-lg flex items-center text-blue-900">
-                  <FileText className="mr-2 h-5 w-5 text-blue-600" />
+                <CardTitle className="text-lg flex items-center text-blue-200">
+                  <FileText className="mr-2 h-5 w-5 text-blue-400" />
                   Mi Comentario
                 </CardTitle>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() => router.push(`/comentario/${miComentario.id}/editar`)}
-                  className="border-blue-300 text-blue-700 hover:bg-blue-100"
+                  className="border-blue-400/50 text-blue-200 hover:bg-blue-800/50"
                 >
                   <Edit3 className="mr-2 h-4 w-4" />
                   Editar
@@ -210,51 +210,51 @@ export default function DashboardPage() {
         )}
 
         {/* Search */}
-        <Card className="mb-8 shadow-xl border-slate-200 bg-white/80 backdrop-blur-sm">
+        <Card className="mb-8 shadow-xl border-slate-600/30 bg-slate-800/80 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-lg flex items-center text-slate-800">
-              <Search className="mr-2 h-5 w-5 text-blue-600" />
+            <CardTitle className="text-lg flex items-center text-slate-100">
+              <Search className="mr-2 h-5 w-5 text-blue-400" />
               Buscar Comentarios
             </CardTitle>
-            <CardDescription className="text-slate-600">
+            <CardDescription className="text-slate-400">
               Filtra por número de departamento, apellido o contenido del comentario
             </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-400" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-500" />
               <Input
                 type="text"
                 placeholder="Escribe para buscar..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10 h-12 text-base border-slate-300 bg-white focus:border-blue-500 focus:ring-blue-500"
+                className="pl-10 h-12 text-base border-slate-600 bg-slate-700/50 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500"
               />
             </div>
           </CardContent>
         </Card>
 
         {/* Comments List */}
-        <Card className="shadow-xl border-slate-200 bg-white/80 backdrop-blur-sm">
+        <Card className="shadow-xl border-slate-600/30 bg-slate-800/80 backdrop-blur-sm">
           <CardHeader>
             <div className="flex items-center justify-between">
-              <CardTitle className="text-lg flex items-center text-slate-800">
-                <MessageSquare className="mr-2 h-5 w-5 text-blue-600" />
+              <CardTitle className="text-lg flex items-center text-slate-100">
+                <MessageSquare className="mr-2 h-5 w-5 text-blue-400" />
                 Todos los comentarios
               </CardTitle>
               <Badge className="text-sm bg-blue-600 text-white border-blue-700">
                 {filteredComentarios.length} {filteredComentarios.length === 1 ? 'comentario' : 'comentarios'}
               </Badge>
             </div>
-            <CardDescription className="text-slate-600">
+            <CardDescription className="text-slate-400">
               Comentarios de propietarios y residentes sobre el Reglamento Interno
             </CardDescription>
           </CardHeader>
           <CardContent>
             {filteredComentarios.length === 0 ? (
-              <div className="text-center py-12 bg-slate-50 rounded-lg border-2 border-dashed border-slate-300">
-                <MessageSquare className="h-12 w-12 text-slate-400 mx-auto mb-4" />
-                <p className="text-slate-600 font-medium">
+              <div className="text-center py-12 bg-slate-700/50 rounded-lg border-2 border-dashed border-slate-600">
+                <MessageSquare className="h-12 w-12 text-slate-500 mx-auto mb-4" />
+                <p className="text-slate-300 font-medium">
                   {searchTerm
                     ? 'No se encontraron comentarios que coincidan con tu búsqueda.'
                     : 'Aún no hay comentarios publicados.'}

@@ -39,20 +39,19 @@ export async function GET() {
 
     const tieneComentario = comentarios && comentarios.length > 0;
 
-    // Verificar si puede comentar
-    const { data: permisoData, error: permisoError } = await supabase.rpc(
-      'puede_comentar',
-      {
-        p_rut: rut,
-        p_departamento: departamento,
-        p_tipo: tipo,
-      }
-    );
+    // Verificar si puede comentar (simplificado - solo verificar fecha límite y si ya tiene comentario)
+    const fechaLimite = new Date('2025-12-25T23:59:59-03:00');
+    const ahora = new Date();
+    const dentroDelPlazo = ahora <= fechaLimite;
 
-    let puedeComentarInfo: PuedeComentarResponse | null = null;
-    if (!permisoError && permisoData) {
-      puedeComentarInfo = permisoData as PuedeComentarResponse;
-    }
+    const puedeComentarInfo: PuedeComentarResponse = {
+      puede_comentar: dentroDelPlazo && !tieneComentario,
+      razon: tieneComentario
+        ? 'Ya tienes un comentario registrado'
+        : !dentroDelPlazo
+          ? 'El plazo para comentar ha finalizado'
+          : 'Puedes crear tu comentario',
+    };
 
     return NextResponse.json({
       usuario: usuario as Usuario,
