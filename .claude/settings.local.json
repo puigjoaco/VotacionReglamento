@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" commit -m \"$(cat <<''EOF''\nfix: Correct badge colors in header (Propietario=blue, Residente=green)\n\nMatch the header badge colors with the comment card colors for consistency.\nPropietario should be blue, Residente should be green/emerald.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" commit -m \"$(cat <<''EOF''\nfix: Correct badge colors in header (Propietario=blue, Residente=green)\n\nMatch the header badge colors with the comment card colors for consistency.\nPropietario should be blue, Residente should be green/emerald.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "mcp__vercel__updateProject",
+      "mcp__vercel__editEnvVar",
+      "mcp__vercel__listProjectDomains",
+      "mcp__vercel__addProjectDomain",
+      "mcp__vercel__removeProjectDomain"
     ],
     "deny": [],
     "ask": []

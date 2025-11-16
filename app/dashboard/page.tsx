@@ -116,12 +116,12 @@ export default function DashboardPage() {
 
   if (status === 'loading' || loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50">
-        <Card className="w-80 shadow-xl">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
+        <Card className="w-80 shadow-xl border-slate-600/30 bg-slate-800/80 backdrop-blur-sm">
           <CardContent className="pt-6">
             <div className="text-center">
-              <Loader2 className="h-12 w-12 animate-spin text-blue-600 mx-auto mb-4" />
-              <p className="text-gray-600 font-medium">Cargando dashboard...</p>
+              <Loader2 className="h-12 w-12 animate-spin text-blue-400 mx-auto mb-4" />
+              <p className="text-slate-200 font-medium">Cargando dashboard...</p>
             </div>
           </CardContent>
         </Card>
