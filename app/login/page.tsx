@@ -68,6 +68,7 @@ export default function LoginPage() {
     setIsLoading(true);
 
     try {
+      console.log('[Login] Attempting sign in...', { departamento, tipo });
       const result = await signIn('credentials', {
         departamento,
         tipo,
@@ -75,14 +76,18 @@ export default function LoginPage() {
         redirect: false,
       });
 
+      console.log('[Login] Sign in result:', result);
+
       if (result?.error) {
+        console.error('[Login] Sign in error:', result.error);
         setError(result.error);
       } else if (result?.ok) {
+        console.log('[Login] Sign in successful, redirecting to /dashboard');
         router.push('/dashboard');
       }
     } catch (err) {
       setError('Error al iniciar sesión. Por favor intenta nuevamente.');
-      console.error(err);
+      console.error('[Login] Exception during sign in:', err);
     } finally {
       setIsLoading(false);
     }

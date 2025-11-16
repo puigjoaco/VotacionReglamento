@@ -62,7 +62,9 @@
       "mcp__vercel__listDeploymentFiles",
       "Bash(findstr:*)",
       "Bash(curl:*)",
-      "Bash(del nul)"
+      "Bash(del nul)",
+      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" add -A)",
+      "Bash(git -C \"D:\\Proyectos\\VotacionReglamento\" status --short)"
     ]
   },
   "enableAllProjectMcpServers": true,

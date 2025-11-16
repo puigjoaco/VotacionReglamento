@@ -23,6 +23,8 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true);
   const [puedeComentarResponse, setPuedeComentarResponse] = useState<any>(null);
 
+  console.log('[Dashboard] Component rendered, session status:', status, 'session:', session);
+
   useEffect(() => {
     if (status === 'loading') return;
     if (status === 'unauthenticated') {
@@ -57,18 +59,29 @@ export default function DashboardPage() {
     const fetchUserInfo = async () => {
       try {
         // Add cache-busting parameter to bypass CDN cache
-        const response = await fetch(`/api/usuarios/current?_t=${Date.now()}`, {
+        const url = `/api/usuarios/current?_t=${Date.now()}`;
+        console.log('[Dashboard] Fetching user info from:', url);
+
+        const response = await fetch(url, {
           cache: 'no-store',
           headers: {
             'Cache-Control': 'no-cache',
           },
         });
+
+        console.log('[Dashboard] Response status:', response.status, response.statusText);
+        console.log('[Dashboard] Response headers:', Object.fromEntries(response.headers.entries()));
+
         if (response.ok) {
           const data = await response.json();
+          console.log('[Dashboard] User info received:', data);
           setPuedeComentarResponse(data.puede_comentar);
+        } else {
+          const errorText = await response.text();
+          console.error('[Dashboard] Error response:', response.status, errorText);
         }
       } catch (error) {
-        console.error('Error al cargar info del usuario:', error);
+        console.error('[Dashboard] Error al cargar info del usuario:', error);
       }
     };
 
