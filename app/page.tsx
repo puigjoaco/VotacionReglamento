@@ -49,10 +49,10 @@ export default function Home() {
             <Link href="/login">
               <Button
                 size="lg"
-                className="text-lg px-10 py-6 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-2xl shadow-blue-500/40 transition-all duration-300 hover:scale-105"
+                className="text-lg px-12 py-7 bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-400 hover:to-green-400 shadow-2xl shadow-emerald-500/50 transition-all duration-300 hover:scale-110 font-bold text-white border-2 border-emerald-400/50"
               >
                 Ingresar al Sistema
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-6 w-6" />
               </Button>
             </Link>
             <a href="/reglamento.pdf" download>
