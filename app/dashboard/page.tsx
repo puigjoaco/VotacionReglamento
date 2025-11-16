@@ -1,14 +1,17 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSession } from 'next-auth/react';
+import { useSession, signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { CommentCard } from '@/components/CommentCard';
 import { DateCountdown } from '@/components/DateCountdown';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import type { ComentarioConUsuario } from '@/types/database';
-import { PlusCircle, Search } from 'lucide-react';
+import { PlusCircle, Search, Building2, LogOut, MessageSquare, CheckCircle2, Loader2 } from 'lucide-react';
 
 export default function DashboardPage() {
   const { data: session, status } = useSession();
@@ -79,35 +82,57 @@ export default function DashboardPage() {
 
   if (status === 'loading' || loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Cargando...</p>
-        </div>
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
+        <Card className="w-80">
+          <CardContent className="pt-6">
+            <div className="text-center">
+              <Loader2 className="h-12 w-12 animate-spin text-blue-600 mx-auto mb-4" />
+              <p className="text-gray-600 font-medium">Cargando dashboard...</p>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+      {/* Header */}
+      <header className="bg-white border-b shadow-sm sticky top-0 z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">
-                Sistema de Comentarios - Reglamento Interno
-              </h1>
-              {session?.user && (
-                <p className="text-sm text-gray-600 mt-1">
-                  {session.user.apellido_razon_social} • Depto {session.user.departamento} •{' '}
-                  {session.user.tipo === 'propietario' ? 'Propietario' : 'Residente'}
-                </p>
-              )}
+            <div className="flex items-center space-x-4">
+              <div className="bg-blue-600 p-2 rounded-lg">
+                <Building2 className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <h1 className="text-xl font-bold text-gray-900">
+                  Sistema de Comentarios
+                </h1>
+                {session?.user && (
+                  <div className="flex items-center gap-2 mt-1">
+                    <span className="text-sm text-gray-600">
+                      {session.user.apellido_razon_social}
+                    </span>
+                    <Badge variant="outline" className="text-xs">
+                      Depto {session.user.departamento}
+                    </Badge>
+                    <Badge
+                      variant={session.user.tipo === 'propietario' ? 'default' : 'secondary'}
+                      className="text-xs"
+                    >
+                      {session.user.tipo === 'propietario' ? 'Propietario' : 'Residente'}
+                    </Badge>
+                  </div>
+                )}
+              </div>
             </div>
             <Button
               variant="outline"
-              onClick={() => router.push('/api/auth/signout')}
+              size="sm"
+              onClick={() => signOut({ callbackUrl: '/login' })}
             >
+              <LogOut className="mr-2 h-4 w-4" />
               Cerrar Sesión
             </Button>
           </div>
@@ -115,70 +140,120 @@ export default function DashboardPage() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Countdown */}
         <div className="mb-8">
           <DateCountdown />
         </div>
 
+        {/* Call to Action */}
         {puedeComentarResponse?.puede_comentar && (
-          <div className="mb-8 bg-green-50 border border-green-200 rounded-lg p-6">
-            <h2 className="text-lg font-semibold text-green-900 mb-2">
+          <Alert className="mb-8 bg-green-50 border-green-200">
+            <CheckCircle2 className="h-5 w-5 text-green-600" />
+            <AlertTitle className="text-green-900 font-semibold">
               ¡Puedes enviar tu comentario!
-            </h2>
-            <p className="text-green-700 mb-4">
-              Tienes hasta el 25 de diciembre para compartir tus propuestas de modificación al
-              Reglamento Interno.
-            </p>
-            <Button onClick={() => router.push('/comentario/nuevo')}>
-              <PlusCircle className="mr-2 h-4 w-4" />
-              Crear mi comentario
-            </Button>
-          </div>
+            </AlertTitle>
+            <AlertDescription className="text-green-700">
+              <p className="mb-4">
+                Tienes hasta el 25 de diciembre de 2025 para compartir tus propuestas de modificación al
+                Reglamento Interno.
+              </p>
+              <Button onClick={() => router.push('/comentario/nuevo')} className="bg-green-600 hover:bg-green-700">
+                <PlusCircle className="mr-2 h-4 w-4" />
+                Crear mi comentario
+              </Button>
+            </AlertDescription>
+          </Alert>
         )}
 
-        <div className="mb-8">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
-            <Input
-              type="text"
-              placeholder="Buscar por departamento, apellido o contenido..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10"
-            />
-          </div>
-        </div>
-
-        <div className="mb-6">
-          <h2 className="text-xl font-semibold mb-4">
-            Todos los comentarios ({filteredComentarios.length})
-          </h2>
-        </div>
-
-        {filteredComentarios.length === 0 ? (
-          <div className="text-center py-12 bg-white rounded-lg border">
-            <p className="text-gray-500">
-              {searchTerm
-                ? 'No se encontraron comentarios que coincidan con tu búsqueda.'
-                : 'Aún no hay comentarios publicados. ¡Sé el primero en participar!'}
-            </p>
-          </div>
-        ) : (
-          <div className="grid gap-6">
-            {filteredComentarios.map((comentario) => (
-              <CommentCard
-                key={comentario.id}
-                comentario={comentario}
-                isOwn={comentario.rut_usuario === session?.user?.rut}
-                onEdit={
-                  comentario.rut_usuario === session?.user?.rut
-                    ? () => router.push(`/comentario/${comentario.id}/editar`)
-                    : undefined
-                }
+        {/* Search */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center">
+              <Search className="mr-2 h-5 w-5" />
+              Buscar Comentarios
+            </CardTitle>
+            <CardDescription>
+              Filtra por número de departamento, apellido o contenido del comentario
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+              <Input
+                type="text"
+                placeholder="Escribe para buscar..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="pl-10"
               />
-            ))}
-          </div>
-        )}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Comments List */}
+        <Card>
+          <CardHeader>
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-lg flex items-center">
+                <MessageSquare className="mr-2 h-5 w-5" />
+                Todos los comentarios
+              </CardTitle>
+              <Badge variant="secondary" className="text-sm">
+                {filteredComentarios.length} {filteredComentarios.length === 1 ? 'comentario' : 'comentarios'}
+              </Badge>
+            </div>
+            <CardDescription>
+              Comentarios de propietarios y residentes sobre el Reglamento Interno
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            {filteredComentarios.length === 0 ? (
+              <div className="text-center py-12 bg-gray-50 rounded-lg border-2 border-dashed">
+                <MessageSquare className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                <p className="text-gray-500 font-medium">
+                  {searchTerm
+                    ? 'No se encontraron comentarios que coincidan con tu búsqueda.'
+                    : 'Aún no hay comentarios publicados.'}
+                </p>
+                {!searchTerm && puedeComentarResponse?.puede_comentar && (
+                  <Button
+                    variant="outline"
+                    className="mt-4"
+                    onClick={() => router.push('/comentario/nuevo')}
+                  >
+                    <PlusCircle className="mr-2 h-4 w-4" />
+                    ¡Sé el primero en participar!
+                  </Button>
+                )}
+              </div>
+            ) : (
+              <div className="grid gap-6">
+                {filteredComentarios.map((comentario) => (
+                  <CommentCard
+                    key={comentario.id}
+                    comentario={comentario}
+                    isOwn={comentario.rut_usuario === session?.user?.rut}
+                    onEdit={
+                      comentario.rut_usuario === session?.user?.rut
+                        ? () => router.push(`/comentario/${comentario.id}/editar`)
+                        : undefined
+                    }
+                  />
+                ))}
+              </div>
+            )}
+          </CardContent>
+        </Card>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <p className="text-center text-sm text-gray-500">
+            Sistema de Comentarios para la Revisión del Reglamento Interno
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

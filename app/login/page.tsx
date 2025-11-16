@@ -1,33 +1,50 @@
 'use client';
 
-import { useState, FormEvent, useEffect } from 'react';
+import { useState, FormEvent } from 'react';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { RutInput } from '@/components/RutInput';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import { Alert, AlertDescription } from '@/components/ui/alert';
+import { Badge } from '@/components/ui/badge';
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { Building2, Calendar, AlertCircle, Loader2 } from 'lucide-react';
+
+// Generar lista de departamentos: Pisos 2-18, 4 departamentos por piso
+const generarDepartamentos = () => {
+  const departamentos: { piso: number; deptos: string[] }[] = [];
+
+  for (let piso = 2; piso <= 18; piso++) {
+    const deptos: string[] = [];
+    for (let unidad = 1; unidad <= 4; unidad++) {
+      deptos.push(`${piso}${unidad}`);
+    }
+    departamentos.push({ piso, deptos });
+  }
+
+  return departamentos;
+};
+
+const DEPARTAMENTOS = generarDepartamentos();
 
 export default function LoginPage() {
   const router = useRouter();
   const [departamento, setDepartamento] = useState('');
-  const [tipo, setTipo] = useState<'propietario' | 'residente' | ''>('');
+  const [tipo, setTipo] = useState('');
   const [rut, setRut] = useState('');
   const [isRutValid, setIsRutValid] = useState(false);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [departamentos, setDepartamentos] = useState<string[]>([]);
-
-  useEffect(() => {
-    // Obtener lista de departamentos únicos
-    const fetchDepartamentos = async () => {
-      try {
-        const response = await fetch('/api/departamentos');
-        const data = await response.json();
-        setDepartamentos(data);
-      } catch (err) {
-        console.error('Error al cargar departamentos:', err);
-      }
-    };
-    fetchDepartamentos();
-  }, []);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -72,107 +89,130 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div>
-          <h1 className="text-center text-3xl font-bold text-gray-900">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+      <div className="w-full max-w-md space-y-6">
+        {/* Header */}
+        <div className="text-center space-y-2">
+          <div className="flex justify-center">
+            <div className="bg-blue-600 p-3 rounded-full">
+              <Building2 className="h-8 w-8 text-white" />
+            </div>
+          </div>
+          <h1 className="text-3xl font-bold text-gray-900">
             Sistema de Comentarios
           </h1>
-          <h2 className="mt-2 text-center text-xl text-gray-600">
-            Reglamento Interno
-          </h2>
-          <p className="mt-4 text-center text-sm text-gray-500">
-            Selecciona tu departamento y tipo, e ingresa tu RUT
+          <p className="text-gray-600">
+            Revisión del Reglamento Interno
           </p>
         </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <p className="text-sm text-blue-800">
-            <strong>Fecha límite:</strong> 25 de diciembre de 2025
-          </p>
+        {/* Deadline Badge */}
+        <div className="flex justify-center">
+          <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-amber-200 px-4 py-2">
+            <Calendar className="h-4 w-4 mr-2" />
+            Fecha límite: 25 de diciembre de 2025
+          </Badge>
         </div>
 
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          <div className="space-y-4">
-            <div>
-              <label htmlFor="departamento" className="block text-sm font-medium text-gray-700">
-                Departamento
-              </label>
-              <div className="mt-1">
-                <select
-                  id="departamento"
-                  value={departamento}
-                  onChange={(e) => setDepartamento(e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                >
-                  <option value="">Selecciona tu departamento</option>
-                  {departamentos.map((depto) => (
-                    <option key={depto} value={depto}>
-                      {depto}
-                    </option>
-                  ))}
-                </select>
+        {/* Login Card */}
+        <Card className="shadow-lg">
+          <CardHeader className="space-y-1">
+            <CardTitle className="text-xl">Iniciar Sesión</CardTitle>
+            <CardDescription>
+              Selecciona tu departamento y tipo, luego ingresa tu RUT como contraseña
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              {/* Departamento */}
+              <div className="space-y-2">
+                <Label htmlFor="departamento">Departamento</Label>
+                <Select value={departamento} onValueChange={setDepartamento}>
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Selecciona tu departamento" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {DEPARTAMENTOS.map(({ piso, deptos }) => (
+                      <SelectGroup key={piso}>
+                        <SelectLabel>Piso {piso}</SelectLabel>
+                        {deptos.map((depto) => (
+                          <SelectItem key={depto} value={depto}>
+                            Departamento {depto}
+                          </SelectItem>
+                        ))}
+                      </SelectGroup>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
-            </div>
 
-            <div>
-              <label htmlFor="tipo" className="block text-sm font-medium text-gray-700">
-                Tipo
-              </label>
-              <div className="mt-1">
-                <select
-                  id="tipo"
-                  value={tipo}
-                  onChange={(e) => setTipo(e.target.value as 'propietario' | 'residente')}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  required
-                >
-                  <option value="">Selecciona tu tipo</option>
-                  <option value="propietario">Propietario</option>
-                  <option value="residente">Residente</option>
-                </select>
+              {/* Tipo */}
+              <div className="space-y-2">
+                <Label htmlFor="tipo">Tipo de Usuario</Label>
+                <Select value={tipo} onValueChange={setTipo}>
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Selecciona tu tipo" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="propietario">
+                      <div className="flex items-center">
+                        <span className="font-medium">Propietario</span>
+                      </div>
+                    </SelectItem>
+                    <SelectItem value="residente">
+                      <div className="flex items-center">
+                        <span className="font-medium">Residente</span>
+                      </div>
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
-            </div>
 
-            <div>
-              <label htmlFor="rut" className="block text-sm font-medium text-gray-700">
-                RUT (Contraseña)
-              </label>
-              <div className="mt-1">
+              {/* RUT */}
+              <div className="space-y-2">
+                <Label htmlFor="rut">RUT (Contraseña)</Label>
                 <RutInput
                   value={rut}
                   onChange={setRut}
                   onValidChange={setIsRutValid}
                   placeholder="12.345.678-9"
                 />
+                <p className="text-xs text-muted-foreground">
+                  Tu RUT es tu contraseña de acceso
+                </p>
               </div>
-              <p className="mt-1 text-xs text-gray-500">
-                Ingresa tu RUT como contraseña
-              </p>
-            </div>
-          </div>
 
-          {error && (
-            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-              <p className="text-sm text-red-800">{error}</p>
-            </div>
-          )}
+              {/* Error Message */}
+              {error && (
+                <Alert variant="destructive">
+                  <AlertCircle className="h-4 w-4" />
+                  <AlertDescription>{error}</AlertDescription>
+                </Alert>
+              )}
 
-          <div>
-            <button
-              type="submit"
-              disabled={isLoading || !isRutValid || !departamento || !tipo}
-              className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isLoading ? 'Verificando...' : 'Ingresar'}
-            </button>
-          </div>
-        </form>
+              {/* Submit Button */}
+              <Button
+                type="submit"
+                className="w-full"
+                disabled={isLoading || !isRutValid || !departamento || !tipo}
+              >
+                {isLoading ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Verificando...
+                  </>
+                ) : (
+                  'Ingresar al Sistema'
+                )}
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
 
-        <div className="mt-6 text-center text-xs text-gray-500">
-          <p>Este sistema permite a propietarios y residentes del edificio</p>
-          <p>enviar comentarios para la revisión del Reglamento Interno.</p>
+        {/* Footer Info */}
+        <div className="text-center text-sm text-gray-500 space-y-1">
+          <p>Sistema exclusivo para propietarios y residentes</p>
+          <p>del edificio para enviar comentarios sobre el Reglamento Interno</p>
         </div>
       </div>
     </div>
