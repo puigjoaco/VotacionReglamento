@@ -79,10 +79,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Verificar si ya tiene comentario
+    // Verificar si ya tiene comentario (que no esté eliminado)
     const { data: existente, error: checkError } = await supabase
       .from('comentarios')
-      .select('id')
+      .select('id, contenido')
       .eq('departamento', departamento)
       .eq('tipo_usuario', tipo)
       .maybeSingle();
@@ -94,7 +94,8 @@ export async function POST(request: NextRequest) {
       checkError
     });
 
-    if (existente) {
+    // Si existe un comentario que NO esté eliminado, bloquear
+    if (existente && !existente.contenido.includes('[Comentario eliminado')) {
       return NextResponse.json(
         {
           error: 'Ya existe un comentario para este departamento y tipo de usuario',
@@ -102,6 +103,23 @@ export async function POST(request: NextRequest) {
         },
         { status: 409 }
       );
+    }
+
+    // Si el comentario existe pero está eliminado, actualizarlo en lugar de crear uno nuevo
+    if (existente && existente.contenido.includes('[Comentario eliminado')) {
+      const { data: comentarioActualizado, error: updateError } = await supabase
+        .from('comentarios')
+        .update({ contenido })
+        .eq('id', existente.id)
+        .select()
+        .single();
+
+      if (updateError) {
+        console.error('Error al reactivar comentario:', updateError);
+        return NextResponse.json({ error: 'Error al crear comentario' }, { status: 500 });
+      }
+
+      return NextResponse.json(comentarioActualizado, { status: 201 });
     }
 
     // Crear comentario
