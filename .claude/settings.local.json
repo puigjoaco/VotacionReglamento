@@ -61,7 +61,8 @@
       "WebFetch(domain:votacion-reglamento.vercel.app)",
       "mcp__vercel__listDeploymentFiles",
       "Bash(findstr:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(del nul)"
     ]
   },
   "enableAllProjectMcpServers": true,

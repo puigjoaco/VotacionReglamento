@@ -37,9 +37,11 @@ export default function DashboardPage() {
         if (response.ok) {
           const data = await response.json();
           // Eliminar duplicados por ID (la vista puede duplicar por JOINs incorrectos)
+          // Y filtrar comentarios eliminados
           const uniqueComentarios = data.filter(
             (comentario: ComentarioConUsuario, index: number, self: ComentarioConUsuario[]) =>
-              index === self.findIndex((c) => c.id === comentario.id)
+              index === self.findIndex((c) => c.id === comentario.id) &&
+              !comentario.contenido.includes('[Comentario eliminado')
           );
           setComentarios(uniqueComentarios);
           setFilteredComentarios(uniqueComentarios);
@@ -88,9 +90,10 @@ export default function DashboardPage() {
     }
   }, [searchTerm, comentarios]);
 
-  // Buscar TODOS los comentarios del departamento del usuario actual
+  // Buscar TODOS los comentarios del departamento del usuario actual (excluyendo eliminados)
   const misComentarios = comentarios.filter(
-    (c) => c.departamento === session?.user?.departamento
+    (c) => c.departamento === session?.user?.departamento &&
+           !c.contenido.includes('[Comentario eliminado')
   );
 
   // El comentario específico del tipo de usuario actual (para compatibilidad)
