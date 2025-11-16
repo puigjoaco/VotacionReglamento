@@ -13,6 +13,18 @@ export async function GET() {
       return NextResponse.json({ error: 'No autenticado' }, { status: 401 });
     }
 
+    // Verificar que la sesión tiene todos los campos necesarios
+    if (!session.user.rut || !session.user.departamento || !session.user.tipo) {
+      return NextResponse.json({
+        error: 'Sesión incompleta. Por favor cierra sesión y vuelve a ingresar.',
+        debug: {
+          hasRut: !!session.user.rut,
+          hasDepartamento: !!session.user.departamento,
+          hasTipo: !!session.user.tipo,
+        }
+      }, { status: 401 });
+    }
+
     const { rut, departamento, tipo } = session.user;
     const supabase = await createClient();
 
