@@ -4,6 +4,8 @@ import { authOptions } from '@/lib/auth';
 import { createClient } from '@/lib/supabase/server';
 import type { Usuario, PuedeComentarResponse } from '@/types/database';
 
+export const dynamic = 'force-dynamic';
+
 // GET /api/usuarios/me - Obtener info del usuario autenticado
 export async function GET() {
   try {
