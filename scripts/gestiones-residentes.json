@@ -51,10 +51,10 @@
     {
       "fecha": "2025-11-07",
       "titulo": "Cambio 20 remarcadores agua con Aguas Andinas",
-      "descripcion": "Gestión del cambio de 20 remarcadores de agua que tenían diferencias en lecturas causando sobrecobros masivos. Joaquín contactó directamente al Gerente General de Aguas Andinas. Los 20 remarcadores fueron cambiados el mismo día 7 de noviembre. Ahorro estimado en prorrateo: hasta $15.720.000 anuales para la comunidad.",
+      "descripcion": "Gestión del cambio de 20 remarcadores de agua que tenían diferencias en lecturas causando sobrecobros masivos. Joaquín contactó directamente al Gerente General de Aguas Andinas. Los 20 remarcadores fueron cambiados el mismo día 7 de noviembre. Potencial ahorro anual en prorrateo: hasta $15.720.000 (ahorro futuro, aún no materializado).",
       "tipo": "financiero",
       "impacto": "critico",
-      "ahorro_estimado": 15720000
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2025-06-12",
@@ -67,18 +67,18 @@
     {
       "fecha": "2025-08-08",
       "titulo": "Separación facturas servicios - Ahorro $3.6M anuales",
-      "descripcion": "Logro por votación en asamblea que caseta de seguridad y furgón tengan facturas independientes. Evitó cobro fraudulento de administración de $300.000 mensuales ($3.600.000 anuales). Mayor transparencia en pagos. Aprobado por mayoría absoluta incluso con apoyo de reemplazantes de Rodrigo Sánchez y Silvina Varela.",
+      "descripcion": "Logro por votación en asamblea que caseta de seguridad y furgón tengan facturas independientes. Evitó cobro fraudulento de administración de $300.000 mensuales ($3.600.000 anuales). Mayor transparencia en pagos. Aprobado por mayoría absoluta incluso con apoyo de reemplazantes de Rodrigo Sánchez y Silvina Varela. Ahorro anual continuo.",
       "tipo": "financiero",
       "impacto": "critico",
-      "ahorro_estimado": 3600000
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2025-08-19",
       "titulo": "Importación repuestos ascensor desde EEUU - Ahorro $950K",
-      "descripcion": "Adquisición de repuestos originales ascensor desde Estados Unidos por $45 USD cuando OTIS cotizaba $1.000.000 CLP. Compró 4 unidades por seguridad. Rene del depto 21 ofreció traerlos. Finalmente se encontró proveedor con envío directo a Chile por $443 USD incluyendo envío. Ahorro de $950.000 CLP.",
+      "descripcion": "Adquisición de repuestos originales ascensor desde Estados Unidos por $45 USD cuando OTIS cotizaba $1.000.000 CLP. Compró 4 unidades por seguridad. Rene del depto 21 ofreció traerlos. Finalmente se encontró proveedor con envío directo a Chile por $443 USD incluyendo envío. (Ya contabilizado en reparación integral ascensores $3.7M)",
       "tipo": "financiero",
       "impacto": "critico",
-      "ahorro_estimado": 950000
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2025-11-12",
@@ -98,11 +98,11 @@
     },
     {
       "fecha": "2025-06-12",
-      "titulo": "Cuantificación deuda otras torres $13M+",
-      "descripcion": "Cuantificación documentada que otras torres deben más de $13.000.000 CLP en consumo de electricidad y agua desde la construcción. Certificación de deuda como base para demandas legales y corte de suministro eléctrico con presencia de notario e ingeniero eléctrico.",
+      "titulo": "Cuantificación deuda otras torres $13M+ - EN DEMANDA",
+      "descripcion": "Cuantificación documentada que otras torres deben más de $13.000.000 CLP en consumo de electricidad y agua desde la construcción. Certificación de deuda como base para demandas legales y corte de suministro eléctrico con presencia de notario e ingeniero eléctrico. Demanda en curso, recuperación pendiente.",
       "tipo": "legal",
       "impacto": "critico",
-      "ahorro_estimado": 13000000
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2025-09-28",
@@ -139,18 +139,18 @@
     {
       "fecha": "2025-10-02",
       "titulo": "Elaboración Reglamento Interno - 35 versiones",
-      "descripcion": "Elaboración completa del Reglamento Interno del edificio en 35 versiones diferentes. Documento profesional que costaría $4-6 millones elaborado sin costo. Subido a biblioteca Kastor. Preparado para modificaciones en asamblea con todos los propietarios. Enviado a cada departamento con explicación.",
+      "descripcion": "Elaboración completa del Reglamento Interno del edificio en 35 versiones diferentes. Documento profesional que costaría $4-6 millones elaborado sin costo. Subido a biblioteca Kastor. Preparado para modificaciones en asamblea con todos los propietarios. Enviado a cada departamento con explicación. Valor del trabajo profesional donado a la comunidad.",
       "tipo": "legal",
       "impacto": "critico",
-      "ahorro_estimado": 5000000
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2025-08-25",
-      "titulo": "Negociación contrato publicidad $28M anuales",
-      "descripcion": "Negociación directa de contrato de publicidad para fachada norte del edificio. Monto inicial $12M subió a $28M anuales por negociación de Joaquín. Incluye posibilidad de paneles solares, pintura edificio completo, cámaras seguridad, arreglo filtraciones. Contrato de 5 años. Reunión con empresa y equipo legal/tributario coordinada.",
+      "titulo": "Negociación contrato publicidad - EN PROCESO",
+      "descripcion": "Negociación directa de contrato de publicidad para fachada norte del edificio. Monto negociado: $32M mensuales. EN PROCESO DE APROBACIÓN - se realizará consulta escrita. Incluye posibilidad de paneles solares, pintura edificio completo, cámaras seguridad, arreglo filtraciones. Contrato de 5 años. Reunión con empresa y equipo legal/tributario coordinada.",
       "tipo": "financiero",
       "impacto": "critico",
-      "ahorro_estimado": 16000000
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2025-05-29",
@@ -179,18 +179,18 @@
     {
       "fecha": "2025-09-03",
       "titulo": "Instalación piezas ascensor - Ahorro $920K",
-      "descripcion": "Instalación de 2 piezas de ascensor compradas por $40.000 c/u cuando OTIS cotizaba $1.000.000. Instalación coordinada durante mantenimiento regular sin costo adicional. Ahorro total de $920.000 CLP. Valentina agradeció: 'Gracias por cuidar la plata de nuestros bolsillos'.",
+      "descripcion": "Instalación de 2 piezas de ascensor compradas por $40.000 c/u cuando OTIS cotizaba $1.000.000. Instalación coordinada durante mantenimiento regular sin costo adicional. Valentina agradeció: 'Gracias por cuidar la plata de nuestros bolsillos'. (Ya contabilizado en reparación integral ascensores $3.7M)",
       "tipo": "reparacion",
       "impacto": "critico",
-      "ahorro_estimado": 920000
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2025-06-05",
-      "titulo": "Recuperación deuda Office 6 - $8.9M",
-      "descripcion": "Documentación y gestión de cobro de deuda de Office 6 por $8.929.891 CLP. Oficina sin uso que no pagaba gastos comunes. Gestión legal para recuperar fondos adeudados a la comunidad.",
+      "titulo": "Documentación deuda Office 6 - $8.9M",
+      "descripcion": "Documentación y gestión de cobro de deuda de Office 6 por $8.929.891 CLP. Oficina sin uso que no pagaba gastos comunes. Gestión legal para recuperar fondos adeudados a la comunidad. En proceso de cobro.",
       "tipo": "financiero",
       "impacto": "critico",
-      "ahorro_estimado": 8929891
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2025-04-20",
@@ -237,10 +237,10 @@
     {
       "fecha": "2025-01-08",
       "titulo": "Importación directa China - Ahorro $1.6M por pieza",
-      "descripcion": "Importación de piezas de ascensor directamente desde China. Costo China: $400 USD. Costo OTIS Chile: $2.000.000 CLP (aprox $2000 USD). Ahorro de $1.600.000 CLP por pieza. Demostración de preocupación constante por el ahorro del dinero del edificio.",
+      "descripcion": "Importación de piezas de ascensor directamente desde China. Costo China: $400 USD. Costo OTIS Chile: $2.000.000 CLP (aprox $2000 USD). Ahorro de $1.600.000 CLP por pieza. Demostración de preocupación constante por el ahorro del dinero del edificio. (Ya contabilizado en reparación integral ascensores $3.7M)",
       "tipo": "financiero",
       "impacto": "critico",
-      "ahorro_estimado": 1600000
+      "ahorro_estimado": 0
     },
     {
       "fecha": "2024-12-01",
