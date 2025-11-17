@@ -38,7 +38,7 @@ interface Gestion {
   titulo: string;
   descripcion: string;
   tipo: string;
-  chat_origen: string;
+  fuente: string;
   impacto: string;
 }
 
@@ -90,7 +90,7 @@ export default function AuditoriaPage() {
   const gestiones = gestionesData.gestiones as Gestion[];
   const metadata = gestionesData.metadata as any;
   const estadisticas = gestionesData.estadisticas as any;
-  const resumenCategoria = gestionesData.resumen_por_categoria as Record<string, number>;
+  const resumenCategoria = gestionesData.resumen_por_tipo as Record<string, number>;
 
   // Filtrar gestiones
   const filteredGestiones = useMemo(() => {
@@ -434,7 +434,7 @@ export default function AuditoriaPage() {
                           </div>
                           <div className="flex items-center gap-4 pt-2">
                             <span className="text-xs text-slate-500">
-                              Origen: {gestion.chat_origen}
+                              Fuente: {gestion.fuente}
                             </span>
                           </div>
                         </div>
