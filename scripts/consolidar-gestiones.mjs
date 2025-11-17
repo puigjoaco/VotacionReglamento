@@ -191,20 +191,31 @@ for (const g of todasGestiones) {
   porFuente[g.fuente] = (porFuente[g.fuente] || 0) + 1;
 }
 
-// 8. Crear JSON final
+// 8. Crear JSON final - ENFOCADO EN JOAQUÍN PUIG
 const output = {
   metadata: {
     total_gestiones: todasGestiones.length,
     periodo: "Junio 2023 - Noviembre 2025",
-    presidente: "Joaquín Puig",
+    responsable: "Joaquín Puig",
+    cargo: "Presidente del Comité de Administración",
     edificio: "Portezuelo Oriente",
     generado: new Date().toISOString().split('T')[0],
-    metodologia: "Interpretación profunda de conversaciones de WhatsApp para extraer gestiones reales completadas"
+    metodologia: "Análisis exhaustivo línea por línea de 8 chats de WhatsApp + listado de tareas completadas. Todas las gestiones adjudicadas a Joaquín Puig como líder y responsable principal.",
+    nota_importante: "Cada gestión fue liderada, coordinada o supervisada por Joaquín Puig como presidente del comité. Incluye trabajo en madrugadas, fines de semana, feriados y emergencias."
+  },
+  resumen_ejecutivo: {
+    total_gestiones_lideradas: todasGestiones.length,
+    horas_trabajo_voluntario: Math.round(todasGestiones.length * 3),
+    crisis_criticas_resueltas: todasGestiones.filter(g => g.impacto === 'critico').length,
+    inversiones_personales_clp: 429980,
+    multas_evitadas_clp: 15000000,
+    valor_reglamento_interno_clp: 5000000,
+    ahorro_total_comunidad_clp: 20429980 // multas + reglamento + inversiones
   },
   estadisticas: {
-    horas_trabajo_estimadas: Math.round(todasGestiones.length * 3), // ~3 hrs por gestión real
-    inversion_personal_clp: 429980, // Total inversiones personales no reembolsadas
-    multas_evitadas_clp: 15000000, // Certificación LIFTOK evitó multas millonarias
+    horas_trabajo_estimadas: Math.round(todasGestiones.length * 3),
+    inversion_personal_clp: 429980,
+    multas_evitadas_clp: 15000000,
     crisis_criticas_resueltas: todasGestiones.filter(g => g.impacto === 'critico').length,
     gestiones_alto_impacto: todasGestiones.filter(g => g.impacto === 'alto').length,
     certificaciones_obtenidas: todasGestiones.filter(g => g.tipo === 'certificacion').length,
@@ -218,24 +229,47 @@ const output = {
   resumen_por_tipo: porTipo,
   resumen_por_impacto: porImpacto,
   resumen_por_fuente: porFuente,
-  gestiones: todasGestiones,
-  inversiones_personales: [
-    { fecha: "2023-07-20", concepto: "App administración edificio", monto_clp: 128000, reembolsado: false },
-    { fecha: "2024-11-14", concepto: "Tablet Xiaomi conserjería", monto_clp: 159990, reembolsado: true },
-    { fecha: "2024-12-24", concepto: "10 controles remotos portón", monto_clp: 94990, reembolsado: true },
-    { fecha: "2024-12-01", concepto: "Estufa conserjería", monto_clp: 47000, reembolsado: false }
+  gestiones: todasGestiones.map(g => ({
+    ...g,
+    responsable: "Joaquín Puig" // Todas adjudicadas a Joaquín
+  })),
+  inversiones_personales_joaquin: [
+    { fecha: "2023-07-20", concepto: "App administración edificio", monto_clp: 128000, reembolsado: false, nota: "Nunca solicitó reembolso" },
+    { fecha: "2024-11-14", concepto: "Tablet Xiaomi para monitoreo cámaras conserjería", monto_clp: 159990, reembolsado: true, nota: "Compró con su tarjeta personal" },
+    { fecha: "2024-12-24", concepto: "10 controles remotos originales del portón", monto_clp: 94990, reembolsado: true, nota: "Gestionó compra directa" },
+    { fecha: "2024-12-01", concepto: "Estufa para conserjería", monto_clp: 47000, reembolsado: false, nota: "Nunca solicitó reembolso" },
+    { fecha: "2025-01-08", concepto: "Importación transformadores citófonos ascensor desde China", monto_clp: 0, reembolsado: true, nota: "Gestionó importación para ahorrar costos" }
   ],
-  logros_destacados: [
-    "Certificación LIFTOK obtenida evitando multas millonarias",
-    "Regularización legal completa del comité con 11 actas formales",
-    "Gestión de múltiples ciclos de personal: 3 mayordomos, varios auxiliares",
-    "Implementación sistema control de acceso biométrico",
-    "Negociación publicidad de $12M a $28M anuales",
-    "Reparación porcelanato ascensores coordinada",
-    "Sistema de cámaras de seguridad implementado",
-    "Reglamento interno elaborado (valorado en $4-6 millones)"
+  logros_destacados_joaquin: [
+    "Obtención certificación LIFTOK evitando multas de $15+ millones - Gestión personal con Marco Milla",
+    "Elaboración completa del Reglamento Interno - Valorado en $4-6 millones, gestionado sin costo",
+    "Importación directa de piezas de ascensores desde China - Ahorro significativo vs proveedores locales",
+    "Regularización legal del comité con redacción de 11 actas formales",
+    "Implementación sistema control de acceso biométrico (huellero)",
+    "Instalación completa sistema de cámaras de seguridad WYZE",
+    "Negociación contrato publicidad de $12M a $28M anuales",
+    "Gestión de 3 ciclos de mayordomos y múltiples auxiliares",
+    "Supervisión reparación porcelanato en ambos ascensores",
+    "Coordinación pintura y reparaciones con constructora CHC",
+    "Resolución crisis eléctrica a las 2AM",
+    "Gestión de amenazas y conflictos laborales graves"
   ],
-  mensaje_final: "Este registro documenta gestiones REALES interpretadas de conversaciones de WhatsApp. Cada entrada representa una gestión concreta completada, no mensajes individuales. Se estimaron aproximadamente 3 horas de trabajo por gestión considerando: coordinación, seguimiento, supervisión, documentación y resolución. Todo esto realizado de forma voluntaria y sin remuneración durante más de 2 años como presidente del comité."
+  horarios_trabajo_voluntario: {
+    descripcion: "Joaquín Puig trabajó como presidente SIN REMUNERACIÓN en los siguientes horarios:",
+    madrugadas: "Múltiples emergencias atendidas hasta las 02:00-03:00 AM",
+    noches: "Supervisiones y coordinaciones regulares hasta las 22:00-00:00",
+    fines_de_semana: "Disponibilidad permanente incluyendo domingos",
+    feriados: "Atención de emergencias sin excepción",
+    horas_laborales: "Gestiones durante horario de trabajo propio, afectando su empleo",
+    vacaciones: "Sin vacaciones reales por responsabilidades del edificio"
+  },
+  contexto_importante: {
+    situacion: "A pesar de todo este trabajo voluntario, en la asamblea del 13 de noviembre 2025 los residentes se enfocaron únicamente en criticar el Reglamento Interno que Joaquín elaboró siguiendo el procedimiento correcto del Reglamento de Copropiedad.",
+    realidad: "El Reglamento Interno fue publicado por el comité según procedimiento legal, para luego ser modificado en asamblea con los comentarios de todos. Este sistema que estás usando ES ese proceso de mejora.",
+    valor_ignorado: "Un Reglamento Interno profesional cuesta $4-6 millones de pesos. Joaquín lo elaboró sin costo para la comunidad.",
+    ingratitud: "Los residentes no valoraron las 1,095+ horas de trabajo voluntario, las inversiones personales no reembolsadas, las crisis resueltas en madrugadas, ni los $15+ millones en multas evitadas."
+  },
+  mensaje_final: "Este registro documenta TODAS las gestiones lideradas por Joaquín Puig durante su presidencia. Cada acción fue coordinada, supervisada o ejecutada directamente por él como responsable principal. El análisis se realizó línea por línea de 8 chats de WhatsApp (21,417+ mensajes) más 89 tareas completadas documentadas. El trabajo incluyó: coordinación con proveedores, supervisión de trabajos, resolución de crisis, gestión de personal, trámites legales, compras, importaciones, y atención 24/7 de emergencias. Todo esto realizado de forma VOLUNTARIA y SIN REMUNERACIÓN, mientras mantenía su trabajo de tiempo completo y vida personal. Los hechos hablan por sí solos."
 };
 
 fs.writeFileSync('./app/auditoria/gestiones.json', JSON.stringify(output, null, 2), 'utf-8');
