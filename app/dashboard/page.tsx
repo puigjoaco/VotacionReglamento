@@ -12,7 +12,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import type { ComentarioConUsuario } from '@/types/database';
-import { PlusCircle, Search, Building2, LogOut, MessageSquare, CheckCircle2, Loader2, Download, FileText, Edit3 } from 'lucide-react';
+import { PlusCircle, Search, Building2, LogOut, MessageSquare, CheckCircle2, Loader2, Download, FileText, Edit3, ThumbsUp } from 'lucide-react';
 
 export default function DashboardPage() {
   const { data: session, status } = useSession();
@@ -22,6 +22,7 @@ export default function DashboardPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
   const [puedeComentarResponse, setPuedeComentarResponse] = useState<any>(null);
+  const [aprobando, setAprobando] = useState(false);
 
   console.log('[Dashboard] Component rendered, session status:', status, 'session:', session);
 
@@ -114,6 +115,45 @@ export default function DashboardPage() {
     (c) => c.tipo_usuario === session?.user?.tipo
   );
 
+  // Función para aprobar rápidamente el reglamento
+  const handleAprobarReglamento = async () => {
+    if (aprobando) return;
+    setAprobando(true);
+    try {
+      const response = await fetch('/api/comentarios', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contenido: '✅ Apruebo el Reglamento Interno de fecha 4 de agosto de 2025 sin modificaciones',
+          tipo_comentario: 'aprobacion'
+        })
+      });
+
+      if (response.ok) {
+        // Recargar comentarios
+        const comentariosResponse = await fetch('/api/comentarios');
+        if (comentariosResponse.ok) {
+          const data = await comentariosResponse.json();
+          const uniqueComentarios = data.filter(
+            (comentario: ComentarioConUsuario, index: number, self: ComentarioConUsuario[]) =>
+              index === self.findIndex((c) => c.id === comentario.id) &&
+              !comentario.contenido.includes('[Comentario eliminado')
+          );
+          setComentarios(uniqueComentarios);
+          setFilteredComentarios(uniqueComentarios);
+        }
+      } else {
+        const error = await response.json();
+        alert(error.error || 'Error al registrar aprobación');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error al registrar aprobación');
+    } finally {
+      setAprobando(false);
+    }
+  };
+
   if (status === 'loading' || loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
@@ -193,24 +233,69 @@ export default function DashboardPage() {
           <DateCountdown />
         </div>
 
-        {/* Call to Action - Crear comentario (SIEMPRE visible si no tiene comentario) */}
+        {/* Call to Action - Opciones para participar (SIEMPRE visible si no tiene comentario) */}
         {!miComentario && (
-          <Alert className="mb-8 bg-gradient-to-r from-emerald-900/50 to-green-900/50 border-emerald-500/30 shadow-lg backdrop-blur-sm">
-            <CheckCircle2 className="h-5 w-5 text-emerald-400" />
-            <AlertTitle className="text-emerald-300 font-semibold text-lg">
-              ¡Puedes enviar tu comentario!
-            </AlertTitle>
-            <AlertDescription className="text-emerald-200/90">
-              <p className="mb-4">
-                Tienes hasta el 25 de diciembre de 2025 para compartir tus propuestas de modificación al
-                Reglamento Interno.
-              </p>
-              <Button onClick={() => router.push('/comentario/nuevo')} className="bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 shadow-lg">
-                <PlusCircle className="mr-2 h-4 w-4" />
-                Crear mi comentario
-              </Button>
-            </AlertDescription>
-          </Alert>
+          <div className="mb-8 space-y-4">
+            <h2 className="text-xl font-bold text-white text-center mb-6">
+              ¿Qué opinas del Reglamento Interno de fecha 4 de agosto de 2025?
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Opción 1: Aprobar */}
+              <Card className="bg-gradient-to-br from-emerald-900/60 to-green-900/60 border-emerald-500/40 shadow-xl hover:shadow-emerald-500/20 transition-all duration-300 cursor-pointer group"
+                    onClick={handleAprobarReglamento}>
+                <CardContent className="pt-6 text-center">
+                  <div className="bg-emerald-500/20 rounded-full p-6 w-24 h-24 mx-auto mb-4 group-hover:bg-emerald-500/30 transition-colors">
+                    <ThumbsUp className="h-12 w-12 text-emerald-400 mx-auto" />
+                  </div>
+                  <h3 className="text-xl font-bold text-emerald-300 mb-2">
+                    ESTOY DE ACUERDO
+                  </h3>
+                  <p className="text-emerald-200/80 text-sm mb-4">
+                    Apruebo el Reglamento Interno actual sin modificaciones
+                  </p>
+                  <Button
+                    disabled={aprobando}
+                    className="bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 shadow-lg w-full"
+                  >
+                    {aprobando ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Registrando...
+                      </>
+                    ) : (
+                      <>
+                        <CheckCircle2 className="mr-2 h-4 w-4" />
+                        Aprobar con 1 click
+                      </>
+                    )}
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Opción 2: Proponer cambios */}
+              <Card className="bg-gradient-to-br from-amber-900/60 to-yellow-900/60 border-amber-500/40 shadow-xl hover:shadow-amber-500/20 transition-all duration-300 cursor-pointer group"
+                    onClick={() => router.push('/comentario/nuevo')}>
+                <CardContent className="pt-6 text-center">
+                  <div className="bg-amber-500/20 rounded-full p-6 w-24 h-24 mx-auto mb-4 group-hover:bg-amber-500/30 transition-colors">
+                    <Edit3 className="h-12 w-12 text-amber-400 mx-auto" />
+                  </div>
+                  <h3 className="text-xl font-bold text-amber-300 mb-2">
+                    PROPONGO CAMBIOS
+                  </h3>
+                  <p className="text-amber-200/80 text-sm mb-4">
+                    Quiero sugerir modificaciones al Reglamento
+                  </p>
+                  <Button className="bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-700 hover:to-yellow-700 shadow-lg w-full">
+                    <PlusCircle className="mr-2 h-4 w-4" />
+                    Escribir mi propuesta
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+            <p className="text-center text-slate-400 text-sm">
+              Tienes hasta el 25 de diciembre de 2025 para participar
+            </p>
+          </div>
         )}
 
         {/* Mis comentarios del departamento */}
@@ -230,6 +315,32 @@ export default function DashboardPage() {
               onEdit={(comentarioId) => router.push(`/comentario/${comentarioId}/editar`)}
             />
           </div>
+        )}
+
+        {/* Estadísticas de participación */}
+        {comentarios.length > 0 && (
+          <Card className="mb-8 shadow-xl border-slate-600/30 bg-slate-800/80 backdrop-blur-sm">
+            <CardContent className="pt-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="text-center p-4 bg-slate-700/50 rounded-lg">
+                  <p className="text-3xl font-bold text-white">{comentarios.length}</p>
+                  <p className="text-sm text-slate-400">Total participaciones</p>
+                </div>
+                <div className="text-center p-4 bg-emerald-900/30 rounded-lg border border-emerald-500/20">
+                  <p className="text-3xl font-bold text-emerald-400">
+                    {comentarios.filter(c => c.tipo_comentario === 'aprobacion').length}
+                  </p>
+                  <p className="text-sm text-emerald-300">Aprueban el reglamento</p>
+                </div>
+                <div className="text-center p-4 bg-amber-900/30 rounded-lg border border-amber-500/20">
+                  <p className="text-3xl font-bold text-amber-400">
+                    {comentarios.filter(c => c.tipo_comentario === 'modificacion' || !c.tipo_comentario).length}
+                  </p>
+                  <p className="text-sm text-amber-300">Proponen modificaciones</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         )}
 
         {/* Search */}

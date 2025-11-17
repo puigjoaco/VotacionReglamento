@@ -1,4 +1,5 @@
 export type TipoUsuario = 'propietario' | 'residente';
+export type TipoComentario = 'aprobacion' | 'modificacion';
 
 export interface Usuario {
   rut: string;
@@ -15,6 +16,7 @@ export interface Comentario {
   departamento: string;
   tipo_usuario: TipoUsuario;
   contenido: string;
+  tipo_comentario: TipoComentario;
   created_at: string;
   updated_at: string;
 }

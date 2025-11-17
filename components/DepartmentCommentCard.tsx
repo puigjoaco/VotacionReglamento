@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import type { ComentarioConUsuario } from '@/types/database';
-import { Building2, User, Home, Edit3 } from 'lucide-react';
+import { Building2, User, Home, Edit3, ThumbsUp } from 'lucide-react';
 
 interface DepartmentCommentCardProps {
   departamento: string;
@@ -78,6 +78,17 @@ export function DepartmentCommentCard({
                   <Home className="mr-1 h-3 w-3" />
                   Comentario del Propietario
                 </Badge>
+                {comentarioPropietario.tipo_comentario === 'aprobacion' ? (
+                  <Badge className="bg-emerald-500/20 text-emerald-300 border-emerald-500/30 text-xs">
+                    <ThumbsUp className="h-3 w-3 mr-1" />
+                    APRUEBA
+                  </Badge>
+                ) : (
+                  <Badge className="bg-amber-500/20 text-amber-300 border-amber-500/30 text-xs">
+                    <Edit3 className="h-3 w-3 mr-1" />
+                    PROPONE CAMBIOS
+                  </Badge>
+                )}
               </div>
               {comentarioPropietario.rut_usuario === currentUserRut && currentUserTipo === 'propietario' && (
                 <Button
@@ -114,6 +125,17 @@ export function DepartmentCommentCard({
                   <User className="mr-1 h-3 w-3" />
                   Comentario del Residente
                 </Badge>
+                {comentarioResidente.tipo_comentario === 'aprobacion' ? (
+                  <Badge className="bg-emerald-500/20 text-emerald-300 border-emerald-500/30 text-xs">
+                    <ThumbsUp className="h-3 w-3 mr-1" />
+                    APRUEBA
+                  </Badge>
+                ) : (
+                  <Badge className="bg-amber-500/20 text-amber-300 border-amber-500/30 text-xs">
+                    <Edit3 className="h-3 w-3 mr-1" />
+                    PROPONE CAMBIOS
+                  </Badge>
+                )}
                 {comentarioResidente.apellido_razon_social !== comentarioPropietario?.apellido_razon_social && (
                   <span className="text-sm text-slate-400">
                     {comentarioResidente.apellido_razon_social}

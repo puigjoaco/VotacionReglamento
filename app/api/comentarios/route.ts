@@ -63,10 +63,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { contenido } = validation.data;
+    const { contenido, tipo_comentario } = validation.data;
     const { rut, departamento, tipo } = session.user;
 
-    console.log('Creando comentario:', { rut, departamento, tipo });
+    console.log('Creando comentario:', { rut, departamento, tipo, tipo_comentario });
 
     const supabase = await createClient();
 
@@ -112,7 +112,7 @@ export async function POST(request: NextRequest) {
       const adminClient = createAdminClient();
       const { data: comentarioActualizado, error: updateError } = await adminClient
         .from('comentarios')
-        .update({ contenido })
+        .update({ contenido, tipo_comentario })
         .eq('id', existente.id)
         .select()
         .single();
@@ -133,6 +133,7 @@ export async function POST(request: NextRequest) {
         departamento,
         tipo_usuario: tipo,
         contenido,
+        tipo_comentario,
       })
       .select()
       .single();

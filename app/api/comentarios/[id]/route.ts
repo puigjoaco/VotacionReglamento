@@ -79,7 +79,7 @@ export async function PATCH(
       );
     }
 
-    const { contenido } = validation.data;
+    const { contenido, tipo_comentario } = validation.data;
 
     step = 'createSupabaseClient';
     const supabase = await createClient();
@@ -131,9 +131,16 @@ export async function PATCH(
     step = 'updateComment';
     // Usar cliente admin para bypass de RLS en operaciones de escritura
     const adminClient = createAdminClient();
+
+    // Construir objeto de actualización
+    const updateData: { contenido: string; tipo_comentario?: string } = { contenido };
+    if (tipo_comentario) {
+      updateData.tipo_comentario = tipo_comentario;
+    }
+
     const { error: updateError } = await adminClient
       .from('comentarios')
-      .update({ contenido })
+      .update(updateData)
       .eq('id', id);
 
     if (updateError) {

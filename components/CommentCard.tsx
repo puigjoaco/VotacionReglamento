@@ -2,6 +2,7 @@ import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { ThumbsUp, Edit3 } from 'lucide-react';
 import type { ComentarioConUsuario } from '@/types/database';
 
 interface CommentCardProps {
@@ -15,26 +16,42 @@ export function CommentCard({ comentario, isOwn = false, onEdit }: CommentCardPr
     locale: es,
   });
 
+  const esAprobacion = comentario.tipo_comentario === 'aprobacion';
+
   return (
-    <Card className={`border-slate-700/50 bg-slate-800/60 backdrop-blur-sm ${isOwn ? 'ring-2 ring-blue-500/30' : ''}`}>
+    <Card className={`border-slate-700/50 bg-slate-800/60 backdrop-blur-sm ${isOwn ? 'ring-2 ring-blue-500/30' : ''} ${esAprobacion ? 'border-emerald-500/30' : ''}`}>
       <CardHeader>
         <div className="flex items-start justify-between">
           <div className="space-y-1">
-            <CardTitle className="text-lg text-white">
+            <CardTitle className="text-lg text-white flex items-center gap-2">
               Departamento {comentario.departamento}
+              {esAprobacion && (
+                <Badge className="bg-emerald-500/20 text-emerald-300 border-emerald-500/30 text-xs">
+                  <ThumbsUp className="h-3 w-3 mr-1" />
+                  APRUEBA
+                </Badge>
+              )}
             </CardTitle>
             <CardDescription className="text-sm text-slate-400">
               {comentario.apellido_razon_social}
             </CardDescription>
           </div>
-          <Badge
-            variant={comentario.tipo_usuario === 'propietario' ? 'default' : 'secondary'}
-            className={comentario.tipo_usuario === 'propietario'
-              ? 'bg-blue-600/80 text-white'
-              : 'bg-emerald-600/80 text-white'}
-          >
-            {comentario.tipo_usuario === 'propietario' ? 'Propietario' : 'Residente'}
-          </Badge>
+          <div className="flex flex-col gap-1 items-end">
+            <Badge
+              variant={comentario.tipo_usuario === 'propietario' ? 'default' : 'secondary'}
+              className={comentario.tipo_usuario === 'propietario'
+                ? 'bg-blue-600/80 text-white'
+                : 'bg-emerald-600/80 text-white'}
+            >
+              {comentario.tipo_usuario === 'propietario' ? 'Propietario' : 'Residente'}
+            </Badge>
+            {!esAprobacion && (
+              <Badge className="bg-amber-500/20 text-amber-300 border-amber-500/30 text-xs">
+                <Edit3 className="h-3 w-3 mr-1" />
+                PROPONE CAMBIOS
+              </Badge>
+            )}
+          </div>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">
