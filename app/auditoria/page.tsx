@@ -91,6 +91,11 @@ export default function AuditoriaPage() {
   const metadata = gestionesData.metadata as any;
   const estadisticas = gestionesData.estadisticas as any;
   const resumenCategoria = gestionesData.resumen_por_tipo as Record<string, number>;
+  const resumenEjecutivo = (gestionesData as any).resumen_ejecutivo;
+  const logrosDestacados = (gestionesData as any).logros_destacados_joaquin as string[];
+  const inversionesPersonales = (gestionesData as any).inversiones_personales_joaquin as any[];
+  const horariosTrabajo = (gestionesData as any).horarios_trabajo_voluntario as any;
+  const contextoImportante = (gestionesData as any).contexto_importante as any;
 
   // Filtrar gestiones
   const filteredGestiones = useMemo(() => {
@@ -146,12 +151,12 @@ export default function AuditoriaPage() {
               <Award className="h-8 w-8 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold">Auditoría de Gestiones</h1>
+              <h1 className="text-2xl font-bold">Auditoría de Gestiones - Joaquín Puig</h1>
               <p className="text-blue-200 text-sm">
-                Registro completo del trabajo realizado por {metadata.presidente}
+                Registro completo del trabajo voluntario realizado como {metadata.cargo}
               </p>
               <p className="text-blue-300 text-xs mt-1">
-                Presidente del Comité • {metadata.periodo}
+                {metadata.edificio} • {metadata.periodo}
               </p>
             </div>
           </div>
@@ -222,7 +227,137 @@ export default function AuditoriaPage() {
           </Card>
         </div>
 
-        {/* Mensaje de contexto */}
+        {/* Resumen Ejecutivo */}
+        <Card className="mb-8 bg-gradient-to-r from-green-900/50 to-emerald-900/50 border-green-500/30 shadow-xl">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center text-green-100">
+              <Award className="mr-2 h-5 w-5 text-green-400" />
+              Resumen Ejecutivo - Impacto Total
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="bg-green-800/30 p-3 rounded-lg">
+                <p className="text-green-300 text-xs font-medium">Gestiones Lideradas</p>
+                <p className="text-2xl font-bold text-white">{formatNumber(resumenEjecutivo.total_gestiones_lideradas)}</p>
+              </div>
+              <div className="bg-green-800/30 p-3 rounded-lg">
+                <p className="text-green-300 text-xs font-medium">Horas Voluntarias</p>
+                <p className="text-2xl font-bold text-white">{formatNumber(resumenEjecutivo.horas_trabajo_voluntario)}</p>
+              </div>
+              <div className="bg-green-800/30 p-3 rounded-lg">
+                <p className="text-green-300 text-xs font-medium">Crisis Críticas Resueltas</p>
+                <p className="text-2xl font-bold text-white">{resumenEjecutivo.crisis_criticas_resueltas}</p>
+              </div>
+              <div className="bg-green-800/30 p-3 rounded-lg">
+                <p className="text-green-300 text-xs font-medium">Inversión Personal</p>
+                <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.inversiones_personales_clp)}</p>
+              </div>
+              <div className="bg-green-800/30 p-3 rounded-lg">
+                <p className="text-green-300 text-xs font-medium">Multas Evitadas</p>
+                <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.multas_evitadas_clp / 1000000)}M</p>
+              </div>
+              <div className="bg-green-800/30 p-3 rounded-lg">
+                <p className="text-green-300 text-xs font-medium">Ahorro Total Comunidad</p>
+                <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.ahorro_total_comunidad_clp / 1000000)}M</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Logros Destacados */}
+        <Card className="mb-8 bg-gradient-to-r from-purple-900/50 to-indigo-900/50 border-purple-500/30 shadow-xl">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center text-purple-100">
+              <CheckCircle2 className="mr-2 h-5 w-5 text-purple-400" />
+              Logros Destacados de Joaquín Puig
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2">
+              {logrosDestacados.map((logro, index) => (
+                <li key={index} className="flex items-start gap-2 text-sm text-purple-100/90">
+                  <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                  <span>{logro}</span>
+                </li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* Inversiones Personales */}
+        <Card className="mb-8 bg-gradient-to-r from-rose-900/50 to-pink-900/50 border-rose-500/30 shadow-xl">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center text-rose-100">
+              <DollarSign className="mr-2 h-5 w-5 text-rose-400" />
+              Inversiones Personales (Nunca Reembolsadas)
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-3">
+              {inversionesPersonales.map((inv, index) => (
+                <div key={index} className="bg-rose-800/30 p-3 rounded-lg">
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <p className="text-rose-100 font-medium text-sm">{inv.concepto}</p>
+                      <p className="text-rose-300 text-xs">{inv.fecha}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-white font-bold">${formatNumber(inv.monto_clp)}</p>
+                      <Badge className={inv.reembolsado ? 'bg-green-600/50 text-green-200' : 'bg-red-600/50 text-red-200'}>
+                        {inv.reembolsado ? 'Reembolsado' : 'Sin reembolso'}
+                      </Badge>
+                    </div>
+                  </div>
+                  <p className="text-rose-200/70 text-xs mt-1">{inv.nota}</p>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Horarios de Trabajo Voluntario */}
+        <Card className="mb-8 bg-gradient-to-r from-cyan-900/50 to-blue-900/50 border-cyan-500/30 shadow-xl">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center text-cyan-100">
+              <Clock className="mr-2 h-5 w-5 text-cyan-400" />
+              Horarios de Trabajo Voluntario
+            </CardTitle>
+            <CardDescription className="text-cyan-200/70">
+              {horariosTrabajo.descripcion}
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="bg-cyan-800/30 p-3 rounded-lg">
+                <p className="text-cyan-300 text-xs font-medium">Madrugadas</p>
+                <p className="text-cyan-100 text-sm">{horariosTrabajo.madrugadas}</p>
+              </div>
+              <div className="bg-cyan-800/30 p-3 rounded-lg">
+                <p className="text-cyan-300 text-xs font-medium">Noches</p>
+                <p className="text-cyan-100 text-sm">{horariosTrabajo.noches}</p>
+              </div>
+              <div className="bg-cyan-800/30 p-3 rounded-lg">
+                <p className="text-cyan-300 text-xs font-medium">Fines de Semana</p>
+                <p className="text-cyan-100 text-sm">{horariosTrabajo.fines_de_semana}</p>
+              </div>
+              <div className="bg-cyan-800/30 p-3 rounded-lg">
+                <p className="text-cyan-300 text-xs font-medium">Feriados</p>
+                <p className="text-cyan-100 text-sm">{horariosTrabajo.feriados}</p>
+              </div>
+              <div className="bg-cyan-800/30 p-3 rounded-lg">
+                <p className="text-cyan-300 text-xs font-medium">Horas Laborales</p>
+                <p className="text-cyan-100 text-sm">{horariosTrabajo.horas_laborales}</p>
+              </div>
+              <div className="bg-cyan-800/30 p-3 rounded-lg">
+                <p className="text-cyan-300 text-xs font-medium">Vacaciones</p>
+                <p className="text-cyan-100 text-sm">{horariosTrabajo.vacaciones}</p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Contexto Importante */}
         <Card className="mb-8 bg-gradient-to-r from-amber-900/50 to-orange-900/50 border-amber-500/30 shadow-xl">
           <CardContent className="pt-6">
             <div className="flex items-start gap-4">
@@ -231,25 +366,38 @@ export default function AuditoriaPage() {
               </div>
               <div>
                 <h3 className="text-amber-200 font-semibold text-lg mb-2">
-                  ¿Por qué existe esta página?
+                  Contexto Importante
                 </h3>
                 <p className="text-amber-100/80 text-sm leading-relaxed mb-3">
-                  Durante la asamblea, se cuestionó el trabajo del Comité de Administración sin
-                  considerar la magnitud de las gestiones realizadas. Este registro muestra{' '}
-                  <strong>objetivamente</strong> cada acción tomada para mantener y mejorar el
-                  edificio.
+                  <strong>Situación:</strong> {contextoImportante.situacion}
                 </p>
                 <p className="text-amber-100/80 text-sm leading-relaxed mb-3">
-                  El Reglamento Interno que se publicó (y que ahora se revisa en el sistema de
-                  comentarios) normalmente tiene un costo de{' '}
-                  <strong>$4.000.000 a $6.000.000 CLP</strong>. Fue realizado sin costo para la
-                  comunidad.
+                  <strong>Realidad:</strong> {contextoImportante.realidad}
+                </p>
+                <p className="text-amber-100/80 text-sm leading-relaxed mb-3">
+                  <strong>Valor Ignorado:</strong> {contextoImportante.valor_ignorado}
                 </p>
                 <p className="text-amber-100/80 text-sm leading-relaxed">
-                  <strong>Nota:</strong> Se han analizado 21,417 líneas de 9 archivos de chat de WhatsApp.
-                  Este registro representa las {formatNumber(metadata.total_gestiones)} gestiones documentadas.
+                  <strong>La ingratitud:</strong> {contextoImportante.ingratitud}
                 </p>
               </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Metodología */}
+        <Card className="mb-8 bg-gradient-to-r from-slate-800/50 to-gray-900/50 border-slate-500/30 shadow-xl">
+          <CardContent className="pt-6">
+            <div className="text-center">
+              <h3 className="text-slate-200 font-semibold text-lg mb-2">
+                Metodología de Auditoría
+              </h3>
+              <p className="text-slate-300/80 text-sm leading-relaxed mb-2">
+                {metadata.metodologia}
+              </p>
+              <p className="text-slate-300/80 text-sm leading-relaxed">
+                <strong>Nota importante:</strong> {metadata.nota_importante}
+              </p>
             </div>
           </CardContent>
         </Card>
