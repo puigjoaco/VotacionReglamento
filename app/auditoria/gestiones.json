@@ -13,14 +13,12 @@
     "total_gestiones_lideradas": 389,
     "horas_trabajo_voluntario": 1167,
     "crisis_criticas_resueltas": 88,
-    "inversiones_personales_clp": 429980,
     "multas_evitadas_clp": 15000000,
     "valor_reglamento_interno_clp": 5000000,
-    "ahorro_total_comunidad_clp": 20429980
+    "ahorro_total_comunidad_clp": 20000000
   },
   "estadisticas": {
     "horas_trabajo_estimadas": 1167,
-    "inversion_personal_clp": 429980,
     "multas_evitadas_clp": 15000000,
     "crisis_criticas_resueltas": 88,
     "gestiones_alto_impacto": 183,
@@ -3985,43 +3983,6 @@
       "fuente": "Chat Residentes",
       "id": 389,
       "responsable": "Joaquín Puig"
-    }
-  ],
-  "inversiones_personales_joaquin": [
-    {
-      "fecha": "2023-07-20",
-      "concepto": "App administración edificio",
-      "monto_clp": 128000,
-      "reembolsado": true,
-      "nota": "Compró con su tarjeta personal y luego fue reembolsado"
-    },
-    {
-      "fecha": "2024-11-14",
-      "concepto": "Tablet Xiaomi para monitoreo cámaras conserjería",
-      "monto_clp": 159990,
-      "reembolsado": true,
-      "nota": "Compró con su tarjeta personal"
-    },
-    {
-      "fecha": "2024-12-24",
-      "concepto": "10 controles remotos originales del portón",
-      "monto_clp": 94990,
-      "reembolsado": true,
-      "nota": "Gestionó compra directa"
-    },
-    {
-      "fecha": "2024-12-01",
-      "concepto": "Estufa para conserjería",
-      "monto_clp": 47000,
-      "reembolsado": true,
-      "nota": "Compró con sus propios fondos"
-    },
-    {
-      "fecha": "2025-01-08",
-      "concepto": "Importación transformadores citófonos ascensor desde China",
-      "monto_clp": 0,
-      "reembolsado": true,
-      "nota": "Gestionó importación para ahorrar costos"
     }
   ],
   "logros_destacados_joaquin": [

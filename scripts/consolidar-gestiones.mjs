@@ -221,14 +221,12 @@ const output = {
     total_gestiones_lideradas: todasGestiones.length,
     horas_trabajo_voluntario: Math.round(todasGestiones.length * 3),
     crisis_criticas_resueltas: todasGestiones.filter(g => g.impacto === 'critico').length,
-    inversiones_personales_clp: 429980,
     multas_evitadas_clp: 15000000,
     valor_reglamento_interno_clp: 5000000,
-    ahorro_total_comunidad_clp: 20429980 // multas + reglamento + inversiones
+    ahorro_total_comunidad_clp: 20000000 // multas + reglamento
   },
   estadisticas: {
     horas_trabajo_estimadas: Math.round(todasGestiones.length * 3),
-    inversion_personal_clp: 429980,
     multas_evitadas_clp: 15000000,
     crisis_criticas_resueltas: todasGestiones.filter(g => g.impacto === 'critico').length,
     gestiones_alto_impacto: todasGestiones.filter(g => g.impacto === 'alto').length,
@@ -247,13 +245,6 @@ const output = {
     ...g,
     responsable: "Joaquín Puig" // Todas adjudicadas a Joaquín
   })),
-  inversiones_personales_joaquin: [
-    { fecha: "2023-07-20", concepto: "App administración edificio", monto_clp: 128000, reembolsado: true, nota: "Compró con su tarjeta personal y luego fue reembolsado" },
-    { fecha: "2024-11-14", concepto: "Tablet Xiaomi para monitoreo cámaras conserjería", monto_clp: 159990, reembolsado: true, nota: "Compró con su tarjeta personal" },
-    { fecha: "2024-12-24", concepto: "10 controles remotos originales del portón", monto_clp: 94990, reembolsado: true, nota: "Gestionó compra directa" },
-    { fecha: "2024-12-01", concepto: "Estufa para conserjería", monto_clp: 47000, reembolsado: true, nota: "Compró con sus propios fondos" },
-    { fecha: "2025-01-08", concepto: "Importación transformadores citófonos ascensor desde China", monto_clp: 0, reembolsado: true, nota: "Gestionó importación para ahorrar costos" }
-  ],
   logros_destacados_joaquin: [
     "Obtención certificación LIFTOK evitando multas de $15+ millones - Gestión personal con Marco Milla",
     "Elaboración completa del Reglamento Interno - Valorado en $4-6 millones, gestionado sin costo",

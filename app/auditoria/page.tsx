@@ -93,7 +93,6 @@ export default function AuditoriaPage() {
   const resumenCategoria = gestionesData.resumen_por_tipo as Record<string, number>;
   const resumenEjecutivo = (gestionesData as any).resumen_ejecutivo;
   const logrosDestacados = (gestionesData as any).logros_destacados_joaquin as string[];
-  const inversionesPersonales = (gestionesData as any).inversiones_personales_joaquin as any[];
   const horariosTrabajo = (gestionesData as any).horarios_trabajo_voluntario as any;
   const contextoImportante = (gestionesData as any).contexto_importante as any;
 
@@ -202,14 +201,14 @@ export default function AuditoriaPage() {
             <CardContent className="pt-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-purple-200 text-sm font-medium">Inversión Personal</p>
+                  <p className="text-purple-200 text-sm font-medium">Crisis Críticas</p>
                   <p className="text-4xl font-bold text-white">
-                    ${formatNumber(estadisticas.inversion_personal_clp)}
+                    {estadisticas.crisis_criticas_resueltas}
                   </p>
                 </div>
-                <DollarSign className="h-10 w-10 text-purple-400" />
+                <AlertTriangle className="h-10 w-10 text-purple-400" />
               </div>
-              <p className="text-xs text-purple-300 mt-2">CLP sin reembolso</p>
+              <p className="text-xs text-purple-300 mt-2">situaciones resueltas</p>
             </CardContent>
           </Card>
 
@@ -250,12 +249,12 @@ export default function AuditoriaPage() {
                 <p className="text-2xl font-bold text-white">{resumenEjecutivo.crisis_criticas_resueltas}</p>
               </div>
               <div className="bg-green-800/30 p-3 rounded-lg">
-                <p className="text-green-300 text-xs font-medium">Inversión Personal</p>
-                <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.inversiones_personales_clp)}</p>
-              </div>
-              <div className="bg-green-800/30 p-3 rounded-lg">
                 <p className="text-green-300 text-xs font-medium">Multas Evitadas</p>
                 <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.multas_evitadas_clp / 1000000)}M</p>
+              </div>
+              <div className="bg-green-800/30 p-3 rounded-lg">
+                <p className="text-green-300 text-xs font-medium">Valor Reglamento Interno</p>
+                <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.valor_reglamento_interno_clp / 1000000)}M</p>
               </div>
               <div className="bg-green-800/30 p-3 rounded-lg">
                 <p className="text-green-300 text-xs font-medium">Ahorro Total Comunidad</p>
@@ -282,37 +281,6 @@ export default function AuditoriaPage() {
                 </li>
               ))}
             </ul>
-          </CardContent>
-        </Card>
-
-        {/* Inversiones Personales */}
-        <Card className="mb-8 bg-gradient-to-r from-rose-900/50 to-pink-900/50 border-rose-500/30 shadow-xl">
-          <CardHeader>
-            <CardTitle className="text-lg flex items-center text-rose-100">
-              <DollarSign className="mr-2 h-5 w-5 text-rose-400" />
-              Compras Gestionadas con Fondos Personales
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              {inversionesPersonales.map((inv, index) => (
-                <div key={index} className="bg-rose-800/30 p-3 rounded-lg">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <p className="text-rose-100 font-medium text-sm">{inv.concepto}</p>
-                      <p className="text-rose-300 text-xs">{inv.fecha}</p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-white font-bold">${formatNumber(inv.monto_clp)}</p>
-                      <Badge className={inv.reembolsado ? 'bg-green-600/50 text-green-200' : 'bg-red-600/50 text-red-200'}>
-                        {inv.reembolsado ? 'Reembolsado' : 'Sin reembolso'}
-                      </Badge>
-                    </div>
-                  </div>
-                  <p className="text-rose-200/70 text-xs mt-1">{inv.nota}</p>
-                </div>
-              ))}
-            </div>
           </CardContent>
         </Card>
 
