@@ -154,22 +154,214 @@ function processChat(filePath, chatName) {
   return gestiones;
 }
 
+// Procesar el listado de tareas completadas (formato estructurado, NO WhatsApp)
+function processTareasCompletadas(filePath) {
+  const content = fs.readFileSync(filePath, 'utf-8');
+  const gestiones = [];
+
+  // Dividir por separador de tareas
+  const tareas = content.split('---');
+
+  for (const tarea of tareas) {
+    if (!tarea.trim()) continue;
+
+    // Extraer título (línea que empieza con número y punto)
+    const tituloMatch = tarea.match(/^\s*\d+\.\s+(.+?)$/m);
+    if (!tituloMatch) continue;
+
+    const titulo = tituloMatch[1].trim();
+
+    // Extraer fecha completada
+    let fecha = null;
+    const fechaMatch1 = tarea.match(/Completada?:\s*(\d{1,2})\/(\d{1,2})\/(\d{4})/i);
+    const fechaMatch2 = tarea.match(/Completada?:\s*(\d{1,2})\s+de\s+(\w+)\s+(\d{4})/i);
+
+    if (fechaMatch1) {
+      const [, day, month, year] = fechaMatch1;
+      fecha = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
+    } else if (fechaMatch2) {
+      const meses = {
+        'enero': '01', 'febrero': '02', 'marzo': '03', 'abril': '04',
+        'mayo': '05', 'junio': '06', 'julio': '07', 'agosto': '08',
+        'septiembre': '09', 'octubre': '10', 'noviembre': '11', 'diciembre': '12'
+      };
+      const [, day, monthName, year] = fechaMatch2;
+      const month = meses[monthName.toLowerCase()] || '01';
+      fecha = `${year}-${month}-${day.padStart(2, '0')}`;
+    }
+
+    if (!fecha) continue;
+
+    // Extraer descripción
+    let descripcion = '';
+    const descMatch = tarea.match(/Descripción:\s*\n\s*(.+?)(?=\n\s*(?:Actualizaciones|Progreso|---)|$)/is);
+    const trabajoMatch = tarea.match(/Trabajo realizado:\s*\n?\s*(.+?)(?=\n\s*(?:Progreso|---)|$)/is);
+
+    if (descMatch) {
+      descripcion = descMatch[1].trim();
+    } else if (trabajoMatch) {
+      descripcion = trabajoMatch[1].trim();
+    }
+
+    // Extraer progreso/actualizaciones si existe
+    const progresoMatch = tarea.match(/(?:Actualizaciones\/Progreso|Progreso registrado):\s*\n(.+?)(?=\s*---|$)/is);
+    if (progresoMatch) {
+      descripcion += ' ' + progresoMatch[1].trim().replace(/^\d+\.\s*\d{2}\/\d{2}\/\d{4}\s*\d{2}:\d{2}:\d{2}\s*-\s*\w+\s*/gm, '');
+    }
+
+    // Extraer categoría/prioridad para determinar tipo
+    const categoriaMatch = tarea.match(/Categoría:\s*(.+?)(?:\n|$)/i);
+    const prioridadMatch = tarea.match(/Prioridad:\s*(\w+)/i);
+
+    let tipo = 'gestion_administrativa';
+    if (categoriaMatch) {
+      const cat = categoriaMatch[1].toLowerCase();
+      if (cat.includes('mantención') || cat.includes('mantenimiento')) tipo = 'mantencion';
+      else if (cat.includes('reparación') || cat.includes('correctiva')) tipo = 'reparacion';
+      else if (cat.includes('limpieza')) tipo = 'mejora';
+      else if (cat.includes('preventiva')) tipo = 'mantencion';
+    }
+
+    let impacto = 'medio';
+    if (prioridadMatch) {
+      const prio = prioridadMatch[1].toLowerCase();
+      if (prio === 'alta') impacto = 'alto';
+      else if (prio === 'baja') impacto = 'bajo';
+    }
+
+    gestiones.push({
+      fecha,
+      titulo,
+      descripcion: descripcion.substring(0, 500),
+      tipo,
+      chat_origen: 'Listado Tareas Completadas',
+      impacto
+    });
+  }
+
+  return gestiones;
+}
+
+// Función para calcular similitud entre dos strings (Jaccard similarity)
+function calcularSimilitud(str1, str2) {
+  const words1 = new Set(str1.toLowerCase().split(/\s+/).filter(w => w.length > 3));
+  const words2 = new Set(str2.toLowerCase().split(/\s+/).filter(w => w.length > 3));
+
+  const intersection = new Set([...words1].filter(x => words2.has(x)));
+  const union = new Set([...words1, ...words2]);
+
+  if (union.size === 0) return 0;
+  return intersection.size / union.size;
+}
+
+// Función para detectar si dos gestiones son duplicadas
+function sonDuplicadas(g1, g2) {
+  // Si las fechas están muy separadas, no son duplicadas
+  const fecha1 = new Date(g1.fecha);
+  const fecha2 = new Date(g2.fecha);
+  const diffDias = Math.abs((fecha1 - fecha2) / (1000 * 60 * 60 * 24));
+
+  if (diffDias > 7) return false; // Más de 7 días de diferencia
+
+  // Calcular similitud del contenido
+  const textoCompleto1 = `${g1.titulo} ${g1.descripcion}`.toLowerCase();
+  const textoCompleto2 = `${g2.titulo} ${g2.descripcion}`.toLowerCase();
+
+  const similitud = calcularSimilitud(textoCompleto1, textoCompleto2);
+
+  // Si similitud > 40%, considerar duplicado
+  return similitud > 0.4;
+}
+
+// Deduplicar gestiones
+function deduplicarGestiones(gestiones) {
+  console.log(`\nDeduplicando ${gestiones.length} gestiones...`);
+
+  // Prioridad de fuentes (mayor número = mayor prioridad)
+  const prioridadFuente = {
+    'Listado Tareas Completadas': 10,
+    '1P. Presidente y Trabajadores': 9,
+    '4P. Comité (solos)': 8,
+    '5P. Laboral': 7,
+    '2P. Mayordomo, Admin y comite': 6,
+    '7P. Comite Portezuelo General': 5,
+    '3P. Solo Administración Portezuelo': 4,
+    '6P. Postventa': 3,
+    '2P. Focos después de Andamios': 2
+  };
+
+  const resultado = [];
+  const marcados = new Set();
+
+  for (let i = 0; i < gestiones.length; i++) {
+    if (marcados.has(i)) continue;
+
+    const grupo = [i];
+
+    // Buscar duplicados
+    for (let j = i + 1; j < gestiones.length; j++) {
+      if (marcados.has(j)) continue;
+
+      if (sonDuplicadas(gestiones[i], gestiones[j])) {
+        grupo.push(j);
+        marcados.add(j);
+      }
+    }
+
+    // Del grupo, elegir el de mayor prioridad (y más descripción)
+    let mejor = i;
+    let mejorPrioridad = prioridadFuente[gestiones[i].chat_origen] || 0;
+    let mejorLongitud = gestiones[i].descripcion.length;
+
+    for (const idx of grupo) {
+      const prio = prioridadFuente[gestiones[idx].chat_origen] || 0;
+      const long = gestiones[idx].descripcion.length;
+
+      if (prio > mejorPrioridad || (prio === mejorPrioridad && long > mejorLongitud)) {
+        mejor = idx;
+        mejorPrioridad = prio;
+        mejorLongitud = long;
+      }
+    }
+
+    resultado.push(gestiones[mejor]);
+  }
+
+  console.log(`   Gestiones únicas: ${resultado.length}`);
+  console.log(`   Duplicados eliminados: ${gestiones.length - resultado.length}`);
+
+  return resultado;
+}
+
 function main() {
   console.log('Extrayendo gestiones de archivos de chat...\n');
 
-  const allGestiones = [];
+  let allGestiones = [];
   const chatFiles = fs.readdirSync(CHATS_DIR).filter(f => f.endsWith('.txt'));
 
+  // 1. Procesar archivos de WhatsApp
   for (const file of chatFiles) {
     const filePath = path.join(CHATS_DIR, file);
-    const chatName = file.replace('Chat de WhatsApp con ', '').replace('.txt', '');
 
-    console.log(`Procesando: ${file}`);
-    const gestiones = processChat(filePath, chatName);
-    console.log(`  -> ${gestiones.length} gestiones encontradas`);
-
-    allGestiones.push(...gestiones);
+    // Verificar si es el listado de tareas (formato diferente)
+    if (file.toLowerCase().includes('listado de tareas')) {
+      console.log(`Procesando listado estructurado: ${file}`);
+      const gestiones = processTareasCompletadas(filePath);
+      console.log(`  -> ${gestiones.length} tareas completadas encontradas`);
+      allGestiones.push(...gestiones);
+    } else {
+      const chatName = file.replace('Chat de WhatsApp con ', '').replace('.txt', '');
+      console.log(`Procesando chat WhatsApp: ${file}`);
+      const gestiones = processChat(filePath, chatName);
+      console.log(`  -> ${gestiones.length} gestiones encontradas`);
+      allGestiones.push(...gestiones);
+    }
   }
+
+  console.log(`\nTotal antes de deduplicación: ${allGestiones.length}`);
+
+  // 2. Deduplicar gestiones (eliminar repetidas entre chats)
+  allGestiones = deduplicarGestiones(allGestiones);
 
   // Ordenar por fecha
   allGestiones.sort((a, b) => new Date(a.fecha) - new Date(b.fecha));
