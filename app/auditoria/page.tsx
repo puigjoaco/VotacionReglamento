@@ -253,8 +253,8 @@ export default function AuditoriaPage() {
                 <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.multas_evitadas_clp / 1000000)}M</p>
               </div>
               <div className="bg-green-800/30 p-3 rounded-lg">
-                <p className="text-green-300 text-xs font-medium">Valor Reglamento Interno</p>
-                <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.valor_reglamento_interno_clp / 1000000)}M</p>
+                <p className="text-green-300 text-xs font-medium">Ahorros Directos</p>
+                <p className="text-2xl font-bold text-white">${formatNumber(resumenEjecutivo.ahorros_documentados_clp / 1000000)}M</p>
               </div>
               <div className="bg-green-800/30 p-3 rounded-lg">
                 <p className="text-green-300 text-xs font-medium">Ahorro Total Comunidad</p>
