@@ -234,10 +234,10 @@ const output = {
     responsable: "Joaquín Puig" // Todas adjudicadas a Joaquín
   })),
   inversiones_personales_joaquin: [
-    { fecha: "2023-07-20", concepto: "App administración edificio", monto_clp: 128000, reembolsado: false, nota: "Nunca solicitó reembolso" },
+    { fecha: "2023-07-20", concepto: "App administración edificio", monto_clp: 128000, reembolsado: true, nota: "Compró con su tarjeta personal y luego fue reembolsado" },
     { fecha: "2024-11-14", concepto: "Tablet Xiaomi para monitoreo cámaras conserjería", monto_clp: 159990, reembolsado: true, nota: "Compró con su tarjeta personal" },
     { fecha: "2024-12-24", concepto: "10 controles remotos originales del portón", monto_clp: 94990, reembolsado: true, nota: "Gestionó compra directa" },
-    { fecha: "2024-12-01", concepto: "Estufa para conserjería", monto_clp: 47000, reembolsado: false, nota: "Nunca solicitó reembolso" },
+    { fecha: "2024-12-01", concepto: "Estufa para conserjería", monto_clp: 47000, reembolsado: true, nota: "Compró con sus propios fondos" },
     { fecha: "2025-01-08", concepto: "Importación transformadores citófonos ascensor desde China", monto_clp: 0, reembolsado: true, nota: "Gestionó importación para ahorrar costos" }
   ],
   logros_destacados_joaquin: [

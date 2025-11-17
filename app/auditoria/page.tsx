@@ -290,7 +290,7 @@ export default function AuditoriaPage() {
           <CardHeader>
             <CardTitle className="text-lg flex items-center text-rose-100">
               <DollarSign className="mr-2 h-5 w-5 text-rose-400" />
-              Inversiones Personales (Nunca Reembolsadas)
+              Compras Gestionadas con Fondos Personales
             </CardTitle>
           </CardHeader>
           <CardContent>

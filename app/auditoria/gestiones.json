@@ -3726,8 +3726,8 @@
       "fecha": "2023-07-20",
       "concepto": "App administración edificio",
       "monto_clp": 128000,
-      "reembolsado": false,
-      "nota": "Nunca solicitó reembolso"
+      "reembolsado": true,
+      "nota": "Compró con su tarjeta personal y luego fue reembolsado"
     },
     {
       "fecha": "2024-11-14",
@@ -3747,8 +3747,8 @@
       "fecha": "2024-12-01",
       "concepto": "Estufa para conserjería",
       "monto_clp": 47000,
-      "reembolsado": false,
-      "nota": "Nunca solicitó reembolso"
+      "reembolsado": true,
+      "nota": "Compró con sus propios fondos"
     },
     {
       "fecha": "2025-01-08",
