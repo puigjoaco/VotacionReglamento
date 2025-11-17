@@ -227,6 +227,22 @@
   ],
   "logros_especificos_joaquin": [
     {
+      "fecha": "2023-07-01",
+      "titulo": "Consolidación 3 cuentas internet a 1 sola - Ahorro $1.44M/año",
+      "descripcion": "Al asumir como presidente, Joaquín consolidó las 3 cuentas de internet separadas (gimnasio, lounge, recepción) que costaban $60.000 cada una ($180.000/mes total) en UNA sola cuenta por $60.000/mes. Ahorro inmediato de $120.000 mensuales ($1.440.000 anuales). Este problema fue mencionado al comité anterior con Rodrigo Lorca de presidente pero NUNCA hicieron nada. Joaquín lo solucionó inmediatamente al asumir.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "ahorro_estimado": 1440000
+    },
+    {
+      "fecha": "2023-07-15",
+      "titulo": "Solución definitiva portón con motor nuevo + repuesto",
+      "descripcion": "El portón del edificio falló TODA LA VIDA durante el periodo de Rodrigo Lorca como presidente y nunca lo solucionaron. Joaquín compró un motor NUEVO y envió el motor malo a reparación completa con piezas nuevas. Ahora hay motor nuevo funcionando + motor completamente reparado de repuesto. Cada vez que falle, se cambia inmediatamente por el repuesto y el otro va a reparación. Solución definitiva al problema crónico.",
+      "tipo": "reparacion",
+      "impacto": "critico",
+      "ahorro_estimado": null
+    },
+    {
       "fecha": "2025-06-15",
       "titulo": "Nuevo jardín con plantas de sombra y paseo de perros",
       "descripcion": "Creación completa del jardín bajo el edificio con plantas que sobreviven en sombra. Joaquín contactó empresa especializada para selección de plantas. Sistema de riego especial para sombra. Además creó circuito para paseo de perros en sector sur bajo estacionamientos de visita. Trabajo realizado gradualmente con jardineros contratados que Joaquín dirigió constantemente para asegurar calidad. Costo mínimo por negociación directa.",
