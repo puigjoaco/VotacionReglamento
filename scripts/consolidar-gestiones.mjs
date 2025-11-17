@@ -222,8 +222,8 @@ const output = {
     horas_trabajo_voluntario: Math.round(todasGestiones.length * 3),
     crisis_criticas_resueltas: todasGestiones.filter(g => g.impacto === 'critico').length,
     multas_evitadas_clp: 15000000,
-    valor_reglamento_interno_clp: 5000000,
-    ahorro_total_comunidad_clp: 20000000 // multas + reglamento
+    ahorros_documentados_clp: todasGestiones.reduce((sum, g) => sum + (g.ahorro_estimado || 0), 0),
+    ahorro_total_comunidad_clp: todasGestiones.reduce((sum, g) => sum + (g.ahorro_estimado || 0), 0) + 15000000 // ahorros directos + multas evitadas
   },
   estadisticas: {
     horas_trabajo_estimadas: Math.round(todasGestiones.length * 3),
