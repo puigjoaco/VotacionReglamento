@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
@@ -81,6 +81,11 @@ export default function AuditoriaPage() {
   const [selectedTipo, setSelectedTipo] = useState<string | null>(null);
   const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
   const [showAllStats, setShowAllStats] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const gestiones = gestionesData.gestiones as Gestion[];
   const metadata = gestionesData.metadata as any;
@@ -126,6 +131,11 @@ export default function AuditoriaPage() {
     });
   };
 
+  const formatNumber = (num: number) => {
+    if (!mounted) return num.toString();
+    return num.toLocaleString('es-CL');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
       {/* Header */}
@@ -156,12 +166,12 @@ export default function AuditoriaPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-blue-200 text-sm font-medium">Total Gestiones</p>
-                  <p className="text-4xl font-bold text-white">{metadata.total_gestiones}</p>
+                  <p className="text-4xl font-bold text-white">{formatNumber(metadata.total_gestiones)}</p>
                 </div>
                 <BarChart3 className="h-10 w-10 text-blue-400" />
               </div>
               <p className="text-xs text-blue-300 mt-2">
-                {metadata.porcentaje_completado} del análisis completado
+                documentadas en chats de WhatsApp
               </p>
             </CardContent>
           </Card>
@@ -172,7 +182,7 @@ export default function AuditoriaPage() {
                 <div>
                   <p className="text-emerald-200 text-sm font-medium">Horas Trabajo</p>
                   <p className="text-4xl font-bold text-white">
-                    {estadisticas.horas_trabajo_estimadas.toLocaleString()}+
+                    {formatNumber(estadisticas.horas_trabajo_estimadas)}+
                   </p>
                 </div>
                 <Clock className="h-10 w-10 text-emerald-400" />
@@ -189,7 +199,7 @@ export default function AuditoriaPage() {
                 <div>
                   <p className="text-purple-200 text-sm font-medium">Inversión Personal</p>
                   <p className="text-4xl font-bold text-white">
-                    ${estadisticas.inversion_personal_clp.toLocaleString()}
+                    ${formatNumber(estadisticas.inversion_personal_clp)}
                   </p>
                 </div>
                 <DollarSign className="h-10 w-10 text-purple-400" />
@@ -203,7 +213,7 @@ export default function AuditoriaPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-amber-200 text-sm font-medium">Multas Evitadas</p>
-                  <p className="text-4xl font-bold text-white">${(estadisticas.multas_evitadas_clp / 1000000).toFixed(0)}M</p>
+                  <p className="text-4xl font-bold text-white">${formatNumber(estadisticas.multas_evitadas_clp / 1000000)}M</p>
                 </div>
                 <Scale className="h-10 w-10 text-amber-400" />
               </div>
@@ -237,7 +247,7 @@ export default function AuditoriaPage() {
                 </p>
                 <p className="text-amber-100/80 text-sm leading-relaxed">
                   <strong>Nota:</strong> Se han analizado 21,417 líneas de 9 archivos de chat de WhatsApp.
-                  Este registro representa las {metadata.total_gestiones.toLocaleString()} gestiones documentadas.
+                  Este registro representa las {formatNumber(metadata.total_gestiones)} gestiones documentadas.
                 </p>
               </div>
             </div>
