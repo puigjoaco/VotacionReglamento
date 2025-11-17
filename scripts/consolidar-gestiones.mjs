@@ -3,6 +3,9 @@ import fs from 'fs';
 // Cargar gestiones interpretadas completas
 const interpretadas = JSON.parse(fs.readFileSync('./scripts/gestiones-completas.json', 'utf-8'));
 
+// Cargar gestiones del chat de Residentes y logros específicos
+const residentes = JSON.parse(fs.readFileSync('./scripts/gestiones-residentes.json', 'utf-8'));
+
 // Cargar las 89 tareas completadas del archivo original
 function cargarTareasCompletadas() {
   const content = fs.readFileSync('./chats/listado de tareas completadas.txt', 'utf-8');
@@ -101,6 +104,8 @@ function sonDuplicadas(g1, g2) {
 // Deduplicar con prioridad
 function deduplicar(gestiones) {
   const prioridad = {
+    'Logros Específicos Joaquín': 11,
+    'Chat Residentes': 10,
     'Listado Tareas Completadas': 10,
     'Presidente y Trabajadores': 9,
     'Comité solos': 8,
@@ -159,8 +164,17 @@ console.log(`Comité solos: ${comiteSolos.length} gestiones`);
 console.log(`Laboral: ${laboral.length} gestiones`);
 console.log(`Comité General: ${comiteGeneral.length} gestiones`);
 
+// 2.5. Cargar gestiones del chat de Residentes y logros específicos
+const chatResidentes = residentes.residentes.map(g => ({...g, fuente: 'Chat Residentes'}));
+const logrosEspecificos = residentes.logros_especificos_joaquin.map(g => ({...g, fuente: 'Logros Específicos Joaquín'}));
+
+console.log(`Chat Residentes: ${chatResidentes.length} gestiones`);
+console.log(`Logros Específicos Joaquín: ${logrosEspecificos.length} gestiones`);
+
 // 3. Combinar todas
 let todasGestiones = [
+  ...logrosEspecificos,  // Máxima prioridad
+  ...chatResidentes,
   ...tareasCompletadas,
   ...presidenteTrabajadores,
   ...comiteSolos,
@@ -243,16 +257,21 @@ const output = {
   logros_destacados_joaquin: [
     "Obtención certificación LIFTOK evitando multas de $15+ millones - Gestión personal con Marco Milla",
     "Elaboración completa del Reglamento Interno - Valorado en $4-6 millones, gestionado sin costo",
-    "Importación directa de piezas de ascensores desde China - Ahorro significativo vs proveedores locales",
+    "Proyecto COPEC Voltex GRATIS - Cargadores eléctricos que costaban $8M conseguidos sin costo, mayor plusvalía",
+    "Iluminación estacionamientos - $800K con maestros propios vs $3M contratistas, ahorro $2.2M",
+    "Importación piezas ascensor desde China - $400 USD vs $2M CLP de OTIS, ahorro de $1.6M por pieza",
+    "Nuevo jardín con plantas de sombra + circuito paseo de perros - Negociado gradualmente con jardineros",
+    "Limpieza estacionamientos diaria - Despidió personal que se negaba (Yahaira/Yamileth), mismo costo mejor servicio",
+    "Separación facturas otras torres - Evitó $300K mensuales de cobro fraudulento ($3.6M anuales)",
+    "Demandas legales contra otras torres por robo de electricidad - Deuda cuantificada en $13M+",
+    "Entrevistas personal en su departamento - Sacrificando tiempo laboral propio para asegurar competencia",
+    "Limpieza ductos basura - NUNCA se había hecho en historia del edificio, eliminó olores",
+    "Hacer valer garantías constructora CHC/EBCO - Seguimiento constante de reparaciones",
     "Regularización legal del comité con redacción de 11 actas formales",
     "Implementación sistema control de acceso biométrico (huellero)",
     "Instalación completa sistema de cámaras de seguridad WYZE",
     "Negociación contrato publicidad de $12M a $28M anuales",
-    "Gestión de 3 ciclos de mayordomos y múltiples auxiliares",
-    "Supervisión reparación porcelanato en ambos ascensores",
-    "Coordinación pintura y reparaciones con constructora CHC",
-    "Resolución crisis eléctrica a las 2AM",
-    "Gestión de amenazas y conflictos laborales graves"
+    "Baja sostenida de gastos comunes del edificio"
   ],
   horarios_trabajo_voluntario: {
     descripcion: "Joaquín Puig trabajó como presidente SIN REMUNERACIÓN en los siguientes horarios:",

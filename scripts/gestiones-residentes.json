@@ -1,0 +1,198 @@
+{
+  "residentes": [
+    {
+      "fecha": "2025-10-05",
+      "titulo": "Instalación cargadores eléctricos COPEC Voltex GRATIS",
+      "descripcion": "Joaquín negoció la instalación de cargador eléctrico COPEC Voltex completamente gratis para el edificio. El cargador, que normalmente costaría $8 millones de pesos, fue conseguido sin costo alguno. La instalación fue realizada profesionalmente por COPEC con equipos ABB de fabricación suiza. Infraestructura preparada para soportar hasta 3 cargadores adicionales. Esta mejora moderniza el edificio e incrementa significativamente su plusvalía.",
+      "tipo": "mejora",
+      "impacto": "critico",
+      "ahorro_estimado": 8000000
+    },
+    {
+      "fecha": "2025-10-20",
+      "titulo": "Reparación integral iluminación estacionamientos - Ahorro $2.2M",
+      "descripcion": "Cambio completo de TODAS las luminarias rotas en los estacionamientos. Joaquín utilizó maestros de su departamento personal para realizar el trabajo, logrando un costo de $800.000 versus $3.000.000 que cobraban contratistas externos. Ahorro de $2.200.000 para la comunidad. Transformación completa de la apariencia y seguridad de los estacionamientos.",
+      "tipo": "mejora",
+      "impacto": "critico",
+      "ahorro_estimado": 2200000
+    },
+    {
+      "fecha": "2025-09-26",
+      "titulo": "Despido personal aseo que se negaba limpiar estacionamientos",
+      "descripcion": "Se despidió a Yahaira y Yamileth quienes se negaban a limpiar los estacionamientos. Se contrató personal nuevo responsable con ganas de trabajar. Ahora los estacionamientos se limpian TODOS LOS DÍAS por el mismo costo. Recuperación notable de la limpieza del edificio completo.",
+      "tipo": "contratacion",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-10-03",
+      "titulo": "Limpieza ductos de basura - Nunca antes realizada",
+      "descripcion": "Limpieza integral de ductos de basura del piso 10 al 2, operación que NUNCA se había realizado en la historia del edificio. Limpieza piso por piso del ducto completo incluyendo puertas y parte interna. Reducción significativa de olores a basura en todos los pasillos.",
+      "tipo": "mejora",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-11-07",
+      "titulo": "Reparación todas las luces escalera de emergencia",
+      "descripcion": "Reparación completa de todas las luces de las escaleras de emergencia que llevaban varios meses sin funcionar. Las luces quedaron operativas y funcionales, mejorando significativamente la seguridad del edificio en caso de emergencia o incendio.",
+      "tipo": "reparacion",
+      "impacto": "critico",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-07-09",
+      "titulo": "Reparación puertas acceso estacionamientos con marcos reforzados",
+      "descripcion": "Reparación de puertas peatonales de acceso desde estacionamientos que tenían bisagras sueltas y mecanismos defectuosos. Instalación de marcos de fierro reforzados para garantizar cierre correcto y mejorar seguridad del edificio.",
+      "tipo": "reparacion",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-10-20",
+      "titulo": "Cambio 20 remarcadores agua con Aguas Andinas",
+      "descripcion": "Gestión del cambio de 20 remarcadores de agua que tenían diferencias en lecturas causando sobrecobros. Gestión completada directamente con Aguas Andinas en noviembre 2025, resultando en rectificación de consumos registrados y ahorro para residentes.",
+      "tipo": "financiero",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-06-12",
+      "titulo": "Demandas legales contra otras torres por robo de electricidad",
+      "descripcion": "Inicio de dos demandas legales formales contra las otras torres por consumo fraudulento de electricidad y agua. Negociación con abogados, recurso de protección escalado a Corte Suprema. Demanda adicional por cobros fraudulentos de administración.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-08-08",
+      "titulo": "Separación facturas servicios - Ahorro $3.6M anuales",
+      "descripcion": "Logro por votación en asamblea que caseta de seguridad y furgón tengan facturas independientes. Evitó cobro fraudulento de administración de $300.000 mensuales ($3.600.000 anuales). Mayor transparencia en pagos.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "ahorro_estimado": 3600000
+    },
+    {
+      "fecha": "2025-08-13",
+      "titulo": "Importación repuestos ascensor desde EEUU - Ahorro $1M",
+      "descripcion": "Adquisición de repuestos originales ascensor desde Estados Unidos por $443 USD con envío cuando presupuestos locales pedían $1.000.000 CLP. Repuestos adicionales en stock. Instalación coordinada con OTIS sin costo adicional.",
+      "tipo": "financiero",
+      "impacto": "alto",
+      "ahorro_estimado": 1000000
+    },
+    {
+      "fecha": "2025-11-08",
+      "titulo": "Reparación integral ascensores del edificio",
+      "descripcion": "Coordinación de reparación completa de ascensores por OTIS. Gestión de instalación de repuestos durante mantenimiento regular sin costo adicional. Seguimiento constante para garantizar trabajo correcto.",
+      "tipo": "reparacion",
+      "impacto": "critico",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-05-12",
+      "titulo": "Compilación 20 problemas edificio para demandas legales",
+      "descripcion": "Compilación exhaustiva y detallada de 20 problemas principales del edificio causados por la constructora: cálculo erróneo gastos comunes, deuda eléctrica otras torres, filtraciones, defectos instalación eléctrica. Base para demandas legales.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-06-12",
+      "titulo": "Cuantificación deuda otras torres $13M+",
+      "descripcion": "Cuantificación que otras torres deben más de $13.000.000 en consumo de electricidad y agua. Certificación de deuda como base para demandas legales y corte de suministro eléctrico.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "ahorro_estimado": 13000000
+    },
+    {
+      "fecha": "2025-09-28",
+      "titulo": "Instrucción personal sobre presurización escaleras emergencia",
+      "descripcion": "Instrucción al personal sobre importancia de mantener cerradas puertas de caja de escala para funcionamiento correcto del sistema de presurización en caso de incendio. Recordatorios de seguridad colocados.",
+      "tipo": "seguridad",
+      "impacto": "critico",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-10-17",
+      "titulo": "Contacto directo con Gerente General Aguas Andinas",
+      "descripcion": "Establecimiento de contacto directo con Gerente General de Aguas Andinas para resolver problema de consumo excesivo por remarcadores defectuosos. Acceso a información y disposición de empresa para solucionar problema.",
+      "tipo": "coordinacion",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-08-28",
+      "titulo": "Sistema seguimiento tareas del comité",
+      "descripcion": "Implementación de sistema de seguimiento de tareas con notificaciones automáticas: 3 días sin avance = correo, 7 días = copia comité, 10 días = copia Joaquín. Mayor responsabilidad en ejecución de gestiones.",
+      "tipo": "coordinacion",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-03-23",
+      "titulo": "Proyecto instalación cámaras seguridad en puntos ciegos",
+      "descripcion": "Promoción proyecto instalación cámaras de seguridad en todos los lugares del edificio incluyendo todos los pisos y puntos ciegos. Proyecto propuesto para votación en asamblea tras robo de bodegas.",
+      "tipo": "seguridad",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-10-02",
+      "titulo": "Actualización Reglamento de Convivencia",
+      "descripcion": "Preparación de actualización del Reglamento de Convivencia del edificio para revisión en asamblea. Coordinación para que en asamblea se hicieran todas las modificaciones necesarias.",
+      "tipo": "legal",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    }
+  ],
+  "logros_especificos_joaquin": [
+    {
+      "fecha": "2025-06-15",
+      "titulo": "Nuevo jardín con plantas de sombra y paseo de perros",
+      "descripcion": "Creación completa del jardín bajo el edificio con plantas que sobreviven en sombra. Joaquín contactó empresa especializada para selección de plantas. Sistema de riego especial para sombra. Además creó circuito para paseo de perros en sector sur bajo estacionamientos de visita. Trabajo realizado gradualmente con jardineros contratados que Joaquín dirigió constantemente para asegurar calidad. Costo mínimo por negociación directa.",
+      "tipo": "mejora",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-01-08",
+      "titulo": "Importación directa China - Ahorro $1.6M por pieza",
+      "descripcion": "Importación de piezas de ascensor directamente desde China. Costo China: $400 USD. Costo OTIS Chile: $2.000.000 CLP (aprox $2000 USD). Ahorro de $1.600.000 CLP por pieza. Demostración de preocupación constante por el ahorro del dinero del edificio.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "ahorro_estimado": 1600000
+    },
+    {
+      "fecha": "2024-12-01",
+      "titulo": "Entrevistas de personal en departamento personal de Joaquín",
+      "descripcion": "Joaquín recibió y entrevistó personalmente a cada empleado del edificio en su propio departamento. Se dio el tiempo de recibirlos entremedio de reuniones personales de su trabajo. Asegurando personal competente y comprometido con el edificio. Sacrificio de tiempo personal y profesional.",
+      "tipo": "contratacion",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-03-01",
+      "titulo": "Baja de gastos comunes del edificio",
+      "descripcion": "Logro sostenido de reducción de gastos comunes del edificio mediante gestión eficiente, negociaciones directas con proveedores, importaciones de piezas, y supervisión constante de gastos. Ahorro mensual para todos los residentes.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-04-15",
+      "titulo": "Aseo general permanente en pasillos del edificio",
+      "descripcion": "Implementación de régimen de aseo general permanente en todos los pasillos del edificio. Supervisión constante del cumplimiento. Los pasillos ahora se mantienen limpios diariamente.",
+      "tipo": "mejora",
+      "impacto": "medio",
+      "ahorro_estimado": null
+    },
+    {
+      "fecha": "2025-02-20",
+      "titulo": "Hacer valer garantías con constructora CHC/EBCO",
+      "descripcion": "Gestión activa para hacer valer todas las garantías con la constructora. Seguimiento de reparaciones pendientes, filtraciones, defectos de construcción. Presión constante para que cumplan con sus obligaciones contractuales.",
+      "tipo": "legal",
+      "impacto": "alto",
+      "ahorro_estimado": null
+    }
+  ]
+}

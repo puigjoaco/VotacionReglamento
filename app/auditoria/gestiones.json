@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_gestiones": 365,
+    "total_gestiones": 389,
     "periodo": "Junio 2023 - Noviembre 2025",
     "responsable": "Joaquín Puig",
     "cargo": "Presidente del Comité de Administración",
@@ -10,46 +10,46 @@
     "nota_importante": "Cada gestión fue liderada, coordinada o supervisada por Joaquín Puig como presidente del comité. Incluye trabajo en madrugadas, fines de semana, feriados y emergencias."
   },
   "resumen_ejecutivo": {
-    "total_gestiones_lideradas": 365,
-    "horas_trabajo_voluntario": 1095,
-    "crisis_criticas_resueltas": 77,
+    "total_gestiones_lideradas": 389,
+    "horas_trabajo_voluntario": 1167,
+    "crisis_criticas_resueltas": 88,
     "inversiones_personales_clp": 429980,
     "multas_evitadas_clp": 15000000,
     "valor_reglamento_interno_clp": 5000000,
     "ahorro_total_comunidad_clp": 20429980
   },
   "estadisticas": {
-    "horas_trabajo_estimadas": 1095,
+    "horas_trabajo_estimadas": 1167,
     "inversion_personal_clp": 429980,
     "multas_evitadas_clp": 15000000,
-    "crisis_criticas_resueltas": 77,
-    "gestiones_alto_impacto": 171,
+    "crisis_criticas_resueltas": 88,
+    "gestiones_alto_impacto": 183,
     "certificaciones_obtenidas": 5,
     "finiquitos_procesados": 10,
-    "contrataciones_gestionadas": 20,
+    "contrataciones_gestionadas": 22,
     "decisiones_comite_formales": 39,
-    "gestiones_legales": 27,
-    "reparaciones_mayores": 16,
-    "mejoras_implementadas": 10
+    "gestiones_legales": 32,
+    "reparaciones_mayores": 19,
+    "mejoras_implementadas": 15
   },
   "resumen_por_tipo": {
     "decision_comite": 39,
-    "legal": 27,
+    "legal": 32,
     "evaluacion": 9,
     "votacion": 3,
     "conflicto_laboral": 3,
-    "financiero": 54,
+    "financiero": 59,
     "finiquito": 10,
     "crisis": 4,
-    "contratacion": 20,
+    "contratacion": 22,
     "gestion_laboral": 4,
     "capacitacion": 4,
-    "coordinacion": 19,
+    "coordinacion": 21,
     "amonestacion": 4,
-    "seguridad": 14,
+    "seguridad": 16,
     "gestion_administrativa": 102,
-    "mejora": 10,
-    "reparacion": 16,
+    "mejora": 15,
+    "reparacion": 19,
     "mantencion": 3,
     "resolucion_conflictos": 1,
     "supervision": 12,
@@ -57,9 +57,9 @@
     "certificacion": 5
   },
   "resumen_por_impacto": {
-    "critico": 77,
-    "alto": 171,
-    "medio": 92,
+    "critico": 88,
+    "alto": 183,
+    "medio": 93,
     "bajo": 25
   },
   "resumen_por_fuente": {
@@ -67,7 +67,9 @@
     "Laboral": 47,
     "Comité General": 30,
     "Presidente y Trabajadores": 123,
-    "Listado Tareas Completadas": 85
+    "Logros Específicos Joaquín": 6,
+    "Listado Tareas Completadas": 85,
+    "Chat Residentes": 18
   },
   "gestiones": [
     {
@@ -1891,13 +1893,24 @@
       "responsable": "Joaquín Puig"
     },
     {
+      "fecha": "2024-12-01",
+      "titulo": "Entrevistas de personal en departamento personal de Joaquín",
+      "descripcion": "Joaquín recibió y entrevistó personalmente a cada empleado del edificio en su propio departamento. Se dio el tiempo de recibirlos entremedio de reuniones personales de su trabajo. Asegurando personal competente y comprometido con el edificio. Sacrificio de tiempo personal y profesional.",
+      "tipo": "contratacion",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Logros Específicos Joaquín",
+      "id": 183,
+      "responsable": "Joaquín Puig"
+    },
+    {
       "fecha": "2024-12-02",
       "titulo": "Revisión contratos de mantención",
       "descripcion": "Evaluación de contratos vigentes con proveedores.",
       "tipo": "gestion_administrativa",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 183,
+      "id": 184,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1907,7 +1920,7 @@
       "tipo": "reparacion",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 184,
+      "id": 185,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1917,7 +1930,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 185,
+      "id": 186,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1927,7 +1940,7 @@
       "tipo": "supervision",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 186,
+      "id": 187,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1937,7 +1950,7 @@
       "tipo": "reparacion",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 187,
+      "id": 188,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1947,7 +1960,7 @@
       "tipo": "coordinacion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 188,
+      "id": 189,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1957,7 +1970,7 @@
       "tipo": "legal",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 189,
+      "id": 190,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1967,7 +1980,7 @@
       "tipo": "coordinacion",
       "impacto": "alto",
       "fuente": "Comité General",
-      "id": 190,
+      "id": 191,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1977,7 +1990,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 191,
+      "id": 192,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1987,7 +2000,7 @@
       "tipo": "mejora",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 192,
+      "id": 193,
       "responsable": "Joaquín Puig"
     },
     {
@@ -1997,7 +2010,7 @@
       "tipo": "supervision",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 193,
+      "id": 194,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2007,7 +2020,7 @@
       "tipo": "legal",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 194,
+      "id": 195,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2017,7 +2030,7 @@
       "tipo": "reparacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 195,
+      "id": 196,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2027,7 +2040,7 @@
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 196,
+      "id": 197,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2037,7 +2050,7 @@
       "tipo": "coordinacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 197,
+      "id": 198,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2047,7 +2060,7 @@
       "tipo": "contratacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 198,
+      "id": 199,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2057,7 +2070,18 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 199,
+      "id": 200,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-01-08",
+      "titulo": "Importación directa China - Ahorro $1.6M por pieza",
+      "descripcion": "Importación de piezas de ascensor directamente desde China. Costo China: $400 USD. Costo OTIS Chile: $2.000.000 CLP (aprox $2000 USD). Ahorro de $1.600.000 CLP por pieza. Demostración de preocupación constante por el ahorro del dinero del edificio.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "ahorro_estimado": 1600000,
+      "fuente": "Logros Específicos Joaquín",
+      "id": 201,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2067,7 +2091,7 @@
       "tipo": "reparacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 200,
+      "id": 202,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2077,7 +2101,7 @@
       "tipo": "acuerdo_conjunto",
       "impacto": "critico",
       "fuente": "Comité General",
-      "id": 201,
+      "id": 203,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2087,7 +2111,7 @@
       "tipo": "reparacion",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 202,
+      "id": 204,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2097,7 +2121,7 @@
       "tipo": "reparacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 203,
+      "id": 205,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2107,7 +2131,7 @@
       "tipo": "reparacion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 204,
+      "id": 206,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2117,7 +2141,7 @@
       "tipo": "supervision",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 205,
+      "id": 207,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2127,7 +2151,7 @@
       "tipo": "coordinacion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 206,
+      "id": 208,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2137,7 +2161,7 @@
       "tipo": "reparacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 207,
+      "id": 209,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2147,7 +2171,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 208,
+      "id": 210,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2157,7 +2181,7 @@
       "tipo": "supervision",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 209,
+      "id": 211,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2167,7 +2191,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 210,
+      "id": 212,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2177,7 +2201,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "alto",
-      "id": 211,
+      "id": 213,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2187,7 +2211,7 @@
       "tipo": "reparacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 212,
+      "id": 214,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2197,7 +2221,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 213,
+      "id": 215,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2207,7 +2231,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 214,
+      "id": 216,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2217,7 +2241,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "alto",
-      "id": 215,
+      "id": 217,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2227,7 +2251,7 @@
       "tipo": "mantencion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 216,
+      "id": 218,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2237,7 +2261,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 217,
+      "id": 219,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2247,7 +2271,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 218,
+      "id": 220,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2257,7 +2281,7 @@
       "tipo": "coordinacion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 219,
+      "id": 221,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2267,7 +2291,7 @@
       "tipo": "crisis",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 220,
+      "id": 222,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2277,7 +2301,7 @@
       "tipo": "legal",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 221,
+      "id": 223,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2287,7 +2311,7 @@
       "tipo": "seguridad",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 222,
+      "id": 224,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2297,7 +2321,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 223,
+      "id": 225,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2307,7 +2331,18 @@
       "tipo": "supervision",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 224,
+      "id": 226,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-02-20",
+      "titulo": "Hacer valer garantías con constructora CHC/EBCO",
+      "descripcion": "Gestión activa para hacer valer todas las garantías con la constructora. Seguimiento de reparaciones pendientes, filtraciones, defectos de construcción. Presión constante para que cumplan con sus obligaciones contractuales.",
+      "tipo": "legal",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Logros Específicos Joaquín",
+      "id": 227,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2317,7 +2352,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Comité General",
-      "id": 225,
+      "id": 228,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2327,7 +2362,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 226,
+      "id": 229,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2337,7 +2372,7 @@
       "tipo": "coordinacion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 227,
+      "id": 230,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2347,7 +2382,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 228,
+      "id": 231,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2357,7 +2392,18 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 229,
+      "id": 232,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-03-01",
+      "titulo": "Baja de gastos comunes del edificio",
+      "descripcion": "Logro sostenido de reducción de gastos comunes del edificio mediante gestión eficiente, negociaciones directas con proveedores, importaciones de piezas, y supervisión constante de gastos. Ahorro mensual para todos los residentes.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "ahorro_estimado": null,
+      "fuente": "Logros Específicos Joaquín",
+      "id": 233,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2367,7 +2413,7 @@
       "tipo": "mejora",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 230,
+      "id": 234,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2377,7 +2423,7 @@
       "tipo": "mejora",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 231,
+      "id": 235,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2387,7 +2433,7 @@
       "tipo": "supervision",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 232,
+      "id": 236,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2397,7 +2443,7 @@
       "tipo": "certificacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 233,
+      "id": 237,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2407,7 +2453,7 @@
       "tipo": "coordinacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 234,
+      "id": 238,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2417,7 +2463,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 235,
+      "id": 239,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2427,7 +2473,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Comité General",
-      "id": 236,
+      "id": 240,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2437,7 +2483,7 @@
       "tipo": "seguridad",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 237,
+      "id": 241,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2447,7 +2493,7 @@
       "tipo": "legal",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 238,
+      "id": 242,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2457,7 +2503,18 @@
       "tipo": "seguridad",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 239,
+      "id": 243,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-03-23",
+      "titulo": "Proyecto instalación cámaras seguridad en puntos ciegos",
+      "descripcion": "Promoción proyecto instalación cámaras de seguridad en todos los lugares del edificio incluyendo todos los pisos y puntos ciegos. Proyecto propuesto para votación en asamblea tras robo de bodegas.",
+      "tipo": "seguridad",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 244,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2467,7 +2524,7 @@
       "tipo": "reparacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 240,
+      "id": 245,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2477,7 +2534,7 @@
       "tipo": "reparacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 241,
+      "id": 246,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2487,7 +2544,7 @@
       "tipo": "seguridad",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 242,
+      "id": 247,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2497,7 +2554,7 @@
       "tipo": "mejora",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 243,
+      "id": 248,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2507,7 +2564,7 @@
       "tipo": "coordinacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 244,
+      "id": 249,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2517,7 +2574,7 @@
       "tipo": "certificacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 245,
+      "id": 250,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2527,7 +2584,7 @@
       "tipo": "certificacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 246,
+      "id": 251,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2537,7 +2594,7 @@
       "tipo": "contratacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 247,
+      "id": 252,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2547,7 +2604,7 @@
       "tipo": "certificacion",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 248,
+      "id": 253,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2557,7 +2614,18 @@
       "tipo": "contratacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 249,
+      "id": 254,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-04-15",
+      "titulo": "Aseo general permanente en pasillos del edificio",
+      "descripcion": "Implementación de régimen de aseo general permanente en todos los pasillos del edificio. Supervisión constante del cumplimiento. Los pasillos ahora se mantienen limpios diariamente.",
+      "tipo": "mejora",
+      "impacto": "medio",
+      "ahorro_estimado": null,
+      "fuente": "Logros Específicos Joaquín",
+      "id": 255,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2567,7 +2635,7 @@
       "tipo": "mejora",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 250,
+      "id": 256,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2577,7 +2645,7 @@
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Comité General",
-      "id": 251,
+      "id": 257,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2587,7 +2655,7 @@
       "tipo": "contratacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 252,
+      "id": 258,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2597,7 +2665,7 @@
       "tipo": "supervision",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 253,
+      "id": 259,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2607,7 +2675,7 @@
       "tipo": "seguridad",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 254,
+      "id": 260,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2617,7 +2685,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 255,
+      "id": 261,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2627,7 +2695,7 @@
       "tipo": "supervision",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 256,
+      "id": 262,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2637,7 +2705,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 257,
+      "id": 263,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2647,7 +2715,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 258,
+      "id": 264,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2657,7 +2725,7 @@
       "tipo": "coordinacion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 259,
+      "id": 265,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2667,7 +2735,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 260,
+      "id": 266,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2677,7 +2745,7 @@
       "tipo": "supervision",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 261,
+      "id": 267,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2687,7 +2755,18 @@
       "tipo": "legal",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 262,
+      "id": 268,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-05-12",
+      "titulo": "Compilación 20 problemas edificio para demandas legales",
+      "descripcion": "Compilación exhaustiva y detallada de 20 problemas principales del edificio causados por la constructora: cálculo erróneo gastos comunes, deuda eléctrica otras torres, filtraciones, defectos instalación eléctrica. Base para demandas legales.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 269,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2697,7 +2776,7 @@
       "tipo": "mantencion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 263,
+      "id": 270,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2707,7 +2786,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 264,
+      "id": 271,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2717,7 +2796,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 265,
+      "id": 272,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2727,7 +2806,7 @@
       "tipo": "seguridad",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 266,
+      "id": 273,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2737,7 +2816,7 @@
       "tipo": "legal",
       "impacto": "critico",
       "fuente": "Comité General",
-      "id": 267,
+      "id": 274,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2747,7 +2826,7 @@
       "tipo": "reparacion",
       "impacto": "medio",
       "fuente": "Presidente y Trabajadores",
-      "id": 268,
+      "id": 275,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2757,7 +2836,7 @@
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 269,
+      "id": 276,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2767,7 +2846,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 270,
+      "id": 277,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2777,7 +2856,7 @@
       "tipo": "certificacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 271,
+      "id": 278,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2787,7 +2866,7 @@
       "tipo": "financiero",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 272,
+      "id": 279,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2797,7 +2876,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 273,
+      "id": 280,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2807,7 +2886,7 @@
       "tipo": "legal",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 274,
+      "id": 281,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2817,7 +2896,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 275,
+      "id": 282,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2827,7 +2906,7 @@
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 276,
+      "id": 283,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2837,7 +2916,7 @@
       "tipo": "coordinacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 277,
+      "id": 284,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2847,7 +2926,29 @@
       "tipo": "acuerdo_conjunto",
       "impacto": "critico",
       "fuente": "Comité General",
-      "id": 278,
+      "id": 285,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-06-12",
+      "titulo": "Demandas legales contra otras torres por robo de electricidad",
+      "descripcion": "Inicio de dos demandas legales formales contra las otras torres por consumo fraudulento de electricidad y agua. Negociación con abogados, recurso de protección escalado a Corte Suprema. Demanda adicional por cobros fraudulentos de administración.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 286,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-06-12",
+      "titulo": "Cuantificación deuda otras torres $13M+",
+      "descripcion": "Cuantificación que otras torres deben más de $13.000.000 en consumo de electricidad y agua. Certificación de deuda como base para demandas legales y corte de suministro eléctrico.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "ahorro_estimado": 13000000,
+      "fuente": "Chat Residentes",
+      "id": 287,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2857,7 +2958,18 @@
       "tipo": "supervision",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 279,
+      "id": 288,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-06-15",
+      "titulo": "Nuevo jardín con plantas de sombra y paseo de perros",
+      "descripcion": "Creación completa del jardín bajo el edificio con plantas que sobreviven en sombra. Joaquín contactó empresa especializada para selección de plantas. Sistema de riego especial para sombra. Además creó circuito para paseo de perros en sector sur bajo estacionamientos de visita. Trabajo realizado gradualmente con jardineros contratados que Joaquín dirigió constantemente para asegurar calidad. Costo mínimo por negociación directa.",
+      "tipo": "mejora",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Logros Específicos Joaquín",
+      "id": 289,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2867,7 +2979,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 280,
+      "id": 290,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2877,7 +2989,7 @@
       "tipo": "coordinacion",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
-      "id": 281,
+      "id": 291,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2887,7 +2999,7 @@
       "tipo": "gestion_administrativa",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 282,
+      "id": 292,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2897,7 +3009,7 @@
       "tipo": "coordinacion",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 283,
+      "id": 293,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2907,7 +3019,51 @@
       "tipo": "gestion_administrativa",
       "impacto": "critico",
       "fuente": "Presidente y Trabajadores",
-      "id": 284,
+      "id": 294,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-07-09",
+      "titulo": "Reparación puertas acceso estacionamientos con marcos reforzados",
+      "descripcion": "Reparación de puertas peatonales de acceso desde estacionamientos que tenían bisagras sueltas y mecanismos defectuosos. Instalación de marcos de fierro reforzados para garantizar cierre correcto y mejorar seguridad del edificio.",
+      "tipo": "reparacion",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 295,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-08-08",
+      "titulo": "Separación facturas servicios - Ahorro $3.6M anuales",
+      "descripcion": "Logro por votación en asamblea que caseta de seguridad y furgón tengan facturas independientes. Evitó cobro fraudulento de administración de $300.000 mensuales ($3.600.000 anuales). Mayor transparencia en pagos.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "ahorro_estimado": 3600000,
+      "fuente": "Chat Residentes",
+      "id": 296,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-08-13",
+      "titulo": "Importación repuestos ascensor desde EEUU - Ahorro $1M",
+      "descripcion": "Adquisición de repuestos originales ascensor desde Estados Unidos por $443 USD con envío cuando presupuestos locales pedían $1.000.000 CLP. Repuestos adicionales en stock. Instalación coordinada con OTIS sin costo adicional.",
+      "tipo": "financiero",
+      "impacto": "alto",
+      "ahorro_estimado": 1000000,
+      "fuente": "Chat Residentes",
+      "id": 297,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-08-28",
+      "titulo": "Sistema seguimiento tareas del comité",
+      "descripcion": "Implementación de sistema de seguimiento de tareas con notificaciones automáticas: 3 días sin avance = correo, 7 días = copia comité, 10 días = copia Joaquín. Mayor responsabilidad en ejecución de gestiones.",
+      "tipo": "coordinacion",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 298,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2917,7 +3073,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 285,
+      "id": 299,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2927,7 +3083,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 286,
+      "id": 300,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2937,7 +3093,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 287,
+      "id": 301,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2947,7 +3103,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 288,
+      "id": 302,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2957,7 +3113,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 289,
+      "id": 303,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2967,7 +3123,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 290,
+      "id": 304,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2977,7 +3133,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 291,
+      "id": 305,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2987,7 +3143,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "alto",
-      "id": 292,
+      "id": 306,
       "responsable": "Joaquín Puig"
     },
     {
@@ -2997,7 +3153,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 293,
+      "id": 307,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3007,7 +3163,18 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 294,
+      "id": 308,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-09-26",
+      "titulo": "Despido personal aseo que se negaba limpiar estacionamientos",
+      "descripcion": "Se despidió a Yahaira y Yamileth quienes se negaban a limpiar los estacionamientos. Se contrató personal nuevo responsable con ganas de trabajar. Ahora los estacionamientos se limpian TODOS LOS DÍAS por el mismo costo. Recuperación notable de la limpieza del edificio completo.",
+      "tipo": "contratacion",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 309,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3017,7 +3184,18 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 295,
+      "id": 310,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-09-28",
+      "titulo": "Instrucción personal sobre presurización escaleras emergencia",
+      "descripcion": "Instrucción al personal sobre importancia de mantener cerradas puertas de caja de escala para funcionamiento correcto del sistema de presurización en caso de incendio. Recordatorios de seguridad colocados.",
+      "tipo": "seguridad",
+      "impacto": "critico",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 311,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3027,7 +3205,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 296,
+      "id": 312,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3037,7 +3215,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 297,
+      "id": 313,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3047,7 +3225,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 298,
+      "id": 314,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3057,7 +3235,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 299,
+      "id": 315,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3067,7 +3245,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 300,
+      "id": 316,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3077,7 +3255,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 301,
+      "id": 317,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3087,7 +3265,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 302,
+      "id": 318,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3097,7 +3275,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 303,
+      "id": 319,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3107,7 +3285,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 304,
+      "id": 320,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3117,7 +3295,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 305,
+      "id": 321,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3127,7 +3305,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 306,
+      "id": 322,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3137,7 +3315,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 307,
+      "id": 323,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3147,7 +3325,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 308,
+      "id": 324,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3157,7 +3335,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 309,
+      "id": 325,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3167,7 +3345,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 310,
+      "id": 326,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3177,7 +3355,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 311,
+      "id": 327,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3187,7 +3365,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 312,
+      "id": 328,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3197,7 +3375,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 313,
+      "id": 329,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3207,7 +3385,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 314,
+      "id": 330,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3217,7 +3395,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 315,
+      "id": 331,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3227,7 +3405,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 316,
+      "id": 332,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3237,7 +3415,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 317,
+      "id": 333,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3247,7 +3425,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "alto",
-      "id": 318,
+      "id": 334,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3257,7 +3435,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 319,
+      "id": 335,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3267,7 +3445,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 320,
+      "id": 336,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3277,7 +3455,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 321,
+      "id": 337,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3287,7 +3465,29 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 322,
+      "id": 338,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-10-02",
+      "titulo": "Actualización Reglamento de Convivencia",
+      "descripcion": "Preparación de actualización del Reglamento de Convivencia del edificio para revisión en asamblea. Coordinación para que en asamblea se hicieran todas las modificaciones necesarias.",
+      "tipo": "legal",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 339,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-10-03",
+      "titulo": "Limpieza ductos de basura - Nunca antes realizada",
+      "descripcion": "Limpieza integral de ductos de basura del piso 10 al 2, operación que NUNCA se había realizado en la historia del edificio. Limpieza piso por piso del ducto completo incluyendo puertas y parte interna. Reducción significativa de olores a basura en todos los pasillos.",
+      "tipo": "mejora",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 340,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3297,7 +3497,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "alto",
-      "id": 323,
+      "id": 341,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3307,7 +3507,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 324,
+      "id": 342,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3317,7 +3517,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 325,
+      "id": 343,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3327,7 +3527,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 326,
+      "id": 344,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3337,7 +3537,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 327,
+      "id": 345,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3347,7 +3547,18 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 328,
+      "id": 346,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-10-05",
+      "titulo": "Instalación cargadores eléctricos COPEC Voltex GRATIS",
+      "descripcion": "Joaquín negoció la instalación de cargador eléctrico COPEC Voltex completamente gratis para el edificio. El cargador, que normalmente costaría $8 millones de pesos, fue conseguido sin costo alguno. La instalación fue realizada profesionalmente por COPEC con equipos ABB de fabricación suiza. Infraestructura preparada para soportar hasta 3 cargadores adicionales. Esta mejora moderniza el edificio e incrementa significativamente su plusvalía.",
+      "tipo": "mejora",
+      "impacto": "critico",
+      "ahorro_estimado": 8000000,
+      "fuente": "Chat Residentes",
+      "id": 347,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3357,7 +3568,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 329,
+      "id": 348,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3367,7 +3578,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 330,
+      "id": 349,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3377,7 +3588,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 331,
+      "id": 350,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3387,7 +3598,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 332,
+      "id": 351,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3397,7 +3608,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 333,
+      "id": 352,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3407,7 +3618,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 334,
+      "id": 353,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3417,7 +3628,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 335,
+      "id": 354,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3427,7 +3638,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 336,
+      "id": 355,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3437,7 +3648,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 337,
+      "id": 356,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3447,7 +3658,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 338,
+      "id": 357,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3457,7 +3668,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 339,
+      "id": 358,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3467,7 +3678,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 340,
+      "id": 359,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3477,7 +3688,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 341,
+      "id": 360,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3487,7 +3698,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 342,
+      "id": 361,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3497,7 +3708,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 343,
+      "id": 362,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3507,7 +3718,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 344,
+      "id": 363,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3517,7 +3728,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 345,
+      "id": 364,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3527,7 +3738,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 346,
+      "id": 365,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3537,7 +3748,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 347,
+      "id": 366,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3547,7 +3758,18 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 348,
+      "id": 367,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-10-17",
+      "titulo": "Contacto directo con Gerente General Aguas Andinas",
+      "descripcion": "Establecimiento de contacto directo con Gerente General de Aguas Andinas para resolver problema de consumo excesivo por remarcadores defectuosos. Acceso a información y disposición de empresa para solucionar problema.",
+      "tipo": "coordinacion",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 368,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3557,7 +3779,29 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 349,
+      "id": 369,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-10-20",
+      "titulo": "Reparación integral iluminación estacionamientos - Ahorro $2.2M",
+      "descripcion": "Cambio completo de TODAS las luminarias rotas en los estacionamientos. Joaquín utilizó maestros de su departamento personal para realizar el trabajo, logrando un costo de $800.000 versus $3.000.000 que cobraban contratistas externos. Ahorro de $2.200.000 para la comunidad. Transformación completa de la apariencia y seguridad de los estacionamientos.",
+      "tipo": "mejora",
+      "impacto": "critico",
+      "ahorro_estimado": 2200000,
+      "fuente": "Chat Residentes",
+      "id": 370,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-10-20",
+      "titulo": "Cambio 20 remarcadores agua con Aguas Andinas",
+      "descripcion": "Gestión del cambio de 20 remarcadores de agua que tenían diferencias en lecturas causando sobrecobros. Gestión completada directamente con Aguas Andinas en noviembre 2025, resultando en rectificación de consumos registrados y ahorro para residentes.",
+      "tipo": "financiero",
+      "impacto": "alto",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 371,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3567,7 +3811,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 350,
+      "id": 372,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3577,7 +3821,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 351,
+      "id": 373,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3587,7 +3831,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 352,
+      "id": 374,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3597,7 +3841,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 353,
+      "id": 375,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3607,7 +3851,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 354,
+      "id": 376,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3617,7 +3861,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 355,
+      "id": 377,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3627,7 +3871,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 356,
+      "id": 378,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3637,7 +3881,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 357,
+      "id": 379,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3647,7 +3891,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 358,
+      "id": 380,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3657,7 +3901,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 359,
+      "id": 381,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3667,7 +3911,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 360,
+      "id": 382,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3677,7 +3921,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 361,
+      "id": 383,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3687,7 +3931,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 362,
+      "id": 384,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3697,7 +3941,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 363,
+      "id": 385,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3707,7 +3951,7 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
-      "id": 364,
+      "id": 386,
       "responsable": "Joaquín Puig"
     },
     {
@@ -3717,7 +3961,29 @@
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
-      "id": 365,
+      "id": 387,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-11-07",
+      "titulo": "Reparación todas las luces escalera de emergencia",
+      "descripcion": "Reparación completa de todas las luces de las escaleras de emergencia que llevaban varios meses sin funcionar. Las luces quedaron operativas y funcionales, mejorando significativamente la seguridad del edificio en caso de emergencia o incendio.",
+      "tipo": "reparacion",
+      "impacto": "critico",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 388,
+      "responsable": "Joaquín Puig"
+    },
+    {
+      "fecha": "2025-11-08",
+      "titulo": "Reparación integral ascensores del edificio",
+      "descripcion": "Coordinación de reparación completa de ascensores por OTIS. Gestión de instalación de repuestos durante mantenimiento regular sin costo adicional. Seguimiento constante para garantizar trabajo correcto.",
+      "tipo": "reparacion",
+      "impacto": "critico",
+      "ahorro_estimado": null,
+      "fuente": "Chat Residentes",
+      "id": 389,
       "responsable": "Joaquín Puig"
     }
   ],
@@ -3761,16 +4027,21 @@
   "logros_destacados_joaquin": [
     "Obtención certificación LIFTOK evitando multas de $15+ millones - Gestión personal con Marco Milla",
     "Elaboración completa del Reglamento Interno - Valorado en $4-6 millones, gestionado sin costo",
-    "Importación directa de piezas de ascensores desde China - Ahorro significativo vs proveedores locales",
+    "Proyecto COPEC Voltex GRATIS - Cargadores eléctricos que costaban $8M conseguidos sin costo, mayor plusvalía",
+    "Iluminación estacionamientos - $800K con maestros propios vs $3M contratistas, ahorro $2.2M",
+    "Importación piezas ascensor desde China - $400 USD vs $2M CLP de OTIS, ahorro de $1.6M por pieza",
+    "Nuevo jardín con plantas de sombra + circuito paseo de perros - Negociado gradualmente con jardineros",
+    "Limpieza estacionamientos diaria - Despidió personal que se negaba (Yahaira/Yamileth), mismo costo mejor servicio",
+    "Separación facturas otras torres - Evitó $300K mensuales de cobro fraudulento ($3.6M anuales)",
+    "Demandas legales contra otras torres por robo de electricidad - Deuda cuantificada en $13M+",
+    "Entrevistas personal en su departamento - Sacrificando tiempo laboral propio para asegurar competencia",
+    "Limpieza ductos basura - NUNCA se había hecho en historia del edificio, eliminó olores",
+    "Hacer valer garantías constructora CHC/EBCO - Seguimiento constante de reparaciones",
     "Regularización legal del comité con redacción de 11 actas formales",
     "Implementación sistema control de acceso biométrico (huellero)",
     "Instalación completa sistema de cámaras de seguridad WYZE",
     "Negociación contrato publicidad de $12M a $28M anuales",
-    "Gestión de 3 ciclos de mayordomos y múltiples auxiliares",
-    "Supervisión reparación porcelanato en ambos ascensores",
-    "Coordinación pintura y reparaciones con constructora CHC",
-    "Resolución crisis eléctrica a las 2AM",
-    "Gestión de amenazas y conflictos laborales graves"
+    "Baja sostenida de gastos comunes del edificio"
   ],
   "horarios_trabajo_voluntario": {
     "descripcion": "Joaquín Puig trabajó como presidente SIN REMUNERACIÓN en los siguientes horarios:",
