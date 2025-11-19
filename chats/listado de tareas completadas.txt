@@ -1,0 +1,1081 @@
+TAREAS COMPLETADAS (1-4)
+
+  1. FILTRACION BOX
+
+  - ID: FILTRACIONBOXGJNwJq
+  - Prioridad: Alta
+  - Categoría: mantención correctiva
+  - Creada: 29/01/2025, 17:22:58
+  - Completada: 29/01/2025, 17:32:27
+  - Tiempo resolución: 0.01 días
+
+  Descripción:
+  Filtración de agua en box 84 de estacionamiento
+
+  Actualizaciones/Progreso:
+  1. 29/01/2025 17:32:27 - Completada
+  Se detectó falta de sello en juntas de baldosas ingreso a box 84. Se reparó y selló con sellante de poliuretano resistente al agua.
+
+  ---
+  2. JARDINERIA - CORTE DE PLANTAS ESTACIONAMIENTOS
+
+  - ID: JARDINERIACORTEDEPLANTASESTACIONAMIENTOSMiVy9o
+  - Prioridad: media
+  - Categoría: mantención preventiva
+  - Creada: 30/01/2025, 02:26:43
+  - Completada: 30/01/2025, 02:28:32
+  - Tiempo resolución: 0.001 días
+
+  Descripción:
+  Corte de plantas que sobresalen en estacionamientos sector oriente del edificio, las plantas bloquean la visibilidad al retroceder por lo que se debe podar y mantener a nivel de la jardinera.
+
+  Actualizaciones/Progreso:
+  1. 30/01/2025 02:28:32 - Completada
+  Se realizó poda de plantas que sobresalían de jardineras en estacionamientos sector oriente.
+
+  ---
+  3. ALFOMBRA ENTRADA PRINCIPAL
+
+  - ID: ALFOMBRAENTRADAPRINCIPALRhLtSN
+  - Prioridad: media
+  - Categoría: mantención correctiva
+  - Creada: 30/01/2025, 02:30:57
+  - Completada: 30/01/2025, 02:32:29
+  - Tiempo resolución: 0.001 días
+
+  Descripción:
+  Alfombra entrada principal doblada, riesgo de caída para residentes. Planchar y/o pegar alfombra a piso.
+
+  Actualizaciones/Progreso:
+  1. 30/01/2025 02:32:29 - Completada
+  Se reposicionó y fijó correctamente la alfombra de entrada principal.
+
+  ---
+  4. SUPERVISION SALA DE BOMBA
+
+  - ID: SUPERVISIONSALADEBOMBAXeZ12g
+  - Prioridad: Alta
+  - Categoría: mantención preventiva
+  - Creada: 30/01/2025, 02:34:08
+  - Completada: 30/01/2025, 02:35:37
+  - Tiempo resolución: 0.001 días
+
+  Descripción:
+  Supervisar funcionamiento correcto de bombas de agua del edificio, revisar presiones, niveles y estado general de equipos.
+
+  Actualizaciones/Progreso:
+  1. 30/01/2025 02:35:37 - Completada
+  Supervisión completada. Bombas funcionando correctamente, presiones normales. 
+
+ ---
+  5. MANTENCION EXTRACTORES Y PRESURIZADOR
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 22 de octubre 2025 | Completada: 30 de octubre 2025, 12:27 hrs
+  Tiempo de resolución: 8 días
+
+  Trabajo realizado:
+  Mantenimiento preventivo completo de extractores de aire y sistema presurizador del edificio.
+
+  ---
+  6. CERRADURA BODEGA PISO 19
+
+  Prioridad: BAJA | Categoría: Reparación
+  Creada: 20 de octubre 2025 | Completada: 30 de octubre 2025, 12:27 hrs
+  Tiempo de resolución: 10 días
+
+  Trabajo realizado:
+  Cambio completo de cerradura de bodega utilizada por empresa EBCO en el piso 19 del edificio.
+
+  ---
+  7. JARDINERÍA - LIMPIEZA MALEZA ENTRADA PRINCIPAL
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 16 de octubre 2025 | Completada: 30 de octubre 2025, 12:26 hrs
+  Tiempo de resolución: 14 días
+
+  Trabajo realizado:
+  Limpieza de entrada principal que estaba llena de maleza y daba mal aspecto al condominio.
+
+  Progreso registrado:
+  - 21-Oct-2025: "SE PROGRAMA LIMPIEZA PARA EL JUEVES 23-10-25" - Axel Cruzalegui
+
+  ---
+  8. GORRO GALVANIZADO TUBERIAS TECHUMBRE
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 16 de octubre 2025 | Completada: 30 de octubre 2025, 12:26 hrs
+  Tiempo de resolución: 14 días
+
+  Trabajo realizado:
+  Compra e instalación de 8 gorros galvanizados para proteger tuberías en la techumbre. Objetivo: evitar que aves ingresen y obstruyan las tuberías con nidos o desechos.
+
+  ---
+  9. REVISION BALIZAS TECHUMBRE
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 16 de octubre 2025 | Completada: 30 de octubre 2025, 12:26 hrs
+  Tiempo de resolución: 14 días
+
+  Trabajo realizado:
+  Inspección completa del estado de las balizas de señalización ubicadas en la techumbre del edificio. Se confirmó buen estado y funcionamiento.
+
+  ---
+  10. LISTADO COMPLETO DE RESIDENTES
+
+  Prioridad: MEDIA | Categoría: Otros
+  Creada: 02 de octubre 2025 | Completada: 30 de octubre 2025, 12:26 hrs
+  Tiempo de resolución: 28 días
+
+  Trabajo realizado:
+  Creación de base de datos completa de residentes incluyendo:
+  - Nombre completo
+  - RUT
+  - Número de teléfono
+  - Correo electrónico
+  - Datos de arrendatarios (si aplica)
+
+  Progreso registrado:
+  - 16-Oct-2025: "EN PROCESO FALTAN, QUE RESIDENTES ENTREGEN LAS HOJAS" - Axel Cruzalegui
+
+  ---
+  11. REPARACION MURALLA PISO 2
+
+  Prioridad: BAJA | Categoría: Reparación
+  Creada: 02 de octubre 2025 | Completada: 30 de octubre 2025, 12:25 hrs
+  Tiempo de resolución: 28 días
+
+  Trabajo realizado:
+  Cotización y ejecución de reparación de muralla dañada en piso 2.
+
+  Progreso registrado:
+  - 16-Oct-2025: "COTIZACION APROVADA, SE TRABAJARA EN ESTA SEMANA" - Axel Cruzalegui
+  - 21-Oct-2025: "SE ESTA REPARANDO." - Axel Cruzalegui
+
+  ---
+  12. CAMBIO LLAVE DE AGUA 3/4" JARDIN
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 16 de octubre 2025 | Completada: 22 de octubre 2025, 16:36 hrs
+  Tiempo de resolución: 6 días
+
+  Trabajo realizado:
+  Reemplazo de llave de agua de 3/4 pulgadas ubicada en el jardín frente a la entrada principal. Llave anterior presentaba fugas y desgaste.
+
+  ---
+  13. REPARACION TAPA DESAGUE SALA DE BASURA NIVEL -2
+
+  Prioridad: BAJA | Categoría: Reparación
+  Creada: 20 de octubre 2025 | Completada: 21 de octubre 2025, 16:07 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Reparación de la tapa del sistema de desagüe de la sala de basura que conecta al nivel -2.
+
+  Actualización final:
+  - 21-Oct-2025: "PROBLEMA SOLUCIONADO" - Axel Cruzalegui
+
+  ---
+  14. MANTENIMIENTO EXTRACTORES TECHUMBRE - CLIMA INOVA
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 16 de octubre 2025 | Completada: 21 de octubre 2025, 12:24 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Visita técnica de empresa CLIMA INOVA para mantenimiento de extractores en techumbre.
+
+  Actualización final:
+  - 21-Oct-2025: "INGRESA LA EMPRESA CLIMA INOVA, FERIFICA PROBLEMA E INDICA QUE ES UN DESBALANCE EL CUAL, SE SOLUCIONARA EN LA PROXIMA MANTENCION." - Axel Cruzalegui
+
+  ---
+  15. SOLICITUD CONTENEDORES RECICLADO MUNICIPALIDAD
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 16 de octubre 2025 | Completada: 21 de octubre 2025, 12:22 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Gestión con la Municipalidad de Vitacura para obtención de contenedores de reciclaje.
+
+  Actualización final:
+  - 21-Oct-2025: "SE RECIBEN 3 CONTENEDORES PEQUEÑOS DE RECICLADO" - Axel Cruzalegui
+
+  ---
+  16. LAVADO RAMPLA PEATONAL
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 17 de octubre 2025 | Completada: 21 de octubre 2025, 12:22 hrs
+  Tiempo de resolución: 4 días
+
+  Trabajo realizado:
+  Lavado profundo de la rampla peatonal que se encontraba ennegrecida por acumulación de tierra y suciedad.
+
+  Actualización final:
+  - 21-Oct-2025: "TAREA EFECTUADA" - Axel Cruzalegui
+
+  ---
+  17. LIMPIEZA MUROS SECTOR PISCINA - EXCREMENTO DE PALOMAS
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 16 de octubre 2025 | Completada: 21 de octubre 2025, 12:21 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Limpieza y desinfección de muros del sector piscina que estaban cubiertos con excremento de paloma.
+
+  Actualización final:
+  - 21-Oct-2025: "TAREA EFECTUADA" - Axel Cruzalegui
+
+  ---
+  18. CAMBIO TUBOS FLUORESCENTES A LED - EDIFICIO COMPLETO
+
+  Prioridad: BAJA | Categoría: Reparación
+  Creada: 01 de octubre 2025 | Completada: 21 de octubre 2025, 12:19 hrs
+  Tiempo de resolución: 20 días
+
+  Trabajo realizado:
+  Reemplazo masivo de iluminación fluorescente por LED en todo el edificio:
+  - Hall ascensores: Tubos LED luz cálida con tapas de acrílico protectoras
+  - Estacionamientos: Tubos LED luz fría
+  - Búsqueda de cotizaciones para tapas de acrílico (equipos completos no disponibles en mercado)
+
+  Progreso registrado:
+  - 07-Oct-2025: "Se efectuara la búsqueda de cotización para los acrílicos ya que los equipos no los pude encontrar." - Axel Cruzalegui
+
+  ---
+  19. LAVADO DE PIEDRAS DECORATIVAS ENTRADA PRINCIPAL
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 16 de octubre 2025 | Completada: 21 de octubre 2025, 12:19 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Lavado y limpieza de las piedras decorativas ubicadas en la entrada principal del edificio.
+
+  Actualización final:
+  - 21-Oct-2025: "TAREA TERMINADA" - Axel Cruzalegui
+
+  ---
+  20. CAMBIO LUCES RAMPLA PISCINA + 36 EQUIPOS HALL ASCENSORES
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 01 de octubre 2025 | Completada: 21 de octubre 2025, 12:17 hrs
+  Tiempo de resolución: 20 días
+
+  Trabajo realizado:
+  - Reemplazo de luz en mal estado en rampla sector piscina
+  - Cambio de 36 equipos de iluminación frente a los ascensores
+  - Cotización de acrílicos protectores
+
+  Progreso registrado:
+  - 10-Oct-2025: "SE ESTA EFECTUANDO DE COTIZACION DE ACRILICOS" - Axel Cruzalegui
+  - 21-Oct-2025: "LLUZ SECTOR PISCINA REPARA, SE EMPIEZA A TRABAJAR EN LOS HALL DE LOS ASCENSORES" - Axel Cruzalegui
+
+  ---
+  21. COMPRA UNIFORMES PERSONAL ASEO Y CONSERJERIA
+
+  Prioridad: MEDIA | Categoría: Administración
+  Creada: 12 de septiembre 2025 | Completada: 17 de octubre 2025, 11:38 hrs
+  Tiempo de resolución: 35 días
+
+  Trabajo realizado:
+  Adquisición de uniformes para personal:
+  - Uniformes completos para auxiliares de aseo (2 personas)
+  - Uniforme para Eduardo
+  - Polar y chaqueta talla grande para personal de domingo (talla universal para cualquier trabajador)
+
+  Progreso registrado:
+  - 23-Sep-2025: "SE ESTA COTIZANDO UNIFORMES" - Axel Cruzalegui
+  - 29-Sep-2025: "1 COTIZACION ENVIADA A LA ESPERA DE 3 COTIZACIONES MAS" - Axel Cruzalegui
+  - 30-Sep-2025: "COTIZACIONS YA ENVIADAS" - Axel Cruzalegui
+
+  ---
+  22. REPARACION 12 CERAMICAS PISO 9
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 14 de octubre 2025 | Completada: 16 de octubre 2025, 09:55 hrs
+  Tiempo de resolución: 2 días
+
+  Trabajo realizado:
+  Reemplazo de 12 cerámicas en mal estado (rotas, despegadas o agrietadas) en el pasillo del piso 9.
+
+  Actualización final:
+  - 16-Oct-2025: "TRABAJO TERMINADO" - Axel Cruzalegui
+
+  ---
+  23. CAMBIO 20 CERAMICOS PISO 6
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 14 de octubre 2025 | Completada: 16 de octubre 2025, 09:55 hrs
+  Tiempo de resolución: 2 días
+
+  Trabajo realizado:
+  Reemplazo de 20 cerámicas deterioradas en el piso 6 del edificio.
+
+  Actualización final:
+  - 16-Oct-2025: "TRABAJO TERMINADO" - Axel Cruzalegui
+
+  ---
+  24. VERIFICACION REGLAMENTO - MULTAS POR NO DEVOLVER LLAVES GIMNASIO
+
+  Prioridad: MEDIA | Categoría: Seguridad
+  Creada: 07 de octubre 2025 | Completada: 16 de octubre 2025, 09:55 hrs
+  Tiempo de resolución: 9 días
+
+  Trabajo realizado:
+  Investigación legal sobre la posibilidad de multar a residentes que no devuelven llaves del gimnasio.
+
+  Actualización final - Análisis Legal Completo:
+  - 07-Oct-2025: "Sí, es posible aplicar una multa por no devolver las llaves del gimnasio, de acuerdo con el reglamento interno proporcionado.
+
+  Base Legal - Artículo 66, Sección C:
+  - Multa de 3 UTM por incumplimiento de normas de uso del gimnasio
+  - La administración puede impedir acceso mediante no entrega de llaves o desactivación de acceso electrónico
+  - La retención indebida de llaves constituye incumplimiento sancionable" - Axel Cruzalegui
+
+  ---
+  25. REPARACION FILTRACION ESTACIONAMIENTO 113EP
+
+  Prioridad: BAJA | Categoría: Reparación
+  Creada: 07 de octubre 2025 | Completada: 16 de octubre 2025, 09:54 hrs
+  Tiempo de resolución: 9 días
+
+  Trabajo realizado:
+  Revisión y reparación de sector de pared donde filtraba agua de lluvia al estacionamiento 113EP.
+
+  Actualización final:
+  - 16-Oct-2025: "SECTOR LIMPIO, SE BAJA EL FLUJO DEL AGUA DEL JARDIN, PARA EVITAR QUE FILTRE AGUA AL ESTACIONAMIENTO" - Axel Cruzalegui
+
+  ---
+  26. ENTREGA DOCUMENTACION COPEC VOLTEX
+
+  Prioridad: BAJA | Categoría: Emergencia
+  Creada: 06 de octubre 2025 | Completada: 16 de octubre 2025, 09:54 hrs
+  Tiempo de resolución: 10 días
+
+  Trabajo realizado:
+  Recopilación y envío de documentación solicitada por Javiera de Copec Voltex (empresa de cargadores eléctricos).
+
+  Actualización final:
+  - 16-Oct-2025: "DOCUMENTACION ENVIADA" - Axel Cruzalegui
+
+  ---
+  27. COTIZACION Y REPARACION PORCELANATO PISO 6
+
+  Prioridad: MEDIA | Categoría: Reparación
+  Creada: 07 de octubre 2025 | Completada: 16 de octubre 2025, 09:50 hrs
+  Tiempo de resolución: 9 días
+
+  Trabajo realizado:
+  Cotización urgente con maestro Pablo Martínez para reparación de cerámica en pasillo piso 6.
+
+  Actualización final:
+  - 16-Oct-2025: "TERMINADO" - Axel Cruzalegui
+
+  ---
+  28. MANTENIMIENTO Y VERIFICACION CAMARAS DE SEGURIDAD
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 11 de octubre 2025 | Completada: 16 de octubre 2025, 09:48 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Revisión completa del sistema de videovigilancia del edificio.
+
+  Actualización final:
+  - 16-Oct-2025: "CAMARAS FUNCIONANDOA AL 100%, Y DVR DE CONSERJERIA CON MERIO DE GRABACION DE UNA SEMANA" - Axel Cruzalegui
+
+  ---
+  29. ENTREGA INFORMACION EMPRESA VOLTEX
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 08 de octubre 2025 | Completada: 16 de octubre 2025, 09:47 hrs
+  Tiempo de resolución: 8 días
+
+  Trabajo realizado:
+  Compilación y entrega de información técnica solicitada por empresa Voltex.
+
+  Actualización final:
+  - 16-Oct-2025: "INFORMACION ENTREGADA" - Axel Cruzalegui
+
+  ---
+  30. REVISION BRAZO PUERTA PEATONAL ESTACIONAMIENTO EP
+
+  Prioridad: BAJA | Categoría: Reparación
+  Creada: 07 de octubre 2025 | Completada: 16 de octubre 2025, 09:47 hrs
+  Tiempo de resolución: 9 días
+
+  Trabajo realizado:
+  Inspección y ajuste del brazo hidráulico de la puerta peatonal de salida al estacionamiento nivel EP.
+
+  ---
+  31. LIMPIEZA SEMANAL DUCTOS CON QUIMICOS
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 07 de octubre 2025 | Completada: 16 de octubre 2025, 09:45 hrs
+  Tiempo de resolución: 9 días
+
+  Trabajo realizado:
+  Implementación de protocolo de limpieza semanal de ductos de basura usando químicos desinfectantes especiales para eliminar olores y bacterias.
+
+  ---
+  32. REGISTRO PROVEEDORES EN SISTEMA DE GESTION
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 01 de octubre 2025 | Completada: 10 de octubre 2025, 16:07 hrs
+  Tiempo de resolución: 9 días
+
+  Trabajo realizado:
+  Ingreso de todos los proveedores del edificio al sistema de gestión y activación de servicios recurrentes programados.
+
+  ---
+  33. COMPRA 4 LIBROS DE REGISTRO
+
+  Prioridad: MEDIA | Categoría: Otros
+  Creada: 08 de octubre 2025 | Completada: 10 de octubre 2025, 15:45 hrs
+  Tiempo de resolución: 2 días
+
+  Trabajo realizado:
+  Adquisición de libros de registro para:
+  1. Registro de encomiendas
+  2. Registro de uso de lounge
+  3. Registro de uso de gimnasio
+  4. Registro de visitas
+
+  Actualización final:
+  - 10-Oct-2025: "LIBROS LISTOS EN CONSERJERIA" - Axel Cruzalegui
+
+  ---
+  34. CONSULTA RIEGO CON JARDINERO RAUL
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 01 de octubre 2025 | Completada: 10 de octubre 2025, 15:44 hrs
+  Tiempo de resolución: 9 días
+
+  Trabajo realizado:
+  Reunión con jardinero Raúl para establecer frecuencia de riego de plantas nuevas.
+
+  Actualización final:
+  - 10-Oct-2025: "SE CONVERSO CON EL JARDINERO, Y SE LE INDICO EL MAL REGADO DE ALGUNOS SECTORES DEL JARDIN, EL CUAL LE EFECTUO LA SOLUCION" - Axel Cruzalegui
+
+  ---
+  35. MANTENCION SISTEMA DE ALARMAS CON TECNICO
+
+  Prioridad: MEDIA | Categoría: Reparación
+  Creada: 01 de octubre 2025 | Completada: 10 de octubre 2025, 15:43 hrs
+  Tiempo de resolución: 9 días
+
+  Trabajo realizado:
+  Coordinación con técnico de alarmas (contacto: Fernando Mira / Damaly) para mantención del sistema.
+
+  Progreso registrado:
+  - 07-Oct-2025: "El técnico se apersonara el día de mañana miércoles 08-10-25" - Axel Cruzalegui
+  - 10-Oct-2025: "MANTENCION EFECTUADA" - Axel Cruzalegui
+
+  ---
+  36. DEMARCACION LINEAS ESTACIONAMIENTO VISITAS
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 23 de septiembre 2025 | Completada: 10 de octubre 2025, 15:43 hrs
+  Tiempo de resolución: 17 días
+
+  Trabajo realizado:
+  Cotización y preparación para demarcación de líneas en estacionamiento de visitas.
+
+  Progreso registrado:
+  - 30-Sep-2025: "Se esta cotizando material de trabajo." - Axel Cruzalegui
+  - 10-Oct-2025: "COTIZACION LISTA DE MATERIALES" - Axel Cruzalegui
+
+  ---
+  37. COMPRA 5 CONTENEDORES DE BASURA 360 LITROS
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 07 de octubre 2025 | Completada: 08 de octubre 2025, 10:20 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Cotización y compra efectiva de 5 contenedores de basura con capacidad de 360 litros cada uno.
+
+  Actualización final:
+  - 08-Oct-2025: "Se efectuó la compra de 5 contenedores de 360litros" - Axel Cruzalegui
+
+  ---
+  38. GESTION CON MUNICIPALIDAD POR RETIRO RECICLADO
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 07 de octubre 2025 | Completada: 07 de octubre 2025, 17:22 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Llamada a la municipalidad por problemas con el retiro del reciclado. Se comunicaron con la empresa encargada del servicio.
+
+  ---
+  39. LIMPIEZA VIDRIOS SOBRE TECHO ENTRADA ESTACIONAMIENTO
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 02 de octubre 2025 | Completada: 07 de octubre 2025, 17:22 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Limpieza de vidrios del sobre techo ubicado en la entrada al estacionamiento del edificio.
+
+  ---
+  40. CAMBIO LLAVE LAVAMANOS GIMNASIO
+
+  Prioridad: MEDIA | Categoría: Reparación
+  Creada: 02 de octubre 2025 | Completada: 07 de octubre 2025, 11:33 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Reemplazo de llave del lavamanos ubicado en el baño del gimnasio.
+
+  ---
+  41. LIMPIEZA PROFUNDA DUCTO DE BASURA GENERAL
+
+  Prioridad: URGENTE | Categoría: Limpieza
+  Creada: 30 de septiembre 2025 | Completada: 07 de octubre 2025, 11:33 hrs
+  Tiempo de resolución: 7 días
+
+  Trabajo realizado:
+  Limpieza profunda y desinfección del ducto de basura principal del edificio con equipamiento especializado.
+
+  ---
+  42. LIMPIEZA CAJA DE ESCALA PISOS 18 AL 11
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 30 de septiembre 2025 | Completada: 07 de octubre 2025, 11:32 hrs
+  Tiempo de resolución: 7 días
+
+  Trabajo realizado:
+  Limpieza general de caja de escala realizada en conjunto con auxiliares de aseo.
+
+  Actualización final:
+  - 07-Oct-2025: "Escala limpias del 18 al 11, por ambas salidas" - Axel Cruzalegui
+
+  ---
+  43. CONTRATACION EMPRESA LIMPIEZA ALFOMBRAS LOUNGE
+
+  Prioridad: ALTA | Categoría: Limpieza
+  Creada: 01 de octubre 2025 | Completada: 03 de octubre 2025, 16:26 hrs
+  Tiempo de resolución: 2 días
+
+  Trabajo realizado:
+  Búsqueda, cotización y contratación de empresa especializada en limpieza profunda de alfombras para el lounge del edificio.
+
+  ---
+  44. ASEO GENERAL PASILLO BODEGA Y SALA PERSONAL
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 01 de octubre 2025 | Completada: 03 de octubre 2025, 16:25 hrs
+  Tiempo de resolución: 2 días
+
+  Trabajo realizado:
+  Limpieza completa del pasillo de bodegas y sala de personal ubicados en el entrepiso.
+
+  ---
+  45. REPARACION MANGUERA INCENDIOS + RECARGA EXTINTORES POST-SINIESTRO
+
+  Prioridad: URGENTE | Categoría: Reparación
+  Creada: 28 de septiembre 2025 | Completada: 03 de octubre 2025, 16:25 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Contratación de empresa JFIRE (Contacto: Ignacio +56 9 6248 5903) para:
+  - Mantención y reparación de manguera contra incendios dañada
+  - Recarga de 5 extintores utilizados durante el incendio del edificio
+
+  Progreso registrado:
+  - 29-Sep-2025: "SE LLAMA A LA EMPRESA JFIRE Y EL DIA MIERCOLES A PRIMERA HORA VENDRA A EFECTUAR LA MANTENCION A LA MANGUERA CONTRA INCENDIOS Y DEJAR RECARGADO LOS 5 EXTINTORES QUE SE UTILIZO EN EL INCENDIO"     
+  - Axel Cruzalegui
+  - 03-Oct-2025: "Trabajo efectuado el pasado miércoles 01-10-2025" - Axel Cruzalegui
+
+  ---
+  46. IMPRESION PROCEDIMIENTO RUIDOS MOLESTOS PARA CONSERJES
+
+  Prioridad: MEDIA | Categoría: Seguridad
+  Creada: 02 de octubre 2025 | Completada: 03 de octubre 2025, 16:24 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Impresión y distribución del procedimiento oficial para manejo de ruidos molestos según reglamento interno, para uso del personal de conserjería.
+
+  ---
+  47. LIMPIEZA PUERTAS PASILLO Y SHAFT BASURA PISOS 18 AL 11
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 01 de octubre 2025 | Completada: 03 de octubre 2025, 16:24 hrs
+  Tiempo de resolución: 2 días
+
+  Trabajo realizado:
+  Limpieza general de:
+  - Puertas de pasillo (piso 18 al 11)
+  - Puertas metálicas de shaft de basura (piso 18 al 11)
+
+  ---
+  48. RECARGA TOTAL EXTINTORES UTILIZADOS EN INCENDIO
+
+  Prioridad: MEDIA | Categoría: Reparación
+  Creada: 28 de septiembre 2025 | Completada: 03 de octubre 2025, 16:23 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Recarga profesional de todos los extintores utilizados durante el incendio ocurrido en el edificio.
+
+  Actualización final:
+  - 03-Oct-2025: "Trabajo efectuado el pasado miércoles 01-10-2025" - Axel Cruzalegui
+
+  ---
+  49. CAMBIO 18 PORCELANATOS PISOS 7 Y 9
+
+  Prioridad: BAJA | Categoría: Reparación
+  Creada: 12 de septiembre 2025 | Completada: 01 de octubre 2025, 11:10 hrs
+  Tiempo de resolución: 19 días
+
+  Trabajo realizado:
+  Reemplazo de 18 porcelanatos deteriorados distribuidos entre pisos 7 y 9. Trabajo realizado por maestro Pablo Martínez.
+
+  Progreso registrado:
+  - 17-Sep-2025: "Se reparo porcelanato de los pisos 7 y 10." - Axel Cruzalegui
+  - 30-Sep-2025: "TRABAJO TERMINADO" - Axel Cruzalegui
+
+  ---
+  50. MULTAS DPTOS 122-161-163-124 Y 51
+
+  Prioridad: BAJA | Categoría: Administración
+  Creada: 30 de septiembre 2025 | Completada: 01 de octubre 2025, 10:38 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Aplicación de multas según reglamento interno a los departamentos:
+  - 122, 161, 163, 124 (infracciones originales)
+  - 51 (adicional por mal uso de estacionamiento de visitas)
+
+  Actualización final:
+  - 01-Oct-2025: "SE ADICIONA MULTA AL DPTO 51 POR MAL USO DE ESTACIONAMIENTO DE VISISTAS" - Axel Cruzalegui
+
+  ---
+  51. MANTENCION PISCINA - COTIZACION CUARZO
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 30 de septiembre 2025 | Completada: 01 de octubre 2025, 10:37 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Mantención completa de la piscina. El mantenedor entregó cotización por cambio de 250 kg de cuarzo para filtro. Se buscará cotización adicional para comparar precios.
+
+  ---
+  52. MULTA DPTO 163 POR RUIDOS MOLESTOS - 2 UTM
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 29 de septiembre 2025 | Completada: 30 de septiembre 2025, 16:28 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Aplicación de multa de 2 UTM al departamento 163 según Artículo 31 del Reglamento Interno por ruidos molestos.
+
+  Procedimiento cumplido:
+  1. Primer aviso: Advertencia por citófono tras verificar ruido
+  2. Segundo aviso: Conserje subió personalmente
+  3. Tercer aviso: Notificación de multa inmediata y aviso a Seguridad Ciudadana/Carabineros
+
+  ---
+  53. MANTENCION SALA DE BOMBAS - COTIZACIONES PENDIENTES
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 30 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:57 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Mantención efectuada en sala de bombas. Mantenedor indicó que hay cotizaciones de trabajos adicionales pendientes de aprobación por la administración.
+
+  ---
+  54. LIMPIEZA RAMPLA NIVEL -1 AL ENTREPISO
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 25 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:46 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Limpieza completa de la rampla que conecta el nivel -1 con el entrepiso del edificio.
+
+  ---
+  55. ASEO SALON DE EVENTOS PARA USO 27-SEP
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 25 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:45 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Limpieza general del salón de eventos preparándolo para evento programado el día sábado 27 de septiembre.
+
+  ---
+  56. LIMPIEZA PASILLO ESTACIONAMIENTO NIVEL -1
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 24 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:44 hrs
+  Tiempo de resolución: 6 días
+
+  Trabajo realizado:
+  Limpieza del pasillo de estacionamiento nivel -1.
+
+  Nota importante:
+  - 25-Sep-2025: "EL TRABAJO FUE EFECTUA, QUEDADANDO PÉNDIENTE 6 ESTACIONAMIENOS LOS CUALES EN LOS APARTAMENTOS NO HAY MORADORES." - Axel Cruzalegui
+
+  ---
+  57. LIMPIEZA VIDRIOS SECTOR PISO 1
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 25 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:44 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Limpieza de todos los vidrios en el sector del piso 1 del edificio.
+
+  ---
+  58. GESTION INSPECTORES MUNICIPALES - RETIRO RECICLADO
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 23 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:43 hrs
+  Tiempo de resolución: 7 días
+
+  Trabajo realizado:
+  Coordinación con inspectores municipales del área de Aseo y Ornato de la Municipalidad de Vitacura para verificar el motivo por el cual no se retira el reciclado acumulado al exterior de la comunidad.
+
+  ---
+  59. VISITA TECNICA COTIZACION CAMARAS TRASERAS
+
+  Prioridad: BAJA | Categoría: Reparación
+  Creada: 23 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:42 hrs
+  Tiempo de resolución: 7 días
+
+  Trabajo realizado:
+  Coordinación de visita técnica de empresa especializada para cotización de instalación de cámaras de seguridad en zonas traseras del edificio.
+
+  ---
+  60. INSTALACION CERAMICA PISO 10
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 23 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:42 hrs
+  Tiempo de resolución: 7 días
+
+  Trabajo realizado:
+  Instalación de nuevas cerámicas en áreas dañadas del piso 10.
+
+  ---
+  61. ASEO SALA DE EVENTOS
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 22 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:41 hrs
+  Tiempo de resolución: 8 días
+
+  Trabajo realizado:
+  Limpieza profunda de la sala de eventos del edificio.
+
+  ---
+  62. ASEO ESTACIONAMIENTO SECTOR -1
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 22 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:41 hrs
+  Tiempo de resolución: 8 días
+
+  Trabajo realizado:
+  Limpieza completa del área de estacionamientos en el sector -1.
+
+  ---
+  63. ASEO GENERAL SECTOR BICICLETERO
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 22 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:40 hrs
+  Tiempo de resolución: 8 días
+
+  Trabajo realizado:
+  Limpieza y ordenamiento del sector bicicletero del edificio.
+
+  ---
+  64. ASEO TOTAL PRIMER NIVEL
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 19 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:39 hrs
+  Tiempo de resolución: 11 días
+
+  Trabajo realizado:
+  Limpieza completa e integral del primer nivel del edificio, incluyendo áreas comunes.
+
+  ---
+  65. REACOMODO SECTOR BASURA Y RECICLADO EXTERNO
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 18 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:38 hrs
+  Tiempo de resolución: 12 días
+
+  Trabajo realizado:
+  Reorganización completa del sector de basura y reciclado ubicado en el exterior del edificio.
+
+  Progreso registrado:
+  - 25-Sep-2025: "SE ENVIO SOLICITUD A LA MUNUCIPALIDAD DE VITACURA PARA QUE NOS BRINDEN EL APOYO DE ENVIAR NUEVOS CONTENEDORES PARA EL RECICLADO Y LA BASURA. ESTOY A LA ESPERA DEL CORREO DE CONFIRMACION" -       
+  Axel Cruzalegui
+
+  ---
+  66. CAMBIO DE LUMINARIAS EN PASILLOS
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 19 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:36 hrs
+  Tiempo de resolución: 11 días
+
+  Trabajo realizado:
+  Reemplazo de luminarias defectuosas en los pasillos del edificio.
+
+  ---
+  67. INSTALACION CERRADURA NUEVA PISO 18
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 19 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:35 hrs
+  Tiempo de resolución: 11 días
+
+  Trabajo realizado:
+  Instalación de cerradura nueva en puerta del piso 18.
+
+  ---
+  68. LIMPIEZA GENERAL SALA DE BASURA
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 19 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:35 hrs
+  Tiempo de resolución: 11 días
+
+  Trabajo realizado:
+  Limpieza profunda y desinfección de la sala de basura del edificio.
+
+  ---
+  69. REPARACION CERRADURA PUERTA TECHUMBRE
+
+  Prioridad: URGENTE | Categoría: Limpieza
+  Creada: 18 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:34 hrs
+  Tiempo de resolución: 12 días
+
+  Trabajo realizado:
+  Reparación de cerradura dañada de puerta que da acceso a la techumbre donde se encuentran las balizas de señalización.
+
+  ---
+  70. ASEO GENERAL SECTOR PISCINA
+
+  Prioridad: ALTA | Categoría: Limpieza
+  Creada: 17 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:32 hrs
+  Tiempo de resolución: 13 días
+
+  Trabajo realizado:
+  Limpieza completa del sector de la piscina, incluyendo áreas circundantes.
+
+  ---
+  71. AJUSTE RELOJ CONTROL - DESACTIVAR RECONOCIMIENTO FACIAL
+
+  Prioridad: URGENTE | Categoría: Mantenimiento
+  Creada: 17 de septiembre 2025 | Completada: 30 de septiembre 2025, 09:20 hrs
+  Tiempo de resolución: 13 días
+
+  Trabajo realizado:
+  Ajuste de configuración del reloj control de asistencia. Se desactivó/reconfiguró la función de reconocimiento facial que estaba activa incorrectamente.
+
+  ---
+  72. REVISION SISTEMA ALARMAS POST-INCENDIO - REARME PALANCA PISO 12
+
+  Prioridad: MEDIA | Categoría: Mantenimiento
+  Creada: 29 de septiembre 2025 | Completada: 29 de septiembre 2025, 11:51 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Revisión y rearme del sistema de alarmas posterior al incendio.
+
+  Actualización final:
+  - 29-Sep-2025: "SE DEJA ARMADA PALACANTA DEL PASILLO 12 LA CUAL FUE ACTIVADA EL DIA DEL SINIESTRO." - Axel Cruzalegui
+
+  ---
+  73. CARTA FORMAL Y MULTA A DPTO 122 POR INCENDIO
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 28 de septiembre 2025 | Completada: 29 de septiembre 2025, 11:47 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Redacción y envío de carta formal al departamento 122 responsable del incendio, junto con aplicación de multa correspondiente según reglamento.
+
+  Actualización final:
+  - 29-Sep-2025: "CARTA E MULTA SOLICITADA" - Axel Cruzalegui
+
+  ---
+  74. MULTA A RESPONSABLE DEL INCENDIO
+
+  Prioridad: MEDIA | Categoría: Administración
+  Creada: 28 de septiembre 2025 | Completada: 29 de septiembre 2025, 11:47 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Aplicación formal de multa al residente responsable del incendio ocurrido en el edificio, según reglamento interno.
+
+  ---
+  75. REPARACION PORTON INTERIOR - LIMPIEZA SENSOR
+
+  Prioridad: MEDIA | Categoría: Reparación
+  Creada: 28 de septiembre 2025 | Completada: 29 de septiembre 2025, 11:10 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Verificación del portón interior que no cerraba completamente. Se limpió el sensor y se ajustó mecanismo.
+
+  Actualización final:
+  - 29-Sep-2025: "SE VERIFICA PORTON Y SE LIMPIA CENSOR Y PORTON QUE CERRADO AL 100%" - Axel Cruzalegui
+
+  ---
+  76. INSTALACION SISTEMA REGADILLO Y MANTENCION JARDIN
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 29 de septiembre 2025 | Completada: 29 de septiembre 2025, 11:00 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Trabajo efectuado por jardinero:
+  - Instalación de sistema de regadío
+  - Mantención general del jardín de la comunidad
+
+  ---
+  77. ENTREGA NUEVO REGLAMENTO INTERNO A TODOS LOS DPTOS
+
+  Prioridad: MEDIA | Categoría: Administración
+  Creada: 17 de septiembre 2025 | Completada: 27 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 10 días
+
+  Trabajo realizado:
+  - Impresión del nuevo reglamento interno
+  - Corcheteado de documentos
+  - Entrega puerta a puerta a todos los departamentos
+  - Avance: Entregado hasta el piso 4 (continuación posterior)
+
+  ---
+  78. REVISION GENERAL PORCELANATOS TODOS LOS PASILLOS
+
+  Prioridad: BAJA | Categoría: Mantenimiento
+  Creada: 23 de septiembre 2025 | Completada: 25 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 2 días
+
+  Trabajo realizado:
+  Inspección completa de porcelanatos en todos los pasillos del edificio para identificar piezas dañadas, agrietadas o despegadas que requieran reemplazo.
+
+  ---
+  79. LIMPIEZA PASILLO PISOS 11 AL 18
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 24 de septiembre 2025 | Completada: 24 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Limpieza de pasillos desde el piso 11 hasta el piso 18.
+
+  ---
+  80. LIMPIEZA PISOS 11 AL 18
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 24 de septiembre 2025 | Completada: 24 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Limpieza completa de pisos desde nivel 11 hasta nivel 18.
+
+  ---
+  81. LIMPIEZA ESTACIONAMIENTO NIVEL -1
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 24 de septiembre 2025 | Completada: 24 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Limpieza integral del estacionamiento subterráneo nivel -1.
+
+  ---
+  82. PRUEBA GRUPO ELECTROGENO - 10 MINUTOS
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 24 de septiembre 2025 | Completada: 24 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Puesta en marcha del grupo electrógeno durante 10 minutos para verificar funcionamiento.
+
+  Estado final:
+  - Equipo funcionando correctamente
+  - Combustible: medio estanque restante
+
+  ---
+  83. MULTA POR MAL USO ESPACIO COMUN - BICICLETA EN SHAFT CALEFON
+
+  Prioridad: ALTA | Categoría: Otros
+  Creada: 18 de septiembre 2025 | Completada: 24 de septiembre 2025, 12:45 hrs
+  Tiempo de resolución: 6 días
+
+  Trabajo realizado:
+  Detección de bicicleta estacionada indebidamente en shaft de calefón (espacio común restringido). Se identificó al propietario y se aplicó multa según reglamento interno.
+
+  ---
+  84. COMPRA CLORO LIQUIDO PARA PERSONAL ASEO
+
+  Prioridad: URGENTE | Categoría: Limpieza
+  Creada: 24 de septiembre 2025 | Completada: 24 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Compra urgente de cloro líquido para uso del personal de aseo en labores de limpieza y desinfección.
+
+  ---
+  85. ASEO GENERAL OFICINA ADMINISTRATIVA
+
+  Prioridad: BAJA | Categoría: Limpieza
+  Creada: 23 de septiembre 2025 | Completada: 23 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 0 días
+
+  Trabajo realizado:
+  Limpieza completa de la oficina administrativa del edificio.
+
+  ---
+  86. PRUEBA QUIMICO DESINCRUSTANTE EN UN PISO
+
+  Prioridad: MEDIA | Categoría: Limpieza
+  Creada: 22 de septiembre 2025 | Completada: 23 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Prueba del químico desincrustante en un piso piloto para evaluar efectividad en la limpieza y determinar si se usa en todo el edificio.
+
+  ---
+  87. DOCUMENTO WORD - TIPOGRAFIA IDENTIFICACION ASCENSORES PARA CAMARAS
+
+  Prioridad: BAJA | Categoría: Mantenimiento
+  Creada: 22 de septiembre 2025 | Completada: 23 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 1 día
+
+  Trabajo realizado:
+  Creación de documento Word con especificaciones de tipografía para identificación de pisos en cada ascensor, diseñado para mejor visualización en cámaras de seguridad.
+
+  ---
+  88. DESATORO DUCTO DE BASURA COLAPSADO - 4 CONTENEDORES EXTRAIDOS
+
+  Prioridad: URGENTE | Categoría: Limpieza
+  Creada: 17 de septiembre 2025 | Completada: 22 de septiembre 2025, 16:38 hrs
+  Tiempo de resolución: 5 días
+
+  Trabajo realizado:
+  Al recibir turno se detectó ducto de basura completamente colapsado. Se procedió al desatoro extrayendo el equivalente a 4 contenedores completos de basura acumulada.
+
+  Actualización final:
+  - 17-Sep-2025: "DUCTO DESATORADO." - Axel Cruzalegui
+
+  ---
+  89. INSTALACION NUMEROS IDENTIFICACION PARADA ASCENSOR
+
+  Prioridad: MEDIA | Categoría: Seguridad
+  Creada: 12 de septiembre 2025 | Completada: 15 de septiembre 2025, 12:00 hrs
+  Tiempo de resolución: 3 días
+
+  Trabajo realizado:
+  - Pedido a medida de números para identificación de parada de ascensor
+  - Diseño bajo visión de cámaras de seguridad
+  - Relleno de materiales faltantes
+  - Instalación completa en todos los ascensores

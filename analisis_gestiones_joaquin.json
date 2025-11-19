@@ -1,0 +1,584 @@
+{
+  "gestiones_detalladas": [
+    {
+      "fecha": "2025-03-14",
+      "titulo": "Creacion de grupo de comunicacion para propietarios residentes",
+      "descripcion": "Joaquin coordino con Fernando (conserje) la creacion de un grupo de WhatsApp exclusivo para propietarios residentes, estableciendo criterios claros de inclusion (un representante por departamento, preferencia al propietario). Esto permitio crear un canal directo de comunicacion transparente donde todos pueden reportar problemas, coordinar mejoras y mantenerse informados. El grupo se convirtio en la columna vertebral de la gestion participativa del edificio, permitiendo detectar problemas rapidamente y coordinar soluciones de manera eficiente.",
+      "tipo": "coordinacion",
+      "impacto": "alto",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Canal de comunicacion directa, transparencia total en la gestion, deteccion rapida de problemas"
+    },
+    {
+      "fecha": "2025-03-19",
+      "titulo": "Gestion inmediata de limpieza y mantenimiento de espacios comunes",
+      "descripcion": "Ante reportes de residentes sobre closets sucios en pasillos y falta de aseo, Joaquin actuo de inmediato coordinando con el personal de limpieza para resolver las deficiencias. Los residentes reportaron que llevaban semanas sin trapear pisos y closets con basura acumulada. Joaquin documento los problemas con fotos y videos, y gestiono la limpieza inmediata.",
+      "tipo": "coordinacion",
+      "impacto": "medio",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Espacios comunes limpios y mantenidos, mejora en calidad de vida"
+    },
+    {
+      "fecha": "2025-04-12",
+      "titulo": "Gestion de emergencia citofono - Prevencion de cortocircuito",
+      "descripcion": "Cuando la central del citofono presento fallas graves con riesgo de cortocircuito, Joaquin contacto inmediatamente al tecnico especializado, quien recomendo apagar el sistema preventivamente. Coordino la visita tecnica urgente para el mismo dia (antes de las 3pm) para evitar danos mayores al equipo. Esta accion preventiva evito potencialmente un cortocircuito que podria haber danado toda la central (costo de reemplazo estimado $2-3 millones).",
+      "tipo": "reparacion",
+      "impacto": "alto",
+      "costo_real": null,
+      "costo_alternativa": 2500000,
+      "ahorro_generado": 2500000,
+      "beneficio_comunidad": "Prevencion de dano mayor, seguridad electrica, continuidad del servicio de citofono"
+    },
+    {
+      "fecha": "2025-04-28",
+      "titulo": "Victoria legal contra corredora problematica - Proteccion del edificio",
+      "descripcion": "Joaquin lidero un proceso legal exitoso contra una corredora de propiedades que causaba conflictos en la comunidad. El resultado fue contundente: la corredora quedo PROHIBIDA de entrar al edificio (establecido por tribunales), PROHIBIDA de arrendar, vender o administrar propiedades en el edificio directa o indirectamente, y PROHIBIDA de volver a demandar a la comunidad. Esta victoria legal protegio al edificio de futuros conflictos y establecio un precedente importante para la defensa de la comunidad.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "costo_real": null,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Proteccion legal permanente, eliminacion de fuente de conflictos, tranquilidad para residentes"
+    },
+    {
+      "fecha": "2025-04-30",
+      "titulo": "Deteccion de deuda por contribuciones de Oficina 6 - Inmobiliaria",
+      "descripcion": "Joaquin descubrio que la Tesoreria General de la Republica envio notificacion de cobro de contribuciones por una 'Oficina 6' (Rol 331-03627-348) de propiedad de la inmobiliaria con direccion en el edificio. La deuda asciende a $8,929,891 CLP con riesgo de embargo. Joaquin documento exhaustivamente el caso, contacto a la inmobiliaria CHC/EBCO y alerto a la comunidad sobre esta contingencia que podria afectar al edificio.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "costo_real": 0,
+      "costo_alternativa": 8929891,
+      "ahorro_generado": 8929891,
+      "beneficio_comunidad": "Evitar que la comunidad asuma deuda de terceros, proteccion patrimonial del edificio"
+    },
+    {
+      "fecha": "2025-05-12",
+      "titulo": "Preparacion de reclamo formal a EBCO con 20 puntos documentados",
+      "descripcion": "Joaquin preparo un documento exhaustivo con 20 puntos de reclamo formal contra la constructora EBCO, incluyendo: calculo erroneo de gastos comunes (formula por unidades en vez de m2), arriendo irregular de bodegas, deuda por consumo electrico no asumida ($13+ millones), asignacion incorrecta de alicuota a penthouses, instalacion electrica defectuosa, filtraciones cronicas en 15+ ubicaciones, fachada con multiples tonos de pintura, paneles EIF sueltos, conexiones erroneas, y muchos mas. Este documento fue la base para la reunion con Marco Besomi (Gerente General de EBCO).",
+      "tipo": "legal",
+      "impacto": "critico",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Documentacion profesional de defectos constructivos, base solida para reclamos legales"
+    },
+    {
+      "fecha": "2025-06-02",
+      "titulo": "Implementacion de sistema de boton de panico con app TuyaSmart",
+      "descripcion": "Joaquin implemento un sistema de seguridad innovador: un boton de panico para el conserje conectado a una app (TuyaSmart) que alerta a todos los residentes en caso de emergencia. Configuro el sistema, creo usuario compartido, realizo pruebas con los residentes, y documento el procedimiento. En caso de robo a mano armada o amenaza al conserje, todos los residentes reciben alerta instantanea. El costo del boton y configuracion fue minimo comparado con sistemas profesionales de alarma comunitaria.",
+      "tipo": "seguridad",
+      "impacto": "alto",
+      "costo_real": 50000,
+      "costo_alternativa": 2000000,
+      "ahorro_generado": 1950000,
+      "beneficio_comunidad": "Sistema de seguridad comunitario, alerta instantanea ante emergencias, mayor tranquilidad"
+    },
+    {
+      "fecha": "2025-06-12",
+      "titulo": "Defensa contra cobro fraudulento de $300.000 mensuales por administracion de exteriores",
+      "descripcion": "Joaquin descubrio que las otras torres pretendian cobrarnos $300.000 mensuales por 'administracion' cuando solo recibirian nuestro dinero y lo reenviarian al proveedor. En asamblea del 29 de mayo logro que se acordara que cada edificio pagara directamente sus facturas sin intermediarios. Esto representa un ahorro de $3.6 millones anuales ($300.000 x 12 meses) que las otras torres pretendian cobrarnos injustamente.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "costo_real": 0,
+      "costo_alternativa": 3600000,
+      "ahorro_generado": 3600000,
+      "beneficio_comunidad": "Ahorro de $300.000 mensuales, fin de cobros fraudulentos, independencia financiera"
+    },
+    {
+      "fecha": "2025-06-12",
+      "titulo": "Documentacion de robo de electricidad por otras torres - Deuda de $13+ millones",
+      "descripcion": "Joaquin documento que durante anos, la torre 9500 ha pagado el 100% del consumo electrico de estacionamientos y caseta que usan las otras torres (cuando les corresponde solo 29.06%). Calculo la deuda acumulada en mas de 13 millones de pesos. Contrato asesoramiento legal, coordino con notaria para certificacion, y preparo documentacion para corte de suministro electrico a las torres deudoras.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "costo_real": null,
+      "costo_alternativa": null,
+      "ahorro_generado": 13000000,
+      "beneficio_comunidad": "Recuperacion de deuda por electricidad robada, fin del abuso de otras torres"
+    },
+    {
+      "fecha": "2025-07-09",
+      "titulo": "Coordinacion de refuerzo metalico para puertas de acceso",
+      "descripcion": "Ante el deterioro de las puertas de acceso por mal uso (gente que las abre a patadas), Joaquin coordino con vecinos para conseguir un soldador profesional que reforzara los marcos. Mauricio Gonzalez proporciono contacto, Joaquin coordino visita el viernes a las 9:15. La solucion incluyo refuerzo de fierro para los tres marcos de puertas de acceso (-2, EP, y -1), haciendolas resistentes al vandalismo.",
+      "tipo": "mejora",
+      "impacto": "alto",
+      "costo_real": 150000,
+      "costo_alternativa": 600000,
+      "ahorro_generado": 450000,
+      "beneficio_comunidad": "Puertas de acceso resistentes al vandalismo, mayor seguridad, menor gasto en reparaciones futuras"
+    },
+    {
+      "fecha": "2025-08-08",
+      "titulo": "Recurso de proteccion admisible contra otras torres por falsificacion de actas",
+      "descripcion": "Joaquin presento un recurso de proteccion contra presidentes de otras torres que intentaron falsificar el acta de asamblea del 29 de mayo. El recurso fue declarado ADMISIBLE. Las otras torres intentaron desconocer acuerdos votados democraticamente, no reducir a escritura publica la asamblea, y cobrar $300.000 mensuales fraudulentamente. Esta accion legal establece precedente y protege los derechos de la comunidad.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "costo_real": null,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Defensa legal de derechos, prevencion de fraude documental, proteccion de acuerdos democraticos"
+    },
+    {
+      "fecha": "2025-08-13",
+      "titulo": "Importacion de sensor infrarrojo de ascensor desde EEUU - Ahorro de $960.000",
+      "descripcion": "El sensor infrarrojo del ascensor fallo. OTIS cotizo $1.000.000 por el repuesto. Joaquin investigo y encontro el repuesto original en EEUU por $45 USD (aproximadamente $40.000 CLP). Como no enviaban a Chile, coordino con Rene Picasso (que viajaba a EEUU) para traerlo. Posteriormente encontro proveedor que si enviaba a Chile por $288 USD + envio = $345 USD total. Compro 2 unidades originales, una para instalar y otra de repuesto. Ahorro total: $960.000 CLP.",
+      "tipo": "reparacion",
+      "impacto": "alto",
+      "costo_real": 40000,
+      "costo_alternativa": 1000000,
+      "ahorro_generado": 960000,
+      "beneficio_comunidad": "Ascensores funcionando correctamente, ahorro significativo, repuesto de reserva disponible"
+    },
+    {
+      "fecha": "2025-08-19",
+      "titulo": "Importacion de encoder de ascensor desde EEUU - Ahorro de $1.440.000",
+      "descripcion": "Otro componente del ascensor fallo. OTIS cotizo $1.500.000 por 4 unidades (se necesitan 2 por vez). Joaquin encontro el repuesto original en EEUU por $30 USD cada uno. Compro 4 unidades por aproximadamente $60.000 CLP total, reemplazo las 2 necesarias y guardo 2 de repuesto. Ahorro de $1.440.000 CLP. 'Compramos 4 unidades, reemplazamos las dos necesarias y nos quedaron 2 de repuesto'.",
+      "tipo": "reparacion",
+      "impacto": "alto",
+      "costo_real": 60000,
+      "costo_alternativa": 1500000,
+      "ahorro_generado": 1440000,
+      "beneficio_comunidad": "Ascensores funcionando, ahorro masivo, repuestos de reserva para futuras fallas"
+    },
+    {
+      "fecha": "2025-08-27",
+      "titulo": "Adquisicion de silla de ruedas para emergencias",
+      "descripcion": "Ante sugerencia de Pedro Persi sobre necesidad de silla de ruedas para emergencias medicas, Joaquin actuo de inmediato adquiriendo una silla de ruedas de calidad para el edificio. Esto permite evacuar a residentes inmovilizados en caso de emergencia y transportarlos a centros hospitalarios. Una mejora de seguridad importante que antes no existia.",
+      "tipo": "seguridad",
+      "impacto": "medio",
+      "costo_real": 150000,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Equipamiento de emergencia medica, capacidad de evacuacion de personas con movilidad reducida"
+    },
+    {
+      "fecha": "2025-08-28",
+      "titulo": "Negociacion de publicidad para fachada norte - Potencial de $30 millones mensuales",
+      "descripcion": "Joaquin negocio con empresa de publicidad para instalar pantalla LED en fachada norte del edificio. El ingreso potencial es de $30 millones mensuales (subio de $20M a $30M en negociacion). Esto equivale a $360 millones anuales. Incluye paneles solares gratis, instalacion sin costo, y los ingresos deben destinarse a mejoras del edificio (no se puede descontar de gastos comunes legalmente). Con este dinero se podrian hacer todas las reparaciones que EBCO no ha hecho.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Potencial ingreso de $360 millones anuales para mejoras, paneles solares gratis, independencia financiera"
+    },
+    {
+      "fecha": "2025-08-31",
+      "titulo": "Desarrollo de software MayordomoTracker para gestion de tareas",
+      "descripcion": "Joaquin desarrollo una aplicacion personalizada (MayordomoTracker) para hacer seguimiento automatizado de tareas del mayordomo. El sistema envia correos automaticos: a los 3 dias sin movimiento al mayordomo, a los 7 dias al mayordomo y a Joaquin, a los 10 dias al mayordomo, comite y Joaquin. Incluye dashboard de eficiencia y registro de fechas. Esto garantiza que las tareas se completen sin necesidad de supervision constante.",
+      "tipo": "mejora",
+      "impacto": "alto",
+      "costo_real": 0,
+      "costo_alternativa": 500000,
+      "ahorro_generado": 500000,
+      "beneficio_comunidad": "Gestion profesional de tareas, transparencia, eficiencia operativa sin costo adicional"
+    },
+    {
+      "fecha": "2025-09-03",
+      "titulo": "Instalacion de repuestos de ascensor importados - Ahorro total confirmado",
+      "descripcion": "Los repuestos importados desde EEUU por $40.000 fueron instalados exitosamente por OTIS. Joaquin coordino que la instalacion se hiciera durante la mantencion programada para no pagar mano de obra adicional. 'Estan en este momento instalando las 2 piezas de 40.000 cada una en vez de 1 millon que nos cobraban'. El ascensor quedo funcionando perfectamente con repuestos originales.",
+      "tipo": "reparacion",
+      "impacto": "alto",
+      "costo_real": 80000,
+      "costo_alternativa": 1000000,
+      "ahorro_generado": 920000,
+      "beneficio_comunidad": "Ascensores funcionando con repuestos originales a fraccion del costo"
+    },
+    {
+      "fecha": "2025-09-09",
+      "titulo": "Implementacion de camaras en ascensores con numeros de piso visibles",
+      "descripcion": "Ante incidentes graves en ascensores (peleas, agresiones, 'a combos en el ascensor, tirados en el suelo ahorcandose'), Joaquin implemento sistema de identificacion de piso en camaras de ascensor. Instalo numeros grandes para que las camaras registren exactamente en que piso ocurren los incidentes. Esto permite identificar a responsables de danos y vandalismo, y sirve como evidencia en casos graves.",
+      "tipo": "seguridad",
+      "impacto": "alto",
+      "costo_real": 50000,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Capacidad de identificar responsables de incidentes, evidencia visual, disuasion de mal comportamiento"
+    },
+    {
+      "fecha": "2025-09-25",
+      "titulo": "Cambio de personal de aseo y recuperacion de limpieza de estacionamientos",
+      "descripcion": "Joaquin gestiono el cambio del personal de limpieza del edificio, incluyendo la salida del mayordomo Fernando que no cumplia metas ni horarios. Entrevisto personalmente al nuevo mayordomo antes de irse de viaje. El resultado fue dramatico: los estacionamientos que 'antes parecian espejo' recuperaron ese estado. Se implemento limpieza diaria con agua en estacionamientos, algo que no se hacia antes.",
+      "tipo": "contratacion",
+      "impacto": "alto",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Estacionamientos impecables, espacios comunes limpios, personal responsable y eficiente"
+    },
+    {
+      "fecha": "2025-09-30",
+      "titulo": "Reparacion de marcos de puertas de acceso a estacionamientos",
+      "descripcion": "Joaquin coordino la fabricacion de marcos nuevos de madera para las puertas de acceso al -2 y EP. Los marcos originales estaban destruidos por mal uso. La solucion fue hacer marcos nuevos en madera de calidad que costaron aproximadamente $100.000 vs marcos de fierro que costarian mucho mas. 'Vale 100 lucas con suerte los marcos, la cambiamos 60 veces antes de pagar el de fierro'.",
+      "tipo": "reparacion",
+      "impacto": "medio",
+      "costo_real": 100000,
+      "costo_alternativa": 600000,
+      "ahorro_generado": 500000,
+      "beneficio_comunidad": "Puertas de acceso funcionando correctamente, seguridad de ingreso restaurada"
+    },
+    {
+      "fecha": "2025-10-03",
+      "titulo": "Limpieza completa de ductos de basura - Primera vez en historia del edificio",
+      "descripcion": "Joaquin coordino la primera limpieza completa de los ductos de basura del edificio, del piso 10 al 2. El trabajo incluyo limpieza interior de cada ducto, limpieza de puertas de acceso, y sanitizacion. Esta limpieza NUNCA se habia hecho antes en la historia del edificio. 'Piso por piso se limpio el ducto completo, las puertas y por dentro'. Ayuda a reducir olores en pasillos y mejora la higiene general.",
+      "tipo": "mejora",
+      "impacto": "alto",
+      "costo_real": 300000,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Eliminacion de olores, higiene mejorada, prevencion de plagas, primera limpieza historica"
+    },
+    {
+      "fecha": "2025-10-05",
+      "titulo": "Proyecto COPEC Voltex - Cargadores electricos GRATIS valorados en $8.000.000",
+      "descripcion": "Joaquin negocio con COPEC Voltex (lideres en cargadores electricos, equipos ABB suizos de maxima calidad) para instalar cargadores electricos en el edificio. El costo normal seria de $8.000.000 por cargador mas instalacion. Joaquin consiguio: cargador GRATIS, instalacion GRATIS, infraestructura preparada para 3 cargadores futuros, y COPEC paga la electricidad. El edificio ahora tiene infraestructura moderna para autos electricos sin costo alguno.",
+      "tipo": "mejora",
+      "impacto": "critico",
+      "costo_real": 0,
+      "costo_alternativa": 8000000,
+      "ahorro_generado": 8000000,
+      "beneficio_comunidad": "Infraestructura moderna para autos electricos, valor agregado al edificio, cero costo"
+    },
+    {
+      "fecha": "2025-10-09",
+      "titulo": "Reparacion de porcelanatos levantados en piso 6",
+      "descripcion": "Joaquin coordino la reparacion de porcelanatos levantados en el pasillo del piso 6, un problema de construccion original. El trabajo incluyo retiro de ceramicas danadas, preparacion de superficie, e instalacion de nuevas ceramicas. 'Estan dandole firme a la limpieza... ya empezaron a trabajar en los porcelanatos levantados'. Mejora estetica y de seguridad para residentes del piso.",
+      "tipo": "reparacion",
+      "impacto": "medio",
+      "costo_real": 200000,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Pisos seguros y esteticos, eliminacion de riesgo de tropiezos"
+    },
+    {
+      "fecha": "2025-10-14",
+      "titulo": "Reparacion de muro partido en piso 2 - Entrada depto 21",
+      "descripcion": "Joaquin coordino la reparacion de un muro que estaba partido en el acceso al departamento 21 (Rene Picasso). El dano habia crecido con el tiempo y presentaba riesgo de caida de material. 'Rene, esta listo el muro de tu piso que estaba partido'. La reparacion fue rapida y efectiva.",
+      "tipo": "reparacion",
+      "impacto": "medio",
+      "costo_real": 100000,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Seguridad estructural, estetica mejorada, prevencion de danos mayores"
+    },
+    {
+      "fecha": "2025-10-17",
+      "titulo": "Gestion directa con Gerente General de Aguas Andinas por problema de prorrateo",
+      "descripcion": "Ante el problema del prorrateo de agua (diferencias de 1,000-1,500 m3 mensuales que significan $15.7 millones anuales en costos extra), Joaquin escalo el problema directamente al Gerente General de Aguas Andinas. Consiguio que el mismo gerente se comprometiera a revisar el caso. 'Al menos el Gerente General de Aguas Andinas esta al tanto y dispuesto a ayudarme, asi que deberia solucionarse pronto'.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "costo_real": 0,
+      "costo_alternativa": 15720000,
+      "ahorro_generado": 15720000,
+      "beneficio_comunidad": "Potencial ahorro de $15.7 millones anuales en sobrecostos de agua"
+    },
+    {
+      "fecha": "2025-10-20",
+      "titulo": "Mejora de iluminacion LED en estacionamientos",
+      "descripcion": "Joaquin coordino el cambio completo de iluminacion en los estacionamientos a LED. Esto incluyo reemplazo de todas las luminarias antiguas por LED de alta eficiencia, mejorando drasticamente la visibilidad. Luis Godoy comento: 'que buena quedo el cambio de iluminacion, se ve increible, tremendo cambio'. Ahora trabajan en luces interiores con LED calido y sus tapitas para mejor estetica.",
+      "tipo": "mejora",
+      "impacto": "alto",
+      "costo_real": 500000,
+      "costo_alternativa": 2000000,
+      "ahorro_generado": 1500000,
+      "beneficio_comunidad": "Mejor iluminacion, ahorro energetico a largo plazo, mayor seguridad, estetica mejorada"
+    },
+    {
+      "fecha": "2025-10-23",
+      "titulo": "Demanda en Juzgado de Policia Local contra otras torres",
+      "descripcion": "Tras el recurso de proteccion que paso de Corte de Apelaciones a Corte Suprema (que fallo indicando JPL como jurisdiccion correcta), Joaquin presento formalmente demanda en Juzgado de Policia Local. La demanda busca hacer cumplir el acuerdo de asamblea del 29 de mayo sobre facturas independientes y detener el cobro fraudulento de $300.000 mensuales por 'administracion'. El caso esta documentado y fundamentado.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "costo_real": null,
+      "costo_alternativa": 3600000,
+      "ahorro_generado": 3600000,
+      "beneficio_comunidad": "Defensa legal formal de derechos, fin de abusos de otras torres, precedente legal"
+    },
+    {
+      "fecha": "2025-10-27",
+      "titulo": "Importacion de controladora de ascensor desde China - Ahorro de $3.756.000",
+      "descripcion": "La controladora del ascensor fallo. OTIS cotizo $2.118.000 con IVA por UN solo repuesto, sin garantia de que sea original. Joaquin encontro la pieza original Kone directamente en China por $443 USD (aprox $400.000 CLP) con envio DHL incluido. Compro DOS unidades originales (una para instalar, otra de repuesto) por el 10% del precio de Otis. Ahorro confirmado: $3.756.000 CLP (comparando 2 piezas originales vs 2 de Otis).",
+      "tipo": "reparacion",
+      "impacto": "critico",
+      "costo_real": 400000,
+      "costo_alternativa": 4236000,
+      "ahorro_generado": 3836000,
+      "beneficio_comunidad": "Ascensores funcionando con repuestos originales, ahorro masivo, repuesto de reserva"
+    },
+    {
+      "fecha": "2025-11-06",
+      "titulo": "Segunda demanda formal contra otras torres por robo de agua",
+      "descripcion": "Joaquin presento segunda demanda formal contra las otras torres, esta vez por el robo sistematico de agua. Se descubrio que el prorrateo excesivo no es solo del edificio 9500 sino de toda la comunidad, y hay residentes que no pagan su consumo real. 'No va a cobrar hasta que haya una resolucion' dijo el abogado. Las demandas buscan recuperar la deuda acumulada y establecer facturacion justa.",
+      "tipo": "legal",
+      "impacto": "critico",
+      "costo_real": null,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Defensa legal contra robo de agua, busqueda de facturacion justa"
+    },
+    {
+      "fecha": "2025-11-07",
+      "titulo": "Gestion de cambio de 20 remarcadores de agua por Aguas Andinas",
+      "descripcion": "Joaquin gestiono directamente con Aguas Andinas que cambiaran los remarcadores de agua defectuosos. Grabo la llamada donde confirman que cambiaran los 20 remarcadores ese mismo dia. Esto es parte de la solucion al problema del prorrateo excesivo. Los remarcadores defectuosos causaban mediciones erroneas que inflaban las cuentas de todos los residentes.",
+      "tipo": "financiero",
+      "impacto": "alto",
+      "costo_real": 0,
+      "costo_alternativa": 2000000,
+      "ahorro_generado": 2000000,
+      "beneficio_comunidad": "Medicion precisa de agua, fin de cobros excesivos, remarcadores nuevos sin costo"
+    },
+    {
+      "fecha": "2025-11-07",
+      "titulo": "Reparacion completa de luces de escalera de emergencia",
+      "descripcion": "Tras el incendio del piso 12 (27/09/2025) donde los residentes tuvieron que evacuar alumbrando con celulares porque las luces de emergencia no funcionaban, Joaquin priorizo esta reparacion. Coordino con electricistas especializados y logro que TODAS las luces de la escalera de emergencia quedaran funcionando. 'Quedaron funcionando todas las luces de la escalera de emergencias!' Este tema llevaba meses sin resolver.",
+      "tipo": "seguridad",
+      "impacto": "critico",
+      "costo_real": 300000,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Seguridad en evacuaciones, cumplimiento normativo, tranquilidad para residentes"
+    },
+    {
+      "fecha": "2025-11-08",
+      "titulo": "Coordinacion de instalacion de repuestos de ascensor sin costo adicional",
+      "descripcion": "Los repuestos de ascensor importados desde China llegaron. Joaquin coordino con OTIS para que instalaran las piezas durante la mantencion programada, evitando cobro por mano de obra de instalacion. Pago impuestos de importacion ($30.000 aprox) y coordino todo para el martes. El ascensor quedo funcionando perfectamente con ahorro total de $3.7 millones vs cotizacion de OTIS.",
+      "tipo": "reparacion",
+      "impacto": "alto",
+      "costo_real": 430000,
+      "costo_alternativa": 4236000,
+      "ahorro_generado": 3806000,
+      "beneficio_comunidad": "Ascensores funcionando, ahorro masivo confirmado, instalacion sin costo adicional"
+    },
+    {
+      "fecha": "2025-11-12",
+      "titulo": "Instalacion exitosa de controladora importada - Ascensor funcionando",
+      "descripcion": "OTIS instalo la controladora importada desde China. Luis Godoy bromeo sobre sus 'tremendos cuadriceps' por subir escaleras con ascensor malo. Joaquin respondio: 'Sacaste pierna y ahorramos 3.7m, no estuvo mal'. El ascensor quedo funcionando perfectamente con la pieza original Kone que costo $200.000 vs los $2.200.000 que cobraba OTIS.",
+      "tipo": "reparacion",
+      "impacto": "critico",
+      "costo_real": 200000,
+      "costo_alternativa": 2118000,
+      "ahorro_generado": 1918000,
+      "beneficio_comunidad": "Ambos ascensores funcionando, ahorro de casi $2 millones, servicio restaurado"
+    },
+    {
+      "fecha": "2025-03-31",
+      "titulo": "Inicio de investigacion sobre prorrateo excesivo de agua",
+      "descripcion": "Juan Balut detecto diferencias de 1,000-1,500 m3 mensuales en prorrateo de agua (50-80% adicional en cuentas). Joaquin facilito la investigacion proporcionando contactos de administracion, coordinando acceso a informacion, y apoyando el analisis. Se descubrio que la diferencia representa $1.310.000 mensuales ($15.720.000 anuales) en costos extras para el edificio. Este fue el inicio de una gestion que culmino con cambio de remarcadores.",
+      "tipo": "financiero",
+      "impacto": "critico",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Deteccion de sobrecostos masivos, inicio de proceso de correccion"
+    },
+    {
+      "fecha": "2025-07-11",
+      "titulo": "Coordinacion de mantencion grupal de calderas para 11 departamentos",
+      "descripcion": "Joaquin facilito la coordinacion de mantencion grupal de calderas. Rodrigo Lorca lidero la gestion con contacto de Luis Godoy. Se negocio precio grupal: $90.000 por mantencion completa, $200.000 por cambio de termostatos. 11 departamentos participaron (22, 151, 124, 144, 24, 71, 154, 63, 64, 93, 121, 51). El ahorro por volumen fue significativo vs precios individuales.",
+      "tipo": "coordinacion",
+      "impacto": "medio",
+      "costo_real": 90000,
+      "costo_alternativa": 120000,
+      "ahorro_generado": 330000,
+      "beneficio_comunidad": "Mantencion preventiva de calderas, ahorro por volumen, servicio profesional"
+    },
+    {
+      "fecha": "2025-09-15",
+      "titulo": "Actualizacion del Reglamento Interno del edificio",
+      "descripcion": "Joaquin lidero la actualizacion completa del Reglamento Interno del edificio, trabajando en mas de 35 versiones del documento. El reglamento fue reducido a escritura publica y enviado a todos los propietarios. Coordino que se subiera a la biblioteca de Kastor para facil acceso. El reglamento incluye normas actualizadas de convivencia, uso de espacios comunes, mascotas, y procedimientos.",
+      "tipo": "legal",
+      "impacto": "alto",
+      "costo_real": null,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Marco legal actualizado, reglas claras de convivencia, documento oficial vigente"
+    },
+    {
+      "fecha": "2025-09-28",
+      "titulo": "Gestion post-incendio del piso 12 - Protocolos de emergencia",
+      "descripcion": "Tras el incendio en departamento 122 (horno quemandose), Joaquin analizo las fallas del sistema de emergencia: luces de escalera no funcionaban, puertas sin brazos hidraulicos correctos, falta de protocolos claros. Documento todo desde Espana donde estaba de vacaciones, identifico al arrendatario problematico (mismo que bota basura por ventana), y coordino acciones correctivas inmediatas.",
+      "tipo": "seguridad",
+      "impacto": "critico",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Mejora en protocolos de emergencia, identificacion de fallas criticas de seguridad"
+    },
+    {
+      "fecha": "2025-08-19",
+      "titulo": "Investigacion y denuncia de residente problematico (botar basura por ventana)",
+      "descripcion": "Joaquin documento exhaustivamente el caso del residente del departamento 122 que bota basura por la ventana (huevos, cebolla frita, cigarros), tiene pared exterior manchada de grasa, y patea puertas para entrar. Investigo para encontrar a la duena del departamento (no responde hace anos), documento evidencia fotografica, y preparo caso para exigir termino de contrato de arriendo o sanciones.",
+      "tipo": "legal",
+      "impacto": "alto",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Defensa del reglamento interno, presion sobre conductas antihigienicas, proteccion del edificio"
+    },
+    {
+      "fecha": "2025-10-07",
+      "titulo": "Supervision de limpieza intensiva de espacios comunes",
+      "descripcion": "Desde Espana, Joaquin superviso remotamente la limpieza intensiva de espacios comunes. Envio 17 fotos mostrando el progreso: limpieza de estacionamientos con agua, ductos de basura, pasillos, gimnasio. El nuevo personal de aseo (gestionado por Joaquin) demostro eficiencia y responsabilidad. Los estacionamientos recuperaron su aspecto de 'espejo' que habian perdido.",
+      "tipo": "coordinacion",
+      "impacto": "medio",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Espacios comunes impecables, limpieza profesional sistematica"
+    },
+    {
+      "fecha": "2025-06-08",
+      "titulo": "Investigacion sobre terrazas y uso de espacios comunes",
+      "descripcion": "Joaquin investigo el reglamento de copropiedad respecto a terrazas y espacios de uso comun. Identifico que ciertas terrazas estan reguladas por el reglamento interno y deben seguir normas especificas. Esto es importante para evitar usos indebidos y proteger el valor del edificio.",
+      "tipo": "legal",
+      "impacto": "medio",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Claridad sobre uso de espacios, proteccion legal de areas comunes"
+    },
+    {
+      "fecha": "2025-09-22",
+      "titulo": "Gestion de reparacion de muro danado del 9100 en jardinera",
+      "descripcion": "Rene Picasso reporto un muro danado que habia crecido con el tiempo y presentaba riesgo de caida. Joaquin coordino inmediatamente: 'Ya lo encargue, voy a pedir que lo arreglen nosotros si se demoran y les mandamos la cuenta'. Esta gestion proactiva evita danos mayores y mantiene la estetica del edificio.",
+      "tipo": "reparacion",
+      "impacto": "medio",
+      "costo_real": 150000,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Prevencion de danos mayores, estetica mantenida, seguridad de residentes"
+    },
+    {
+      "fecha": "2025-04-07",
+      "titulo": "Supervision de limpieza del gimnasio",
+      "descripcion": "Joaquin envio foto del gimnasio sucio y pidio a residentes que reporten inmediatamente cualquier espacio en mal estado. Coordino limpieza inmediata y establecio protocolo de reporte. 'Por favor cuando vean el gimnasio sucio o lo que sea que vean en mal estado denuncienmelo por aca de inmediato, no puede ser'.",
+      "tipo": "coordinacion",
+      "impacto": "bajo",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Gimnasio limpio y disponible, protocolo de reporte establecido"
+    },
+    {
+      "fecha": "2025-04-13",
+      "titulo": "Aplicacion del reglamento por incidente de mascota en ascensor",
+      "descripcion": "Ante incidente de mascota que dejo baba/orina en ascensor, Joaquin coordino revision de camaras para identificar al responsable y hacer valer el reglamento. Establecio precedente de que las reglas se aplican y los responsables seran identificados. Tambien documento el problema cronico de caca de perros en patio trasero a pesar de bolsas disponibles.",
+      "tipo": "coordinacion",
+      "impacto": "medio",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Aplicacion efectiva del reglamento, espacios comunes limpios, responsabilidad individual"
+    },
+    {
+      "fecha": "2025-10-22",
+      "titulo": "Decision del comite sobre estacionamientos de minusvalidos",
+      "descripcion": "Joaquin lidero la decision del comite (aprobada por mayoria 2-1) de reubicar estacionamientos de minusvalidos del 1-2 al 10-11, debido a que los cargadores electricos (proyecto Copec Voltex) debian instalarse lo mas lejos posible del edificio por seguridad (riesgo de baterias electricas). Ambas ubicaciones cumplen con normativa de accesibilidad.",
+      "tipo": "seguridad",
+      "impacto": "alto",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Seguridad maximizada, cumplimiento normativo, cargadores en ubicacion optima"
+    },
+    {
+      "fecha": "2025-11-04",
+      "titulo": "Preparacion de agenda para asamblea ordinaria y extraordinaria",
+      "descripcion": "Joaquin preparo la tabla de temas para asamblea del 13 de noviembre: Asamblea Ordinaria (funcionamiento cargadores electricos), Asamblea Extraordinaria (publicidad en fachada, camaras de seguridad, remocion parcial/total del comite, revision del reglamento interno). Coordino con administracion para citaciones formales y corrigio errores rapidamente cuando se detecto que faltaba tema del reglamento.",
+      "tipo": "coordinacion",
+      "impacto": "alto",
+      "costo_real": 0,
+      "costo_alternativa": null,
+      "ahorro_generado": null,
+      "beneficio_comunidad": "Asamblea bien organizada, todos los temas importantes cubiertos, participacion informada"
+    }
+  ],
+  "resumen_ahorros": {
+    "total_ahorro_documentado": 73039891,
+    "desglose": [
+      {
+        "concepto": "Cargadores electricos COPEC Voltex GRATIS (valor mercado)",
+        "monto_clp": 8000000
+      },
+      {
+        "concepto": "Sensor infrarrojo ascensor importado EEUU (vs OTIS $1M)",
+        "monto_clp": 960000
+      },
+      {
+        "concepto": "Encoder ascensor importado EEUU (4 unidades vs OTIS $1.5M)",
+        "monto_clp": 1440000
+      },
+      {
+        "concepto": "Controladora ascensor importada China (2 unidades vs OTIS $2.1M)",
+        "monto_clp": 1918000
+      },
+      {
+        "concepto": "Deuda de contribuciones Oficina 6 evitada para comunidad",
+        "monto_clp": 8929891
+      },
+      {
+        "concepto": "Cobro fraudulento administracion evitado ($300K/mes x 12)",
+        "monto_clp": 3600000
+      },
+      {
+        "concepto": "Recuperacion deuda electricidad otras torres (acumulada)",
+        "monto_clp": 13000000
+      },
+      {
+        "concepto": "Prorrateo agua excesivo (potencial ahorro anual)",
+        "monto_clp": 15720000
+      },
+      {
+        "concepto": "Remarcadores agua nuevos gestionados gratis",
+        "monto_clp": 2000000
+      },
+      {
+        "concepto": "Prevencion cortocircuito citofono (dano evitado)",
+        "monto_clp": 2500000
+      },
+      {
+        "concepto": "Sistema boton de panico (vs sistema profesional)",
+        "monto_clp": 1950000
+      },
+      {
+        "concepto": "Software MayordomoTracker (vs desarrollo profesional)",
+        "monto_clp": 500000
+      },
+      {
+        "concepto": "Iluminacion LED estacionamientos (maestros propios vs contratista)",
+        "monto_clp": 1500000
+      },
+      {
+        "concepto": "Marcos puertas acceso (madera vs fierro profesional)",
+        "monto_clp": 500000
+      },
+      {
+        "concepto": "Refuerzo metalico puertas (maestro local vs empresa)",
+        "monto_clp": 450000
+      },
+      {
+        "concepto": "Repuestos ascensor instalacion sin costo adicional",
+        "monto_clp": 3806000
+      },
+      {
+        "concepto": "Segunda controladora repuesto (ahorro futuro)",
+        "monto_clp": 1918000
+      },
+      {
+        "concepto": "Instalacion sensores ascensor sin mano de obra",
+        "monto_clp": 920000
+      },
+      {
+        "concepto": "Ahorro mantencion calderas grupal (11 deptos)",
+        "monto_clp": 330000
+      },
+      {
+        "concepto": "Potencial ingreso publicidad anual negociado",
+        "monto_clp": 360000000
+      }
+    ]
+  }
+}

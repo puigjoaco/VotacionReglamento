@@ -28,7 +28,9 @@ import {
   BarChart3,
   Award,
   Plane,
+  ArrowRight,
 } from 'lucide-react';
+import Link from 'next/link';
 import gestionesData from './gestiones.json';
 
 // Definir tipo para gestión
@@ -163,6 +165,36 @@ export default function AuditoriaPage() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Botón destacado a Pendientes */}
+        <Link href="/auditoria/pendientes">
+          <Card className="mb-8 border-red-500/50 bg-gradient-to-r from-red-900/30 to-orange-900/30 backdrop-blur-sm shadow-2xl hover:shadow-red-500/20 transition-all cursor-pointer group">
+            <CardContent className="pt-6 pb-6">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4">
+                  <div className="bg-gradient-to-br from-red-600 to-red-700 p-3 rounded-lg shadow-lg group-hover:scale-110 transition-transform">
+                    <AlertTriangle className="h-8 w-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-1">
+                      PENDIENTES DE ENTREGA AL NUEVO COMITÉ
+                    </h3>
+                    <p className="text-red-200 text-sm">
+                      24 problemas estructurales heredados que deben continuarse • 2 demandas legales en curso
+                    </p>
+                  </div>
+                </div>
+                <Button
+                  variant="outline"
+                  className="border-red-400 text-red-300 hover:bg-red-500/20 hover:text-white group-hover:translate-x-1 transition-all"
+                >
+                  Ver Detalles
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </Link>
+
         {/* Estadísticas principales */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
           <Card className="bg-gradient-to-br from-blue-900/80 to-blue-800/80 border-blue-700/50 shadow-xl">

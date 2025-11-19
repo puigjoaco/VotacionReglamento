@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "titulo": "ENTREGA FORMAL AL NUEVO COMITÉ DE ADMINISTRACIÓN",
+    "fecha_entrega": "2025-11-18",
+    "responsable_saliente": "Joaquín Puig Vittini",
+    "cargo": "Presidente del Comité de Administración",
+    "edificio": "Portezuelo Oriente",
+    "nota_importante": "Estos problemas estructurales fueron heredados de la constructora/inmobiliaria y requieren seguimiento legal y técnico urgente. El nuevo comité debe continuar las gestiones iniciadas para proteger los intereses de la comunidad."
+  },
+  "resumen_ejecutivo": {
+    "total_pendientes": 24,
+    "criticos_urgentes": 12,
+    "demandas_en_curso": 2,
+    "monto_deudas_terceros": 13000000,
+    "riesgo_legal": "ALTO",
+    "riesgo_estructural": "ALTO"
+  },
+  "categorias": {
+    "legal_demandas": 6,
+    "financiero": 5,
+    "filtraciones_impermeabilizacion": 6,
+    "electrico_instalaciones": 4,
+    "estructural_construccion": 3
+  },
+  "pendientes": [
+    {
+      "id": 1,
+      "categoria": "financiero",
+      "prioridad": "critica",
+      "titulo": "Cálculo de gastos comunes según fórmula ilegal",
+      "descripcion": "Los gastos comunes se prorratean por cantidad de unidades y NO por m² construidos ni avalúo fiscal (Ley N° 21.442). Esto perjudica enormemente a Portezuelo Oriente que tiene más unidades pero menos superficie. Fórmula impuesta por constructora para facilitar aprobación del proyecto.",
+      "impacto": "Estamos pagando alícuota desproporcionada mensualmente",
+      "accion_requerida": "Evaluar reclamación retroactiva de montos mal calculados desde el origen. Demandar corrección de fórmula según ley.",
+      "estado_actual": "Identificado, no corregido",
+      "demanda_legal": true
+    },
+    {
+      "id": 2,
+      "categoria": "legal_demandas",
+      "prioridad": "critica",
+      "titulo": "Arriendo ilegal de bodegas bajo nuestra torre",
+      "descripcion": "La inmobiliaria 'donó' a las 4 torres originales bodegas ubicadas BAJO nuestro edificio, excluyéndonos totalmente. Esas bodegas se arriendan como estacionamientos sin declarar ingresos ni repartir beneficios. Además, su uso contradice la recepción municipal original.",
+      "impacto": "Cesión sin sustento legal, ingresos no declarados, uso irregular",
+      "accion_requerida": "Demanda legal para recuperar control de bodegas bajo nuestro edificio y cobro de arriendos históricos.",
+      "estado_actual": "En evaluación legal",
+      "demanda_legal": true
+    },
+    {
+      "id": 3,
+      "categoria": "financiero",
+      "prioridad": "critica",
+      "titulo": "Deuda $13M+ por consumo eléctrico y agua no asumida",
+      "descripcion": "Portezuelo Oriente cubre 100% del consumo de caseta de entrada cuando solo nos corresponde 29.06%. Las otras torres (70.94%) se niegan a pagar. También pagamos íntegramente consumo eléctrico de bodegas/estacionamientos que no usamos ni administramos. Ofrecieron pagar 'la mitad' informalmente.",
+      "impacto": "Más de $13.000.000 CLP adeudados por otras torres",
+      "accion_requerida": "DEMANDA FORMAL EN CURSO. Continuar proceso legal hasta recuperación total de deuda.",
+      "estado_actual": "Demanda iniciada",
+      "demanda_legal": true
+    },
+    {
+      "id": 4,
+      "categoria": "financiero",
+      "prioridad": "alta",
+      "titulo": "Alícuota incorrecta Penthouse con terrazas exclusivas",
+      "descripcion": "Penthouses (Hernán Besomi, Germán Eguigurren) tienen misma alícuota que deptos sin terrazas. Según Ley N° 21.442 y Circular N° 47 SII (2021), terrazas de uso exclusivo deben estar en avalúo fiscal e impactar proporción de gastos comunes.",
+      "impacto": "Cálculo incorrecto de gastos comunes para Penthouses",
+      "accion_requerida": "Corrección de alícuota según avalúo fiscal real incluyendo terrazas.",
+      "estado_actual": "Identificado, no corregido",
+      "demanda_legal": false
+    },
+    {
+      "id": 5,
+      "categoria": "electrico_instalaciones",
+      "prioridad": "critica",
+      "titulo": "Instalación eléctrica PELIGROSA en señaléticas emergencia",
+      "descripcion": "Inmobiliaria debía conectar señaléticas a generador con conduit y cableado conforme. REALIDAD (inspección 9 mayo): NO hay conduit, cables sueltos en cielo, certificación antigua (no EVA), y GRAVE: cable verde (tierra) usado como FASE. En shafts cables cruzan sueltos frente a medidores.",
+      "impacto": "RIESGO GRAVE de incendio/electrocución. Fuera de norma completamente.",
+      "accion_requerida": "URGENTE: Exigir corrección completa por inmobiliaria con certificación profesional.",
+      "estado_actual": "Reportado, no corregido",
+      "demanda_legal": false
+    },
+    {
+      "id": 6,
+      "categoria": "estructural_construccion",
+      "prioridad": "media",
+      "titulo": "Piedras tragaluz acceso desordenadas tras impermeabilización",
+      "descripcion": "Tras trabajos de impermeabilización del muro de entrada, removieron piedras del tragaluz y nunca las repusieron correctamente. Llevan meses botadas sin criterio estético ni técnico.",
+      "impacto": "Afecta imagen acceso principal, falta de prolijidad",
+      "accion_requerida": "Exigir reposición correcta según compromiso original de cierre de obra.",
+      "estado_actual": "Compromiso incumplido",
+      "demanda_legal": false
+    },
+    {
+      "id": 7,
+      "categoria": "estructural_construccion",
+      "prioridad": "media",
+      "titulo": "Martelina de muro acceso con densidad menor (parche visible)",
+      "descripcion": "Al reparar estuco del muro entrada, aplicaron martelina de densidad muy inferior a la original, generando parche evidente y estéticamente inaceptable. Advertido múltiples veces a Rodrigo Vega y Tamara, sin respuesta.",
+      "impacto": "Trabajo mal ejecutado, apariencia deficiente",
+      "accion_requerida": "Exigir corrección con materiales correctos.",
+      "estado_actual": "Inmobiliaria lo dio por terminado incorrectamente",
+      "demanda_legal": false
+    },
+    {
+      "id": 8,
+      "categoria": "estructural_construccion",
+      "prioridad": "media",
+      "titulo": "Reparación patio trasero sin acabado (muro sucio)",
+      "descripcion": "Reparación estructural en jardinera trasera (riesgo desprendimiento) quedó sin pintura ni acabado. Muro sucio, apariencia de descuido absoluto.",
+      "impacto": "Trabajo incompleto, inaceptable para entrega de obra",
+      "accion_requerida": "Exigir terminación completa con pintura y acabado profesional.",
+      "estado_actual": "Incompleto",
+      "demanda_legal": false
+    },
+    {
+      "id": 9,
+      "categoria": "filtraciones_impermeabilizacion",
+      "prioridad": "critica",
+      "titulo": "Filtración crónica hall principal sin solución definitiva",
+      "descripcion": "En hall entrada hacia ascensores (junto conserjería), filtración de agua crónica desde hace años. 'Reparada' múltiples veces pero reaparece cada invierno. Proviene de bajada aguas lluvias sector poniente (Fuerza Aeroespacial Puerto México, línea 1), filtra por bodega hacia techo hall.",
+      "impacto": "Problema estructural sin solución real, daño recurrente",
+      "accion_requerida": "Exigir solución estructural definitiva, no parches temporales.",
+      "estado_actual": "Reparaciones temporales insuficientes",
+      "demanda_legal": false
+    },
+    {
+      "id": 10,
+      "categoria": "filtraciones_impermeabilizacion",
+      "prioridad": "alta",
+      "titulo": "Tubería exterior suelta hacia poniente sin reparar",
+      "descripcion": "Tubería de bajada de aguas lluvias exterior (lado poniente) está sueltísima. Problema reportado hace tiempo, sin solución. Deterioro agravado por inacción.",
+      "impacto": "Riesgo de desprendimiento, filtraciones agravadas",
+      "accion_requerida": "Reparación y fijación completa de tubería exterior.",
+      "estado_actual": "Reportado, no reparado",
+      "demanda_legal": false
+    },
+    {
+      "id": 11,
+      "categoria": "filtraciones_impermeabilizacion",
+      "prioridad": "critica",
+      "titulo": "Inundación permanente lounge - maderas dañadas",
+      "descripcion": "Lounge constantemente inundado, acumulación de agua ha dañado severamente TODAS las maderas almacenadas en clóset (completamente infladas y deterioradas). Reiteradamente informado sin respuesta ni reparación.",
+      "impacto": "Daño patrimonial, deterioro funcional espacio común",
+      "accion_requerida": "Solución impermeabilización + reposición maderas dañadas.",
+      "estado_actual": "Sin respuesta",
+      "demanda_legal": false
+    },
+    {
+      "id": 12,
+      "categoria": "filtraciones_impermeabilizacion",
+      "prioridad": "critica",
+      "titulo": "12+ zonas con filtraciones persistentes en estacionamientos",
+      "descripcion": "Pese a reparaciones bajo supervisión de Rodrigo Vega, estacionamientos siguen con filtraciones graves. Trabajos claramente insuficientes. Documentadas: Est 38 (P-2), frente 86/90 (EP), muralla final (EP), muralla 15 (P-2), rampa P-1, vertical ventana norte, Lounge (shaft+jardinera), muro poniente, bodegas 58/59, piso 17-19 caja escala, piso 19 sala maestros, tubería est 87, fachada norte, hall entrada.",
+      "impacto": "Problema estructural no abordado correctamente",
+      "accion_requerida": "Exigir nueva evaluación estructural completa y reparación definitiva.",
+      "estado_actual": "Reparaciones insuficientes",
+      "demanda_legal": false
+    },
+    {
+      "id": 13,
+      "categoria": "estructural_construccion",
+      "prioridad": "media",
+      "titulo": "Fachada con múltiples tonos de pintura (puzzle de colores)",
+      "descripcion": "Pintura exterior presenta múltiples tonos por reparaciones sucesivas mal gestionadas. Cada intervención sumó nuevo color, convirtiendo fachada en 'puzzle'. Edificio entregado 2019, apariencia impropia.",
+      "impacto": "Afecta valor estético y patrimonial del inmueble",
+      "accion_requerida": "Pintura completa fachada con tono uniforme.",
+      "estado_actual": "Falta de estándar y profesionalismo",
+      "demanda_legal": false
+    },
+    {
+      "id": 14,
+      "categoria": "estructural_construccion",
+      "prioridad": "media",
+      "titulo": "Pintura caja escala completa - compromiso incumplido",
+      "descripcion": "Tras trabajos reparación eléctrica, se acordó pintar caja escala completa para corregir manchas/daños. Nunca se cumplió. Actualmente presenta múltiples manchones, imagen de obra inconclusa.",
+      "impacto": "Compromiso incumplido, apariencia deficiente",
+      "accion_requerida": "Exigir cumplimiento de pintura completa caja escala.",
+      "estado_actual": "Compromiso no cumplido",
+      "demanda_legal": false
+    },
+    {
+      "id": 15,
+      "categoria": "estructural_construccion",
+      "prioridad": "critica",
+      "titulo": "Paneles EIF sueltos con riesgo de desprendimiento (Tipo 4)",
+      "descripcion": "En deptos Tipo 4 (sector oriente habitación secundaria), paneles EIF (aislamiento térmico exterior) claramente desprendidos en pisos bajos y altos. Aunque material base liviano, peso estuco+martelina los vuelve PELIGROSOS con riesgo real de caída.",
+      "impacto": "URGENCIA ESTRUCTURAL: riesgo caída, daño visual grave",
+      "accion_requerida": "INMEDIATO: Inspección y reparación estructural completa paneles EIF.",
+      "estado_actual": "Riesgo inminente",
+      "demanda_legal": false
+    },
+    {
+      "id": 16,
+      "categoria": "electrico_instalaciones",
+      "prioridad": "alta",
+      "titulo": "Sensores incendio inutilizados + negativa pago limpieza",
+      "descripcion": "Intervención alarmas descubrió cables sin conduit, obligando romper cielos. Al reparar/pintar, pintaron sensores de incendio inutilizándolos. Reemplazo: $10M. Optamos limpieza riesgosa (prohibida fabricante): $300-400K. Rodrigo Vega negó pagar con respaldo.",
+      "impacto": "Sensores incendio comprometidos, negativa asumir responsabilidad",
+      "accion_requerida": "Cobrar $300-400K limpieza + evaluar reemplazo completo sensores.",
+      "estado_actual": "Gasto asumido por comunidad, inmobiliaria se negó",
+      "demanda_legal": false
+    },
+    {
+      "id": 17,
+      "categoria": "electrico_instalaciones",
+      "prioridad": "media",
+      "titulo": "Luminarias lounge no encienden desde interior - ilógico",
+      "descripcion": "Luces terraza exterior lounge NO se pueden encender desde interior (ilógico, contradice proyecto). Solo desde conserjería (absurdo funcional). Comprometieron corregir, nunca lo hicieron.",
+      "impacto": "Funcionalidad básica incorrecta",
+      "accion_requerida": "Corrección conexión luminarias según proyecto original.",
+      "estado_actual": "Compromiso incumplido",
+      "demanda_legal": false
+    },
+    {
+      "id": 18,
+      "categoria": "filtraciones_impermeabilizacion",
+      "prioridad": "critica",
+      "titulo": "Terraza lounge: gárgolas tapadas para evitar inundación interna",
+      "descripcion": "Filtraciones severas terraza lounge hacia interior. OBLIGADOS a tapar gárgolas de drenaje para evitar inundaciones internas. Si se dejan libres, terraza se inunda completamente afectando espacios interiores.",
+      "impacto": "Problema estructural grave: impermeabilización y evacuación deficientes",
+      "accion_requerida": "Solución estructural completa: impermeabilización + sistema drenaje funcional.",
+      "estado_actual": "Medida extrema temporal (gárgolas tapadas)",
+      "demanda_legal": false
+    },
+    {
+      "id": 19,
+      "categoria": "financiero",
+      "prioridad": "alta",
+      "titulo": "Deuda contribuciones Oficina 6: $8.929.891 CLP",
+      "descripcion": "Notificación TGR recibida en conserjería para Inmobiliaria El Ulmo S.A. (ROL 331-03627-348, AV SANTA MARIA 9500 OF 6). Deuda $8.929.891 CLP. Proceso cobro administrativo iniciado (Expediente 12353-2024 VITACURA), resolución 23 enero 2025, notificada 30 abril 2025. Incluye medidas apremio: embargo y eventual remate.",
+      "impacto": "Unidad no recepcionada correctamente, incertidumbre y contingencias",
+      "accion_requerida": "Clarificar situación Oficina 6, exigir regularización inmobiliaria.",
+      "estado_actual": "Proceso cobro TGR activo",
+      "demanda_legal": false
+    },
+    {
+      "id": 20,
+      "categoria": "estructural_construccion",
+      "prioridad": "critica",
+      "titulo": "Aislamiento acústico INACEPTABLE entre departamentos",
+      "descripcion": "Deficiencia grave en aislación acústica vertical (losas piso/cielo). Insonorización extremadamente baja. Residentes perciben: conversaciones normales, pasos descalzos (suenan como tacones), ruidos sanitarios, sonidos íntimos. Transmisión intolerable vulnera derecho al descanso y tranquilidad.",
+      "impacto": "VICIO CONSTRUCTIVO: falta privacidad acústica, calidad vida afectada",
+      "accion_requerida": "Evaluación técnica aislamiento + solución estructural. Puede requerir demanda.",
+      "estado_actual": "Reportado transversalmente por numerosos residentes",
+      "demanda_legal": false
+    },
+    {
+      "id": 21,
+      "categoria": "financiero",
+      "prioridad": "critica",
+      "titulo": "Fondo reserva cobrado desde 2019 sin contraprestación + 5% recargo",
+      "descripcion": "Desde 2019 pagamos fondo reserva a cuenta de comunidad exterior que NO presta servicio real. No accedemos áreas comunes (piscinas, jardines). Único gasto común: empresa seguridad caseta (gestionada externamente, sin participación comunidad exterior). Recargo 5% injustificado. Fondo usado para gastos de torres originales (piscinas, jardines) que no usamos.",
+      "impacto": "Desvío recursos sin fundamento legal. Vulnera Ley N° 21.442",
+      "accion_requerida": "RESTITUCIÓN ÍNTEGRA fondo acumulado desde 2019 + intereses/reajustes. Cobro indebido.",
+      "estado_actual": "Pago mensual continuo injustificado",
+      "demanda_legal": true
+    },
+    {
+      "id": 22,
+      "categoria": "electrico_instalaciones",
+      "prioridad": "critica",
+      "titulo": "Estanque hidroneumático 10 bar - PELIGROSAMENTE INSUFICIENTE",
+      "descripcion": "Sala bombas: estanque hidroneumático 10 bar MAX cuando sistema arranca a 9.5 bar (margen solo 0.5 bar). INSUFICIENTE para amortiguar golpe de ariete. RIESGO REAL ruptura estanque por sobrepresión. ESTÁNDAR MÍNIMO: 16 bar.",
+      "impacto": "Negligencia técnica: riesgo falla estructural sistema hidráulico",
+      "accion_requerida": "URGENTE: Reposición estanque por 16 bar sin costo comunidad.",
+      "estado_actual": "Especificación deficiente con riesgo inminente",
+      "demanda_legal": false
+    },
+    {
+      "id": 23,
+      "categoria": "electrico_instalaciones",
+      "prioridad": "critica",
+      "titulo": "Iluminación caja escala NO FUNCIONA piso 18-9 + agua en interruptores",
+      "descripcion": "Equipo Rodrigo Vega reparó interruptores/timers/luminarias caja escala. Resultado deplorable: luces NO funcionan piso 18 hasta 9. GRAVE: agua detectada al interior de interruptores (piso 11 confirmado por electricista). Riesgo seguridad emergencia + peligro eléctrico.",
+      "impacto": "Falla técnica + riesgo seguridad. Ejecución deficiente y peligrosa",
+      "accion_requerida": "Reparación completa profesional certificada: reposición interruptores, sellado humedad, verificación continuidad.",
+      "estado_actual": "Sistema defectuoso con filtraciones",
+      "demanda_legal": false
+    },
+    {
+      "id": 24,
+      "categoria": "estructural_construccion",
+      "prioridad": "media",
+      "titulo": "Fisura hormigón piso 2 depto 21 reapareció tras 2 meses",
+      "descripcion": "Arreglaron fisura hormigón pero volvió a aparecer después de 2 meses. Típico de arreglos de Rodrigo Vega que duran nada.",
+      "impacto": "Reparación temporal insuficiente, problema estructural no resuelto",
+      "accion_requerida": "Exigir reparación estructural definitiva.",
+      "estado_actual": "Reparación temporal fallida",
+      "demanda_legal": false
+    }
+  ],
+  "acciones_legales_en_curso": [
+    {
+      "titulo": "Demanda por deuda consumo eléctrico y agua",
+      "monto": "$13.000.000+ CLP",
+      "estado": "Iniciada",
+      "representacion_legal": "Contratada"
+    },
+    {
+      "titulo": "Evaluación demanda por fondo reserva indebido",
+      "monto": "Fondo acumulado 2019-2025 + intereses",
+      "estado": "En evaluación",
+      "representacion_legal": "Disponible"
+    }
+  ],
+  "contexto_entrega": {
+    "mensaje_al_nuevo_comite": "Estos 24 problemas NO fueron generados por nuestra gestión. Son errores estructurales, técnicos y administrativos heredados de la constructora/inmobiliaria que nos dejaron 'el cacho'. Hemos iniciado las acciones legales necesarias para proteger los intereses de la comunidad. El nuevo comité debe continuar estas gestiones con firmeza hasta lograr soluciones definitivas y compensaciones justas.",
+    "prioridades_inmediatas": [
+      "Continuar demandas legales en curso (deuda eléctrica/agua)",
+      "Exigir reparación urgente instalaciones eléctricas peligrosas",
+      "Seguimiento estanque hidroneumático (riesgo ruptura)",
+      "Solución estructural filtraciones múltiples",
+      "Corrección alícuota gastos comunes según ley"
+    ],
+    "documentacion_disponible": [
+      "Certificado deuda TGR Oficina 6",
+      "Inspección eléctrica (9 mayo) - señaléticas emergencia",
+      "Listado 12+ zonas filtraciones estacionamientos",
+      "Comunicaciones con Rodrigo Vega/Tamara (inmobiliaria)",
+      "Contratos representación legal"
+    ]
+  }
+}
