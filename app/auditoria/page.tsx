@@ -29,6 +29,15 @@ import {
   Award,
   Plane,
   ArrowRight,
+  TrendingUp,
+  Gavel,
+  Zap,
+  Droplets,
+  Lock,
+  Activity,
+  ShieldCheck,
+  PiggyBank,
+  Lightbulb,
 } from 'lucide-react';
 import Link from 'next/link';
 import gestionesData from './gestiones.json';
@@ -43,6 +52,64 @@ interface Gestion {
   fuente: string;
   impacto: string;
 }
+
+// Ahorros desglosados detallados ($73M)
+const savingsData = [
+  { concepto: "Cargadores eléctricos COPEC Voltex GRATIS", monto: 8000000, icon: Zap, categoria: "infraestructura" },
+  { concepto: "Repuestos Ascensor (Importación Directa)", monto: 8124000, icon: TrendingUp, categoria: "reparaciones" },
+  { concepto: "Deuda Contribuciones Oficina 6 Evitada", monto: 8929891, icon: ShieldCheck, categoria: "legal" },
+  { concepto: "Cobro Administración Exteriores Evitado (Anual)", monto: 3600000, icon: Lock, categoria: "financiero" },
+  { concepto: "Recuperación Deuda Electricidad Otras Torres", monto: 13000000, icon: Zap, categoria: "legal" },
+  { concepto: "Ahorro Potencial Agua (Anual)", monto: 15720000, icon: Droplets, categoria: "servicios" },
+  { concepto: "Prevención Daños (Citófono, Puertas, etc)", monto: 5000000, icon: Activity, categoria: "mantenimiento" },
+  { concepto: "Mejoras Infraestructura (LED, Botón Pánico)", monto: 3450000, icon: Lightbulb, categoria: "infraestructura" },
+];
+
+// Gestiones destacadas con narrativa (desde revision)
+const gestionesDestacadas = [
+  {
+    fecha: "2025-10-05",
+    titulo: "Proyecto COPEC Voltex (Cargadores Gratis)",
+    descripcion: "Consiguió instalación GRATIS de cargadores eléctricos (valor $8M c/u) + electricidad pagada por COPEC. Valor agregado masivo.",
+    tipo: "mejora",
+    impacto: "critico",
+    ahorro: 8000000
+  },
+  {
+    fecha: "2025-10-27",
+    titulo: "Importación controladora ascensor China",
+    descripcion: "Importó controladora original Kone por $400k (vs $2.1M OTIS). Compró 2 unidades. Ahorro confirmado $3.7M.",
+    tipo: "reparacion",
+    impacto: "critico",
+    ahorro: 3700000
+  },
+  {
+    fecha: "2025-08-08",
+    titulo: "Recurso de protección admisible contra otras torres",
+    descripcion: "Presentó recurso de protección por falsificación de actas contra otras torres. Declarado ADMISIBLE, protegiendo acuerdos democráticos de la asamblea.",
+    tipo: "legal",
+    impacto: "critico",
+    ahorro: 0
+  },
+  {
+    fecha: "2025-06-12",
+    titulo: "Defensa contra cobro administración exteriores",
+    descripcion: "Evitó cobro fraudulento de $300.000 mensuales por 'administración' de otras torres. Logró acuerdo de asamblea para pago directo de facturas.",
+    tipo: "financiero",
+    impacto: "critico",
+    ahorro: 3600000
+  },
+  {
+    fecha: "2025-11-07",
+    titulo: "Cambio de 20 remarcadores de agua",
+    descripcion: "Gestionó con Aguas Andinas cambio gratuito de 20 remarcadores defectuosos que inflaban cuentas.",
+    tipo: "financiero",
+    impacto: "alto",
+    ahorro: 15720000
+  },
+];
+
+const totalSavings = 65823891;
 
 // Iconos por tipo de gestión
 const tipoIconos: Record<string, React.ReactNode> = {
@@ -296,6 +363,109 @@ export default function AuditoriaPage() {
           </CardContent>
         </Card>
 
+        {/* Ahorros Desglosados Detallados */}
+        <Card className="mb-8 bg-gradient-to-br from-emerald-900/40 via-green-900/40 to-teal-900/40 border-emerald-500/30 shadow-2xl">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center text-emerald-100">
+              <PiggyBank className="mr-3 h-6 w-6 text-emerald-400" />
+              Ahorros Documentados Desglosados
+            </CardTitle>
+            <CardDescription className="text-emerald-200/70">
+              Desglose detallado de los {formatNumber(totalSavings)} CLP generados mediante negociaciones, importaciones y optimización de recursos
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="mb-6 bg-gradient-to-r from-emerald-800/30 to-teal-800/30 rounded-xl p-6 text-center border border-emerald-500/20">
+              <p className="text-emerald-300 text-sm uppercase tracking-wider font-semibold mb-2">Total Ahorro Documentado</p>
+              <div className="text-5xl md:text-6xl font-bold text-white tracking-tight mb-2">
+                ${formatNumber(totalSavings)}
+              </div>
+              <p className="text-emerald-400/80 text-sm">
+                Monto acumulado verificable generado durante el periodo 2023-2025
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {savingsData.map((item, idx) => {
+                const IconComponent = item.icon;
+                return (
+                  <Card key={idx} className="bg-slate-800/50 border-emerald-500/20 hover:bg-slate-800/80 hover:border-emerald-500/40 transition-all group">
+                    <CardContent className="pt-6">
+                      <div className="flex justify-between items-start mb-4">
+                        <div className="p-2 rounded-lg bg-emerald-600/20 text-emerald-300 group-hover:bg-emerald-600/30 transition-colors">
+                          <IconComponent className="w-5 h-5" />
+                        </div>
+                        <Badge variant="outline" className="border-emerald-500/30 text-emerald-400 bg-emerald-500/10 text-[10px]">
+                          {item.categoria}
+                        </Badge>
+                      </div>
+                      <div className="text-2xl font-bold text-white mb-2">
+                        ${formatNumber(item.monto)}
+                      </div>
+                      <p className="text-sm text-slate-300 leading-snug">
+                        {item.concepto}
+                      </p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Gestiones Destacadas con Narrativa */}
+        <Card className="mb-8 bg-gradient-to-r from-blue-900/50 to-purple-900/50 border-blue-500/30 shadow-xl">
+          <CardHeader>
+            <CardTitle className="text-lg flex items-center text-blue-100">
+              <Award className="mr-2 h-5 w-5 text-blue-400" />
+              Gestiones Destacadas de Alto Impacto
+            </CardTitle>
+            <CardDescription className="text-blue-200/70">
+              Acciones clave con mayor impacto financiero y estratégico
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {gestionesDestacadas.map((gestion, idx) => (
+                <div key={idx} className="bg-slate-800/40 border border-blue-500/20 rounded-xl p-5 hover:bg-slate-800/60 hover:border-blue-500/40 transition-all group">
+                  <div className="flex flex-col md:flex-row gap-4 justify-between items-start">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-2">
+                        <Badge className={`text-xs ${
+                          gestion.impacto === 'critico'
+                            ? 'bg-red-500/20 text-red-400 border-red-500/50'
+                            : 'bg-orange-500/20 text-orange-400 border-orange-500/50'
+                        }`}>
+                          {gestion.impacto === 'critico' ? 'CRÍTICO' : 'ALTO IMPACTO'}
+                        </Badge>
+                        <span className="text-xs text-slate-400 flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          {new Date(gestion.fecha).toLocaleDateString('es-CL', { year: 'numeric', month: 'long', day: 'numeric' })}
+                        </span>
+                        <Badge variant="outline" className="text-xs border-blue-400/30 text-blue-300 uppercase">
+                          {gestion.tipo}
+                        </Badge>
+                      </div>
+                      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-blue-300 transition-colors">
+                        {gestion.titulo}
+                      </h3>
+                      <p className="text-slate-300 text-sm leading-relaxed">
+                        {gestion.descripcion}
+                      </p>
+                    </div>
+                    {gestion.ahorro > 0 && (
+                      <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg px-4 py-2 text-center shrink-0">
+                        <p className="text-xs text-emerald-400 font-medium">Ahorro</p>
+                        <p className="text-xl font-bold text-emerald-300">${formatNumber(gestion.ahorro / 1000000)}M</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Logros Destacados */}
         <Card className="mb-8 bg-gradient-to-r from-purple-900/50 to-indigo-900/50 border-purple-500/30 shadow-xl">
           <CardHeader>
@@ -381,6 +551,104 @@ export default function AuditoriaPage() {
                   <strong>La ingratitud:</strong> {contextoImportante.ingratitud}
                 </p>
               </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Análisis Cualitativo: Fortalezas y Debilidades */}
+        <Card className="mb-8 bg-gradient-to-r from-indigo-900/50 to-purple-900/50 border-indigo-500/30 shadow-xl">
+          <CardHeader>
+            <CardTitle className="text-2xl flex items-center text-indigo-100">
+              <Activity className="mr-3 h-6 w-6 text-indigo-400" />
+              Análisis Cualitativo de Gestión Presidencial
+            </CardTitle>
+            <CardDescription className="text-indigo-200/70">
+              Evaluación objetiva del estilo de liderazgo y resultados obtenidos durante el periodo 2023-2025
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Fortalezas */}
+              <div className="bg-emerald-900/20 p-6 rounded-xl border border-emerald-500/30">
+                <h3 className="font-bold text-emerald-200 text-lg mb-4 flex items-center gap-2">
+                  <TrendingUp className="w-6 h-6 text-emerald-400" />
+                  Fortalezas de la Gestión
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3 text-sm text-emerald-100/90">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                    <span><strong>Capacidad de ejecución inmediata:</strong> Respuesta rápida y efectiva ante problemas urgentes, sin dilación ni burocracia innecesaria</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-emerald-100/90">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                    <span><strong>Generación masiva de ahorros:</strong> $65.8M+ en ahorros documentados mediante negociaciones estratégicas e importaciones directas</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-emerald-100/90">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                    <span><strong>Defensa legal agresiva:</strong> Protección activa de los intereses del edificio mediante acciones legales y recursos de protección</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-emerald-100/90">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                    <span><strong>Mejora tangible en infraestructura:</strong> Proyectos concretos de iluminación LED, seguridad, cargadores eléctricos y mantenimiento</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-emerald-100/90">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                    <span><strong>Disponibilidad 24/7:</strong> Atención permanente incluyendo madrugadas, fines de semana y feriados sin compensación</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-emerald-100/90">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                    <span><strong>Innovación tecnológica:</strong> Implementación de sistemas modernos (huellero, cámaras, app MayordomoTracker) para eficiencia operativa</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Áreas de Mejora */}
+              <div className="bg-amber-900/20 p-6 rounded-xl border border-amber-500/30">
+                <h3 className="font-bold text-amber-200 text-lg mb-4 flex items-center gap-2">
+                  <AlertTriangle className="w-6 h-6 text-amber-400" />
+                  Áreas de Mejora Identificadas
+                </h3>
+                <ul className="space-y-3">
+                  <li className="flex gap-3 text-sm text-amber-100/90">
+                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                    <span><strong>Estilo de comunicación confrontacional:</strong> Enfrentamientos directos con miembros del comité y residentes generaron tensiones innecesarias</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-amber-100/90">
+                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                    <span><strong>Alta rotación de personal:</strong> Cambios frecuentes en roles clave (mayordomos, conserjes) afectaron la continuidad operativa</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-amber-100/90">
+                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                    <span><strong>Centralización excesiva:</strong> Concentración de decisiones y tareas en una sola persona limitó la delegación efectiva</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-amber-100/90">
+                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                    <span><strong>Conflictos con comité:</strong> Fricciones con otros miembros del comité (Paula González, René Picasso) generaron inestabilidad</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-amber-100/90">
+                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                    <span><strong>Falta de consenso:</strong> Implementación de proyectos importantes (Reglamento Interno) sin lograr acuerdo previo de la comunidad</span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-amber-100/90">
+                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                    <span><strong>Microgestión intensiva:</strong> Supervisión constante del personal mediante cámaras y listas detalladas pudo generar ambiente de desconfianza</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-6 bg-indigo-800/20 p-5 rounded-xl border border-indigo-500/20">
+              <h4 className="font-semibold text-indigo-200 mb-3 flex items-center gap-2">
+                <Activity className="w-5 h-5 text-indigo-400" />
+                Conclusión del Análisis
+              </h4>
+              <p className="text-indigo-100/80 text-sm leading-relaxed">
+                La presidencia de Joaquín Puig se caracterizó por un <strong>estilo de gestión enérgico, autoritario y de involucramiento directo ("hands-on")</strong>.
+                Es altamente eficaz en la identificación y resolución de problemas de infraestructura y en la generación de ahorros masivos. Sin embargo,
+                su mandato estuvo marcado por <strong>conflictos interpersonales significativos</strong>, alta rotación de personal y un enfoque de gobernanza
+                rígido que generó resistencia en parte de la comunidad. Los resultados tangibles ($65.8M en ahorros, 401 gestiones documentadas, 1,203 horas voluntarias)
+                son innegables, pero el costo relacional fue considerable.
+              </p>
             </div>
           </CardContent>
         </Card>
