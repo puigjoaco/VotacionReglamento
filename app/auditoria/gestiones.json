@@ -1756,7 +1756,7 @@
     {
       "fecha": "2024-10-29",
       "titulo": "Seguimiento OTIS botones ascensor y citófono",
-      "descripcion": "Joaquín presionó activamente a OTIS para completar reparación de botones de ascensor y citófono que llevaba 2 meses pendiente. Seguimiento persistente hasta lograr solución completa.",
+      "descripcion": "Joaquín presionó activamente a OTIS para completar reparación de botones de ascensor y citófono que llevaba 2 meses pendiente.\n\nSeguimiento persistente hasta lograr solución completa.",
       "tipo": "supervision",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
@@ -2248,7 +2248,7 @@
     {
       "fecha": "2025-01-30",
       "titulo": "ALFOMBRA ENTRADA PRINCIPAL",
-      "descripcion": "Alfombra entrada principal doblada, riesgo de caída para residentes. Planchar y/o pegar alfombra a piso.",
+      "descripcion": "Alfombra entrada principal doblada, riesgo de caída para residentes.\n\nPlanchar y/o pegar alfombra a piso.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
@@ -2652,7 +2652,7 @@
     {
       "fecha": "2025-04-15",
       "titulo": "Aseo general permanente en pasillos del edificio",
-      "descripcion": "Implementación de régimen de aseo general permanente en todos los pasillos del edificio. Supervisión constante del cumplimiento. Los pasillos ahora se mantienen limpios diariamente.",
+      "descripcion": "Implementación de régimen de aseo general permanente en todos los pasillos del edificio.\n\nSupervisión constante del cumplimiento.\n\nLos pasillos ahora se mantienen limpios diariamente.",
       "tipo": "mejora",
       "impacto": "medio",
       "ahorro_estimado": null,
@@ -3101,7 +3101,7 @@
     {
       "fecha": "2025-07-15",
       "titulo": "Instalación sistema botón de pánico",
-      "descripcion": "Instalación de sistema de botón de pánico para seguridad del edificio. Sistema conectado a central de emergencias. Mayor protección para residentes ante situaciones de peligro.",
+      "descripcion": "Instalación de sistema de botón de pánico para seguridad del edificio.\n\nSistema conectado a central de emergencias.\n\nMayor protección para residentes ante situaciones de peligro.",
       "tipo": "seguridad",
       "impacto": "alto",
       "ahorro_estimado": null,
@@ -3248,7 +3248,7 @@
     {
       "fecha": "2025-09-24",
       "titulo": "MULTA POR MAL USO ESPACIO COMUN - BICICLETA EN SHAFT CALEFON",
-      "descripcion": "Detección de bicicleta estacionada indebidamente en shaft de calefón (espacio común restringido). Se identificó al propietario y se aplicó multa según reglamento interno.",
+      "descripcion": "Detección de bicicleta estacionada indebidamente en shaft de calefón (espacio común restringido).\n\nSe identificó al propietario y se aplicó multa según reglamento interno.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "alto",
@@ -3381,7 +3381,7 @@
     {
       "fecha": "2025-09-30",
       "titulo": "MANTENCION SALA DE BOMBAS - COTIZACIONES PENDIENTES",
-      "descripcion": "Mantención efectuada en sala de bombas. Mantenedor indicó que hay cotizaciones de trabajos adicionales pendientes de aprobación por la administración.",
+      "descripcion": "Mantención efectuada en sala de bombas.\n\nMantenedor indicó que hay cotizaciones de trabajos adicionales pendientes de aprobación por la administración.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
@@ -3551,7 +3551,7 @@
     {
       "fecha": "2025-09-30",
       "titulo": "AJUSTE RELOJ CONTROL - DESACTIVAR RECONOCIMIENTO FACIAL",
-      "descripcion": "Ajuste de configuración del reloj control de asistencia. Se desactivó/reconfiguró la función de reconocimiento facial que estaba activa incorrectamente.",
+      "descripcion": "Ajuste de configuración del reloj control de asistencia.\n\nSe desactivó/reconfiguró la función de reconocimiento facial que estaba activa incorrectamente.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
@@ -3561,7 +3561,7 @@
     {
       "fecha": "2025-10-01",
       "titulo": "CAMBIO 18 PORCELANATOS PISOS 7 Y 9",
-      "descripcion": "Reemplazo de 18 porcelanatos deteriorados distribuidos entre pisos 7 y 9. Trabajo realizado por maestro Pablo Martínez.",
+      "descripcion": "Reemplazo de 18 porcelanatos deteriorados distribuidos entre pisos 7 y 9.\n\nTrabajo realizado por maestro Pablo Martínez.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
@@ -3581,7 +3581,7 @@
     {
       "fecha": "2025-10-01",
       "titulo": "MANTENCION PISCINA - COTIZACION CUARZO",
-      "descripcion": "Mantención completa de la piscina. El mantenedor entregó cotización por cambio de 250 kg de cuarzo para filtro. Se buscará cotización adicional para comparar precios.",
+      "descripcion": "Mantención completa de la piscina.\n\nEl mantenedor entregó cotización por cambio de 250 kg de cuarzo para filtro.\n\nSe buscará cotización adicional para comparar precios.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
@@ -3673,7 +3673,7 @@
     {
       "fecha": "2025-10-07",
       "titulo": "GESTION CON MUNICIPALIDAD POR RETIRO RECICLADO",
-      "descripcion": "Llamada a la municipalidad por problemas con el retiro del reciclado. Se comunicaron con la empresa encargada del servicio.",
+      "descripcion": "Llamada a la municipalidad por problemas con el retiro del reciclado.\n\nSe comunicaron con la empresa encargada del servicio.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
@@ -3996,7 +3996,7 @@
     {
       "fecha": "2025-10-22",
       "titulo": "CAMBIO LLAVE DE AGUA 3/4\" JARDIN",
-      "descripcion": "Reemplazo de llave de agua de 3/4 pulgadas ubicada en el jardín frente a la entrada principal. Llave anterior presentaba fugas y desgaste.",
+      "descripcion": "Reemplazo de llave de agua de 3/4 pulgadas ubicada en el jardín frente a la entrada principal.\n\nLlave anterior presentaba fugas y desgaste.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
@@ -4036,7 +4036,7 @@
     {
       "fecha": "2025-10-30",
       "titulo": "GORRO GALVANIZADO TUBERIAS TECHUMBRE",
-      "descripcion": "Compra e instalación de 8 gorros galvanizados para proteger tuberías en la techumbre. Objetivo: evitar que aves ingresen y obstruyan las tuberías con nidos o desechos.",
+      "descripcion": "Compra e instalación de 8 gorros galvanizados para proteger tuberías en la techumbre.\n\nObjetivo: evitar que aves ingresen y obstruyan las tuberías con nidos o desechos.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
@@ -4046,7 +4046,7 @@
     {
       "fecha": "2025-10-30",
       "titulo": "REVISION BALIZAS TECHUMBRE",
-      "descripcion": "Inspección completa del estado de las balizas de señalización ubicadas en la techumbre del edificio. Se confirmó buen estado y funcionamiento.",
+      "descripcion": "Inspección completa del estado de las balizas de señalización ubicadas en la techumbre del edificio.\n\nSe confirmó buen estado y funcionamiento.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
