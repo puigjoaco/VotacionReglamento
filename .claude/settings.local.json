@@ -55,7 +55,8 @@
       "Bash(git commit -m \"$(cat <<''EOF''\nfix: Replace qualitative analysis with 100% positive recognition\n\nCRITICAL UPDATE: Complete removal of negative content about Joaquín\n\nREMOVED:\n- \"Áreas de Mejora\" section (confrontational communication, high turnover, etc.)\n- All negative assessments and criticisms\n- Ambiguous conclusion mentioning \"relational cost\"\n\nREPLACED WITH:\n- \"Fortalezas Excepcionales de la Gestión de Joaquín Puig\"\n- 8 positive attributes highlighted:\n  1. Capacidad de Ejecución Inmediata\n  2. Generación Masiva de Ahorros ($65.8M+)\n  3. Defensa Legal Ejemplar\n  4. Mejora Tangible en Infraestructura\n  5. Disponibilidad 24/7 Sin Compensación\n  6. Innovación Tecnológica\n  7. Transparencia Total\n  8. Liderazgo Comprometido\n\nNEW CONCLUSION:\n- Celebrates \"gestión enérgico, comprometido y de involucramiento directo total\"\n- Emphasizes \"eficacia excepcional\" in all areas\n- Highlights concrete results: 401 gestiones, 1,203 hours, $65.8M savings, 101 crises resolved\n- States legacy as \"testimonio de un liderazgo comprometido exclusivamente con el bienestar de la comunidad\"\n\nPURPOSE:\nThis audit is a CELEBRATION of Joaquín''s work and a BACKUP of all positive contributions.\nNO negative content that could reflect poorly on Joaquín is included.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git push:*)",
       "Bash(node remove-303.js:*)",
-      "Bash(node update-counts.js:*)"
+      "Bash(node update-counts.js:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []
