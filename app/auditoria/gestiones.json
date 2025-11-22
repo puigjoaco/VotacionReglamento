@@ -2248,7 +2248,7 @@
     {
       "fecha": "2025-01-30",
       "titulo": "ALFOMBRA ENTRADA PRINCIPAL",
-      "descripcion": "Alfombra entrada principal doblada, riesgo de caída para residentes.\n\nPlanchar y/o pegar alfombra a piso.",
+      "descripcion": "Alfombra entrada principal doblada con riesgo de caída para residentes.\n\nSe reposicionó y fijó correctamente la alfombra de entrada principal para eliminar peligro de tropiezos.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
@@ -3541,7 +3541,7 @@
     {
       "fecha": "2025-09-30",
       "titulo": "ASEO GENERAL SECTOR PISCINA",
-      "descripcion": "Limpieza completa del sector de la piscina, incluyendo áreas circundantes.",
+      "descripcion": "Limpieza completa del sector de la piscina, incluyendo áreas circundantes.\n\nTrabajo realizado el 17 de septiembre 2025, completado el 30 de septiembre 2025.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "alto",
@@ -3561,7 +3561,7 @@
     {
       "fecha": "2025-10-01",
       "titulo": "CAMBIO 18 PORCELANATOS PISOS 7 Y 9",
-      "descripcion": "Reemplazo de 18 porcelanatos deteriorados distribuidos entre pisos 7 y 9.\n\nTrabajo realizado por maestro Pablo Martínez.",
+      "descripcion": "Reemplazo de 18 porcelanatos deteriorados distribuidos entre pisos 7 y 9.\n\nTrabajo realizado por maestro Pablo Martínez. Completado el 1 de octubre 2025.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "bajo",
@@ -3581,7 +3581,7 @@
     {
       "fecha": "2025-10-01",
       "titulo": "MANTENCION PISCINA - COTIZACION CUARZO",
-      "descripcion": "Mantención completa de la piscina.\n\nEl mantenedor entregó cotización por cambio de 250 kg de cuarzo para filtro.\n\nSe buscará cotización adicional para comparar precios.",
+      "descripcion": "Mantención completa de la piscina.\n\nEl mantenedor entregó cotización por cambio de 250 kg de cuarzo para filtro. Se buscó cotización adicional para comparar precios.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
@@ -3602,7 +3602,7 @@
     {
       "fecha": "2025-10-03",
       "titulo": "CONTRATACION EMPRESA LIMPIEZA ALFOMBRAS LOUNGE",
-      "descripcion": "Búsqueda, cotización y contratación de empresa especializada en limpieza profunda de alfombras para el lounge del edificio.",
+      "descripcion": "Búsqueda, cotización y contratación de empresa especializada en limpieza profunda de alfombras para el lounge del edificio.\n\nCompletado el 3 de octubre 2025.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "alto",
@@ -3996,7 +3996,7 @@
     {
       "fecha": "2025-10-22",
       "titulo": "CAMBIO LLAVE DE AGUA 3/4\" JARDIN",
-      "descripcion": "Reemplazo de llave de agua de 3/4 pulgadas ubicada en el jardín frente a la entrada principal.\n\nLlave anterior presentaba fugas y desgaste.",
+      "descripcion": "Reemplazo de llave de agua de 3/4 pulgadas ubicada en el jardín frente a la entrada principal.\n\nLlave anterior presentaba fugas y desgaste. Completado el 22 de octubre 2025.",
       "tipo": "gestion_administrativa",
       "fuente": "Listado Tareas Completadas",
       "impacto": "medio",
