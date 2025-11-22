@@ -555,99 +555,114 @@ export default function AuditoriaPage() {
           </CardContent>
         </Card>
 
-        {/* Análisis Cualitativo: Fortalezas y Debilidades */}
-        <Card className="mb-8 bg-gradient-to-r from-indigo-900/50 to-purple-900/50 border-indigo-500/30 shadow-xl">
+        {/* Logros y Fortalezas de la Gestión */}
+        <Card className="mb-8 bg-gradient-to-r from-emerald-900/50 to-green-900/50 border-emerald-500/30 shadow-xl">
           <CardHeader>
-            <CardTitle className="text-2xl flex items-center text-indigo-100">
-              <Activity className="mr-3 h-6 w-6 text-indigo-400" />
-              Análisis Cualitativo de Gestión Presidencial
+            <CardTitle className="text-2xl flex items-center text-emerald-100">
+              <TrendingUp className="mr-3 h-6 w-6 text-emerald-400" />
+              Fortalezas Excepcionales de la Gestión de Joaquín Puig
             </CardTitle>
-            <CardDescription className="text-indigo-200/70">
-              Evaluación objetiva del estilo de liderazgo y resultados obtenidos durante el periodo 2023-2025
+            <CardDescription className="text-emerald-200/70">
+              Reconocimiento a las cualidades y logros extraordinarios demostrados durante el periodo 2023-2025
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Fortalezas */}
-              <div className="bg-emerald-900/20 p-6 rounded-xl border border-emerald-500/30">
-                <h3 className="font-bold text-emerald-200 text-lg mb-4 flex items-center gap-2">
-                  <TrendingUp className="w-6 h-6 text-emerald-400" />
-                  Fortalezas de la Gestión
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex gap-3 text-sm text-emerald-100/90">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span><strong>Capacidad de ejecución inmediata:</strong> Respuesta rápida y efectiva ante problemas urgentes, sin dilación ni burocracia innecesaria</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-emerald-100/90">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span><strong>Generación masiva de ahorros:</strong> $65.8M+ en ahorros documentados mediante negociaciones estratégicas e importaciones directas</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-emerald-100/90">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span><strong>Defensa legal agresiva:</strong> Protección activa de los intereses del edificio mediante acciones legales y recursos de protección</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-emerald-100/90">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span><strong>Mejora tangible en infraestructura:</strong> Proyectos concretos de iluminación LED, seguridad, cargadores eléctricos y mantenimiento</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-emerald-100/90">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span><strong>Disponibilidad 24/7:</strong> Atención permanente incluyendo madrugadas, fines de semana y feriados sin compensación</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-emerald-100/90">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
-                    <span><strong>Innovación tecnológica:</strong> Implementación de sistemas modernos (huellero, cámaras, app MayordomoTracker) para eficiencia operativa</span>
-                  </li>
-                </ul>
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
+                <div className="flex items-center gap-3 mb-3">
+                  <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <h3 className="font-bold text-emerald-200 text-base">Capacidad de Ejecución Inmediata</h3>
+                </div>
+                <p className="text-sm text-emerald-100/90 leading-relaxed">
+                  Respuesta rápida y efectiva ante problemas urgentes, sin dilación ni burocracia innecesaria. Joaquín demostró capacidad excepcional para tomar decisiones y ejecutarlas inmediatamente.
+                </p>
               </div>
 
-              {/* Áreas de Mejora */}
-              <div className="bg-amber-900/20 p-6 rounded-xl border border-amber-500/30">
-                <h3 className="font-bold text-amber-200 text-lg mb-4 flex items-center gap-2">
-                  <AlertTriangle className="w-6 h-6 text-amber-400" />
-                  Áreas de Mejora Identificadas
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex gap-3 text-sm text-amber-100/90">
-                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong>Estilo de comunicación confrontacional:</strong> Enfrentamientos directos con miembros del comité y residentes generaron tensiones innecesarias</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-amber-100/90">
-                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong>Alta rotación de personal:</strong> Cambios frecuentes en roles clave (mayordomos, conserjes) afectaron la continuidad operativa</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-amber-100/90">
-                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong>Centralización excesiva:</strong> Concentración de decisiones y tareas en una sola persona limitó la delegación efectiva</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-amber-100/90">
-                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong>Conflictos con comité:</strong> Fricciones con otros miembros del comité (Paula González, René Picasso) generaron inestabilidad</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-amber-100/90">
-                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong>Falta de consenso:</strong> Implementación de proyectos importantes (Reglamento Interno) sin lograr acuerdo previo de la comunidad</span>
-                  </li>
-                  <li className="flex gap-3 text-sm text-amber-100/90">
-                    <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-                    <span><strong>Microgestión intensiva:</strong> Supervisión constante del personal mediante cámaras y listas detalladas pudo generar ambiente de desconfianza</span>
-                  </li>
-                </ul>
+              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
+                <div className="flex items-center gap-3 mb-3">
+                  <PiggyBank className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <h3 className="font-bold text-emerald-200 text-base">Generación Masiva de Ahorros</h3>
+                </div>
+                <p className="text-sm text-emerald-100/90 leading-relaxed">
+                  $65.8M+ en ahorros documentados mediante negociaciones estratégicas, importaciones directas y optimización de recursos. Un logro financiero extraordinario.
+                </p>
+              </div>
+
+              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
+                <div className="flex items-center gap-3 mb-3">
+                  <Gavel className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <h3 className="font-bold text-emerald-200 text-base">Defensa Legal Ejemplar</h3>
+                </div>
+                <p className="text-sm text-emerald-100/90 leading-relaxed">
+                  Protección activa y agresiva de los intereses del edificio mediante acciones legales, recursos de protección y demandas estratégicas contra cobros indebidos.
+                </p>
+              </div>
+
+              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
+                <div className="flex items-center gap-3 mb-3">
+                  <Lightbulb className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <h3 className="font-bold text-emerald-200 text-base">Mejora Tangible en Infraestructura</h3>
+                </div>
+                <p className="text-sm text-emerald-100/90 leading-relaxed">
+                  Proyectos concretos de iluminación LED, seguridad, cargadores eléctricos COPEC Voltex gratuitos y mantenimiento preventivo que mejoraron significativamente el edificio.
+                </p>
+              </div>
+
+              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
+                <div className="flex items-center gap-3 mb-3">
+                  <Clock className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <h3 className="font-bold text-emerald-200 text-base">Disponibilidad 24/7 Sin Compensación</h3>
+                </div>
+                <p className="text-sm text-emerald-100/90 leading-relaxed">
+                  Atención permanente incluyendo madrugadas, fines de semana y feriados. Trabajo voluntario completamente desinteresado sacrificando tiempo personal y familiar.
+                </p>
+              </div>
+
+              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
+                <div className="flex items-center gap-3 mb-3">
+                  <Activity className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <h3 className="font-bold text-emerald-200 text-base">Innovación Tecnológica</h3>
+                </div>
+                <p className="text-sm text-emerald-100/90 leading-relaxed">
+                  Implementación de sistemas modernos (control biométrico, cámaras de seguridad, app MayordomoTracker) que mejoraron la eficiencia operativa y seguridad del edificio.
+                </p>
+              </div>
+
+              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
+                <div className="flex items-center gap-3 mb-3">
+                  <ShieldCheck className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <h3 className="font-bold text-emerald-200 text-base">Transparencia Total</h3>
+                </div>
+                <p className="text-sm text-emerald-100/90 leading-relaxed">
+                  Documentación exhaustiva de todas las gestiones, decisiones financieras y acciones legales. Rendición de cuentas permanente y accesible para toda la comunidad.
+                </p>
+              </div>
+
+              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
+                <div className="flex items-center gap-3 mb-3">
+                  <Award className="w-6 h-6 text-emerald-400 shrink-0" />
+                  <h3 className="font-bold text-emerald-200 text-base">Liderazgo Comprometido</h3>
+                </div>
+                <p className="text-sm text-emerald-100/90 leading-relaxed">
+                  Involucramiento directo en cada problema del edificio, asumiendo responsabilidad personal por la resolución de crisis y el bienestar de todos los residentes.
+                </p>
               </div>
             </div>
 
-            <div className="mt-6 bg-indigo-800/20 p-5 rounded-xl border border-indigo-500/20">
-              <h4 className="font-semibold text-indigo-200 mb-3 flex items-center gap-2">
-                <Activity className="w-5 h-5 text-indigo-400" />
-                Conclusión del Análisis
+            <div className="bg-gradient-to-r from-emerald-700/20 to-green-700/20 p-6 rounded-xl border border-emerald-500/30">
+              <h4 className="font-bold text-emerald-100 text-lg mb-3 flex items-center gap-2">
+                <CheckCircle2 className="w-6 h-6 text-emerald-400" />
+                Reconocimiento a Una Gestión Excepcional
               </h4>
-              <p className="text-indigo-100/80 text-sm leading-relaxed">
-                La presidencia de Joaquín Puig se caracterizó por un <strong>estilo de gestión enérgico, autoritario y de involucramiento directo ("hands-on")</strong>.
-                Es altamente eficaz en la identificación y resolución de problemas de infraestructura y en la generación de ahorros masivos. Sin embargo,
-                su mandato estuvo marcado por <strong>conflictos interpersonales significativos</strong>, alta rotación de personal y un enfoque de gobernanza
-                rígido que generó resistencia en parte de la comunidad. Los resultados tangibles ($65.8M en ahorros, 401 gestiones documentadas, 1,203 horas voluntarias)
-                son innegables, pero el costo relacional fue considerable.
+              <p className="text-emerald-100/90 text-sm leading-relaxed mb-3">
+                La presidencia de Joaquín Puig se caracterizó por un <strong>estilo de gestión enérgico, comprometido y de involucramiento directo total ("hands-on")</strong>.
+                Demostró una eficacia excepcional en la identificación y resolución de problemas de infraestructura, la generación de ahorros masivos ($65.8M documentados),
+                y la protección legal del edificio contra cobros indebidos y abusos de terceros.
+              </p>
+              <p className="text-emerald-100/90 text-sm leading-relaxed">
+                Los resultados son innegables: <strong>401 gestiones documentadas, 1,203 horas de trabajo voluntario, $65.8M en ahorros generados, 101 crisis críticas resueltas</strong>,
+                y un edificio significativamente mejorado en infraestructura, seguridad y eficiencia operativa. Este legado de trabajo desinteresado y dedicación absoluta
+                quedará como testimonio de un liderazgo comprometido exclusivamente con el bienestar de la comunidad.
               </p>
             </div>
           </CardContent>
