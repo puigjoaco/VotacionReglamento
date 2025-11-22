@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_gestiones": 401,
+    "total_gestiones": 400,
     "periodo": "Junio 2023 - Noviembre 2025",
     "responsable": "Joaquín Puig",
     "cargo": "Presidente del Comité de Administración",
@@ -10,7 +10,7 @@
     "nota_importante": "Cada gestión fue liderada, coordinada o supervisada por Joaquín Puig como presidente del comité. Incluye trabajo en madrugadas, fines de semana, feriados y emergencias."
   },
   "resumen_ejecutivo": {
-    "total_gestiones_lideradas": 401,
+    "total_gestiones_lideradas": 400,
     "horas_trabajo_voluntario": 1203,
     "crisis_criticas_resueltas": 101,
     "multas_evitadas_clp": 15000000,
@@ -114,7 +114,7 @@
     {
       "fecha": "2023-07-01",
       "titulo": "Consolidación 3 cuentas internet a 1 sola - Ahorro $1.44M/año",
-      "descripcion": "Al asumir como presidente, Joaquín consolidó las 3 cuentas de internet separadas (gimnasio, lounge, recepción) que costaban $60.000 cada una ($180.000/mes total) en UNA sola cuenta por $60.000/mes. Ahorro inmediato de $120.000 mensuales ($1.440.000 anuales). Este problema fue mencionado al comité anterior con Rodrigo Lorca de presidente pero NUNCA hicieron nada. Joaquín lo solucionó inmediatamente al asumir.",
+      "descripcion": "Al asumir como presidente, Joaquín consolidó las 3 cuentas de internet separadas (gimnasio, lounge, recepción) que costaban \u0000.000 cada una (80.000/mes total) en UNA sola cuenta por \u0000.000/mes. Ahorro inmediato de \u0010.000 mensuales (.440.000 anuales). Joaquín lo solucionó inmediatamente al asumir.",
       "tipo": "financiero",
       "impacto": "critico",
       "ahorro_estimado": 1440000,
@@ -155,7 +155,7 @@
     {
       "fecha": "2023-07-15",
       "titulo": "Solución definitiva portón con motor nuevo + repuesto",
-      "descripcion": "El portón del edificio falló TODA LA VIDA durante el periodo de Rodrigo Lorca como presidente y nunca lo solucionaron. Joaquín compró un motor NUEVO y envió el motor malo a reparación completa con piezas nuevas. Ahora hay motor nuevo funcionando + motor completamente reparado de repuesto. Cada vez que falle, se cambia inmediatamente por el repuesto y el otro va a reparación. Solución definitiva al problema crónico.",
+      "descripcion": "El portón del edificio presentaba fallas recurrentes que nunca se habían solucionado definitivamente. Joaquín compró un motor NUEVO y envió el motor malo a reparación completa con piezas nuevas. Ahora hay motor nuevo funcionando + motor completamente reparado de repuesto. Cada vez que falle, se cambia inmediatamente por el repuesto y el otro va a reparación. Solución definitiva al problema crónico.",
       "tipo": "reparacion",
       "impacto": "critico",
       "ahorro_estimado": null,
@@ -3110,17 +3110,6 @@
       "responsable": "Joaquín Puig"
     },
     {
-      "fecha": "2025-07-31",
-      "titulo": "Coordinación mantención masiva termos calefón",
-      "descripcion": "Rodrigo Lorca coordinó mantención grupal de termos para 12+ departamentos. Lista organizada por días (lunes/martes). Ahorro colectivo por compra grupal. Residentes satisfechos con servicio profesional.",
-      "tipo": "coordinacion",
-      "impacto": "medio",
-      "ahorro_estimado": null,
-      "fuente": "Chat Residentes",
-      "id": 303,
-      "responsable": "Joaquín Puig"
-    },
-    {
       "fecha": "2025-08-08",
       "titulo": "Separación facturas servicios - Ahorro $3.6M anuales",
       "descripcion": "Logro por votación en asamblea que caseta de seguridad y furgón tengan facturas independientes. Evitó cobro fraudulento de administración de $300.000 mensuales ($3.600.000 anuales). Mayor transparencia en pagos. Aprobado por mayoría absoluta incluso con apoyo de reemplazantes de Rodrigo Sánchez y Silvina Varela. Ahorro anual continuo.",
@@ -4145,12 +4134,6 @@
     "feriados": "Atención de emergencias sin excepción",
     "horas_laborales": "Gestiones durante horario de trabajo propio, afectando su empleo",
     "vacaciones": "Sin vacaciones reales por responsabilidades del edificio"
-  },
-  "contexto_importante": {
-    "situacion": "A pesar de todo este trabajo voluntario, en la asamblea del 13 de noviembre 2025 los residentes se enfocaron únicamente en criticar el Reglamento Interno que Joaquín elaboró siguiendo el procedimiento correcto del Reglamento de Copropiedad.",
-    "realidad": "El Reglamento Interno fue publicado por el comité según procedimiento legal, para luego ser modificado en asamblea con los comentarios de todos. Este sistema que estás usando ES ese proceso de mejora.",
-    "valor_ignorado": "Un Reglamento Interno profesional cuesta $4-6 millones de pesos. Joaquín lo elaboró sin costo para la comunidad.",
-    "ingratitud": "Los residentes no valoraron las 1,095+ horas de trabajo voluntario, las inversiones personales no reembolsadas, las crisis resueltas en madrugadas, ni los $15+ millones en multas evitadas."
   },
   "mensaje_final": "Este registro documenta TODAS las gestiones lideradas por Joaquín Puig durante su presidencia. Cada acción fue coordinada, supervisada o ejecutada directamente por él como responsable principal. El análisis se realizó línea por línea de 8 chats de WhatsApp (21,417+ mensajes) más 89 tareas completadas documentadas. El trabajo incluyó: coordinación con proveedores, supervisión de trabajos, resolución de crisis, gestión de personal, trámites legales, compras, importaciones, y atención 24/7 de emergencias. Todo esto realizado de forma VOLUNTARIA y SIN REMUNERACIÓN, mientras mantenía su trabajo de tiempo completo y vida personal. Los hechos hablan por sí solos."
 }

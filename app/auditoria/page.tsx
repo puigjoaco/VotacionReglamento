@@ -163,7 +163,6 @@ export default function AuditoriaPage() {
   const resumenEjecutivo = (gestionesData as any).resumen_ejecutivo;
   const logrosDestacados = (gestionesData as any).logros_destacados_joaquin as string[];
   const horariosTrabajo = (gestionesData as any).horarios_trabajo_voluntario as any;
-  const contextoImportante = (gestionesData as any).contexto_importante as any;
 
   // Filtrar gestiones
   const filteredGestiones = useMemo(() => {
@@ -527,34 +526,6 @@ export default function AuditoriaPage() {
           </CardContent>
         </Card>
 
-        {/* Contexto Importante */}
-        <Card className="mb-8 bg-gradient-to-r from-amber-900/50 to-orange-900/50 border-amber-500/30 shadow-xl">
-          <CardContent className="pt-6">
-            <div className="flex items-start gap-4">
-              <div className="bg-amber-500/20 p-3 rounded-lg">
-                <AlertTriangle className="h-6 w-6 text-amber-400" />
-              </div>
-              <div>
-                <h3 className="text-amber-200 font-semibold text-lg mb-2">
-                  Contexto Importante
-                </h3>
-                <p className="text-amber-100/80 text-sm leading-relaxed mb-3">
-                  <strong>Situación:</strong> {contextoImportante.situacion}
-                </p>
-                <p className="text-amber-100/80 text-sm leading-relaxed mb-3">
-                  <strong>Realidad:</strong> {contextoImportante.realidad}
-                </p>
-                <p className="text-amber-100/80 text-sm leading-relaxed mb-3">
-                  <strong>Valor Ignorado:</strong> {contextoImportante.valor_ignorado}
-                </p>
-                <p className="text-amber-100/80 text-sm leading-relaxed">
-                  <strong>La ingratitud:</strong> {contextoImportante.ingratitud}
-                </p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
         {/* Logros y Fortalezas de la Gestión */}
         <Card className="mb-8 bg-gradient-to-r from-emerald-900/50 to-green-900/50 border-emerald-500/30 shadow-xl">
           <CardHeader>
@@ -660,7 +631,7 @@ export default function AuditoriaPage() {
                 y la protección legal del edificio contra cobros indebidos y abusos de terceros.
               </p>
               <p className="text-emerald-100/90 text-sm leading-relaxed">
-                Los resultados son innegables: <strong>401 gestiones documentadas, 1,203 horas de trabajo voluntario, $65.8M en ahorros generados, 101 crisis críticas resueltas</strong>,
+                Los resultados son innegables: <strong>400 gestiones documentadas, 1,203 horas de trabajo voluntario, $65.8M en ahorros generados, 101 crisis críticas resueltas</strong>,
                 y un edificio significativamente mejorado en infraestructura, seguridad y eficiencia operativa. Este legado de trabajo desinteresado y dedicación absoluta
                 quedará como testimonio de un liderazgo comprometido exclusivamente con el bienestar de la comunidad.
               </p>
