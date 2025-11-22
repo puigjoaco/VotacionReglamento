@@ -366,7 +366,7 @@
     {
       "fecha": "2023-09-25",
       "titulo": "Aprobación mejoras urgentes",
-      "descripcion": "Priorización de reparaciones críticas.",
+      "descripcion": "Joaquín priorizó y aprobó reparaciones urgentes del edificio.",
       "tipo": "decision_comite",
       "impacto": "alto",
       "fuente": "Comité solos",
@@ -1616,7 +1616,7 @@
     {
       "fecha": "2024-10-08",
       "titulo": "Crisis administrativa con Federal",
-      "descripcion": "Acumulación de problemas sin resolver.",
+      "descripcion": "Joaquín identificó acumulación de problemas administrativos con Federal que requerían atención inmediata.",
       "tipo": "crisis",
       "impacto": "critico",
       "fuente": "Comité General",
@@ -1756,7 +1756,7 @@
     {
       "fecha": "2024-10-29",
       "titulo": "Seguimiento OTIS botones ascensor y citófono",
-      "descripcion": "Presión a OTIS por reparación pendiente de 2 meses.",
+      "descripcion": "Joaquín presionó activamente a OTIS para completar reparación de botones de ascensor y citófono que llevaba 2 meses pendiente. Seguimiento persistente hasta lograr solución completa.",
       "tipo": "supervision",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
@@ -1806,7 +1806,7 @@
     {
       "fecha": "2024-11-12",
       "titulo": "Reunión urgente por deuda Federal",
-      "descripcion": "Análisis de situación financiera crítica.",
+      "descripcion": "Joaquín convocó reunión urgente para analizar situación financiera grave con Federal y definir plan de acción.",
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Comité General",
@@ -2509,8 +2509,8 @@
     },
     {
       "fecha": "2025-03-19",
-      "titulo": "Gestión morosidad crítica",
-      "descripcion": "Acciones sobre departamentos con alta morosidad.",
+      "titulo": "Gestión proactiva morosidad grave",
+      "descripcion": "Joaquín gestionó proactivamente situación de morosidad grave en departamentos, implementando acciones correctivas.",
       "tipo": "legal",
       "impacto": "alto",
       "fuente": "Presidente y Trabajadores",
@@ -2530,7 +2530,7 @@
     {
       "fecha": "2025-03-23",
       "titulo": "Proyecto instalación cámaras seguridad urgente",
-      "descripcion": "Promoción proyecto instalación cámaras de seguridad en todos los lugares del edificio incluyendo todos los pisos y puntos ciegos. Documentación de peleas físicas en ascensores (ahorcamientos, combos), robos en bodegas, choques sin identificar culpables. Proyecto propuesto para votación en asamblea.",
+      "descripcion": "Joaquín promovió proyecto de instalación de cámaras de seguridad en todos los lugares del edificio incluyendo pisos y puntos ciegos. Documentó incidentes de seguridad (agresiones en ascensores, robos en bodegas, choques sin identificar culpables) para justificar inversión. Proyecto presentado para votación en asamblea.",
       "tipo": "seguridad",
       "impacto": "critico",
       "ahorro_estimado": null,
@@ -2672,8 +2672,8 @@
     },
     {
       "fecha": "2025-04-15",
-      "titulo": "Deuda crítica $20.5M a Federal",
-      "descripcion": "6 facturas pendientes, crisis administrativa.",
+      "titulo": "Deuda grave \u0000.5M a Federal",
+      "descripcion": "Joaquín enfrentó deuda grave de $20.5M con Federal correspondiente a 6 facturas pendientes, coordinando solución administrativa.",
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Comité General",
