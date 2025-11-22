@@ -60,7 +60,6 @@ const savingsData = [
   { concepto: "Deuda Contribuciones Oficina 6 Evitada", monto: 8929891, icon: ShieldCheck, categoria: "legal" },
   { concepto: "Cobro Administración Exteriores Evitado (Anual)", monto: 3600000, icon: Lock, categoria: "financiero" },
   { concepto: "Recuperación Deuda Electricidad Otras Torres", monto: 13000000, icon: Zap, categoria: "legal" },
-  { concepto: "Ahorro Potencial Agua (Anual)", monto: 15720000, icon: Droplets, categoria: "servicios" },
   { concepto: "Prevención Daños (Citófono, Puertas, etc)", monto: 5000000, icon: Activity, categoria: "mantenimiento" },
   { concepto: "Mejoras Infraestructura (LED, Botón Pánico)", monto: 3450000, icon: Lightbulb, categoria: "infraestructura" },
 ];
@@ -101,15 +100,15 @@ const gestionesDestacadas = [
   },
   {
     fecha: "2025-11-07",
-    titulo: "Cambio de 20 remarcadores de agua",
-    descripcion: "Gestionó con Aguas Andinas cambio gratuito de 20 remarcadores defectuosos que inflaban cuentas.",
-    tipo: "financiero",
-    impacto: "alto",
-    ahorro: 15720000
+    titulo: "Cambio de 75 remarcadores de agua",
+    descripcion: "Joaquín gestionó con Gerente General de Aguas Andinas el cambio de 75 remarcadores defectuosos. Problema causaba prorrateo incorrecto de 1.500 m3 mensuales entre toda la comunidad.",
+    tipo: "coordinacion",
+    impacto: "critico",
+    ahorro: null
   },
 ];
 
-const totalSavings = 65823891;
+const totalSavings = 50103891;
 
 // Iconos por tipo de gestión
 const tipoIconos: Record<string, React.ReactNode> = {
@@ -452,7 +451,7 @@ export default function AuditoriaPage() {
                         {gestion.descripcion}
                       </p>
                     </div>
-                    {gestion.ahorro > 0 && (
+                    {gestion.ahorro && gestion.ahorro > 0 && (
                       <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-lg px-4 py-2 text-center shrink-0">
                         <p className="text-xs text-emerald-400 font-medium">Ahorro</p>
                         <p className="text-xl font-bold text-emerald-300">${formatNumber(gestion.ahorro / 1000000)}M</p>
@@ -555,7 +554,7 @@ export default function AuditoriaPage() {
                   <h3 className="font-bold text-emerald-200 text-base">Generación Masiva de Ahorros</h3>
                 </div>
                 <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  $65.8M+ en ahorros documentados mediante negociaciones estratégicas, importaciones directas y optimización de recursos. Un logro financiero extraordinario.
+                  $50.1M+ en ahorros documentados mediante negociaciones estratégicas, importaciones directas y optimización de recursos. Un logro financiero extraordinario.
                 </p>
               </div>
 
@@ -627,11 +626,11 @@ export default function AuditoriaPage() {
               </h4>
               <p className="text-emerald-100/90 text-sm leading-relaxed mb-3">
                 La presidencia de Joaquín Puig se caracterizó por un <strong>estilo de gestión enérgico, comprometido y de involucramiento directo total ("hands-on")</strong>.
-                Demostró una eficacia excepcional en la identificación y resolución de problemas de infraestructura, la generación de ahorros masivos ($65.8M documentados),
+                Demostró una eficacia excepcional en la identificación y resolución de problemas de infraestructura, la generación de ahorros masivos ($50.1M documentados),
                 y la protección legal del edificio contra cobros indebidos y abusos de terceros.
               </p>
               <p className="text-emerald-100/90 text-sm leading-relaxed">
-                Los resultados son innegables: <strong>400 gestiones documentadas, 1,203 horas de trabajo voluntario, $65.8M en ahorros generados, 101 crisis críticas resueltas</strong>,
+                Los resultados son innegables: <strong>400 gestiones documentadas, 1,203 horas de trabajo voluntario, $50.1M en ahorros generados, 101 crisis críticas resueltas</strong>,
                 y un edificio significativamente mejorado en infraestructura, seguridad y eficiencia operativa. Este legado de trabajo desinteresado y dedicación absoluta
                 quedará como testimonio de un liderazgo comprometido exclusivamente con el bienestar de la comunidad.
               </p>

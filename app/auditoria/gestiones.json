@@ -3884,7 +3884,7 @@
     {
       "fecha": "2025-10-17",
       "titulo": "Contacto directo con Gerente General Aguas Andinas",
-      "descripcion": "Establecimiento de contacto directo con Gerente General de Aguas Andinas para resolver problema de consumo excesivo por remarcadores defectuosos. Gerente General dispuesto a ayudar personalmente. Prorrateo de $1.500 m3 mensuales cuando debería ser máximo $1.242 m3. Problema afecta a toda la comunidad, no solo al edificio.",
+      "descripcion": "Joaquín estableció contacto directo con el Gerente General de Aguas Andinas para resolver problema de remarcadores defectuosos. Prorrateo incorrecto de 1.500 m3 mensuales de agua que se distribuye a toda la comunidad por falla en los remarcadores. Gerente General comprometido a resolver el problema.",
       "tipo": "coordinacion",
       "impacto": "critico",
       "ahorro_estimado": null,
@@ -4086,11 +4086,11 @@
     },
     {
       "fecha": "2025-11-07",
-      "titulo": "Cambio 20 remarcadores agua con Aguas Andinas",
-      "descripcion": "Gestión del cambio de 20 remarcadores de agua que tenían diferencias en lecturas causando sobrecobros masivos. Joaquín contactó directamente al Gerente General de Aguas Andinas. Los 20 remarcadores fueron cambiados el mismo día 7 de noviembre. Potencial ahorro anual en prorrateo: hasta $15.720.000 (ahorro futuro, aún no materializado).",
+      "titulo": "Cambio 75 remarcadores agua con Aguas Andinas",
+      "descripcion": "Joaquín gestionó el cambio de 75 remarcadores de agua defectuosos con Aguas Andinas. Contactó directamente al Gerente General. Los remarcadores con fallas causaban que 1.500 m3 de agua se prorratearan entre toda la comunidad mensualmente. Cambio coordinado para solucionar el problema de años.",
       "tipo": "financiero",
       "impacto": "critico",
-      "ahorro_estimado": 0,
+      "ahorro_estimado": null,
       "fuente": "Chat Residentes",
       "id": 400,
       "responsable": "Joaquín Puig"
