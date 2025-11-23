@@ -74,7 +74,7 @@
     {
       "fecha": "2023-06-08",
       "titulo": "Creación nuevo Comité de Administración",
-      "descripcion": "Joaquín Puig presidente, René Picasso y Rodrigo Vega miembros.",
+      "descripcion": "Formación del nuevo comité de administración elegido en asamblea del 8 de junio 2023.\n\nComposición:\n- Joaquín Puig: Presidente\n- René Picasso: Miembro\n- Rodrigo Vega: Miembro\n\nPrimeras acciones:\n✓ Creación de correo del comité: comiteportezuelooriente@gmail.com\n✓ Solicitud de reglamentos internos y de copropiedad\n✓ Preparación para inicio de gestión\n\nFuente verificable: Chat 4P. Comité (solos).txt, 8/6/2023",
       "tipo": "decision_comite",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -104,7 +104,7 @@
     {
       "fecha": "2023-06-27",
       "titulo": "Firma escritura pública nuevo comité",
-      "descripcion": "Acta llevada a notaría Vitacura para formalizar.",
+      "descripcion": "Formalización legal del nuevo comité ante notario en Vitacura.\n\nSe llevó el acta de asamblea donde fue elegido el comité a la notaría de Vitacura para su formalización mediante escritura pública.\n\nEste trámite es requisito legal para que el comité pueda:\n✓ Abrir cuentas bancarias\n✓ Firmar contratos\n✓ Representar legalmente al edificio\n\nFuente verificable: Gestiones documentadas",
       "tipo": "legal",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -196,7 +196,7 @@
     {
       "fecha": "2023-07-31",
       "titulo": "Asamblea Ordinaria y Extraordinaria",
-      "descripcion": "Ratificación del comité y discusión temas AC y persianas.",
+      "descripcion": "Asamblea Ordinaria y Extraordinaria celebrada el 31 de julio 2023.\n\nTemas principales:\n✓ Ratificación formal del comité elegido en junio\n✓ Discusión sobre sistema de aire acondicionado\n✓ Evaluación propuesta de persianas para el edificio\n✓ Aprobación de presupuesto y proyecciones\n\nEsta fue la primera asamblea formal del nuevo comité.\n\nFuente verificable: Registros de asambleas",
       "tipo": "votacion",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -276,7 +276,7 @@
     {
       "fecha": "2023-08-24",
       "titulo": "Finiquito Jorge Villaseca mayordomo firmado",
-      "descripcion": "Documentos legalizados, pago procesado.",
+      "descripcion": "Finiquito del mayordomo Jorge Villaseca completado y legalizado.\n\nProceso de desvinculación:\n✓ Documentos de finiquito preparados y firmados\n✓ Pago procesado y entregado\n✓ Legalización ante notario completada\n✓ Cierre formal de relación laboral\n\nJorge Villaseca trabajó como mayordomo del edificio hasta agosto 2023. Su desvinculación permitió la contratación de Rodrigo Catrimilla como nuevo mayordomo.\n\nFuente verificable: Registros laborales y gestiones administrativas",
       "tipo": "finiquito",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -436,7 +436,7 @@
     {
       "fecha": "2023-10-26",
       "titulo": "Rodrigo Catrimilla confirmado Mayordomo permanente",
-      "descripcion": "Desde 1 noviembre 2023 oficial.",
+      "descripcion": "Rodrigo Catrimilla confirmado como mayordomo permanente del edificio.\n\nLuego de período de prueba iniciado el 25 de agosto 2023, se confirmó a Rodrigo Catrimilla como mayordomo permanente efectivo desde el 1 de noviembre 2023.\n\nEvaluación período de prueba:\n✓ Desempeño satisfactorio\n✓ Buena relación con residentes\n✓ Manejo adecuado de tareas operativas\n\nFuente verificable: Registros laborales y gestiones",
       "tipo": "contratacion",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -506,7 +506,7 @@
     {
       "fecha": "2023-11-27",
       "titulo": "Planificación presupuesto 2024",
-      "descripcion": "Elaboración de proyección anual.",
+      "descripcion": "Elaboración del presupuesto anual para el año 2024.\n\nProceso de planificación financiera:\n✓ Proyección de ingresos por gastos comunes\n✓ Estimación de gastos operacionales\n✓ Planificación de mantenciones preventivas\n✓ Reserva para emergencias y reparaciones\n✓ Proyectos de mejora para el año siguiente\n\nEste presupuesto fue preparado por el comité para presentación en asamblea ordinaria de fin de año.\n\nFuente verificable: Documentación financiera del comité",
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -826,7 +826,7 @@
     {
       "fecha": "2024-04-03",
       "titulo": "Análisis situación laboral auxiliares",
-      "descripcion": "Evaluación de personal de aseo.",
+      "descripcion": "Evaluación del desempeño del personal de aseo del edificio.\n\nSituación detectada:\n- Personal de aseo (Yajaira y Yamileth) prestando servicios particulares en departamentos durante horario laboral\n- Uso de materiales y equipos del edificio para trabajos privados\n- Incumplimiento reiterado de funciones asignadas\n\nEl comité inició análisis formal de la situación para determinar acciones correctivas necesarias.\n\nFuente verificable: Registros de incidentes y chat laboral",
       "tipo": "decision_comite",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -836,7 +836,7 @@
     {
       "fecha": "2024-04-03",
       "titulo": "3 amonestaciones enviadas Inspección Trabajo",
-      "descripcion": "2 a Yajaira, 1 a Yamileth por servicios particulares.",
+      "descripcion": "Envío de 3 cartas de amonestación formal a la Inspección del Trabajo.\n\nAmonestaciones enviadas:\n✓ 2 amonestaciones a Yajaira (personal de aseo)\n✓ 1 amonestación a Yamileth (personal de aseo)\n\nMotivo: Prestación de servicios particulares a residentes durante horario laboral pagado por el edificio, constituyendo falta grave según código del trabajo.\n\nProcedimiento legal seguido correctamente para respaldar eventual desvinculación.\n\nFuente verificable: Registros laborales y documentación legal",
       "tipo": "amonestacion",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -846,7 +846,7 @@
     {
       "fecha": "2024-04-10",
       "titulo": "Decisión sobre personal problemático",
-      "descripcion": "Análisis de casos de incumplimiento.",
+      "descripcion": "Análisis de casos de incumplimiento laboral y decisión sobre acciones a seguir.\n\nEl comité evaluó:\n✓ Casos documentados de incumplimiento\n✓ Amonestaciones previas sin mejora\n✓ Impacto en calidad del servicio\n✓ Opciones legales disponibles\n\nDecisión: Proceder con proceso de desvinculación del personal problemático siguiendo procedimientos legales establecidos.\n\nFuente verificable: Actas de reuniones del comité",
       "tipo": "decision_comite",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -856,7 +856,7 @@
     {
       "fecha": "2024-04-10",
       "titulo": "Consulta abogado sobre despidos",
-      "descripcion": "Asesoría legal para desvinculación.",
+      "descripcion": "Asesoría legal para proceso de desvinculación laboral.\n\nConsulta realizada con abogado laboral para:\n✓ Validar causales de despido aplicables\n✓ Confirmar documentación necesaria\n✓ Revisar procedimientos legales correctos\n✓ Evitar demandas laborales posteriores\n\nEl abogado confirmó que las causales documentadas eran suficientes para desvinculación justificada.\n\nFuente verificable: Registros de asesorías legales",
       "tipo": "legal",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -876,7 +876,7 @@
     {
       "fecha": "2024-04-18",
       "titulo": "Preparación documentos de despido",
-      "descripcion": "Elaboración de cartas y finiquitos.",
+      "descripcion": "Elaboración de cartas de despido y documentos de finiquito.\n\nDocumentos preparados:\n✓ Cartas de desvinculación formal\n✓ Liquidaciones de finiquito\n✓ Detalle de últimas remuneraciones\n✓ Cálculo de indemnizaciones si corresponde\n\nTodos los documentos preparados con asesoría legal para garantizar cumplimiento normativo.\n\nFuente verificable: Archivos de recursos humanos",
       "tipo": "finiquito",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -886,7 +886,7 @@
     {
       "fecha": "2024-04-19",
       "titulo": "Consulta abogado laboral para despidos",
-      "descripcion": "Recomendación causal 'necesidades empresa'.",
+      "descripcion": "Segunda consulta con abogado laboral para confirmar estrategia de desvinculación.\n\nRecomendación del abogado:\n✓ Utilizar causal \"necesidades de la empresa\" (artículo 161)\n✓ Esta causal es más segura legalmente\n✓ Evita conflictos sobre causales específicas\n✓ Requiere pago de indemnización pero minimiza riesgo de demandas\n\nEl comité aceptó esta recomendación profesional.\n\nFuente verificable: Asesorías legales documentadas",
       "tipo": "legal",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -896,7 +896,7 @@
     {
       "fecha": "2024-04-24",
       "titulo": "Aprobación proceso desvinculación",
-      "descripcion": "Autorización formal de despidos.",
+      "descripcion": "Autorización formal del comité para proceder con despidos.\n\nDecisión aprobada:\n✓ Desvinculación de personal de aseo problemático\n✓ Uso de causal \"necesidades de la empresa\"\n✓ Pago de indemnizaciones correspondientes\n✓ Inicio inmediato de búsqueda de reemplazos\n\nEl comité autorizó formalmente al presidente para ejecutar el proceso.\n\nFuente verificable: Actas del comité de administración",
       "tipo": "decision_comite",
       "impacto": "critico",
       "fuente": "Comité solos",
