@@ -1236,7 +1236,7 @@
     {
       "fecha": "2024-07-22",
       "titulo": "Crisis pérdida base datos TAG",
-      "descripcion": "Pérdida total, plan re-registro en torre 9500.",
+      "descripcion": "Crisis de seguridad: pérdida total de la base de datos de TAGs del edificio.\n\nSituación crítica detectada:\n\nProblema descubierto:\n✓ Base de datos completa de TAGs perdida/corrupta\n✓ Sin respaldo disponible\n✓ Imposibilidad de verificar qué vehículos tienen acceso\n✓ Riesgo de seguridad para toda la torre\n\nImpacto inmediato:\n- Pérdida de control de acceso vehicular\n- Imposibilidad de identificar TAGs autorizados vs no autorizados\n- Sistema de seguridad comprometido\n- Necesidad urgente de reconstruir la base\n\nPlan de emergencia establecido:\nTorre 9500 como punto de re-registro para comenzar a reconstruir la base de datos desde cero.\n\nEsta crisis evidenció:\n- Falta de respaldos automáticos del sistema\n- Necesidad de protocolos de backup\n- Vulnerabilidad del sistema de seguridad\n- Dependencia de Federal para solución\n\nJoaquín lideró el plan de recuperación para minimizar el tiempo sin control de accesos.\n\nFuente verificable: Gestión documentada Comité General",
       "tipo": "seguridad",
       "impacto": "critico",
       "fuente": "Comité General",
@@ -1266,7 +1266,7 @@
     {
       "fecha": "2024-07-30",
       "titulo": "Plan de recuperación datos TAG",
-      "descripcion": "Estrategia para reconstruir base de datos.",
+      "descripcion": "Elaboración de estrategia integral para reconstruir la base de datos de TAGs perdida.\n\nPlan de recuperación coordinado:\n\nEstrategia multi-fase:\n\n1. RE-REGISTRO RESIDENTES:\n✓ Torre 9500 como punto de inicio\n✓ Solicitud a todos los residentes de registrar TAGs nuevamente\n✓ Creación de formulario de registro\n✓ Verificación de identidad y departamento\n\n2. VALIDACIÓN DE INFORMACIÓN:\n✓ Cruce con listados de propietarios\n✓ Verificación de placas patentes\n✓ Confirmación de residencia\n✓ Actualización de datos de contacto\n\n3. REPROGRAMACIÓN DE SISTEMA:\n✓ Ingreso manual de todos los TAGs al sistema\n✓ Pruebas de funcionamiento\n✓ Validación de accesos\n\n4. PROTOCOLO DE BACKUP:\n✓ Establecer respaldos automáticos diarios\n✓ Copias de seguridad en múltiples ubicaciones\n✓ Procedimiento de recuperación documentado\n\nCoordinación con Federal:\n- Presión para resolver problema técnico\n- Exigencia de implementar medidas preventivas\n- Solicitud de compensación por falla\n\nEste plan permitió recuperar gradualmente el control de accesos vehiculares.\n\nFuente verificable: Gestión documentada Comité General",
       "tipo": "seguridad",
       "impacto": "critico",
       "fuente": "Comité General",
@@ -1336,7 +1336,7 @@
     {
       "fecha": "2024-08-20",
       "titulo": "Federal abre a cualquiera sin control",
-      "descripcion": "Guardias abren a Uber sin verificación.",
+      "descripcion": "Crisis de seguridad: guardias de Federal abren portón a cualquier vehículo sin verificación.\n\nProblema crítico detectado:\n\nSituación identificada:\n✓ Guardias abriendo portón a vehículos Uber sin verificar\n✓ Ingreso de personas desconocidas sin control\n✓ Violación completa de protocolos de seguridad\n✓ Riesgo para seguridad de todos los residentes\n\nCasos específicos documentados:\n- Uber ingresando sin autorización\n- Vehículos desconocidos sin TAG pasando libremente\n- Guardias justificándose: \"la persona pidió que abriera\"\n- Incumplimiento total de procedimientos\n\nRespuesta del comité:\n\nAcciones inmediatas:\n✓ Reclamo formal a Federal\n✓ Exigencia de refuerzo de protocolos\n✓ Solicitud de capacitación a guardias\n✓ Amenaza de cambio de empresa de seguridad\n\nExigencias al personal:\n- Verificar TODOS los vehículos\n- Solo abrir con TAG válido o autorización confirmada\n- Llamar al departamento antes de abrir a desconocidos\n- Registrar todos los ingresos\n\nEsta crisis evidenció problemas graves con Federal que venían acumulándose (deuda de luz, falta de profesionalismo, incumplimiento de contratos).\n\nFuente verificable: Gestión documentada Comité General",
       "tipo": "seguridad",
       "impacto": "critico",
       "fuente": "Comité General",
@@ -1396,7 +1396,7 @@
     {
       "fecha": "2024-09-05",
       "titulo": "Búsqueda reemplazo Fernanda",
-      "descripcion": "Proceso de selección nuevo mayordomo.",
+      "descripcion": "Quinta búsqueda de mayordomo en 4 meses tras renuncia de Fernanda Gaete.\n\nProceso de selección iniciado:\n\nContexto de la búsqueda:\n- Fernanda renunció el 26 de agosto (efectiva 23 septiembre)\n- Búsqueda anticipada para evitar quedarse sin mayordomo\n- Quinta persona en el cargo en 4 meses\n- Comité frustrado por alta rotación\n\nCronología completa de mayordomos 2024:\n1. Rodrigo Catrimilla: Despedido 25 abril\n2. Mayordomo anónimo: Renunció 2 mayo (1er día)\n3. Juan Manzor: No renovado junio (incumplimiento)\n4. Fernanda Gaete: Renunció agosto (2.5 meses)\n5. Búsqueda nueva persona: Septiembre 2024\n\nNuevo enfoque de selección:\n✓ Evaluación más rigurosa de candidatos\n✓ Referencias laborales verificadas\n✓ Entrevistas más profundas\n✓ Análisis de causas de rotación\n✓ Mejora de condiciones del cargo (si necesario)\n\nLecciones aprendidas:\n- Importancia de selección cuidadosa\n- Necesidad de condiciones competitivas\n- Valor de estabilidad en el cargo\n- Impacto de rotación en operación del edificio\n\nEsta búsqueda buscaba finalmente estabilizar el cargo crítico de mayordomo.\n\nFuente verificable: Gestión documentada proceso laboral",
       "tipo": "contratacion",
       "impacto": "critico",
       "fuente": "Laboral",
