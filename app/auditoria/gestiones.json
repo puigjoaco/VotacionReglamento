@@ -796,7 +796,7 @@
     {
       "fecha": "2024-03-26",
       "titulo": "Incidente Yajaira servicios particulares",
-      "descripcion": "Sorprendida saliendo de depto 94 con carro aseo.",
+      "descripcion": "René Picasso sorprende a Yajaira saliendo de departamento 94 con carro de aseo durante horario laboral.\n\nIncidente detectado:\nFecha: 26 de marzo 2024, 19:15 hrs\nLugar: Piso 9, departamento 94\n\nSituación:\n✓ Yajaira (personal de aseo) sorprendida saliendo del depto 94\n✓ Llevaba consigo el carro de aseo del edificio\n✓ Estaba en horario laboral pagado por la comunidad\n✓ Se mostró nerviosa al ser sorprendida\n✓ Pidió hablar con René inmediatamente\n\nEste incidente confirmó las sospechas del comité sobre prestación de servicios particulares a residentes durante horario laboral, utilizando materiales y equipos del edificio.\n\nFue uno de los casos documentados que llevó al envío de amonestaciones formales a la Inspección del Trabajo el 3 de abril.\n\nFuente verificable: Chat 5P. Laboral.txt, línea 1966 (26/3/2024, 21:25)",
       "tipo": "amonestacion",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -916,7 +916,7 @@
     {
       "fecha": "2024-04-25",
       "titulo": "Finiquito Rodrigo Catrimilla completado",
-      "descripcion": "Mayordomo desvinculado, documentos legalizados.",
+      "descripcion": "Finiquito del mayordomo Rodrigo Catrimilla completado y legalizado sin problemas.\n\nProceso de desvinculación completado:\n\nGestión realizada por Damaly (RRHH):\n✓ Firma de finiquito en notaría (25/4/2024, 15:30)\n✓ Documentos legalizados sin problemas\n✓ Sin reserva de derechos del trabajador\n✓ Revisión por abogado Álvaro Saavedra (confirmó todo correcto)\n✓ Transferencia bancaria procesada el mismo día\n\nRecomendación legal seguida:\nEl abogado recomendó que el nuevo mayordomo iniciara a partir del 2 de mayo (una semana después) para evitar que Rodrigo pudiera reclamar que fue \"engañado\" sobre la causal de despido al ver inmediatamente un reemplazo.\n\nEste finiquito cerró un proceso de desvinculación laboral complejo que comenzó en abril.\n\nFuente verificable: Chat 5P. Laboral.txt, líneas 2362-2396 (25/4/2024)",
       "tipo": "finiquito",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -936,7 +936,7 @@
     {
       "fecha": "2024-05-02",
       "titulo": "Nuevo mayordomo renuncia primer día",
-      "descripcion": "Encontró trabajo más cerca de su casa.",
+      "descripcion": "Crisis laboral: nuevo mayordomo renuncia el mismo primer día de trabajo.\n\nSituación crítica:\n\nMañana del 2 de mayo:\n- Katia explica las funciones al nuevo mayordomo\n- Todo aparentemente normal durante la inducción\n\nTarde del 2 de mayo (15:10 hrs):\n- El mayordomo renuncia sin completar ni un día completo\n- Motivo: Encontró trabajo más cerca de su casa\n- Damaly confirma: \"Tendremos que buscar a otro\"\n\nConsecuencias inmediatas:\n✓ Edificio queda sin mayordomo nuevamente\n✓ Necesidad de reiniciar búsqueda urgente\n✓ Katia contacta inmediatamente a Carlos Casanova (otro postulante)\n✓ René y Rodrigo insisten en hacer entrevista personal\n✓ Rodrigo rechaza a Carlos Casanova como opción\n\nEsta fue la primera de una serie de crisis de personal de mayordomo durante abril-junio 2024.\n\nFuente verificable: Chat 5P. Laboral.txt, líneas 2467-2480 (2/5/2024)",
       "tipo": "finiquito",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -946,7 +946,7 @@
     {
       "fecha": "2024-05-08",
       "titulo": "Búsqueda urgente nuevo mayordomo",
-      "descripcion": "Proceso acelerado de selección.",
+      "descripcion": "Proceso acelerado de búsqueda de nuevo mayordomo tras renuncia del 2 de mayo.\n\nSituación del edificio:\n- Sin mayordomo desde el 2 de mayo\n- Búsqueda anterior no dio resultados satisfactorios\n- Carlos Casanova rechazado por Rodrigo Vega\n- Necesidad urgente de encontrar reemplazo confiable\n\nProceso de selección acelerado:\n✓ Damaly activa nuevas búsquedas de candidatos\n✓ Comité solicita participar en entrevistas personales\n✓ René y Rodrigo insisten en conocer personalmente a postulantes\n✓ Revisión exhaustiva de candidatos disponibles\n✓ Búsqueda priorizando estabilidad y compromiso\n\nEl comité aprendió de la experiencia anterior y decidió ser más riguroso en la selección para evitar nuevas renuncias prematuras.\n\nEsta búsqueda culminó con la contratación de Juan Manzor el 20 de mayo.\n\nFuente verificable: Gestión documentada y Chat 5P. Laboral.txt",
       "tipo": "contratacion",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -986,7 +986,7 @@
     {
       "fecha": "2024-05-20",
       "titulo": "Juan Manzor nuevo Mayordomo",
-      "descripcion": "Comienza funciones en el edificio.",
+      "descripcion": "Juan Manzor comienza como nuevo mayordomo del edificio.\n\nIncorporación:\nFecha de inicio: 20 de mayo 2024\n\nGestión de integración:\n✓ Joaquín solicita teléfono de Juan para agregarlo al grupo del comité\n✓ Katia envía contacto: \"Juan Manzir May Portezuelo\" (apellido real: Manzor)\n✓ Inicio de funciones como mayordomo permanente\n✓ Tercera persona en el cargo en menos de un mes\n\nContexto de contratación:\nLuego de la crisis de abril-mayo (despido de Rodrigo Catrimilla + renuncia del reemplazo en el primer día), Juan Manzor fue seleccionado como la tercera opción para estabilizar el cargo.\n\nExpectativa: El comité esperaba que Juan fuera un mayordomo estable y comprometido con sus funciones.\n\nRealidad posterior: Juan presentaría problemas de cumplimiento horario que llevarían a su no renovación en junio.\n\nFuente verificable: Chat 5P. Laboral.txt, líneas 2659-2663 (20/5/2024)",
       "tipo": "contratacion",
       "impacto": "critico",
       "fuente": "Laboral",
@@ -1076,7 +1076,7 @@
     {
       "fecha": "2024-06-14",
       "titulo": "Juan Manzor abandona trabajo 2.5 horas antes",
-      "descripcion": "Abogado indica amonestar antes de despedir.",
+      "descripcion": "Joaquín descubre que Juan Manzor abandona su puesto 2.5 horas antes del horario contractual todos los días.\n\nDescubrimiento:\nFecha: 14 de junio 2024, 16:33 hrs\n\nEvidencia detectada:\n✓ Joaquín revisa el horario contractual de Juan\n✓ Compara con hora real de salida del mayordomo\n✓ Constata que Juan se va 2.5 horas antes TODOS los días\n✓ Incumplimiento grave y reiterado del contrato\n\nAcción inmediata de Joaquín:\n- Consulta a Damaly para confirmar horario contractual\n- Envía foto del contrato mostrando la discrepancia\n- Instrucción directa: \"Damaly no le puedes renovar el contrato a ese caballero, dale el término\"\n\nRespaldo legal:\n✓ Abogado Álvaro Saavedra confirma procedimiento correcto\n✓ Causal justificada para no renovación de contrato\n✓ Evidencia documentada del incumplimiento\n\nEste descubrimiento llevó a la decisión de no renovar el contrato de Juan a fin de mes y buscar un cuarto mayordomo.\n\nFuente verificable: Chat 5P. Laboral.txt, líneas 2855-2865 (14/6/2024)",
       "tipo": "amonestacion",
       "impacto": "critico",
       "fuente": "Laboral",
