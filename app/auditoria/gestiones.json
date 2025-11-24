@@ -696,7 +696,7 @@
     {
       "fecha": "2024-03-06",
       "titulo": "Coordinación con comité exteriores",
-      "descripcion": "Primera reunión inter-edificios.",
+      "descripcion": "Inicio de coordinación con comités de las otras torres del condominio.\n\nAntecedentes:\n- El condominio Portezuelo está compuesto por 5 edificios independientes\n- Cada edificio tenía su propia administración\n- Áreas comunes exteriores compartidas sin coordinación formal\n- Necesidad de establecer mecanismos de gobernanza conjunta\n\nGestión realizada:\n✓ Identificación de necesidad de crear Comité Exteriores formal\n✓ Contacto con presidentes de las otras 4 torres\n✓ Coordinación inicial para primera reunión inter-edificios\n✓ Preparación de temas prioritarios a tratar\n\nEsta coordinación llevó a la creación formal del grupo al día siguiente.\n\nFuente verificable: Gestión previa documentada",
       "tipo": "coordinacion",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -706,7 +706,7 @@
     {
       "fecha": "2024-03-07",
       "titulo": "Creación Comité Exteriores Portezuelo General",
-      "descripcion": "Coordinación entre los 5 edificios del condominio.",
+      "descripcion": "Creación formal del \"Comité Exteriores Portezuelo\" para coordinar los 5 edificios del condominio.\n\nGrupo creado por:\nAdministrador Exterior Cristóbal Román (7/3/2024, 13:24 hrs)\n\nEdificios participantes:\n- Torre 9500 (Portezuelo Oriente) - Joaquín Puig\n- Torre 9400 (Lanín) - Gonzalo Degiorgis\n- Torre 9300 (Llaima) - Rodrigo Sánchez\n- Torre 9200 (Lonquimay) - Pabla Gainza\n- Torre 9100 (Villarrica) - Fernando Bolumburu\n\nObjetivo:\nCoordinación de gastos, mantenciones y decisiones sobre áreas comunes exteriores compartidas por las 5 torres.\n\nEste fue el primer mecanismo formal de gobernanza conjunta del condominio completo.\n\nFuente verificable: Chat 7P. Comite Portezuelo General.txt, línea 2",
       "tipo": "coordinacion",
       "impacto": "critico",
       "fuente": "Comité General",
@@ -726,7 +726,7 @@
     {
       "fecha": "2024-03-13",
       "titulo": "Definición aportes gastos exteriores",
-      "descripcion": "Establecimiento de cuotas por edificio.",
+      "descripcion": "Establecimiento del sistema de aportes y gastos comunes para áreas exteriores.\n\nTemas tratados en primera reunión:\n✓ Definición de cuotas por edificio para gastos exteriores\n✓ Revisión de pagos de honorarios de administración\n✓ Establecimiento de mecanismos de cobro\n✓ Coordinación financiera entre las 5 torres\n\nProblemática identificada:\n- Edificio 9500 objetó cobros de enero-febrero realizados sin aprobación formal\n- Joaquín Puig planteó que decisiones \"a puertas cerradas\" sin incluir a todos los edificios serían objetadas\n- Necesidad de establecer procedimientos transparentes y participativos\n\nResultado:\nSistema de aportes definido con participación de todos los edificios.\n\nFuente verificable: Chat 7P. Comite Portezuelo General.txt, líneas 187-199",
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Comité solos",
@@ -736,7 +736,7 @@
     {
       "fecha": "2024-03-13",
       "titulo": "Primera reunión formal Comité General 5 Torres",
-      "descripcion": "Agenda: caseta, consumos, administración, banco.",
+      "descripcion": "Primera reunión formal del Comité Exteriores con representantes de las 5 torres.\n\nFecha: Miércoles 13 de marzo 2024, 19:00 hrs\nLugar: Sala de reuniones Torre Lanín (9400)\n\nAgenda de temas tratados:\n1. Consumos de Caseta de Guardia\n2. Revisión pagos de Honorarios de Administración\n3. Situación Bombas y Consumo Agua\n4. Situación Federal (seguridad)\n5. Programación Trabajos aprobados (recarpeteo, piscina, riego automático)\n6. Plan de Trabajo Exteriores (evacuación aguas lluvias, filtraciones)\n7. Situación Auxiliares de Aseo\n8. Revisión Contrato de Mantención de Jardines\n9. Acta Banco Chile\n\nEsta reunión estableció las bases de coordinación formal entre las 5 torres del condominio.\n\nFuente verificable: Chat 7P. Comite Portezuelo General.txt, líneas 12-87",
       "tipo": "coordinacion",
       "impacto": "critico",
       "fuente": "Comité General",
@@ -746,7 +746,7 @@
     {
       "fecha": "2024-03-14",
       "titulo": "Apertura cuenta bancaria conjunta Banco Chile",
-      "descripcion": "Acta notarial con 2 firmas de presidentes.",
+      "descripcion": "Gestión urgente para apertura de cuenta bancaria conjunta en Banco Chile.\n\nProceso coordinado por Joaquín Puig:\n\nDía 14/3/2024:\n✓ Coordinación con Notaría Vitacura (Susana de escrituras públicas)\n✓ Preparación de acta con facultades para apertura de cuenta\n✓ Definición de 2 firmas autorizadas (votado en reunión)\n✓ Gestión para firma electrónica avanzada\n\nProcedimiento establecido:\n1. Envío de documento a notaría para preparación de escritura pública\n2. Impresión y firma de todos los presidentes en conserjería 9500\n3. Recogida del libro de actas en 9100 (en poder de Pabla)\n4. Cita 15/3/2024 a las 14:30 en Notaría Vitacura\n5. Entrega inmediata de documento escriturado con firma electrónica\n6. Ingreso al Banco Chile el mismo día\n\nJoaquín gestionó personalmente con el banco para acelerar el proceso y evitar depositar en cuentas provisionales.\n\nFuente verificable: Chat 7P. Comite Portezuelo General.txt, líneas 95-185",
       "tipo": "financiero",
       "impacto": "critico",
       "fuente": "Comité General",
