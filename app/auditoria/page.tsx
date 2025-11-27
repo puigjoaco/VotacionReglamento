@@ -41,6 +41,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import gestionesData from './gestiones.json';
+import { GestionCard } from '@/components/GestionCard';
 
 // Definir tipo para gestión
 interface Gestion {
@@ -760,89 +761,19 @@ export default function AuditoriaPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="space-y-4">
-              {filteredGestiones.map((gestion, index) => (
-                <div
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {filteredGestiones.map((gestion: any) => (
+                <GestionCard
                   key={gestion.id}
-                  className="relative pl-8 pb-4 border-l-2 border-slate-600 last:border-l-0"
-                >
-                  {/* Punto en la línea de tiempo */}
-                  <div
-                    className={`absolute left-[-9px] top-0 w-4 h-4 rounded-full border-2 ${
-                      tipoColores[gestion.tipo]
-                        ? tipoColores[gestion.tipo].split(' ')[0]
-                        : 'bg-slate-600'
-                    } border-slate-800`}
-                  />
-
-                  {/* Card de gestión */}
-                  <div
-                    className={`bg-slate-700/50 rounded-lg border border-slate-600/50 overflow-hidden transition-all ${
-                      expandedCards.has(gestion.id) ? 'shadow-lg' : ''
-                    }`}
-                  >
-                    <button
-                      onClick={() => toggleCard(gestion.id)}
-                      className="w-full p-4 text-left hover:bg-slate-700/70 transition-colors"
-                    >
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-2 mb-2">
-                            <Badge
-                              variant="outline"
-                              className="text-xs border-blue-400/50 text-blue-300"
-                            >
-                              #{gestion.id}
-                            </Badge>
-                            <Badge
-                              className={`text-xs ${
-                                tipoColores[gestion.tipo] ||
-                                'bg-slate-600 text-slate-300 border-slate-500'
-                              }`}
-                            >
-                              <span className="mr-1">
-                                {tipoIconos[gestion.tipo] || (
-                                  <CheckCircle2 className="h-3 w-3 inline" />
-                                )}
-                              </span>
-                              {gestion.tipo}
-                            </Badge>
-                            <span className="text-xs text-slate-400 flex items-center">
-                              <Calendar className="h-3 w-3 mr-1" />
-                              {formatDate(gestion.fecha)}
-                            </span>
-                          </div>
-                          <h3 className="font-semibold text-slate-100">{gestion.titulo}</h3>
-                        </div>
-                        {expandedCards.has(gestion.id) ? (
-                          <ChevronUp className="h-5 w-5 text-slate-400" />
-                        ) : (
-                          <ChevronDown className="h-5 w-5 text-slate-400" />
-                        )}
-                      </div>
-                    </button>
-
-                    {expandedCards.has(gestion.id) && (
-                      <div className="px-4 pb-4 border-t border-slate-600/50">
-                        <div className="mt-3 space-y-3">
-                          <div>
-                            <p className="text-xs font-medium text-slate-400 mb-1">Descripción:</p>
-                            <p className="text-sm text-slate-200">{gestion.descripcion}</p>
-                          </div>
-                          <div>
-                            <p className="text-xs font-medium text-slate-400 mb-1">Impacto:</p>
-                            <p className="text-sm text-emerald-300">{gestion.impacto}</p>
-                          </div>
-                          <div className="flex items-center gap-4 pt-2">
-                            <span className="text-xs text-slate-500">
-                              Fuente: {gestion.fuente}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
+                  id={gestion.id}
+                  fecha={gestion.fecha}
+                  titulo={gestion.titulo}
+                  descripcion={gestion.descripcion}
+                  descripcion_completa={gestion.descripcion_completa}
+                  tipo={gestion.tipo}
+                  fuente={gestion.fuente}
+                  impacto={gestion.impacto}
+                />
               ))}
             </div>
 
