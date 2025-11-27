@@ -161,8 +161,6 @@ export default function AuditoriaPage() {
   const estadisticas = gestionesData.estadisticas as any;
   const resumenCategoria = gestionesData.resumen_por_tipo as Record<string, number>;
   const resumenEjecutivo = (gestionesData as any).resumen_ejecutivo;
-  const logrosDestacados = (gestionesData as any).logros_destacados_joaquin as string[];
-  const horariosTrabajo = (gestionesData as any).horarios_trabajo_voluntario as any;
 
   // Filtrar gestiones
   const filteredGestiones = useMemo(() => {
@@ -218,11 +216,8 @@ export default function AuditoriaPage() {
               <Award className="h-8 w-8 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold">Auditoría de Gestiones - Joaquín Puig</h1>
+              <h1 className="text-2xl font-bold">Registro de Gestiones del Comité</h1>
               <p className="text-blue-200 text-sm">
-                Registro completo del trabajo voluntario realizado como {metadata.cargo}
-              </p>
-              <p className="text-blue-300 text-xs mt-1">
                 {metadata.edificio} • {metadata.periodo}
               </p>
             </div>
@@ -465,180 +460,6 @@ export default function AuditoriaPage() {
           </CardContent>
         </Card>
 
-        {/* Logros Destacados */}
-        <Card className="mb-8 bg-gradient-to-r from-purple-900/50 to-indigo-900/50 border-purple-500/30 shadow-xl">
-          <CardHeader>
-            <CardTitle className="text-lg flex items-center text-purple-100">
-              <CheckCircle2 className="mr-2 h-5 w-5 text-purple-400" />
-              Logros Destacados de Joaquín Puig
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-2">
-              {logrosDestacados.map((logro, index) => (
-                <li key={index} className="flex items-start gap-2 text-sm text-purple-100/90">
-                  <CheckCircle2 className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
-                  <span>{logro}</span>
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
-
-        {/* Horarios de Trabajo Voluntario */}
-        <Card className="mb-8 bg-gradient-to-r from-cyan-900/50 to-blue-900/50 border-cyan-500/30 shadow-xl">
-          <CardHeader>
-            <CardTitle className="text-lg flex items-center text-cyan-100">
-              <Clock className="mr-2 h-5 w-5 text-cyan-400" />
-              Horarios de Trabajo Voluntario
-            </CardTitle>
-            <CardDescription className="text-cyan-200/70">
-              {horariosTrabajo.descripcion}
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              <div className="bg-cyan-800/30 p-3 rounded-lg">
-                <p className="text-cyan-300 text-xs font-medium">Madrugadas</p>
-                <p className="text-cyan-100 text-sm">{horariosTrabajo.madrugadas}</p>
-              </div>
-              <div className="bg-cyan-800/30 p-3 rounded-lg">
-                <p className="text-cyan-300 text-xs font-medium">Noches</p>
-                <p className="text-cyan-100 text-sm">{horariosTrabajo.noches}</p>
-              </div>
-              <div className="bg-cyan-800/30 p-3 rounded-lg">
-                <p className="text-cyan-300 text-xs font-medium">Fines de Semana</p>
-                <p className="text-cyan-100 text-sm">{horariosTrabajo.fines_de_semana}</p>
-              </div>
-              <div className="bg-cyan-800/30 p-3 rounded-lg">
-                <p className="text-cyan-300 text-xs font-medium">Feriados</p>
-                <p className="text-cyan-100 text-sm">{horariosTrabajo.feriados}</p>
-              </div>
-              <div className="bg-cyan-800/30 p-3 rounded-lg">
-                <p className="text-cyan-300 text-xs font-medium">Horas Laborales</p>
-                <p className="text-cyan-100 text-sm">{horariosTrabajo.horas_laborales}</p>
-              </div>
-              <div className="bg-cyan-800/30 p-3 rounded-lg">
-                <p className="text-cyan-300 text-xs font-medium">Vacaciones</p>
-                <p className="text-cyan-100 text-sm">{horariosTrabajo.vacaciones}</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Logros y Fortalezas de la Gestión */}
-        <Card className="mb-8 bg-gradient-to-r from-emerald-900/50 to-green-900/50 border-emerald-500/30 shadow-xl">
-          <CardHeader>
-            <CardTitle className="text-2xl flex items-center text-emerald-100">
-              <TrendingUp className="mr-3 h-6 w-6 text-emerald-400" />
-              Fortalezas Excepcionales de la Gestión de Joaquín Puig
-            </CardTitle>
-            <CardDescription className="text-emerald-200/70">
-              Reconocimiento a las cualidades y logros extraordinarios demostrados durante el periodo 2023-2025
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-3">
-                  <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <h3 className="font-bold text-emerald-200 text-base">Capacidad de Ejecución Inmediata</h3>
-                </div>
-                <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  Respuesta rápida y efectiva ante problemas urgentes, sin dilación ni burocracia innecesaria. Joaquín demostró capacidad excepcional para tomar decisiones y ejecutarlas inmediatamente.
-                </p>
-              </div>
-
-              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-3">
-                  <PiggyBank className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <h3 className="font-bold text-emerald-200 text-base">Generación Masiva de Ahorros</h3>
-                </div>
-                <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  $50.1M+ en ahorros documentados mediante negociaciones estratégicas, importaciones directas y optimización de recursos. Un logro financiero extraordinario.
-                </p>
-              </div>
-
-              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-3">
-                  <Gavel className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <h3 className="font-bold text-emerald-200 text-base">Defensa Legal Ejemplar</h3>
-                </div>
-                <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  Protección activa y agresiva de los intereses del edificio mediante acciones legales, recursos de protección y demandas estratégicas contra cobros indebidos.
-                </p>
-              </div>
-
-              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-3">
-                  <Lightbulb className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <h3 className="font-bold text-emerald-200 text-base">Mejora Tangible en Infraestructura</h3>
-                </div>
-                <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  Proyectos concretos de iluminación LED, seguridad, cargadores eléctricos COPEC Voltex gratuitos y mantenimiento preventivo que mejoraron significativamente el edificio.
-                </p>
-              </div>
-
-              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-3">
-                  <Clock className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <h3 className="font-bold text-emerald-200 text-base">Disponibilidad 24/7 Sin Compensación</h3>
-                </div>
-                <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  Atención permanente incluyendo madrugadas, fines de semana y feriados. Trabajo voluntario completamente desinteresado sacrificando tiempo personal y familiar.
-                </p>
-              </div>
-
-              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-3">
-                  <Activity className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <h3 className="font-bold text-emerald-200 text-base">Innovación Tecnológica</h3>
-                </div>
-                <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  Implementación de sistemas modernos (control biométrico, cámaras de seguridad, app MayordomoTracker) que mejoraron la eficiencia operativa y seguridad del edificio.
-                </p>
-              </div>
-
-              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-3">
-                  <ShieldCheck className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <h3 className="font-bold text-emerald-200 text-base">Transparencia Total</h3>
-                </div>
-                <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  Documentación exhaustiva de todas las gestiones, decisiones financieras y acciones legales. Rendición de cuentas permanente y accesible para toda la comunidad.
-                </p>
-              </div>
-
-              <div className="bg-emerald-800/20 p-5 rounded-xl border border-emerald-500/30">
-                <div className="flex items-center gap-3 mb-3">
-                  <Award className="w-6 h-6 text-emerald-400 shrink-0" />
-                  <h3 className="font-bold text-emerald-200 text-base">Liderazgo Comprometido</h3>
-                </div>
-                <p className="text-sm text-emerald-100/90 leading-relaxed">
-                  Involucramiento directo en cada problema del edificio, asumiendo responsabilidad personal por la resolución de crisis y el bienestar de todos los residentes.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-emerald-700/20 to-green-700/20 p-6 rounded-xl border border-emerald-500/30">
-              <h4 className="font-bold text-emerald-100 text-lg mb-3 flex items-center gap-2">
-                <CheckCircle2 className="w-6 h-6 text-emerald-400" />
-                Reconocimiento a Una Gestión Excepcional
-              </h4>
-              <p className="text-emerald-100/90 text-sm leading-relaxed mb-3">
-                La presidencia de Joaquín Puig se caracterizó por un <strong>estilo de gestión enérgico, comprometido y de involucramiento directo total ("hands-on")</strong>.
-                Demostró una eficacia excepcional en la identificación y resolución de problemas de infraestructura, la generación de ahorros masivos ($50.1M documentados),
-                y la protección legal del edificio contra cobros indebidos y abusos de terceros.
-              </p>
-              <p className="text-emerald-100/90 text-sm leading-relaxed">
-                Los resultados son innegables: <strong>400 gestiones documentadas, 1,203 horas de trabajo voluntario, $50.1M en ahorros generados, 101 crisis críticas resueltas</strong>,
-                y un edificio significativamente mejorado en infraestructura, seguridad y eficiencia operativa. Este legado de trabajo desinteresado y dedicación absoluta
-                quedará como testimonio de un liderazgo comprometido exclusivamente con el bienestar de la comunidad.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-
         {/* Metodología */}
         <Card className="mb-8 bg-gradient-to-r from-slate-800/50 to-gray-900/50 border-slate-500/30 shadow-xl">
           <CardContent className="pt-6">
@@ -791,14 +612,11 @@ export default function AuditoriaPage() {
           <CardContent className="pt-6">
             <div className="text-center">
               <h3 className="text-blue-200 font-semibold text-lg mb-2">
-                Más de 3 años de trabajo voluntario documentado
+                Registro completo del período 2023-2025
               </h3>
               <p className="text-blue-100/80 text-sm">
-                {(gestionesData as any).mensaje_final}
-              </p>
-              <p className="text-blue-100/80 text-sm mt-2">
-                Cada gestión aquí documentada representa horas de coordinación, seguimiento y
-                responsabilidad asumida sin remuneración alguna.
+                Cada gestión documentada representa coordinación, seguimiento y
+                responsabilidad asumida en beneficio de la comunidad.
               </p>
             </div>
           </CardContent>
