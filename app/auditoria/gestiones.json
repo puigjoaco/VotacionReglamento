@@ -14,8 +14,8 @@
     "horas_trabajo_voluntario": 1203,
     "crisis_criticas_resueltas": 101,
     "multas_evitadas_clp": 15000000,
-    "ahorros_documentados_clp": 21140000,
-    "ahorro_total_comunidad_clp": 36140000
+    "ahorros_documentados_clp": 20660000,
+    "ahorro_total_comunidad_clp": 35660000
   },
   "estadisticas": {
     "horas_trabajo_estimadas": 1203,
@@ -117,15 +117,15 @@
     },
     {
       "fecha": "2023-07-01",
-      "titulo": "Consolidación 3 cuentas internet a 1 sola - Ahorro $1.44M/año",
-      "descripcion": "Al asumir como presidente, Joaquín consolidó las 3 cuentas de internet separadas (gimnasio, lounge, recepción) que costaban \u0000.000 cada una (80.000/mes",
+      "titulo": "Consolidación 3 cuentas internet a 1 sola - Ahorro $960K/año",
+      "descripcion": "Al asumir, consolidó las 3 cuentas de internet que pagaba la gestión anterior (gym $40K, lounge $40K, conserjería $40K = $120K/mes total) en 1 sola cuenta de $40K/mes con repetidores. Ahorro: $80K/mes = $960K/año.",
       "tipo": "financiero",
       "impacto": "critico",
-      "ahorro_estimado": 1440000,
+      "ahorro_estimado": 960000,
       "fuente": "Logros Específicos Joaquín",
       "id": 5,
       "responsable": "Joaquín Puig",
-      "descripcion_completa": "Al asumir como presidente, Joaquín consolidó las 3 cuentas de internet separadas (gimnasio, lounge, recepción) que costaban \u0000.000 cada una (80.000/mes"
+      "descripcion_completa": "Al asumir como presidente en junio 2023, Joaquín detectó que la gestión anterior de Rodrigo Lorca pagaba 3 cuentas de internet separadas: una para el gimnasio ($40.000/mes), una para el lounge ($40.000/mes) y una para la conserjería ($40.000/mes), totalizando $120.000 mensuales. Joaquín consolidó todo en una sola cuenta de $40.000/mes e instaló repetidores WiFi para cubrir los tres espacios. Ahorro inmediato: $80.000/mes = $960.000/año. Este problema había sido reportado al comité anterior pero nunca fue solucionado."
     },
     {
       "fecha": "2023-07-03",
