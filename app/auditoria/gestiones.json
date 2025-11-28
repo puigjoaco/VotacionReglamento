@@ -151,14 +151,14 @@
     },
     {
       "fecha": "2023-07-14",
-      "titulo": "Consulta abogado sobre reglamento interno (presupuesto rechazado)",
-      "descripcion": "Joaquín consultó a su abogado personal Fermín Oyarzún sobre elaboración del Reglamento Interno. Presupuesto: $5.8M. El comité rechazó el costo. Posteriormente Joaquín lo elaboró con abogados personales (gratis) y solo pagó $200K revisión final.",
+      "titulo": "Consulta inicial sobre Reglamento Interno (presupuesto rechazado)",
+      "descripcion": "Joaquín consultó a su abogado personal Fermín Oyarzún sobre elaboración del Reglamento Interno. Presupuesto presentado: $5.8M para trabajo completo. El comité rechazó el costo por considerarlo muy alto.",
       "tipo": "legal",
       "impacto": "alto",
       "fuente": "Comité solos",
       "id": 8,
       "responsable": "Joaquín Puig",
-      "descripcion_completa": "El Reglamento Interno del edificio tenía vacíos legales y requería actualización completa. Joaquín consultó en julio 2023 a su abogado personal Fermín Oyarzún sobre el costo de elaborar un Reglamento profesional. Fermín Oyarzún presentó presupuesto de $5.800.000 CLP para realizar el trabajo completo (análisis legal, redacción, revisión normativa y certificación). El comité evaluó el presupuesto pero decidió rechazarlo por considerarlo muy costoso. Como alternativa, Joaquín elaboró el Reglamento personalmente durante 4 meses (35 versiones) con asesoría GRATUITA de sus abogados personales, y solo pagó $200.000 a un abogado externo para la revisión final y certificación. Ahorro neto: $5.600.000."
+      "descripcion_completa": "El Reglamento Interno vigente tenía vacíos legales y requería actualización. En julio 2023, Joaquín consultó a su abogado personal Fermín Oyarzún sobre el costo de elaborar un Reglamento profesional completo. Fermín Oyarzún presentó presupuesto de $5.800.000 CLP para realizar el trabajo completo (análisis legal, redacción según Ley de Copropiedad, revisión normativa y certificación). El comité evaluó el presupuesto pero decidió rechazarlo por considerarlo muy costoso. El tema quedó pendiente hasta 2025 cuando Joaquín finalmente lo elaboró con sus abogados personales."
     },
     {
       "fecha": "2023-07-15",
@@ -2829,16 +2829,16 @@
       "descripcion_completa": "- Mayor seguridad vs TAGs (no se pierden, no se duplican)\n\n→ Sistema de control de acceso biométrico instalado y programado exitosamente."
     },
     {
-      "fecha": "2025-04-01",
-      "titulo": "Elaboración Reglamento Interno completo - Ahorro $5.8M + 4 meses trabajo",
-      "descripcion": "Joaquín dedicó más de 4 meses a elaborar el Reglamento Interno completo del edificio con ayuda de sus abogados personales. Trabajo profesional que cos",
+      "fecha": "2025-06-01",
+      "titulo": "Elaboración Reglamento Interno completo - Ahorro $5.6M",
+      "descripcion": "Joaquín elaboró personalmente el Reglamento Interno durante 4 meses (junio-agosto 2025) con asesoría GRATUITA de sus abogados personales. Solo pagó $200K a abogado externo para revisión final. Ahorro vs presupuesto Fermín Oyarzún 2023: $5.6M.",
       "tipo": "legal",
       "impacto": "critico",
       "ahorro_estimado": 5800000,
       "fuente": "Chat Residentes",
       "id": 251,
       "responsable": "Joaquín Puig",
-      "descripcion_completa": "Joaquín dedicó más de 4 meses a elaborar el Reglamento Interno completo del edificio con ayuda de sus abogados personales. Trabajo profesional que cos\n\n💰 Inversión: $4"
+      "descripcion_completa": "Durante junio, julio y agosto de 2025, Joaquín elaboró personalmente el Reglamento Interno completo del edificio. Trabajo que tomó 4 meses intensivos con 35 versiones diferentes, incorporando cada problema detectado durante su presidencia. Contó con asesoría GRATUITA de sus abogados personales quienes donaron su tiempo profesional. Solo pagó $200.000 CLP a un abogado externo para la revisión final y certificación legal del documento. Contexto: En 2023 el abogado Fermín Oyarzún había presupuestado $5.800.000 para este mismo trabajo (ID 8), pero el comité rechazó el costo. Joaquín lo resolvió con recursos propios 2 años después. Ahorro neto: $5.600.000 CLP. El reglamento fue aprobado en asamblea extraordinaria con 92% de aprobación."
     },
     {
       "fecha": "2025-04-02",
