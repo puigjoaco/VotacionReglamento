@@ -12,7 +12,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import type { ComentarioConUsuario } from '@/types/database';
-import { PlusCircle, Search, Building2, LogOut, MessageSquare, CheckCircle2, Loader2, Download, FileText, Edit3, ThumbsUp } from 'lucide-react';
+import { PlusCircle, Search, Building2, LogOut, MessageSquare, CheckCircle2, Loader2, Download, FileText, Edit3, ThumbsUp, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function DashboardPage() {
   const { data: session, status } = useSession();
@@ -23,6 +24,18 @@ export default function DashboardPage() {
   const [loading, setLoading] = useState(true);
   const [puedeComentarResponse, setPuedeComentarResponse] = useState<any>(null);
   const [aprobando, setAprobando] = useState(false);
+  const [participacion, setParticipacion] = useState<{
+    estadisticas: {
+      total: number;
+      participaron: number;
+      pendientes: number;
+      porcentaje: number;
+      aprobaciones: number;
+      modificaciones: number;
+      votoPropietario: number;
+      votoResidente: number;
+    };
+  } | null>(null);
 
   console.log('[Dashboard] Component rendered, session status:', status, 'session:', session);
 
@@ -86,8 +99,22 @@ export default function DashboardPage() {
       }
     };
 
+    // Obtener datos de participación
+    const fetchParticipacion = async () => {
+      try {
+        const response = await fetch('/api/participacion');
+        if (response.ok) {
+          const data = await response.json();
+          setParticipacion(data);
+        }
+      } catch (error) {
+        console.error('Error al cargar participación:', error);
+      }
+    };
+
     fetchComentarios();
     fetchUserInfo();
+    fetchParticipacion();
   }, [status, router]);
 
   useEffect(() => {
@@ -337,6 +364,63 @@ export default function DashboardPage() {
                     {comentarios.filter(c => c.tipo_comentario === 'modificacion' || !c.tipo_comentario).length}
                   </p>
                   <p className="text-sm text-amber-300">Proponen modificaciones</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* Widget de avance de participación por departamento */}
+        {participacion && (
+          <Card className="mb-8 shadow-xl border-cyan-600/30 bg-gradient-to-br from-slate-800/90 to-cyan-900/40 backdrop-blur-sm hover:shadow-cyan-500/10 transition-all duration-300">
+            <CardContent className="pt-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="bg-cyan-500/20 p-2.5 rounded-lg">
+                    <Building2 className="h-6 w-6 text-cyan-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-white">Avance de la Torre</h3>
+                    <p className="text-sm text-slate-400">Participación por departamento</p>
+                  </div>
+                </div>
+                <Link href="/avance">
+                  <Button variant="outline" size="sm" className="border-cyan-500/40 bg-cyan-500/10 text-cyan-300 hover:bg-cyan-500/20 hover:text-cyan-200">
+                    Ver edificio
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
+
+              {/* Progress bar */}
+              <div className="mb-4">
+                <div className="flex justify-between text-sm mb-2">
+                  <span className="text-slate-300">
+                    {participacion.estadisticas.participaron} de {participacion.estadisticas.total} departamentos
+                  </span>
+                  <span className="font-bold text-cyan-400">{participacion.estadisticas.porcentaje}%</span>
+                </div>
+                <div className="h-3 bg-slate-700 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-cyan-500 to-emerald-500 transition-all duration-500"
+                    style={{ width: `${participacion.estadisticas.porcentaje}%` }}
+                  />
+                </div>
+              </div>
+
+              {/* Mini stats */}
+              <div className="grid grid-cols-3 gap-3 text-center">
+                <div className="bg-emerald-900/30 rounded-lg p-2 border border-emerald-500/20">
+                  <p className="text-lg font-bold text-emerald-400">{participacion.estadisticas.votoPropietario}</p>
+                  <p className="text-xs text-emerald-300">Propietarios</p>
+                </div>
+                <div className="bg-amber-900/30 rounded-lg p-2 border border-amber-500/20">
+                  <p className="text-lg font-bold text-amber-400">{participacion.estadisticas.votoResidente}</p>
+                  <p className="text-xs text-amber-300">Residentes</p>
+                </div>
+                <div className="bg-slate-700/50 rounded-lg p-2">
+                  <p className="text-lg font-bold text-slate-300">{participacion.estadisticas.pendientes}</p>
+                  <p className="text-xs text-slate-400">Pendientes</p>
                 </div>
               </div>
             </CardContent>
