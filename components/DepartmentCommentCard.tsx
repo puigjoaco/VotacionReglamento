@@ -20,8 +20,13 @@ interface DepartmentCommentCardProps {
   onEdit: (comentarioId: string) => void;
 }
 
-// Componente auxiliar para el botón de análisis
+// FEATURE DISABLED: AI Analysis button removed per user request
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function AnalisisButton({ comentario }: { comentario: ComentarioConUsuario }) {
+  // Feature disabled - returning null to hide button
+  return null;
+
+  /* ORIGINAL CODE COMMENTED OUT
   const [analizando, setAnalizando] = useState(false);
   const [analisis, setAnalisis] = useState<any>(comentario.analisis_ia || null);
   const [mostrarAnalisis, setMostrarAnalisis] = useState(false);
@@ -106,6 +111,7 @@ function AnalisisButton({ comentario }: { comentario: ComentarioConUsuario }) {
       {mostrarAnalisis && analisis && <AnalisisComentario analisis={analisis} />}
     </div>
   );
+  */
 }
 
 export function DepartmentCommentCard({
