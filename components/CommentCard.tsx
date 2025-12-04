@@ -4,6 +4,7 @@ import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { ThumbsUp, Edit3, FileText, Loader2 } from 'lucide-react';
 import type { ComentarioConUsuario } from '@/types/database';
 import { useState } from 'react';
@@ -107,23 +108,34 @@ export function CommentCard({ comentario, isOwn = false, onEdit }: CommentCardPr
         {/* Botón de análisis - Solo para comentarios que NO son aprobación */}
         {!esAprobacion && (
           <div className="pt-2">
-            <button
-              onClick={handleAnalizar}
-              disabled={analizando}
-              className="flex items-center gap-2 px-4 py-2 bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-300 border border-cyan-500/30 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
-            >
-              {analizando ? (
-                <>
-                  <Loader2 className="h-4 w-4 animate-spin" />
-                  Analizando...
-                </>
-              ) : (
-                <>
-                  <FileText className="h-4 w-4" />
-                  {analisis ? (mostrarAnalisis ? 'Ocultar análisis' : 'Ver análisis') : 'Comparar con el Reglamento Interno'}
-                </>
-              )}
-            </button>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <button
+                    onClick={handleAnalizar}
+                    disabled={analizando}
+                    className="flex items-center gap-2 px-4 py-2 bg-cyan-600/20 hover:bg-cyan-600/30 text-cyan-300 border border-cyan-500/30 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
+                  >
+                    {analizando ? (
+                      <>
+                        <Loader2 className="h-4 w-4 animate-spin" />
+                        Analizando...
+                      </>
+                    ) : (
+                      <>
+                        <FileText className="h-4 w-4" />
+                        {analisis ? (mostrarAnalisis ? 'Ocultar análisis' : 'Ver análisis') : 'Comparar con el Reglamento Interno'}
+                      </>
+                    )}
+                  </button>
+                </TooltipTrigger>
+                <TooltipContent className="max-w-xs">
+                  <p className="text-sm">
+                    Analiza tu comentario con Inteligencia Artificial para identificar qué puntos ya existen en el Reglamento Interno vigente y cuáles son nuevas sugerencias a considerar.
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
             {error && (
               <p className="text-red-400 text-xs mt-2">{error}</p>
             )}
