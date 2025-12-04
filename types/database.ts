@@ -17,6 +17,8 @@ export interface Comentario {
   tipo_usuario: TipoUsuario;
   contenido: string;
   tipo_comentario: TipoComentario;
+  analisis_ia?: any; // JSON con el análisis generado por IA
+  fecha_analisis?: string; // Fecha cuando se analizó
   created_at: string;
   updated_at: string;
 }

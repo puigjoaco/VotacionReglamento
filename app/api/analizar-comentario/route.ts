@@ -70,9 +70,9 @@ IMPORTANTE:
 
 Responde SOLO con el JSON, sin markdown, sin backticks, sin texto adicional.`;
 
-    // Usar Gemini 2.5 Pro (modelo estable más reciente, 2M tokens)
+    // Usar Gemini 3 Pro (modelo más reciente, pero con límites restrictivos: 25 RPM, 250 RPD)
     const model = genAI.getGenerativeModel({
-      model: 'gemini-2.5-pro',
+      model: 'gemini-3-pro',
       generationConfig: {
         temperature: 0.7,
         maxOutputTokens: 8192,
@@ -95,13 +95,33 @@ Responde SOLO con el JSON, sin markdown, sin backticks, sin texto adicional.`;
 
     // Guardar en la base de datos si se proporciona el ID
     if (comentarioId) {
-      // TODO: Aquí se puede guardar en Supabase cuando tengas la columna lista
-      // const { createClient } = require('@supabase/ssr');
-      // const supabase = createClient(...);
-      // await supabase
-      //   .from('comentarios')
-      //   .update({ analisis_ia: analisis, fecha_analisis: new Date() })
-      //   .eq('id', comentarioId)
+      const { createClient } = await import('@supabase/ssr');
+      const { cookies } = await import('next/headers');
+
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+        {
+          cookies: {
+            getAll() {
+              return cookies().getAll();
+            },
+            setAll(cookiesToSet) {
+              cookiesToSet.forEach(({ name, value, options }) =>
+                cookies().set(name, value, options)
+              );
+            },
+          },
+        }
+      );
+
+      await supabase
+        .from('comentarios')
+        .update({
+          analisis_ia: analisis,
+          fecha_analisis: new Date().toISOString()
+        })
+        .eq('id', comentarioId);
     }
 
     return NextResponse.json({

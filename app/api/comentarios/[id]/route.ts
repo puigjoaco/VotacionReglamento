@@ -133,7 +133,11 @@ export async function PATCH(
     const adminClient = createAdminClient();
 
     // Construir objeto de actualización
-    const updateData: { contenido: string; tipo_comentario?: string } = { contenido };
+    const updateData: { contenido: string; tipo_comentario?: string; analisis_ia: null; fecha_analisis: null } = {
+      contenido,
+      analisis_ia: null, // Limpiar análisis al editar para permitir re-análisis
+      fecha_analisis: null
+    };
     if (tipo_comentario) {
       updateData.tipo_comentario = tipo_comentario;
     }
