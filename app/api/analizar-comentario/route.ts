@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import { createClient } from '@/lib/supabase/server';
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY!);
 
@@ -95,25 +96,7 @@ Responde SOLO con el JSON, sin markdown, sin backticks, sin texto adicional.`;
 
     // Guardar en la base de datos si se proporciona el ID
     if (comentarioId) {
-      const { createClient } = await import('@supabase/ssr');
-      const { cookies } = await import('next/headers');
-
-      const supabase = createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-        {
-          cookies: {
-            getAll() {
-              return cookies().getAll();
-            },
-            setAll(cookiesToSet) {
-              cookiesToSet.forEach(({ name, value, options }) =>
-                cookies().set(name, value, options)
-              );
-            },
-          },
-        }
-      );
+      const supabase = await createClient();
 
       await supabase
         .from('comentarios')
