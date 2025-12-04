@@ -71,9 +71,9 @@ IMPORTANTE:
 
 Responde SOLO con el JSON, sin markdown, sin backticks, sin texto adicional.`;
 
-    // Usar Gemini 3 Pro (modelo más reciente, pero con límites restrictivos: 25 RPM, 250 RPD)
+    // Usar Gemini 1.5 Pro (modelo estable y potente)
     const model = genAI.getGenerativeModel({
-      model: 'gemini-3-pro',
+      model: 'gemini-1.5-pro',
       generationConfig: {
         temperature: 0.7,
         maxOutputTokens: 8192,
