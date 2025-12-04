@@ -1,8 +1,15 @@
 'use client';
 
-import { BookOpen, Lightbulb, CheckCircle2 } from 'lucide-react';
+import { BookOpen, Lightbulb, CheckCircle2, AlertCircle } from 'lucide-react';
 
 interface PuntoExistente {
+  tema: string;
+  articulo: string;
+  texto_articulo: string;
+  mensaje_amable: string;
+}
+
+interface PropuestaModificacion {
   tema: string;
   articulo: string;
   texto_articulo: string;
@@ -17,6 +24,7 @@ interface AporteNuevo {
 interface AnalisisData {
   mensaje_intro: string;
   puntos_existentes: PuntoExistente[];
+  propuestas_modificacion?: PropuestaModificacion[];
   aportes_nuevos: AporteNuevo[];
   mensaje_cierre: string;
 }
@@ -82,6 +90,54 @@ export default function AnalisisComentario({ analisis }: AnalisisComentarioProps
                         </div>
                         <p className="text-xs text-slate-400 italic leading-relaxed">
                           "{punto.texto_articulo}"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Propuestas de modificación/eliminación */}
+        {analisis.propuestas_modificacion && analisis.propuestas_modificacion.length > 0 && (
+          <div className="mb-6">
+            <div className="flex items-center gap-2 mb-3">
+              <AlertCircle className="h-5 w-5 text-amber-400" />
+              <h4 className="text-base font-semibold text-amber-300">
+                Propuestas de Modificación
+              </h4>
+            </div>
+
+            <div className="space-y-4">
+              {analisis.propuestas_modificacion.map((propuesta, index) => (
+                <div
+                  key={index}
+                  className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4"
+                >
+                  <div className="flex items-start gap-2 mb-2">
+                    <div className="h-5 w-5 rounded-full bg-amber-500/20 flex items-center justify-center mt-0.5 flex-shrink-0">
+                      <span className="text-amber-400 text-xs font-bold">✎</span>
+                    </div>
+                    <div className="flex-1">
+                      <h5 className="text-sm font-medium text-amber-200 mb-1">
+                        {propuesta.tema}
+                      </h5>
+                      <p className="text-sm text-slate-300 mb-3">
+                        {propuesta.mensaje_amable}
+                      </p>
+
+                      {/* Artículo actual que se propone modificar */}
+                      <div className="bg-slate-900/50 rounded p-3 border-l-2 border-amber-400">
+                        <div className="flex items-center gap-2 mb-1">
+                          <BookOpen className="h-4 w-4 text-amber-400" />
+                          <span className="text-xs font-semibold text-amber-300">
+                            {propuesta.articulo} (actual)
+                          </span>
+                        </div>
+                        <p className="text-xs text-slate-400 italic leading-relaxed">
+                          "{propuesta.texto_articulo}"
                         </p>
                       </div>
                     </div>

@@ -31,14 +31,17 @@ ${reglamento}
 COMENTARIO A ANALIZAR:
 "${comentario}"
 
-INSTRUCCIONES:
+INSTRUCCIONES CRÍTICAS:
 1. Identifica cada punto o tema mencionado en el comentario
-2. Para cada punto, determina si YA existe en el Reglamento o es NUEVO
-3. Si existe, cita el artículo específico y el texto relevante
-4. Usa un tono SIEMPRE amable, agradecido y constructivo
-5. NUNCA uses palabras como "inválido", "incorrecto", "equivocado", "válido", "válida"
-6. NUNCA seas condescendiente
-7. Reconoce el valor de la participación del usuario
+2. PRIMERO determina la INTENCIÓN del usuario:
+   - ¿Propone AGREGAR algo nuevo? (palabras clave: "debería", "se debe", "es necesario", "falta")
+   - ¿Propone ELIMINAR/MODIFICAR algo existente? (palabras clave: "NO debería", "no se debe", "evitar", "quitar")
+3. Si propone AGREGAR algo que YA EXISTE: cita el artículo y explica que ya está contemplado
+4. Si propone ELIMINAR/MODIFICAR algo que YA EXISTE: reconoce que su propuesta es modificar/eliminar ese artículo
+5. Si propone algo que NO EXISTE: reconócelo como aporte nuevo
+6. Usa un tono SIEMPRE amable, agradecido y constructivo
+7. NUNCA uses palabras como "inválido", "incorrecto", "equivocado"
+8. Reconoce el valor de la participación del usuario
 
 FORMATO DE RESPUESTA (JSON estricto):
 {
@@ -51,6 +54,14 @@ FORMATO DE RESPUESTA (JSON estricto):
       "mensaje_amable": "¡Excelente que te preocupe este tema! Te comentamos que el Reglamento vigente ya lo contempla en [artículo], donde establece que..."
     }
   ],
+  "propuestas_modificacion": [
+    {
+      "tema": "Descripción breve del tema",
+      "articulo": "Número del artículo que propone modificar/eliminar",
+      "texto_articulo": "Cita textual del artículo actual",
+      "mensaje_amable": "Entendemos tu preocupación sobre [artículo]. Actualmente establece que... Tu propuesta de modificarlo/eliminarlo será considerada durante el proceso de revisión."
+    }
+  ],
   "aportes_nuevos": [
     {
       "tema": "Descripción breve del tema",
@@ -61,13 +72,12 @@ FORMATO DE RESPUESTA (JSON estricto):
 }
 
 IMPORTANTE:
-- Para "puntos_existentes", SÍ cites artículos específicos del Reglamento
-- Para "aportes_nuevos", reconócelos como aportes sin usar "válido"
+- Para "puntos_existentes": Usuario propone AGREGAR algo que YA EXISTE → cita el artículo con mensaje positivo
+- Para "propuestas_modificacion": Usuario propone ELIMINAR/MODIFICAR algo que YA EXISTE → cita el artículo actual y reconoce su propuesta de cambio
+- Para "aportes_nuevos": Usuario propone algo que NO EXISTE en el reglamento → reconócelo como aporte nuevo
 - Sé específico y claro, pero siempre amable
-- Si un punto ya existe, explica amablemente que está contemplado
-- Si un punto es nuevo, reconócelo como un aporte sin juzgar
-- Si no hay puntos existentes, deja el array vacío: []
-- Si no hay aportes nuevos, deja el array vacío: []
+- Si no hay elementos en una categoría, deja el array vacío: []
+- NUNCA confundas una propuesta de eliminar con una propuesta de agregar
 
 Responde SOLO con el JSON, sin markdown, sin backticks, sin texto adicional.`;
 
