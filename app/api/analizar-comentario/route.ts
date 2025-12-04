@@ -70,9 +70,9 @@ IMPORTANTE:
 
 Responde SOLO con el JSON, sin markdown, sin backticks, sin texto adicional.`;
 
-    // Usar Gemini 1.5 Pro con contexto largo (2M tokens)
+    // Usar Gemini 2.5 Pro (modelo estable más reciente, 2M tokens)
     const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-pro',
+      model: 'gemini-2.5-pro',
       generationConfig: {
         temperature: 0.7,
         maxOutputTokens: 8192,
