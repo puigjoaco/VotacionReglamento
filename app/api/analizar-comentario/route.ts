@@ -71,9 +71,9 @@ IMPORTANTE:
 
 Responde SOLO con el JSON, sin markdown, sin backticks, sin texto adicional.`;
 
-    // Usar Gemini 1.5 Pro (modelo estable y potente)
+    // Usar Gemini 2.0 Flash Experimental (modelo más reciente)
     const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-pro',
+      model: 'gemini-2.0-flash-exp',
       generationConfig: {
         temperature: 0.7,
         maxOutputTokens: 8192,
