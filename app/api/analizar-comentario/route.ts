@@ -17,8 +17,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Leer el Reglamento Interno
-    const reglamentoPath = join(process.cwd(), 'reglamentointerno.txt');
+    // Leer el Reglamento Interno desde public folder
+    const reglamentoPath = join(process.cwd(), 'public', 'reglamentointerno.txt');
     const reglamento = readFileSync(reglamentoPath, 'utf-8');
 
     // Prompt para Gemini
